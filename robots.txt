@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://haohailong.github.io/sitemap.xml 
+Sitemap: http://shengmingzhiqing.com/sitemap.xml 
