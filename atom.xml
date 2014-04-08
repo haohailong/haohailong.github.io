@@ -4,7 +4,7 @@
   <title><![CDATA[生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-09T00:13:12+02:00</updated>
+  <updated>2014-04-09T00:33:05+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -19,6 +19,8 @@
     <updated>2014-04-08T02:16:35+02:00</updated>
     <id>http://shengmingzhiqing.com/blog/i-need-a-tongue-kiss</id>
     <content type="html"><![CDATA[<h2 id="section">性事诗</h2>
+
+<p>（本文为测试文档）</p>
 
 <p>1</p>
 
@@ -137,6 +139,26 @@ M的快感究竟来自哪里<br />
 
 <p>郝海龙<br />
 2013年12月21日~22日</p>
+
+<p>本文为测试文件。</p>
+
+<script type="math/tex; mode=display">% &lt;![CDATA[
+
+\begin{align*}
+  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
+      \vdots & \ddots & \vdots \\
+      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{align*}
+ %]]&gt;</script>
 ]]></content>
   </entry>
   
