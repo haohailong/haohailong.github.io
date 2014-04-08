@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 随心 | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/sui-xin/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-09T00:33:05+02:00</updated>
+  <updated>2014-04-09T01:02:46+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -18,9 +18,7 @@
     <link href="http://shengmingzhiqing.com/blog/i-need-a-tongue-kiss.html/"/>
     <updated>2014-04-08T02:16:35+02:00</updated>
     <id>http://shengmingzhiqing.com/blog/i-need-a-tongue-kiss</id>
-    <content type="html"><![CDATA[<h2 id="section">性事诗</h2>
-
-<p>（本文为测试文档）</p>
+    <content type="html"><![CDATA[<h2 id="section">性事诗<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></h2>
 
 <p>1</p>
 
@@ -159,6 +157,14 @@ M的快感究竟来自哪里<br />
     \end{array} \right)
 \end{align*}
  %]]&gt;</script>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>本文为测试文档。<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 ]]></content>
   </entry>
   
