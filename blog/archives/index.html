@@ -64,7 +64,6 @@
   <script type="text/javascript"
      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
   </script>
-  <script src="/javascripts/footnote.js"></script>
 
 <!--新窗口中打开链接-->
 <script type="text/javascript">
@@ -76,11 +75,17 @@ function addBlankTargetForLinks () {
 $(document).bind('DOMNodeInserted', function(event) {
   addBlankTargetForLinks();
 });
-
 </script>
 
 <!--adn timeline-->
 <script type="text/javascript" src="/javascripts/adn-timeline.min.js"></script>
+
+<!--bigfoot-->
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/bigfoot.js"></script>
+<script type="text/javascript">
+    $.bigfoot();
+</script>
   
 
 </head>
