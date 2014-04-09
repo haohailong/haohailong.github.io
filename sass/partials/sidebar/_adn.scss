@@ -1,0 +1,60 @@
+#adn_posts {
+  .loading {
+    background: inline-image('adn_32_gray.png') no-repeat center .5em;
+    color: darken($sidebar-bg, 18);
+    text-shadow: $main-bg 0 1px;
+    text-align: center;
+    padding: 2.5em 0 .5em;
+    &.error {
+      background: inline-image('adn_32_gray.png') no-repeat center .5em;
+    }
+  }
+  p {
+    position: relative;
+    padding-right: 1em;
+    font-size: .9em;
+  }
+  a.author {
+    float: left;
+    padding: 0 0 1em .1em;
+    position: relative;
+    text-shadow: #fff 0 1px;
+    font-size: .7em;
+    span { font-size: 1.5em; }
+    text-decoration: none;
+    &:hover {
+      color: $sidebar-link-color-subdued-hover;
+      text-decoration: none;
+    }
+  }
+  a.timestamp {
+    color: lighten($sidebar-link-color-subdued, 15);
+    float: right;
+    padding: 0 0 .1em 1em;
+    position: relative; right: -1.3em;
+    text-shadow: #fff 0 1px;
+    font-size: .7em;
+    span { font-size: 1.5em; }
+    text-decoration: none;
+    &:hover {
+      color: $sidebar-link-color-subdued-hover;
+      text-decoration: none;
+    }
+  }
+  a[href*='alpha.app.net']{
+    @extend .aside-alt-link;
+    @include hover-link;
+    font-size: .9em;
+  }
+  div {
+      position: relative;
+      left: .5em;
+      padding-right: .5em;
+      font-size: .9em;
+      clear: both;
+  }
+}
+
+a#adn_follow {
+    font-size: .9em;
+}

@@ -83,8 +83,13 @@ google_plus_one_size: medium
 googleplus_user:
 googleplus_hidden: false
 
+# App.net
+adn_user: hailong
+adn_post_count: 5
+adn_show_replies: false
+
 # Pinboard
-pinboard_user:
+pinboard_user: 
 pinboard_count: 3
 
 # Delicious

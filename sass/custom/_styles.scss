@@ -1,2 +1,16 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+/* 
+body > header h1 {
+  font-size: 2.2em;
+  @extend .heading;
+  font-family: $header-title-font-family;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin-bottom: 0.6667em;
+}
+*/
+h1 {
+  font-size: 2.2em;
+  line-height: 1.2em;
+}

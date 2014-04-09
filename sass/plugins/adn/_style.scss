@@ -1,0 +1,7 @@
+@import "adn-timeline";
+
+.adn-timeline {
+  @include adn-timeline-layout;
+  @include adn-timeline-theme;
+}
+
