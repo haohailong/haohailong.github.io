@@ -5,7 +5,7 @@ date: 2014-04-08 02:16:35 +0200
 comments: true
 categories: 随心
 ---
-##性事诗
+##性事诗[^1] 
 
 1
 
@@ -36,6 +36,7 @@ M的快感究竟来自哪里
 然后  
 她哭了
 <!--more-->
+
 3
 
 二十多岁的人  
@@ -123,3 +124,24 @@ M的快感究竟来自哪里
 
 郝海龙  
 2013年12月21日~22日
+
+本文为测试文件。
+
+$$
+\begin{align*}
+  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
+      \vdots & \ddots & \vdots \\
+      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{align*}
+$$
+
+[^1]: 本文为测试文档。
