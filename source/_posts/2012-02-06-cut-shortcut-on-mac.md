@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mac的「剪切」快捷键"
+title: "Mac 的「剪切」快捷键"
 date: 2012-02-06 14:53
 comments: true
 categories: "Mac"
