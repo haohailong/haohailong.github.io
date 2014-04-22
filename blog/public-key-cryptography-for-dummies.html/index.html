@@ -1,4 +1,171 @@
-<p>相信很多朋友和我一样，都有传递情书的经历。在我中小学那个还没有陌陌的时代，写纸条应该算是与女同学建立感情的最佳手段——至少是之一。</p>
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>写给大家看的公钥加密算法原理 - 生命之氢</title>
+  <meta name="author" content="郝海龙">
+
+  
+  <meta name="description" content="相信很多朋友和我一样，都有传递情书的经历。在我中小学那个还没有陌陌的时代，写纸条应该算是与女同学建立感情的最佳手段——至少是之一。 既然是传递纸条就难免会假他人之手，尤其是在上课这种不方便走动，班主任又有意把长得有夫妻相的男女生分在不同角落的情况下。 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://shengmingzhiqing.com/blog/public-key-cryptography-for-dummies.html/">
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="生命之氢" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Special+Elite:regular" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Marko+One:regular" rel="stylesheet" type="text/css">
+
+  <!-- mathjax config similar to math.stackexchange -->
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+  </script>
+
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+          var all = MathJax.Hub.getAllJax(), i;
+          for(i=0; i < all.length; i += 1) {
+              all[i].SourceElement().parentNode.className += ' has-jax';
+          }
+      });
+  </script>
+
+  <script type="text/javascript"
+     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+<!--新窗口中打开链接-->
+<script type="text/javascript">
+function addBlankTargetForLinks () {
+  $('a[href^="http"]').each(function(){
+      $(this).attr('target', '_blank');
+  });
+}
+$(document).bind('DOMNodeInserted', function(event) {
+  addBlankTargetForLinks();
+});
+</script>
+
+<!--adn timeline-->
+<script type="text/javascript" src="/javascripts/adn-timeline.min.js"></script>
+
+<!--bigfoot-->
+<style>@import url("/stylesheets/bigfoot-number.scss");</style>
+<script type="text/javascript" src="/javascripts/libs/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/bigfoot.js"></script>
+<script type="text/javascript">
+    $.bigfoot();
+</script>
+
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-49889656-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">生命之氢</a></h1>
+  
+    <h2>Another side of Hailong Hao.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:shengmingzhiqing.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="搜索 = 输入 + 回车"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">首页</a></li>
+  <li><a href="/blog/archives">文章列表</a></li>
+  <li><a href="http://haohailong.net">另一面</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">写给大家看的公钥加密算法原理</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-02T00:00:00+02:00" pubdate data-updated="true">2013年07月02日</time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://shengmingzhiqing.com">评论</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>相信很多朋友和我一样，都有传递情书的经历。在我中小学那个还没有陌陌的时代，写纸条应该算是与女同学建立感情的最佳手段——至少是之一。</p>
 
 <p>既然是传递纸条就难免会假他人之手，尤其是在上课这种不方便走动，班主任又有意把长得有夫妻相的男女生分在不同角落的情况下。是以这种原始的通讯手段虽然能使大名鼎鼎而或臭名昭著的「棱镜」计划丧失用武之地，但却躲不过最原始的监控手段——直接打开看。中国人好奇心最大的地方莫过于别人的私生活，可以想象纸条上不可能有什么秘密存在，肉麻的情话最终往往会成为大家的笑柄。如何才能有效传递情书，但又不让情书的信息在传递过程中泄露出去就成了困扰我很长时间的问题。</p>
 
@@ -23,3 +190,138 @@
 </blockquote>
 
 <p>由于加密使用的是公钥，所以「非对称加密算法」又称「公钥加密算法」。这种算法可以说是远距离传输私密信息的基石，在互联网（尤其是电子商务）上得到了广泛的应用，几乎任何需要传递保密信息的领域都少不它的身影。可以说只要你上过网，几乎就一定接触过这种算法。目前最流行的公钥加密算法是「RSA 加密演算法」，大名鼎鼎的 google 数字证书以及 Gmail 等服务用的就是这种加密演算法。而比特币的加密机制基于「椭圆曲线加密算法」，相比 RSA，同等大小的密钥可以提供更高的安全级别。也就是说，如果你信任 google 的加密系统，那么对于比特币的加密机制也大可放心。</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard"><span class="fn">郝海龙</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-02T00:00:00+02:00" pubdate data-updated="true">2013年07月02日</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/it-general/'>IT(General)</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/Day-One.html/" title="Previous Post: Day One">&laquo; Day One</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/Gain-from-LaTeX-homeowork-1.html/" title="Next Post: 第一份 LaTeX 作业心得">第一份 LaTeX 作业心得 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h2>本文评论</h2>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>最新发布</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/Gain-from-LaTeX-homeowork-1.html/">第一份 LaTeX 作业心得</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/public-key-cryptography-for-dummies.html/">写给大家看的公钥加密算法原理</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/Day-One.html/">Day One</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/why-enter-key-is-huiche-in-chinese.html/">为什么「Enter 键」要被翻译为「回车键」？</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/cut-shortcut-on-mac.html/">Mac 的「剪切」快捷键</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - 郝海龙 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'shengmingzhiqing';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://shengmingzhiqing.com/blog/public-key-cryptography-for-dummies.html/';
+        var disqus_url = 'http://shengmingzhiqing.com/blog/public-key-cryptography-for-dummies.html/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
