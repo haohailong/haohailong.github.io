@@ -4,7 +4,7 @@
   <title><![CDATA[生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-22T23:36:11+02:00</updated>
+  <updated>2014-04-22T23:39:13+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -62,7 +62,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[写给大家看的公钥加密算法原理]]></title>
+    <title type="html"><![CDATA[Public Key Cryptography for Dummies]]></title>
     <link href="http://shengmingzhiqing.com/blog/public-key-cryptography-for-dummies.html/"/>
     <updated>2013-07-02T00:00:00+02:00</updated>
     <id>http://shengmingzhiqing.com/blog/public-key-cryptography-for-dummies</id>
