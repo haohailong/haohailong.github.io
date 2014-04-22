@@ -4,7 +4,7 @@
   <title><![CDATA[分类：LaTeX | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/latex/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-23T01:17:54+02:00</updated>
+  <updated>2014-04-23T01:20:02+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -23,6 +23,8 @@
 <p>到了真正写论文的时候，我的同事 Alina 和导师 Cristina 都推荐我用 <a href="http://www.lyx.org" target="_blank" title="Lyx">Lyx</a>。我必须承认这个「所见即所得」的 LaTeX 编辑器功能很强大，可以满足你学术写作的大部分需求——如果不是全部的话。但是，不得不说 Lyx 有些功能的实现需要在版面美观方面做出一定让步。这让我这个细节强迫症痛苦不已。</p>
 
 <p>于是，我决定转回 WYSIWYM <sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>模式的 LaTeX，重新学习 LaTeX 也就成了必然，这一次我用的教材是 <a href="http://www.amazon.com/Guide-LaTeX-Edition-Helmut-Kopka-ebook/dp/B00256Z3G8/ref=tmm_kin_title_0?ie=UTF8&amp;qid=1385070416&amp;sr=8-1" target="_blank"><em>Guide to LaTeX</em></a>。为了避免再次忘掉，除了完成书上的练习之外，我决定给自己布置作业，以便可以应对真实的排版情况。</p>
+
+<!--more-->
 
 <p>今天（其实已经是昨天了）我刚刚完成第一份作业——<a href="http://haohailong.net/archives/3233" target="_blank">重排「《GRE 填空教程》英汉对照 8.1 版」</a>（感兴趣的朋友可以点击链接看一下我的作业做得怎么样）。完成这份作业总共花了我整整两天时间，每天几乎都是从早做到晚。一般而言，精疲力竭之后总会有不少收获，这次也不例外。一些心得摘录在此：</p>
 
