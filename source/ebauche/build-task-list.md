@@ -6,6 +6,8 @@ comments: true
 sharing: true
 footer: true
 ---
+### 郝海龙
+
 已完成：
 
 1. 安装 git。
@@ -43,6 +45,8 @@ footer: true
 * 添加目录插件。
 * 代码与 Gist 显示相关。
 * 版权申明。
+* 更换搜索引擎。
+* 每页显示文章数量设定。
 
 可能需要做的其他事情：
 
