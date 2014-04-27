@@ -253,15 +253,35 @@ $(document).bind('DOMNodeInserted', function(event) {
 
 <p>既然是为黑客设计的博客框架，安装起来肯定没有像普通应用程序那么简单，需要一些准备工作，但请相信我，并不复杂。</p>
 
-<h4 id="git">2.1 安装 git</h4>
+<h4 id="git-9">2.1 安装 git <sup id="fnref:9"><a href="#fn:9" rel="footnote">9</a></sup></h4>
 
 <p>既然要使用 Github，那么肯定首先要安装 Git，这个很简单：</p>
 
 <ol>
   <li>点击这里到 Git 官方网站。</li>
-  <li>找到下图所示的下载链接，按照提示下载并安装。
- <img src="http://s.olo.la/6JZw.png" /></li>
+  <li>
+    <p>找到下图所示的下载链接，按照提示下载并安装。</p>
+
+    <p><img src="http://s.olo.la/6JZw.png" /></p>
+  </li>
 </ol>
+
+<h4 id="ruby-10">2.2 安装 Ruby <sup id="fnref:10"><a href="#fn:10" rel="footnote">10</a></sup></h4>
+
+<p>先说句题外话，其实我是从 Ruby 语言才知道有诞生石这种说法的。安装 Ruby 稍稍有些复杂，不过你只要按照以下步骤一步一步来就好了：</p>
+
+<ol>
+  <li>
+    <p>安装 HomeBrew</p>
+
+    <p>HomeBrew 是一个非常有用的软件包管理系统，你可以把它想象成一个稍微抽象一点的 Mac App Store，我们这一步安装它的目的是为了安装别的东西 (Ruby) 。</p>
+
+    <p>安装 HomeBrew 非常简单，打开终端 (Terminal)，输入以下命令并敲回车：</p>
+  </li>
+</ol>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">$ ruby &lt;(curl -fsSkL raw.github.com/mxcl/homebrew/go)</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>HomeBrew</p>
 
@@ -290,6 +310,12 @@ $(document).bind('DOMNodeInserted', function(event) {
     </li>
     <li id="fn:8">
       <p>A blogging framework for hackers.<a href="#fnref:8" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:9">
+      <p>什么是 Git？<a href="http://zh.wikipedia.org/wiki/Git">点这里</a>，看完你能了解个大概，这基本上已经够了，但如果还需更多知识， 就看看 wikipedia 和 Git 官网。<a href="#fnref:9" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:10">
+      <p>什么是 Ruby？<a href="http://zh.wikipedia.org/wiki/Ruby">点这里</a>，看完你能了解个大概，这基本上已经够了，但如果还需更多知识，就看看 wikipedia 和 <a href="https://www.ruby-lang.org/en/">Ruby 官网</a>。<a href="#fnref:10" rel="reference">&#8617;</a></p>
     </li>
   </ol>
 </div>
