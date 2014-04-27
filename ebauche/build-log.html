@@ -230,6 +230,44 @@ $(document).bind('DOMNodeInserted', function(event) {
 
 <p>2014 年 4 月 27 日</p>
 
+<hr />
+
+<h2 id="octopress---github-pages">Octopress 搭建流程 – Github Pages</h2>
+
+<p>本文介绍如何在 Github Pages 上搭建 Octopress 博客，主要针对 IT 外行人士。科普文章用词未必精确，行家里手请不要太在意。对了，我用的是 Mac，Windows 我不熟，我只知道 IE 浏览器。</p>
+
+<h3 id="octopress--github-pages">1. 为什么是 Octopress &amp; Github Pages?</h3>
+
+<p>在做任何事情之前最好先问个为什么，尽管很多情况下未必有答案，但这个做法绝对有好处。用 Octopress 搭建博客，并托管到 Github Pages，撇除<a href="http://s.olo.la/KIoY">一些个人因素</a>之外，我想还有以下几点原因：</p>
+
+<ol>
+  <li>免费且独立。把 Octopress 博客系统搭建到 Github Pages 虽是免费，但不失独立性，即便 Github 全站关闭，你也将有一份本地全站备份，随时可以重新恢复。不必受托管商之气，而且还免费，如果你愿意，甚至可以自行插入广告挣钱。</li>
+  <li>版本控制。写文章，建网站，做软件都需要修改，但有时候改完了又会后悔，如果有时光机就好了，Git 就是你的时光机。当然如果你不想了解这些看上去很唬人的 IT 名词，只是想写博客的话，请在需要的时候再研究这条的内容。</li>
+  <li>相对其他托管到 Github 上的博客程序，Octopress 更加成熟易上手。打个比方，Jekyll 可以说是毛坯房，Hexo 和 Octopress 算是简装修，但相比 Hexo，Octopress 有更多熟练地装修范例和装修工人，更容易获取帮助。当然如果你只想住精装修的房子，那不得不花点钱上 WordPress 了。</li>
+  <li>按照官方的说法，Octopress 是个「为黑客设计的博客框架<sup id="fnref:8"><a href="#fn:8" rel="footnote">8</a></sup>」，这很酷，你不觉得吗？</li>
+</ol>
+
+<p>如果你之前没有写过博客，打算开始搭建自己第一个博客的话，其实也不妨试试 Octopress，免费还能学到东西，何乐而不为？</p>
+
+<h3 id="section-3">2. 准备工作</h3>
+
+<p>既然是为黑客设计的博客框架，安装起来肯定没有像普通应用程序那么简单，需要一些准备工作，但请相信我，并不复杂。</p>
+
+<h4 id="command-line-tools">2.1 安装 Command Line Tools</h4>
+
+<p>首先，你需要下载安装 Xcode 集成开发环境，毕竟要有个黑客的样子是不是？这很简单，直接在 Mac App Store 里下载就好了，和你下载其他的 Mac 应用程序没有什么不同。</p>
+
+<p>然后，我们需要安装命令行工具 (Command Line Tools)。怎么安装呢？用命令行安装。听上去有点绕？打开终端 (Terminal)，在里面输入如下命令并敲回车：</p>
+
+<pre><code>$ xcode-select --install
+</code></pre>
+
+<p>随后你将会看到以下对话框：</p>
+
+<p><span class="caption-wrapper"><img class="caption" src="http://s.olo.la/UhTK.png" width="" height="" title="Command Line Tools Install Dialogue" /><span class="caption-text">Command Line Tools Install Dialogue</span></span></p>
+
+<p>点击安装 (Install) 即可。如果安装不成功，请到<a href="https://developer.apple.com/downloads/index.action">这里</a>查找并手动安装。</p>
+
 <div class="footnotes">
   <ol>
     <li id="fn:1">
@@ -252,6 +290,9 @@ $(document).bind('DOMNodeInserted', function(event) {
     </li>
     <li id="fn:7">
       <p>准确地说，是在 Github 圈子里最为大众。<a href="#fnref:7" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:8">
+      <p>A blogging framework for hackers.<a href="#fnref:8" rel="reference">&#8617;</a></p>
     </li>
   </ol>
 </div>
