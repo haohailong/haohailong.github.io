@@ -274,16 +274,170 @@ $(document).bind('DOMNodeInserted', function(event) {
   <li>
     <p>安装 HomeBrew</p>
 
-    <p>HomeBrew 是一个非常有用的软件包管理系统，你可以把它想象成一个稍微抽象一点的 Mac App Store，我们这一步安装它的目的是为了安装别的东西 (Ruby) 。</p>
+    <p><a href="http://brew.sh/index_zh-cn.html">HomeBrew</a> 是一个非常有用的软件包管理系统，你可以把它想象成一个稍微抽象一点的 Mac App Store，我们这一步安装它的目的是为了安装别的东西 (Ruby) 。</p>
 
-    <p>安装 HomeBrew 非常简单，打开终端 (Terminal)，输入以下命令并敲回车：</p>
+    <p>安装 HomeBrew 非常简单，打开终端 (Terminal)，执行以下命令（所谓「执行」即「输入+回车」，下同）：</p>
   </li>
 </ol>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">$ ruby &lt;(curl -fsSkL raw.github.com/mxcl/homebrew/go)</span></code></pre></td></tr></table></div></figure></notextile></div>
+</pre></td><td class="code"><pre><code class=""><span class="line">ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>HomeBrew</p>
+<pre><code>如果在执行上如命令的时候弹出需要安装 Xcode Command Line Tool 的提示，直接点击安装即可。
+
+安装好之后最好先执行以下命令：
+</code></pre>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">brew doctor</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<pre><code>此条命令用来诊断安装中出现的问题并提示修复方法，如果没有问题则会显示：
+</code></pre>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">Your system is ready to brew.</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<pre><code>如遇问题，则按照提示处理，如果不懂如何处理可以先试着执行后面的步骤，如果能成功，则没有太大问题，毕竟我们只是想写博客而已。当然，做任何事情之前，备份是必须的。
+</code></pre>
+
+<ol>
+  <li>
+    <p>使用 RVM 安装 Ruby</p>
+
+    <p>执行以下命令安装 RVM，最新的稳定版 Ruby 也会随之安装：</p>
+  </li>
+</ol>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">curl -L https://get.rvm.io | bash -s stable --ruby</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<pre><code>为避免出现问题，可执行以下命令安装 Ruby 2.0.0: 
+</code></pre>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">rvm install 2.0.0
+</span><span class="line">	rvm use 2.0.0
+</span><span class="line">	rvm rubygems latest</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<pre><code>可以执行 &lt;code&gt;ruby --version&lt;/code&gt; 命令来查看现在使用的 Ruby 版本，确保正在使用的是 Ruby 2.o.o.
+</code></pre>
+
+<h4 id="github-">2.3 注册 Github 账号</h4>
+
+<p>这个没什么好说的，早晚需要，去 <a href="http://github.com">http://github.com</a> 注册吧。</p>
+
+<h4 id="section-4">2.4 域名指向（可选）</h4>
+
+<p>如果你有自己的域名可用，可以在这时就配置好，毕竟解析起来需要一段时间，不如在我们搭建博客的时候让它开始，这样我们搭建完成后，基本上就可以直接用自有域名访问了。</p>
+
+<p>如果你用的是顶级域名，比如 shengmingzhiqing.com, 请将该域名的 A 记录(A Record)指向 <code>204.232.175.78</code>.</p>
+
+<p>如果你使用二级域名，比如 blog.shengmingzhiqing.com, 请将该域名的 CNAME 指向 <code>[your_username].github.io</code>, 把其中的 [your_username]换成你自己在 Github 上的用户名。</p>
+
+<p>如果你暂时没有域名，这一步可以暂时不用管。</p>
+
+<h3 id="octopress">3. 本地安装 Octopress</h3>
+
+<p>终于进入正题了。有了前面的准备工作，安装 Octopress 显得非常简单：</p>
+
+<p>首先，打开终端 (Terminal) 执行如下命令：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">git clone git://github.com/imathis/octopress.git octopress
+</span><span class="line">cd octopress</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>上面的代码中，第一行的作用是把 Octopress 克隆到本地磁盘，将会在你的本地<code>~/user/yourusername</code> 这个文件夹下生成一个名为 octopress 的文件夹。如果你不知道 yourusername 是什么，其实就是你每次打开终端时，$ 这个符号前面显示的那玩意。</p>
+
+<p>第二行的作用是进入这个新建的 octopress 文件夹。这一步可能会碰到一个「是否要信任 .rvmrc file」的问题，输入 yes. </p>
+
+<p>然后我们开始安装 Octopress 所必需的依赖项(dependencies)，执行以下命令：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">gem install bundler
+</span><span class="line">bundle install</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>然后执行如下命令安装默认主题：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">rake install</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>本地安装完毕。顺便说一句，所谓 rake 就是 ruby make 的缩写。</p>
+
+<p>这时你执行如下命令：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">rake preview</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>然后在浏览器内输入 <code>http://localhost:4000/</code>，即可看到我们搭建完成的博客。也许并不好看，但很令人开心，不是么？</p>
+
+<blockquote>
+  <p>注意，以上各步中如果出现权限问题（关键词 permission），无法完成（关键词 abort）的话，请在各命令前加上 <code>sudo+空格</code>，如有提示，请输入电脑登录密码。</p>
+</blockquote>
+
+<h3 id="octopress--github-pages-1">4. 将 Octopress 部署到 Github Pages</h3>
+
+<h4 id="repository">4.1 新建库 (Repository)</h4>
+
+<p>用刚刚注册的 Github 账号登录，然后在点击页面右上角的加号，在弹出菜单中点击 <code>New Repository</code>: 如图所示</p>
+
+<p><img src="http://s.olo.la/9TgX.png" /></p>
+
+<p>然后会跳转到一个新建库 (Create new repository) 的页面，在<code>Repository name</code>一栏填 <code>[your_username].github.io</code>，[your_username] 是你 Github 上的用户名，请务必按照此格式填写，否则无法在 Github 上部署博客。然后点击 <code>Create repository</code> 按钮提交。</p>
+
+<p>如果一切顺利会出现一个页面，有一个 SSH 地址，形如 <code>git@github.com:[your_username]/[your_username].github.io.git</code>，下一步会用到。</p>
+
+<h4 id="octopress--github-pages-2">4.2 将本地部署的 Octopress 发布到 Github Pages</h4>
+
+<p>打开终端 (Terminal)，执行以下命令：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">cd octopress
+</span><span class="line">rake setup_github_pages</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>然后会出现一个问句，请把 4.1 步生成的 SSH 地址粘贴到这里，然后回车继续。</p>
+
+<p>执行以下命令：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">rake generate
+</span><span class="line">rake deploy</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>第一行命令用来生成页面，第二行命令用来部署页面，可按照字面意思理解。如果理解不了，可以暂且不管。任何一步如果出现失败提示，请使用 <code>sudo</code>。</p>
+
+<p>如果上述内容完成，即可使用 http://[your_username].github.io/ 访问页面，将会出现一个和在本地预览时相同的页面。</p>
+
+<p>然后，不要忘了把源文件全部发布到 <code>source</code> 分支下面，再一次可以看不懂，执行以下命令：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">git add .
+</span><span class="line">git commit -m "备注内容"
+</span><span class="line">git push origin source</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<h4 id="section-5">4.4 使用自己的域名（可选）</h4>
+
+<p>如果你有自己的域名，并且想指向这个新博客的话，请首先确保执行了 2.4 节中的内容。如果没有执行，可以随时执行。</p>
+
+<p>然后执行命令，注意把 <code>your-domain.com</code> 换成你自己的域名。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">echo 'your-domain.com' &gt;&gt; source/CNAME</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>然后再次执行以下命令：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">rake generate
+</span><span class="line">rake deploy</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>这样你就可以使用自己的域名了。域名解析需要一段时间，如果没有马上生效，请不要着急。如果长时间没有生效，请确保完整执行了 2.4 节和本节内容。</p>
 
 <div class="footnotes">
   <ol>
