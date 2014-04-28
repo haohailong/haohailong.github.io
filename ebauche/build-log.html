@@ -281,58 +281,49 @@ $(document).bind('DOMNodeInserted', function(event) {
 <p>先说句题外话，其实我是从 Ruby 语言才知道有诞生石这种说法的。安装 Ruby 稍稍有些复杂，不过你只要按照以下步骤一步一步来就好了：</p>
 
 <ul>
-  <li>
-    <p>安装 HomeBrew</p>
-
-    <p><a href="http://brew.sh/index_zh-cn.html">HomeBrew</a> 是一个非常有用的软件包管理系统，你可以把它想象成一个稍微抽象一点的 Mac App Store. 正如我们用 Mac App Store 来安装其他软件一样，我们这一步安装 HomeBrew 的目的是为了安装别的软件 (Ruby) 。当然 Mac App Store 和 HomeBrew 本身也是软件。</p>
-
-    <p>安装 HomeBrew 非常简单，打开终端 (Terminal)，执行以下命令（所谓「执行」即「输入+回车」，下同）：</p>
-  </li>
+  <li>安装 HomeBrew</li>
 </ul>
+
+<p><a href="http://brew.sh/index_zh-cn.html">HomeBrew</a> 是一个非常有用的软件包管理系统，你可以把它想象成一个稍微抽象一点的 Mac App Store. 正如我们用 Mac App Store 来安装其他软件一样，我们这一步安装 HomeBrew 的目的是为了安装别的软件 (Ruby) 。当然 Mac App Store 和 HomeBrew 本身也是软件。</p>
+
+<p>安装 HomeBrew 非常简单，打开终端 (Terminal)，执行以下命令（所谓「执行」即「输入+回车」，下同）：</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 </pre></td><td class="code"><pre><code class=""><span class="line">ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<pre><code>如果在执行上如命令的时候弹出需要安装 Xcode Command Line Tool 的提示，直接点击安装即可。
+<p>如果在执行上如命令的时候弹出需要安装 Xcode Command Line Tool 的提示，直接点击安装即可。</p>
 
-安装好之后最好先执行以下命令：
-</code></pre>
+<p>安装好之后最好先执行以下命令：</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 </pre></td><td class="code"><pre><code class=""><span class="line">brew doctor</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<pre><code>此条命令用来诊断安装中出现的问题并提示修复方法，如果没有问题则会显示：
-</code></pre>
+<p>此条命令用来诊断安装中出现的问题并提示修复方法，如果没有问题则会显示：</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 </pre></td><td class="code"><pre><code class=""><span class="line">Your system is ready to brew.</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<pre><code>如遇问题，则按照提示处理，如果不懂如何处理可以先试着执行后面的步骤，如果能成功，则没有太大问题，毕竟我们只是想写博客而已。当然，做任何事情之前，备份是必须的。
-</code></pre>
+<p>如遇问题，则按照提示处理，如果不懂如何处理可以先试着执行后面的步骤，如果能成功，则没有太大问题，毕竟我们只是想写博客而已。当然，做任何事情之前，备份是必须的。</p>
 
 <ul>
-  <li>
-    <p>使用 RVM 安装 Ruby</p>
-
-    <p>执行以下命令安装 RVM，最新的稳定版 Ruby 也会随之安装：</p>
-  </li>
+  <li>使用 RVM 安装 Ruby</li>
 </ul>
+
+<p>执行以下命令安装 RVM，最新的稳定版 Ruby 也会随之安装：</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 </pre></td><td class="code"><pre><code class=""><span class="line">curl -L https://get.rvm.io | bash -s stable --ruby</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<pre><code>为避免出现问题，可执行以下命令安装 Ruby 2.0.0: 
-</code></pre>
+<p>为避免出现问题，可执行以下命令安装 Ruby 2.0.0: </p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
 </pre></td><td class="code"><pre><code class=""><span class="line">rvm install 2.0.0
-</span><span class="line">	rvm use 2.0.0
-</span><span class="line">	rvm rubygems latest</span></code></pre></td></tr></table></div></figure></notextile></div>
+</span><span class="line">rvm use 2.0.0
+</span><span class="line">rvm rubygems latest</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<pre><code>可以执行 &lt;code&gt;ruby --version&lt;/code&gt; 命令来查看现在使用的 Ruby 版本，确保正在使用的是 Ruby 2.o.o.
-</code></pre>
+<p>可以执行 <code>ruby --version</code> 命令来查看现在使用的 Ruby 版本，确保正在使用的是 Ruby 2.o.o.</p>
 
 <h4 id="github-">2.3 注册 Github 账号</h4>
 
