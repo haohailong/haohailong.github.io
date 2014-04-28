@@ -4,7 +4,7 @@
   <title><![CDATA[生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-28T15:45:36+02:00</updated>
+  <updated>2014-04-28T16:06:17+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -245,7 +245,7 @@
 </pre></td><td class="code"><pre><code class=""><span class="line">cd source/_posts/
 </span><span class="line">vim yyyy-mm-dd-Post-Title.markdown</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>即可用 vim 编辑器编辑的刚才的文章了，好吧我知道你作为这篇文章的读者并不是一个能熟练使用 vim 的人，那么请在命令行输入 <code>;q</code>退出这个编辑器。如果你不想假装是个黑客的话，其实发布文章并不需要这么麻烦。</p>
+<p>即可用 vim 编辑器编辑的刚才的文章了，好吧我知道你作为这篇文章的读者并不是一个能熟练使用 vim 的人，那么请在命令行输入 <code>:q</code>退出这个编辑器。如果你不想假装是个黑客的话，其实发布文章并不需要这么麻烦。</p>
 
 <p>我们直接打开 <code>octopress/source/_posts</code> 文件夹，找到刚才生成的文件，用你喜欢的 Markdown 编辑器（免费的我推荐 <a href="http://mouapp.com">Mou</a>，收费的我推荐 <a href="http://bywordapp.com">Byword</a>）或者文本编辑器打开，对文章内容进行编辑。</p>
 
