@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Octopress 每个人都该为自己打造专属的写作环境"
-date: 2014-04-27 22:54:15
+date: 2014-04-27
 comments: true
 categories: "Octopress"
 ---
