@@ -13,7 +13,7 @@ categories: "LaTeX"
 
 于是，我决定转回 WYSIWYM [^1]模式的 LaTeX，重新学习 LaTeX 也就成了必然，这一次我用的教材是 <a href="http://www.amazon.com/Guide-LaTeX-Edition-Helmut-Kopka-ebook/dp/B00256Z3G8/ref=tmm_kin_title_0?ie=UTF8&qid=1385070416&sr=8-1" target="_blank">*Guide to LaTeX*</a>。为了避免再次忘掉，除了完成书上的练习之外，我决定给自己布置作业，以便可以应对真实的排版情况。
 
-今天（其实已经是昨天了）我刚刚完成第一份作业——<a href="http://haohailong.net/archives/3233" target="_blank">重排「《GRE填空教程》英汉对照8.1版」</a>（感兴趣的朋友可以点击链接看一下我的作业做得怎么样）。完成这份作业总共花了我整整两天时间，每天几乎都是从早做到晚。一般而言，精疲力竭之后总会有不少收获，这次也不例外。一些心得摘录在此：
+今天（其实已经是昨天了）我刚刚完成第一份作业——<a href="http://haohailong.net/archives/gre-sentence-completion-tutorial-8-1.vie" target="_blank">重排「《GRE填空教程》英汉对照8.1版」</a>（感兴趣的朋友可以点击链接看一下我的作业做得怎么样）。完成这份作业总共花了我整整两天时间，每天几乎都是从早做到晚。一般而言，精疲力竭之后总会有不少收获，这次也不例外。一些心得摘录在此：
 
 1. 再次明白了作业的重要性。很多事情不做，永远不可能知道是怎么回事：做这份作业之前，我以为我可以花半天时间搞定所有的事情，可是真正做的时候意外却接二连三的发生。
 2. 遇到问题不要轻易放弃，即使解决不了，解决问题的过程也可能带来意外收获。这次为了解决一个批处理的问题，写了两个 AppleScript 脚本程序，最终问题靠别的方法解决的，但因此看了两本 AppleScript 教程，对 AppleScript 有了更深的了解。
