@@ -234,6 +234,8 @@ $(document).bind('DOMNodeInserted', function(event) {
 
 <h2 id="octopress---github-pages">Octopress 搭建流程 – Github Pages</h2>
 
+<p>（本文主要参考 <a href="http://octopress.org/">Octopress 官网</a>安装教程。)</p>
+
 <p>本文介绍如何在 Github Pages 上搭建 Octopress 博客，主要针对 IT 外行人士。科普文章用词未必精确，行家里手请不要太在意。对了，我用的是 Mac，Windows 我不熟，我只知道 IE 浏览器。</p>
 
 <h3 id="octopress--github-pages">1. 为什么是 Octopress &amp; Github Pages?</h3>
@@ -480,18 +482,16 @@ $(document).bind('DOMNodeInserted', function(event) {
 </span><span class="line">categories: ""
 </span><span class="line">---</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>这其实是这篇文章的元数据：layout 暂时不要理会；title 是这篇文章显示在最终网页上的标题；date 部分是详细的文件生成时间，如 <code>2014-04-28 03:35:00</code>；comment 部分表示是否允许评论，目前显示是允许，如果想关闭评论，请改为 false；categories 指这篇文章的分类目录，请在后面引号中输入，如果没有该目录，则会自动生成。请不要删除这段信息，在这段信息下面开始你的文章内容。</p>
+<p>这其实是这篇文章的元数据：<code>layout</code> 暂时不要理会；<code>title</code> 是这篇文章显示在最终网页上的标题；<code>date</code> 部分是详细的文件生成时间，如 <code>2014-04-28 03:35:00</code>；<code>comment</code> 部分表示是否允许评论，目前显示是允许，如果想关闭评论，请改为 <code>false</code>；<code>categories</code> 指这篇文章的分类目录，请在后面引号中输入，如果没有该目录，则会自动生成。请不要删除这段信息，在这段信息下面开始你的文章内容。</p>
 
-<p>这件事情给我们的启发是，以后发布文章，其实并不需要使用终端命令行生成文件。可以直接将自己写好的文章放到这个文件夹下面，当然请按照 <code>yyyy-mm-dd-Post-Title.markdown</code> 这样的文件格式命名，同时记得在文章前面添加元数据信息。这种做法与上面的方法无异。</p>
+<p>这件事情给我们的启发是，以后发布文章，其实并不需要使用终端命令行生成文件。可以直接将自己写好的文章放到这个文件夹下面，当然请按照 <code>yyyy-mm-dd-Post-Title.markdown</code> 这样的文件格式命名，同时记得在文章前面添加元数据信息。这种做法生成的文章与上面的方法无异。如果你觉得添加元数据信息过于麻烦，推荐一个非常好用的工具：<a href="https://smilesoftware.com/TextExpander/index.html">TextExpander</a>。</p>
 
-<p>在文章写好之后，使用命令行执行：</p>
+<p>在文章写好之后，使用命令行执行（仔细观察命令，像不像 generate 和 deploy 的合体？）：</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
-<span class="line-number">2</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">cd octopress
-</span><span class="line">rake gen_deploy</span></code></pre></td></tr></table></div></figure></notextile></div>
+</pre></td><td class="code"><pre><code class=""><span class="line">rake gen_deploy</span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>同样如果在本节中，任何命令执行失败，没有取得想要结果，请在前面加 <code>sudo</code>。</p>
+<p>同样，如果在本节中，任何命令执行失败，没有取得想要结果，请在前面加 <code>sudo</code>。是时候说一说 <code>sudo</code> 命令了，这其实是 super do 的缩写，之所以用它是因为，一般而言 Mac 上最高权限的<code>root</code> 账户默认是关闭的。我们自己的账户哪怕是管理员也在一些地方没有权限操作，super do 其实就是越权操作的意思，因此也往往需要输入密码，一般而言短时间内不需要输入第二次。</p>
 
 <p>这样你的第一篇日志就发布出来了，恭喜你正式开通了基于 Octopress 的独立博客。</p>
 
