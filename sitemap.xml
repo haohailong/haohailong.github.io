@@ -65,24 +65,14 @@
         <lastmod>2014-04-28T17:06:53+02:00</lastmod>
     </url>
     <url>
-        <loc>http://shengmingzhiqing.com/ebauche/52podcast-internal-training-videos.html</loc>
+        <loc>
+            http://shengmingzhiqing.com/ebauche/52podcast/52podcast-internal-training-videos.html
+        </loc>
         <lastmod>2014-04-25T05:35:34+02:00</lastmod>
     </url>
     <url>
-        <loc>http://shengmingzhiqing.com/ebauche/build-log.html</loc>
-        <lastmod>2014-04-28T17:11:00+02:00</lastmod>
-    </url>
-    <url>
-        <loc>http://shengmingzhiqing.com/ebauche/build-task-list.html</loc>
-        <lastmod>2014-04-28T16:31:28+02:00</lastmod>
-    </url>
-    <url>
         <loc>http://shengmingzhiqing.com/ebauche/</loc>
-        <lastmod>2014-04-27T17:33:00+02:00</lastmod>
-    </url>
-    <url>
-        <loc>http://shengmingzhiqing.com/ebauche/jekyll-octopress-blogs.html</loc>
-        <lastmod>2014-04-24T02:16:37+02:00</lastmod>
+        <lastmod>2014-04-28T17:27:13+02:00</lastmod>
     </url>
     <url>
         <loc>http://shengmingzhiqing.com/ebauche/notes/</loc>
@@ -93,7 +83,19 @@
         <lastmod>2014-04-25T05:35:49+02:00</lastmod>
     </url>
     <url>
-        <loc>http://shengmingzhiqing.com/ebauche/wordpress-plugins-in-use.html</loc>
+        <loc>http://shengmingzhiqing.com/ebauche/octopress/build-log.html</loc>
+        <lastmod>2014-04-28T17:11:00+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://shengmingzhiqing.com/ebauche/octopress/build-task-list.html</loc>
+        <lastmod>2014-04-28T16:31:28+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://shengmingzhiqing.com/ebauche/octopress/jekyll-octopress-blogs.html</loc>
+        <lastmod>2014-04-24T02:16:37+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://shengmingzhiqing.com/ebauche/wordpress/wordpress-plugins-in-use.html</loc>
         <lastmod>2014-04-27T17:37:43+02:00</lastmod>
     </url>
     <url>
