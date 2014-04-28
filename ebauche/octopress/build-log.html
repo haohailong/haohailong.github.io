@@ -299,7 +299,7 @@ http://[your_domain_name]/blog/Post-Title.html/ # 这也是本博的生成方式
 
 <p>理论上可以添加到任何位置，但为了显示直观，建议加到 <code>category_dir: blog/categories</code> 下一行。</p>
 
-<h3 id="section-9">继续阅读</h3>
+<h3 id="section-9">「继续阅读」按钮</h3>
 
 <p>如果你希望你的文章在首页显示摘要，点击类似「继续阅读」这样的按钮查看全文，可以在你的文章中插入 <code><!--more--></code>，这样在这个标记之前的内容会出现在首页。你可以试着在你的文章中插入这个标签，会发现首页会在这里出现一个<code>Read on &rarr;</code>这样的按钮，当然我们也希望他是汉语。</p>
 
@@ -310,7 +310,7 @@ http://[your_domain_name]/blog/Post-Title.html/ # 这也是本博的生成方式
 </pre></td><td class="code"><pre><code class="yaml"><span class="line"><span class="l-Scalar-Plain">excerpt_link</span><span class="p-Indicator">:</span> <span class="s">&quot;Read</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">&amp;rarr;&quot;</span>  <span class="c1"># &quot;Continue reading&quot; link text at the bottom of excerpted articles</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>然后把 Read on → 替换为你想要的文字，比如「阅读全文」，并保存。</p>
+<p>然后把 Read on \→ 替换为你想要的文字，比如「阅读全文」，并保存。</p>
 
 <p>修改到这一步，你肯定很想看看效果，现在执行如下命令，重新生成并部署页面：</p>
 
@@ -324,6 +324,8 @@ http://[your_domain_name]/blog/Post-Title.html/ # 这也是本博的生成方式
 <h3 id="markdown-">修改 Markdown 文件后缀</h3>
 
 <p>Octopress 默认日志文件后缀是 .markdown，但现在大多数 markdown 文件的后缀是 .md，</p>
+
+<p>用文本编辑器打开 rakefile 文件，找到如下一行代码：</p>
 
 <h3 id="markdown--1">修改默认 Markdown 解释器</h3>
 
