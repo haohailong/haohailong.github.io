@@ -72,7 +72,7 @@
     </url>
     <url>
         <loc>http://shengmingzhiqing.com/ebauche/</loc>
-        <lastmod>2014-04-28T17:27:13+02:00</lastmod>
+        <lastmod>2014-04-28T17:29:50+02:00</lastmod>
     </url>
     <url>
         <loc>http://shengmingzhiqing.com/ebauche/notes/</loc>
@@ -87,12 +87,12 @@
         <lastmod>2014-04-28T17:11:00+02:00</lastmod>
     </url>
     <url>
-        <loc>http://shengmingzhiqing.com/ebauche/octopress/build-task-list.html</loc>
-        <lastmod>2014-04-28T16:31:28+02:00</lastmod>
-    </url>
-    <url>
         <loc>http://shengmingzhiqing.com/ebauche/octopress/jekyll-octopress-blogs.html</loc>
         <lastmod>2014-04-24T02:16:37+02:00</lastmod>
+    </url>
+    <url>
+        <loc>http://shengmingzhiqing.com/ebauche/octopress/task-list.html</loc>
+        <lastmod>2014-04-28T17:28:52+02:00</lastmod>
     </url>
     <url>
         <loc>http://shengmingzhiqing.com/ebauche/wordpress/wordpress-plugins-in-use.html</loc>
