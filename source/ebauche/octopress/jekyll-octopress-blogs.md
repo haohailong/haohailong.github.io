@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "一些 Jekyll/Octopress 博客"
+title: "Jekyll/Octopress 博客"
 date: 2014-04-23
 comments: true
 sharing: true
