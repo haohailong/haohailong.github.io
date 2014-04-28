@@ -225,7 +225,7 @@ $(document).bind('DOMNodeInserted', function(event) {
 
 <p>所有以上这些信息都可以通过基本配置文件 <code>_config.yml</code> 来修改。先在 <code>octopress</code> 文件夹下找到这个文件，用你喜欢的文本编辑器打开（我喜欢 TextMate 2），你会发现如下信息：</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>lang: yaml </span></figcaption>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>_config.yml </span></figcaption>
 <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
 <span class="line-number">3</span>
@@ -236,16 +236,17 @@ $(document).bind('DOMNodeInserted', function(event) {
 <span class="line-number">8</span>
 <span class="line-number">9</span>
 <span class="line-number">10</span>
-</pre></td><td class="code"><pre><code class=""><span class="line"># ----------------------- #
-</span><span class="line">#      Main Configs       #
-</span><span class="line"># ----------------------- #
+</pre></td><td class="code"><pre><code class="yaml"><span class="line"><span class="c1"># ----------------------- #</span>
+</span><span class="line"><span class="c1">#      Main Configs       #</span>
+</span><span class="line"><span class="c1"># ----------------------- #</span>
 </span><span class="line">
-</span><span class="line">url: http://yoursite.com
-</span><span class="line">title: My Octopress Blog
-</span><span class="line">subtitle: A blogging framework for hackers.
-</span><span class="line">author: Your Name
-</span><span class="line">simple_search: https://www.google.com/search
-</span><span class="line">description:</span></code></pre></td></tr></table></div></figure></notextile></div>
+</span><span class="line"><span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">http://yoursite.com</span>
+</span><span class="line"><span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">My Octopress Blog</span>
+</span><span class="line"><span class="l-Scalar-Plain">subtitle</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">A blogging framework for hackers.</span>
+</span><span class="line"><span class="l-Scalar-Plain">author</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Your Name</span>
+</span><span class="line"><span class="l-Scalar-Plain">simple_search</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">https://www.google.com/search</span>
+</span><span class="line"><span class="l-Scalar-Plain">description</span><span class="p-Indicator">:</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <div class="footnotes">
   <ol>
