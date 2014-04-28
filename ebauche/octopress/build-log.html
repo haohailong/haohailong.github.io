@@ -202,18 +202,58 @@ $(document).bind('DOMNodeInserted', function(event) {
 
 <p>在你搭建博客的时候，Octopress 会为你安装默认的主题 Classic，但这个主题第一眼看上去很难说好看，所以可以考虑选择安装<a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">第三方主题</a>。</p>
 
-<p>如果你能在上面的链接中找到满意的主题，按照主题的要求去安装部署即可。比如你喜欢 <a href="https://github.com/macjasp/cleanpress">CleanPress</a> 这款主题，</p>
+<p>如果你能在上面的链接中找到满意的主题，按照主题的要求去安装部署即可。比如你喜欢 <a href="https://github.com/macjasp/cleanpress">CleanPress</a> 这款主题，你可执行以下命令：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">cd octopress
+</span><span class="line">git clone git://github.com/macjasp/cleanpress.git .themes/cleanpress
+</span><span class="line">rake install['cleanpress']
+</span><span class="line">rake generate</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>我个人看过很多主题，但最终还是用了简洁素雅的默认主题。我并不需要太多的装饰<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>，只要版面布局符合基本审美要求即可。另外，我也喜欢这个浓浓的黑客范儿。</p>
+
+<p>当然默认主题也有很多令人不满意的地方，好在我们还可以修改，不着急，慢慢来。</p>
 
 <h2 id="section-3">基本配置信息</h2>
 
-<p>当你把第一篇文章发布到博客的时候，你会发现文章底部显示 “posted by Your Name”，也就是说原本应该出现你名字的地方成了系统默认的两个英文单词 “Your Name”</p>
+<p>当你打开搭建好的博客后，你会发现博客的标题是 My Octopress Blog，副标题是 A blogging framework for hackers.</p>
 
-<p>如果修改呢？请打开你的 </p>
+<p>当你把第一篇文章发布到博客的时候，你会发现文章底部显示 “posted by Your Name”，也就是说原本应该出现你名字的地方成了系统默认的两个英文单词 “Your Name”。</p>
+
+<p>所有以上这些信息都可以通过基本配置文件 <code>_config.yml</code> 来修改。先在 <code>octopress</code> 文件夹下找到这个文件，用你喜欢的文本编辑器打开（我喜欢 TextMate 2），你会发现如下信息：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>lang: yaml </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+<span class="line-number">8</span>
+<span class="line-number">9</span>
+<span class="line-number">10</span>
+</pre></td><td class="code"><pre><code class=""><span class="line"># ----------------------- #
+</span><span class="line">#      Main Configs       #
+</span><span class="line"># ----------------------- #
+</span><span class="line">
+</span><span class="line">url: http://yoursite.com
+</span><span class="line">title: My Octopress Blog
+</span><span class="line">subtitle: A blogging framework for hackers.
+</span><span class="line">author: Your Name
+</span><span class="line">simple_search: https://www.google.com/search
+</span><span class="line">description:</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <div class="footnotes">
   <ol>
     <li id="fn:1">
       <p>想到这一节，我把博客的副标题也改为了「Hailong Hao’s Laboratory」，这里不仅是我的博客，也是用来试错的地方。<a href="#fnref:1" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>这我留给了 <a href="http://haohailong.net/">http://haohailong.net/</a><a href="#fnref:2" rel="reference">&#8617;</a></p>
     </li>
   </ol>
 </div>
