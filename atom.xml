@@ -4,7 +4,7 @@
   <title><![CDATA[生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-29T01:08:52+02:00</updated>
+  <updated>2014-04-29T01:10:07+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -333,7 +333,8 @@ f'\left( x\right) = \lim _{x\rightarrow 0}\dfrac {f\left( x+\Delta x\right) - f\
     <updated>2014-04-28T06:33:33+02:00</updated>
     <id>http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages</id>
     <content type="html"><![CDATA[<blockquote class="info">
-  <p>本文介绍如何在 Github Pages 上搭建 Octopress 博客，主要针对 IT 外行人士。科普文章用词未必精确，行家里手请不要太在意。主要参考 <a href="http://octopress.org/">Octopress 官网</a>安装教程。对了，我用的是 Mac，Windows 我不熟，我只知道 IE 浏览器。</p>
+  <p>本文介绍如何在 Github Pages 上搭建 Octopress 博客，主要针对 IT 外行人士。科普文章用词未必精确，行家里手请不要太在意。主要参考 <a href="http://octopress.org/">Octopress 官网</a>安装教程。
+对了，我用的是 Mac，Windows 我不熟，我只知道 IE 浏览器。</p>
 </blockquote>
 
 <h2 id="octopress--github-pages">1. 为什么是 Octopress &amp; Github Pages?</h2>
