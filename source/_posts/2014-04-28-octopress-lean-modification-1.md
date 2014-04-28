@@ -25,7 +25,7 @@ categories: "Octopress"
 对于博客系统的个性化修改，一般来说分为如下几个方面：
 
 - 新主题安装：Octopress 本身有很多[第三方主题](https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes)可以直接安装使用。
-- 基本配置信息：主要指博客作者，时间显示方式，目录层级关系等等。这部分信息主要通过 <code>_config.yml</code> 这个配置文件来修改。
+- 基本配置：主要指博客作者，时间显示方式，目录层级关系等等。这部分信息主要通过 <code>_config.yml</code> 这个配置文件来修改。
 - 自定义主题模板：主要指顶部导航栏显示内容，侧边栏显示内容等等。这部分内容主要通过 <code>/source/_includes/custom</code> 这个目录下的相关文件来修改。
 - 插件安装：安装第三方插件以实现相应效果，比如侧边栏显示 Twitter 时间线等等。 主要与 <code>/plugins</code> 这个目录有关。
 - 样式修改：字体，配色等通过样式表修改的属性。主要通过修改 <code>/sass/custom/_styles.scss</code> 来实现。
@@ -49,7 +49,7 @@ rake generate
 
 当然默认主题也有很多令人不满意的地方，好在我们还可以修改，不着急，慢慢来。
 
-## 基本配置信息
+## 基本配置
 
 ### 域名，网站标题，作者
 

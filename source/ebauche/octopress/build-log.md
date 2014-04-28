@@ -10,7 +10,7 @@ footer: true
 
 ## Octopress 每个人都该为自己打造专属的写作环境
 
-> 本节内容已作为单篇文章发布，点此查看：[Octopress 每个人都该为自己打造专属的写作环境]({{ root_url }}/blog/everybody-should-build-his-own-writing-space.html) 。2014 年 4 月 27 日
+{:.info 本节内容已作为单篇文章发布，点此查看：[Octopress 每个人都该为自己打造专属的写作环境]({{ root_url }}/blog/everybody-should-build-his-own-writing-space.html) 。2014 年 4 月 27 日 }
 
 ## Octopress 搭建流程 – Github Pages
 
