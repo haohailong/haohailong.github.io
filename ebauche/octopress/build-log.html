@@ -288,7 +288,7 @@ http://[your_domain_name]/blog/Post-Title.html/ # 这也是本博的生成方式
 
 <h3 id="section-8">分类目录前缀</h3>
 
-<p>在你文章底部日期右边是该文章所属的分类，点击它，会显示该分类下所有的文章<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>。但你发现该目录标题前有一个前缀 “Categories: “，这当然没错，但我们希望它是汉语。</p>
+<p>在你文章底部日期右边是该文章所属的分类，点击它，会显示该分类下所有的文章<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>。但你发现该目录标题前有一个前缀 “Categories”，这当然没错，但我们希望它是汉语。</p>
 
 <p>回到<code>_config.yml</code> 文件，添加下面一行代码并保存：</p>
 
@@ -325,7 +325,14 @@ http://[your_domain_name]/blog/Post-Title.html/ # 这也是本博的生成方式
 
 <p>Octopress 默认日志文件后缀是 .markdown，但现在大多数 markdown 文件的后缀是 .md，</p>
 
-<p>用文本编辑器打开 rakefile 文件，找到如下一行代码：</p>
+<p>用文本编辑器打开 rakefile 文件，找到如下两行行代码：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>rakefile </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="n">new_post_ext</span>    <span class="o">=</span> <span class="s2">&quot;markdown&quot;</span>  <span class="c1"># default new post file extension when using the new_post task</span>
+</span><span class="line"><span class="n">new_page_ext</span>    <span class="o">=</span> <span class="s2">&quot;markdown&quot;</span>  <span class="c1"># default new page file extension when using the new_page task</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <h3 id="markdown--1">修改默认 Markdown 解释器</h3>
 
@@ -348,7 +355,7 @@ http://[your_domain_name]/blog/Post-Title.html/ # 这也是本博的生成方式
 </span><span class="line">    <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">smart</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>把其中的 <code>markdown: rdiscount</code> 改为 <code>markdown: kramdown</code> 并删掉下面几行。当然如果你想保留原来的代码，以便以后研究，可以考虑把原来这几行代码注释掉（对于  yml 文件，就是在前面加 # ），被注释掉的代码对文件没有任何印象，除了能让你看得更直观之外。<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup></p>
+<p>把其中的 <code>markdown: rdiscount</code> 改为 <code>markdown: kramdown</code> 并删掉下面几行。当然如果你想保留原来的代码，以便以后研究，可以考虑把原来这几行代码注释掉（对于  yml 文件，就是在前面加 # ），被注释掉的代码对文件没有任何影响，除了能让你看得更直观之外。<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup></p>
 
 <div class="footnotes">
   <ol>
