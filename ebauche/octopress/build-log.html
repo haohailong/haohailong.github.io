@@ -170,7 +170,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   <p>本节内容已作为单篇文章发布，点此查看：<a href="http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html">Octopress 搭建流程 – Github Pages</a> 。</p>
 </blockquote>
 
-<h1 id="octopress--1">Octopress 精益修改</h1>
+<h1 id="octopress--1">Octopress 精益修改 (1)</h1>
 
 <h2 id="section-1">永远的第二步</h2>
 
@@ -221,6 +221,8 @@ $(document).bind('DOMNodeInserted', function(event) {
 
 <h2 id="section-4">基本配置信息</h2>
 
+<h3 id="section-5">域名，网站标题，作者</h3>
+
 <p>当你打开搭建好的博客后，你会发现博客的标题是 My Octopress Blog，副标题是 A blogging framework for hackers.</p>
 
 <p>当你把第一篇文章发布到博客的时候，你会发现文章底部显示 “posted by Your Name”，也就是说原本应该出现你名字的地方成了系统默认的两个英文单词 “Your Name”。</p>
@@ -235,7 +237,7 @@ $(document).bind('DOMNodeInserted', function(event) {
 <span class="line-number">5</span>
 <span class="line-number">6</span>
 </pre></td><td class="code"><pre><code class="yaml"><span class="line"><span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">http://yoursite.com</span>  <span class="c1">#这里改为你网站的域名</span>
-</span><span class="line"><span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">My Octopress Blog</span>  <span class="c1">#这里改为你想要的博客标题</span>
+</span><span class="line"><span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">My Octopress Blog</span>  <span class="c1">#这里改为你想要的网站标题</span>
 </span><span class="line"><span class="l-Scalar-Plain">subtitle</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">A blogging framework for hackers.</span> <span class="c1">#这里改为你的博客副标题</span>
 </span><span class="line"><span class="l-Scalar-Plain">author</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Your Name</span> <span class="c1">#这里改为博客作者的名字，也就是你的名字</span>
 </span><span class="line"><span class="l-Scalar-Plain">simple_search</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">https://www.google.com/search</span> <span class="c1">#这时默认搜索引擎，可以先不管</span>
@@ -243,6 +245,8 @@ $(document).bind('DOMNodeInserted', function(event) {
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>按照我给出的 # 后面的提示信息做相应修改即可，请注意，诸如<code>url: </code>中的冒号必须是英文冒号，并且要符合英文标点符号使用规范：冒号后必须空格。</p>
+
+<h3 id="section-6">日期格式</h3>
 
 <p>我们暂且把 <code>_config.yml</code> 文件放到一边，再回头看博客主页，你会发现每条博客上面的日期和文章尾部的日期都是诸如 <code>Apr 28th 2014</code> 这样的格式。我们当然是想把它变成中文的「2014 年 4 月 28 日」这样的格式，那么再次回到 <code>_config.yml</code> 文件，顺着刚才那几行代码往下看，你会发现这样一行：</p>
 
@@ -252,6 +256,8 @@ $(document).bind('DOMNodeInserted', function(event) {
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>请把其中的 <code>"ordinal"</code> 改为 <code>"%Y 年%-m 月%d 日"</code>，并保存。</p>
+
+<h3 id="section-7">文章链接形式</h3>
 
 <p>回到博客，点开你发表的文章，这是你看一下地址栏，发现网址（也就是这篇文章的链接）是类似这样的形式：</p>
 
@@ -280,6 +286,68 @@ http://[your_domain_name]/blog/Post-Title.html/ # 这也是本博的生成方式
 </span><span class="line"><span class="l-Scalar-Plain">permalink</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/blog/:title.html/</span> <span class="c1">#实现第二种</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
+<h3 id="section-8">分类目录前缀</h3>
+
+<p>在你文章底部日期右边是该文章所属的分类，点击它，会显示该分类下所有的文章<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>。但你发现该目录标题前有一个前缀 “Categories: “，这当然没错，但我们希望它是汉语。</p>
+
+<p>回到<code>_config.yml</code> 文件，添加下面一行代码并保存：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>_config.yml </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="yaml"><span class="line"><span class="l-Scalar-Plain">category_title_prefix</span><span class="p-Indicator">:</span> <span class="s">&quot;分类：&quot;</span> <span class="c1"># 修改分类前缀</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>理论上可以添加到任何位置，但为了显示直观，建议加到 <code>category_dir: blog/categories</code> 下一行。</p>
+
+<h3 id="section-9">继续阅读</h3>
+
+<p>如果你希望你的文章在首页显示摘要，点击类似「继续阅读」这样的按钮查看全文，可以在你的文章中插入 <code><!--more--></code>，这样在这个标记之前的内容会出现在首页。你可以试着在你的文章中插入这个标签，会发现首页会在这里出现一个<code>Read on &rarr;</code>这样的按钮，当然我们也希望他是汉语。</p>
+
+<p>回到<code>_config.yml</code> 文件，找到这一行：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>_config.yml </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="yaml"><span class="line"><span class="l-Scalar-Plain">excerpt_link</span><span class="p-Indicator">:</span> <span class="s">&quot;Read</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">&amp;rarr;&quot;</span>  <span class="c1"># &quot;Continue reading&quot; link text at the bottom of excerpted articles</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>然后把 Read on → 替换为你想要的文字，比如「阅读全文」，并保存。</p>
+
+<p>修改到这一步，你肯定很想看看效果，现在执行如下命令，重新生成并部署页面：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">rake generate
+</span><span class="line">rake deploy</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>看看博客，我们想要的效果都已经实现了吧。</p>
+
+<h3 id="markdown-">修改 Markdown 文件后缀</h3>
+
+<p>Octopress 默认日志文件后缀是 .markdown，但现在大多数 markdown 文件的后缀是 .md，</p>
+
+<h3 id="markdown--1">修改默认 Markdown 解释器</h3>
+
+<p>Octopress 默认的 Markdown 解释器是 rdiscount，个人更喜欢 <a href="http://kramdown.gettalong.org/quickref.html">kramdown</a>，支持 <a href="https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide">Multi Markdown</a> 语法和 LaTeX，对于理工科博客 LaTeX 必不可少，而且据说 kramdown 更快，也是 Github 推荐的 Markdown 解释器。</p>
+
+<p>回到<code>_config.yml</code> 文件，找到：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>_config.yml </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+</pre></td><td class="code"><pre><code class="yaml"><span class="line"><span class="l-Scalar-Plain">markdown</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">rdiscount</span>
+</span><span class="line"><span class="l-Scalar-Plain">rdiscount</span><span class="p-Indicator">:</span>
+</span><span class="line">  <span class="l-Scalar-Plain">extensions</span><span class="p-Indicator">:</span>
+</span><span class="line">    <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">autolink</span>
+</span><span class="line">    <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">footnotes</span>
+</span><span class="line">    <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">smart</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>把其中的 <code>markdown: rdiscount</code> 改为 <code>markdown: kramdown</code> 并删掉下面几行。当然如果你想保留原来的代码，以便以后研究，可以考虑把原来这几行代码注释掉（对于  yml 文件，就是在前面加 # ），被注释掉的代码对文件没有任何印象，除了能让你看得更直观之外。<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup></p>
+
 <div class="footnotes">
   <ol>
     <li id="fn:1">
@@ -287,6 +355,12 @@ http://[your_domain_name]/blog/Post-Title.html/ # 这也是本博的生成方式
     </li>
     <li id="fn:2">
       <p>这我留给了 <a href="http://haohailong.net/">http://haohailong.net/</a><a href="#fnref:2" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>当然如果你现在只有这一篇文章，也只会显示这一篇。<a href="#fnref:3" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p>你会发现，之前在代码中的说明文字都是注释掉的。<a href="#fnref:4" rel="reference">&#8617;</a></p>
     </li>
   </ol>
 </div>
