@@ -251,6 +251,9 @@ $(document).bind('DOMNodeInserted', function(event) {
     <p>相对其他托管到 Github 上的博客程序，Octopress 更加成熟易上手。打个比方，Jekyll 可以说是毛坯房，Hexo 和 Octopress 算是简装修，但相比 Hexo，Octopress 有更多装修范例和更多熟练的装修工人，更容易获取帮助。当然如果你只想住精装修的房子，那不得不花点钱上 WordPress 了。</p>
   </li>
   <li>
+    <p>使用 Markdown。Markdown 是现在最为流行的轻量级标记语言，也是已故的天才 Aaron Swartz 留给世人最好的礼物，窃以为每个在互联网上发布文章的人都该掌握。</p>
+  </li>
+  <li>
     <p>按照官方的说法，Octopress 是个「为黑客设计的博客框架<sup id="fnref:8"><a href="#fn:8" rel="footnote">8</a></sup>」，这很酷，你不觉得吗？</p>
   </li>
 </ol>
@@ -441,6 +444,64 @@ $(document).bind('DOMNodeInserted', function(event) {
 <p>这样你就可以使用自己的域名了。域名解析需要一段时间，如果没有马上生效，请不要着急。如果长时间没有生效，请确保完整执行了 2.4 节和本节内容。</p>
 
 <h3 id="section-6">5. 发布新贴</h3>
+
+<p>博客搭建好了，我们可以开始我们的第一贴了。那么怎么发布新贴呢？如果你真的想像个黑客一样写博客，我们可以继续使用我们的终端 (Terminal) 和命令行，执行以下命令：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">cd octopress
+</span><span class="line">rake new_post["Post Title"]</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>把其中的 Post Title 替换为你想写的文章标题。然后会有一个名为 <code>yyyy-mm-dd-Post-Title.markdown</code> 的文件在 <code>octopress/source/_posts</code> 目录下生成，其中 yyyy-mm-dd 是你当时的日期。然后执行以下命令：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">cd source/_posts/
+</span><span class="line">vim yyyy-mm-dd-Post-Title.markdown</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>即可用 vim 编辑器编辑的刚才的文章了，好吧我知道你作为这篇文章的读者并不是一个能熟练使用 vim 的人，那么请在命令行输入 <code>;q</code>退出这个编辑器。如果你不想假装是个黑客的话，其实发布文章并不需要这么麻烦。</p>
+
+<p>我们直接打开 <code>octopress/source/_posts</code> 文件夹，找到刚才生成的文件，用你喜欢的 Markdown 编辑器（免费的我推荐 <a href="http://mouapp.com">Mou</a>，收费的我推荐 <a href="http://bywordapp.com">Byword</a>）或者文本编辑器打开，对文章内容进行编辑。</p>
+
+<p>打开文件后，你会发现文章开头有这么一段信息</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">---
+</span><span class="line">layout: post
+</span><span class="line">title: "Post Title"
+</span><span class="line">date: yyyy-mm-dd hh:mm:ss
+</span><span class="line">comments: true
+</span><span class="line">categories: ""
+</span><span class="line">---</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>这其实是这篇文章的元数据：layout 暂时不要理会；title 是这篇文章显示在最终网页上的标题；date 部分是详细的文件生成时间，如 <code>2014-04-28 03:35:00</code>；comment 部分表示是否允许评论，目前显示是允许，如果想关闭评论，请改为 false；categories 指这篇文章的分类目录，请在后面引号中输入，如果没有该目录，则会自动生成。请不要删除这段信息，在这段信息下面开始你的文章内容。</p>
+
+<p>这件事情给我们的启发是，以后发布文章，其实并不需要使用终端命令行生成文件。可以直接将自己写好的文章放到这个文件夹下面，当然请按照 <code>yyyy-mm-dd-Post-Title.markdown</code> 这样的文件格式命名，同时记得在文章前面添加元数据信息。这种做法与上面的方法无异。</p>
+
+<p>在文章写好之后，使用命令行执行：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">cd octopress
+</span><span class="line">rake gen_deploy</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>同样如果在本节中，任何命令执行失败，没有取得想要结果，请在前面加 <code>sudo</code>。</p>
+
+<p>这样你的第一篇日志就发布出来了，恭喜你正式开通了基于 Octopress 的独立博客。</p>
+
+<p>当然你会发现似乎文章作者不是你，界面是英文显示，整体排版效果差强人意等等问题，不着急，我们会在接下来的文章中讲解如何配置和修改 Octopress 博客。</p>
+
+<p>对于实用性知识，我的向来的原则是「精益学习」，先把最核心最当紧的问题解决了，其余问题发现一例解决一例，不断在干中学，不断版本迭代。后面讲到如何配置修改 Octopress 博客的文章就秉承这一原则，先将遇到了什么问题，然后将如何寻找解决方法。</p>
+
+<p>顺便说一句，我可能算是第一个提出「精益学习」这个概念的人吧，这个想法来自「<a href="http://zh.wikipedia.org/wiki/精益创业">精益创业</a>」。</p>
+
+<p>2014 年 4 月 28 日</p>
 
 <div class="footnotes">
   <ol>
