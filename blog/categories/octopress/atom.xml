@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Octopress | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-28T04:39:29+02:00</updated>
+  <updated>2014-04-28T04:41:02+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -24,7 +24,7 @@
 
 <h2 id="octopress--github-pages">1. 为什么是 Octopress &amp; Github Pages?</h2>
 
-<p>在做任何事情之前最好先问个为什么，尽管很多情况下未必有答案，但这个做法绝对有好处。用 Octopress 搭建博客，并托管到 Github Pages，撇除<a href="http://s.olo.la/KIoY">一些个人因素</a>之外，我想还有以下几点原因：</p>
+<p>在做任何事情之前最好先问个为什么，尽管很多情况下未必有答案，但这个做法绝对有好处。用 Octopress 搭建博客，并托管到 Github Pages，撇除<a href="http://s.olo.la/KIoY">一些个人因素</a>之外，我想还有以下几点原因：<!--more--></p>
 
 <ol>
   <li>
