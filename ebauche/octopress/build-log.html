@@ -323,7 +323,7 @@ http://[your_domain_name]/blog/Post-Title.html/ # 这也是本博的生成方式
 
 <h3 id="markdown-">修改 Markdown 文件后缀</h3>
 
-<p>Octopress 默认日志文件后缀是 .markdown，但现在大多数 markdown 文件的后缀是 .md，</p>
+<p>Octopress 默认日志文件后缀是 .markdown，但现在大多数 Markdown 文件的后缀是 .md，推荐使用这种更为简洁的后缀。</p>
 
 <p>用文本编辑器打开 rakefile 文件，找到如下两行行代码：</p>
 
@@ -334,9 +334,31 @@ http://[your_domain_name]/blog/Post-Title.html/ # 这也是本博的生成方式
 </span><span class="line"><span class="n">new_page_ext</span>    <span class="o">=</span> <span class="s2">&quot;markdown&quot;</span>  <span class="c1"># default new page file extension when using the new_page task</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
+<p>改为：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>rakefile </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="n">new_post_ext</span>    <span class="o">=</span> <span class="s2">&quot;md&quot;</span>  <span class="c1"># 默认新日志文件后缀</span>
+</span><span class="line"><span class="n">new_page_ext</span>    <span class="o">=</span> <span class="s2">&quot;md&quot;</span>  <span class="c1"># 默认新页面文件后缀</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>第二行是默认新页面文件后缀，如果不明白具体新页面指什么，后面的文章中会有讲解。</p>
+
 <h3 id="markdown--1">修改默认 Markdown 解释器</h3>
 
 <p>Octopress 默认的 Markdown 解释器是 rdiscount，个人更喜欢 <a href="http://kramdown.gettalong.org/quickref.html">kramdown</a>，支持 <a href="https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide">Multi Markdown</a> 语法和 LaTeX，对于理工科博客 LaTeX 必不可少，而且据说 kramdown 更快，也是 Github 推荐的 Markdown 解释器。</p>
+
+<p>首先用文本编辑器打开 <code>Gemfile</code> 文件，在文件末尾添加一行：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>Gemfile </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="ruby"><span class="line"><span class="n">gem</span> <span class="s1">&#39;kramdown&#39;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>然后在终端 (Terminal) 执行如下命令：</p>
+
+<p><code>bundle install</code></p>
 
 <p>回到<code>_config.yml</code> 文件，找到：</p>
 
