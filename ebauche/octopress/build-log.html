@@ -9,7 +9,7 @@
   <meta name="author" content="郝海龙">
 
   
-  <meta name="description" content="Octopress 搭建日志 2014 年 4 月 23 日 郝海龙 Octopress 每个人都该为自己打造专属的写作环境 本节内容已作为单篇文章发布，点此查看：Octopress 每个人都该为自己打造专属的写作环境 。 Octopress 搭建流程 – Github Pages &hellip;">
+  <meta name="description" content="Octopress 搭建日志 2014年4月23日 郝海龙 Octopress 每个人都该为自己打造专属的写作环境 本节内容已作为单篇文章发布，点此查看：Octopress 每个人都该为自己打造专属的写作环境 。 Octopress 搭建流程 – Github Pages &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -153,7 +153,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2014-04-23T16:06:00+02:00" pubdate data-updated="true">2014 年 4 月 23 日</time></p>
+<time datetime="2014-04-23T16:06:00+02:00" pubdate data-updated="true">2014年4月23日</time></p>
   </header>
   
   <h3 id="section">郝海龙</h3>
@@ -237,10 +237,46 @@ $(document).bind('DOMNodeInserted', function(event) {
 </span><span class="line"><span class="l-Scalar-Plain">subtitle</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">A blogging framework for hackers.</span> <span class="c1">#这里改为你的博客副标题</span>
 </span><span class="line"><span class="l-Scalar-Plain">author</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Your Name</span> <span class="c1">#这里改为博客作者的名字，也就是你的名字</span>
 </span><span class="line"><span class="l-Scalar-Plain">simple_search</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">https://www.google.com/search</span> <span class="c1">#这时默认搜索引擎，可以先不管</span>
-</span><span class="line"><span class="l-Scalar-Plain">description</span><span class="p-Indicator">:</span>
+</span><span class="line"><span class="l-Scalar-Plain">description</span><span class="p-Indicator">:</span> <span class="c1">#网站描述信息</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div>
 
-<p>按照我给出的 # 后面的提示信息做出修改即可</p>
+<p>按照我给出的 # 后面的提示信息做相应修改即可，请注意，诸如<code>url: </code>中的冒号必须是英文冒号，并且要符合英文标点符号使用规范：冒号后必须空格。</p>
+
+<p>我们暂且把 <code>_config.yml</code> 文件放到一边，再回头看博客主页，你会发现每条博客上面的日期和文章尾部的日期都是诸如 <code>Apr 28th 2014</code> 这样的格式。我们当然是想把它变成中文的「2014 年 4 月 28 日」这样的格式，那么再次回到 <code>_config.yml</code> 文件，顺着刚才那几行代码往下看，你会发现这样一行：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>_config.yml </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="yaml"><span class="line"><span class="l-Scalar-Plain">date_format</span><span class="p-Indicator">:</span> <span class="s">&quot;ordinal&quot;</span> <span class="c1">#默认日期显示方式</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>请把其中的 <code>"ordinal"</code> 改为 <code>"%Y 年%-m 月%d 日"</code>，并保存。</p>
+
+<p>回到博客，点开你发表的文章，这是你看一下地址栏，发现网址（也就是这篇文章的链接）是类似这样的形式：</p>
+
+<pre><code>http://[your_domain_name]/blog/2014/04/28/Post-Title/
+</code></pre>
+
+<p>对我们个人博客而言，这种层级显得太多，我个人推荐如下两种显示方式：</p>
+
+<pre><code>http://[your_domain_name]/blog/20140428/Post-Title.html/
+http://[your_domain_name]/blog/Post-Title.html/
+</code></pre>
+
+<p>怎么实现呢？接着回到<code>_config.yml</code> 文件，往下看，找到：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>_config.yml </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+</pre></td><td class="code"><pre><code class="yaml"><span class="line"><span class="l-Scalar-Plain">permalink</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/blog/:year/:month/:day/:title/</span> <span class="c1">#文章固定链接</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>按照如下方式修改（二者任选其一）并保存：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>_config.yml </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+</pre></td><td class="code"><pre><code class="yaml"><span class="line"><span class="l-Scalar-Plain">permalink</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/blog/:year:month:day/:title.html/</span> <span class="c1">#实现第一种</span>
+</span><span class="line"><span class="l-Scalar-Plain">permalink</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/blog/:year:month:day/:title.html/</span> <span class="c1">#实现第二种</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <div class="footnotes">
   <ol>
@@ -269,7 +305,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2014-04-23T16:06:00+02:00" pubdate data-updated="true">2014 年 4 月 23 日</time>
+<time datetime="2014-04-23T16:06:00+02:00" pubdate data-updated="true">2014年4月23日</time>
         
       </p>
       
