@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Octopress | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-28T04:41:02+02:00</updated>
+  <updated>2014-04-28T05:01:26+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -67,7 +67,7 @@
 
 <h3 id="ruby-3">2.2 安装 Ruby <sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup></h3>
 
-<p>先说句题外话，其实我是从 Ruby 语言才知道有诞生石这种说法的。安装 Ruby 稍稍有些复杂，不过你只要按照以下步骤一步一步来就好了：</p>
+<p>先说句题外话，其实我是从 Ruby 语言才知道有<a href="http://zh.wikipedia.org/wiki/誕生石">诞生石</a>这种说法的。安装 Ruby 稍稍有些复杂，不过你只要按照以下步骤一步一步来就好了：</p>
 
 <ul>
   <li>安装 HomeBrew</li>
@@ -202,7 +202,7 @@
 
 <p>如果上述内容完成，即可使用 http://[your_username].github.io/ 访问页面，将会出现一个和在本地预览时相同的页面。</p>
 
-<p>然后，不要忘了把源文件全部发布到 <code>source</code> 分支下面，再一次可以看不懂，执行以下命令：</p>
+<p>然后，不要忘了把源文件全部发布到 <code>source</code> 分支下面，再一次可以看不懂<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup>，执行以下命令：</p>
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -215,7 +215,7 @@
 
 <p>如果你有自己的域名，并且想指向这个新博客的话，请首先确保执行了 2.4 节中的内容。如果没有执行，可以随时执行。</p>
 
-<p>然后执行命令，注意把 <code>your-domain.com</code> 换成你自己的域名。</p>
+<p>然后执行下面的命令，注意把 <code>your-domain.com</code> 换成你自己的域名。</p>
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>echo ‘your-domain.com’ » source/CNAME</span></code></pre></td></tr></table></div></figure></notextile></div></p>
@@ -295,6 +295,9 @@
     </li>
     <li id="fn:3">
       <p>什么是 Ruby？<a href="http://zh.wikipedia.org/wiki/Ruby">点这里</a>，看完你能了解个大概，这基本上已经够了，但如果还需更多知识，就看看 wikipedia 和 <a href="https://www.ruby-lang.org/en/">Ruby 官网</a>。<a href="#fnref:3" rel="reference">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p>如果想看懂，这里有个快速上手指南：<a href="http://rogerdudler.github.io/git-guide/index.zh.html">git - 简明指南</a><a href="#fnref:4" rel="reference">&#8617;</a></p>
     </li>
   </ol>
 </div>
