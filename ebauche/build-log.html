@@ -241,10 +241,18 @@ $(document).bind('DOMNodeInserted', function(event) {
 <p>在做任何事情之前最好先问个为什么，尽管很多情况下未必有答案，但这个做法绝对有好处。用 Octopress 搭建博客，并托管到 Github Pages，撇除<a href="http://s.olo.la/KIoY">一些个人因素</a>之外，我想还有以下几点原因：</p>
 
 <ol>
-  <li>免费且独立。把 Octopress 博客系统搭建到 Github Pages 虽是免费，但不失独立性，即便 Github 全站关闭，你也将有一份本地全站备份，随时可以重新恢复。不必受托管商之气，而且还免费，如果你愿意，甚至可以自行插入广告挣钱。</li>
-  <li>版本控制。写文章，建网站，做软件都需要修改，但有时候改完了又会后悔，如果有时光机就好了，Git 就是你的时光机。当然如果你不想了解这些看上去很唬人的 IT 名词，只是想写博客的话，请在需要的时候再研究这条的内容。</li>
-  <li>相对其他托管到 Github 上的博客程序，Octopress 更加成熟易上手。打个比方，Jekyll 可以说是毛坯房，Hexo 和 Octopress 算是简装修，但相比 Hexo，Octopress 有更多熟练地装修范例和装修工人，更容易获取帮助。当然如果你只想住精装修的房子，那不得不花点钱上 WordPress 了。</li>
-  <li>按照官方的说法，Octopress 是个「为黑客设计的博客框架<sup id="fnref:8"><a href="#fn:8" rel="footnote">8</a></sup>」，这很酷，你不觉得吗？</li>
+  <li>
+    <p>免费且独立。把 Octopress 博客系统搭建到 Github Pages 虽是免费，但不失独立性，即便 Github 全站关闭，你也将有一份本地全站备份，随时可以重新恢复。不必受托管商之气，而且还免费，如果你愿意，甚至可以自行插入广告挣钱。</p>
+  </li>
+  <li>
+    <p>版本控制。写文章，建网站，做软件都需要修改，但有时候改完了又会后悔，如果有时光机就好了，Git 就是你的时光机。当然如果你不想了解这些看上去很唬人的 IT 名词，只是想写博客的话，请在需要的时候再研究这条的内容。</p>
+  </li>
+  <li>
+    <p>相对其他托管到 Github 上的博客程序，Octopress 更加成熟易上手。打个比方，Jekyll 可以说是毛坯房，Hexo 和 Octopress 算是简装修，但相比 Hexo，Octopress 有更多装修范例和更多熟练的装修工人，更容易获取帮助。当然如果你只想住精装修的房子，那不得不花点钱上 WordPress 了。</p>
+  </li>
+  <li>
+    <p>按照官方的说法，Octopress 是个「为黑客设计的博客框架<sup id="fnref:8"><a href="#fn:8" rel="footnote">8</a></sup>」，这很酷，你不觉得吗？</p>
+  </li>
 </ol>
 
 <p>如果你之前没有写过博客，打算开始搭建自己第一个博客的话，其实也不妨试试 Octopress，免费还能学到东西，何乐而不为？</p>
@@ -258,7 +266,9 @@ $(document).bind('DOMNodeInserted', function(event) {
 <p>既然要使用 Github，那么肯定首先要安装 Git，这个很简单：</p>
 
 <ol>
-  <li>点击这里到 Git 官方网站。</li>
+  <li>
+    <p><a href="http://git-scm.com/">点击这里</a>到 Git 官方网站。</p>
+  </li>
   <li>
     <p>找到下图所示的下载链接，按照提示下载并安装。</p>
 
@@ -274,7 +284,7 @@ $(document).bind('DOMNodeInserted', function(event) {
   <li>
     <p>安装 HomeBrew</p>
 
-    <p><a href="http://brew.sh/index_zh-cn.html">HomeBrew</a> 是一个非常有用的软件包管理系统，你可以把它想象成一个稍微抽象一点的 Mac App Store，我们这一步安装它的目的是为了安装别的东西 (Ruby) 。</p>
+    <p><a href="http://brew.sh/index_zh-cn.html">HomeBrew</a> 是一个非常有用的软件包管理系统，你可以把它想象成一个稍微抽象一点的 Mac App Store. 正如我们用 Mac App Store 来安装其他软件一样，我们这一步安装 HomeBrew 的目的是为了安装别的软件 (Ruby) 。当然 Mac App Store 和 HomeBrew 本身也是软件。</p>
 
     <p>安装 HomeBrew 非常简单，打开终端 (Terminal)，执行以下命令（所谓「执行」即「输入+回车」，下同）：</p>
   </li>
@@ -438,6 +448,8 @@ $(document).bind('DOMNodeInserted', function(event) {
 </span><span class="line">rake deploy</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>这样你就可以使用自己的域名了。域名解析需要一段时间，如果没有马上生效，请不要着急。如果长时间没有生效，请确保完整执行了 2.4 节和本节内容。</p>
+
+<h3 id="section-6">5. 发布新贴</h3>
 
 <div class="footnotes">
   <ol>
