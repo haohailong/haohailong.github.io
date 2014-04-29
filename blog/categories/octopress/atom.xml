@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Octopress | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-30T00:26:35+02:00</updated>
+  <updated>2014-04-30T00:30:07+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -594,10 +594,8 @@ rake setup_github_pages
 <p><div class='bogus-wrapper'><notextile><figure class='code'> <table class="CodeRay"><tr>
   <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
 <a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
 </pre></td>
-  <td class="code"><pre>
-rake generate
+  <td class="code"><pre>rake generate
 rake deploy
 </pre></td>
 </tr></table>
