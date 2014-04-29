@@ -1,27 +1,17 @@
 /*
-Syntax error: File to import not found or unreadable: coderay-github.
-              Load paths:
-                Sass::Globbing::Importer
-                /Users/Hailong/octopress/sass
-                /Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/blueprint/stylesheets
-                /Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets
-                Compass::SpriteImporter
-        on line 87 of /Users/Hailong/octopress/sass/custom/_styles.scss
+Syntax error: Invalid CSS after "...coderay-github"": expected selector or at-rule, was ".CodeRay {"
+        on line 89 of /Users/Hailong/octopress/sass/custom/_styles.scss
         from line 10 of /Users/Hailong/octopress/sass/screen.scss
 
 Backtrace:
-/Users/Hailong/octopress/sass/custom/_styles.scss:87
+/Users/Hailong/octopress/sass/custom/_styles.scss:89
 /Users/Hailong/octopress/sass/screen.scss:10
-/Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/import_node.rb:45:in `import'
-/Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
-/Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
-/Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:227:in `map'
-/Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
+/Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/scss/parser.rb:1146:in `expected'
+/Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/scss/parser.rb:1084:in `expected'
+/Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/scss/parser.rb:28:in `parse'
+/Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/engine.rb:342:in `_to_tree'
+/Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/engine.rb:274:in `to_tree'
+/Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:225:in `visit_import'
 /Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
 /Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -65,4 +55,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: coderay-github.\A               Load paths:\A                 Sass::Globbing::Importer\A                 /Users/Hailong/octopress/sass\A                 /Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 87 of /Users/Hailong/octopress/sass/custom/_styles.scss\A         from line 10 of /Users/Hailong/octopress/sass/screen.scss"; }
+  content: "Syntax error: Invalid CSS after \"...coderay-github\"\": expected selector or at-rule, was \".CodeRay {\"\A         on line 89 of /Users/Hailong/octopress/sass/custom/_styles.scss\A         from line 10 of /Users/Hailong/octopress/sass/screen.scss"; }
