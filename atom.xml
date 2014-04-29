@@ -4,7 +4,7 @@
   <title><![CDATA[生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-29T06:13:48+02:00</updated>
+  <updated>2014-04-29T06:17:00+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -600,7 +600,7 @@ f'\left( x\right) = \lim _{x\rightarrow 0}\dfrac {f\left( x+\Delta x\right) - f\
 
 <p>我们直接打开 <code>octopress/source/_posts</code> 文件夹，找到刚才生成的文件，用你喜欢的 Markdown 编辑器（免费的我推荐 <a href="http://mouapp.com">Mou</a>，收费的我推荐 <a href="http://bywordapp.com">Byword</a>）或者文本编辑器打开，对文章内容进行编辑。</p>
 
-<p>打开文件后，你会发现文章开头有这么一段信息</p>
+<p>打开文件后，你会发现文章开头有这么一段信息（不包括反斜杠<code>\</code>）:</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
 <span class="line-number">2</span>
