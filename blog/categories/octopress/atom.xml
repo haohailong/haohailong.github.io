@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Octopress | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-29T03:32:46+02:00</updated>
+  <updated>2014-04-29T03:34:32+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -303,6 +303,10 @@ git push origin source
   </li>
   <li><a href="#section-3">5. 发布新贴</a></li>
   <li><a href="#codeblock-">{% codeblock %}</a></li>
+</ul>
+
+<ul>
+  <li>list element with functor item</li>
 </ul>
 
 <p class="info">本文介绍如何在 Github Pages 上搭建 Octopress 博客，主要针对 IT 外行人士。科普文章用词未必精确，行家里手请不要太在意。主要参考 <a href="http://octopress.org/">Octopress 官网</a>安装教程。<br />
