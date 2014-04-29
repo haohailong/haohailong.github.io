@@ -6,6 +6,9 @@ comments: true
 categories: "Octopress"
 ---
 
+- list element with functor item
+{:toc}
+
 ## 永远的第二步
 
 通过「[Octopress 搭建流程 – Github Pages](http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/)」，我们搭建好了自己的 Octopress 博客并发布了第一篇文章。

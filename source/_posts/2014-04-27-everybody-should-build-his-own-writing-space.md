@@ -6,6 +6,9 @@ comments: true
 categories: "Octopress"
 ---
 
+- list element with functor item
+{:toc}
+
 ## 我的博客史
 
 每次搭建新博客都想把自己写博客的历史回顾一遍，这次索性来个彻底回顾，直接从最早接触互联网说起吧。
