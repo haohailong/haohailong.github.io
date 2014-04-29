@@ -83,6 +83,15 @@ ul#markdown-toc {
 .CodeRay span.insert, .CodeRay span.change, .CodeRay span.delete {
         width: auto;
 }
+
+/* Coderay plugin 边框设定*/
+.CodeRay pre, p code, li code {
+  border: 1px solid #565656;
+  border-top-color: #cbcbcb;
+  border-left-color: #a5a5a5;
+  border-right-color: #a5a5a5;
+}
+
 @import "custom/coderay";
 
 

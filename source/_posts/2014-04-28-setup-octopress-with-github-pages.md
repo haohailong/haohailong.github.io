@@ -53,23 +53,23 @@ categories: "Octopress"
 	
 安装 HomeBrew 非常简单，打开终端 (Terminal)，执行以下命令（所谓「执行」即「输入+回车」，下同）：
 	
-{% codeblock %}
+{% coderay %}
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
-{% endcodeblock %}
+{% endcoderay %}
 	
 如果在执行上如命令的时候弹出需要安装 Xcode Command Line Tool 的提示，直接点击安装即可。
 	
 安装好之后最好先执行以下命令：
 	
-{% codeblock %}
+{% coderay %}
 brew doctor
-{% endcodeblock %}
+{% endcoderay %}
 	
 此条命令用来诊断安装中出现的问题并提示修复方法，如果没有问题则会显示：
 	
-{% codeblock %}
+{% coderay %}
 Your system is ready to brew.
-{% endcodeblock %}
+{% endcoderay %}
 	
 如遇问题，则按照提示处理，如果不懂如何处理可以先试着执行后面的步骤，如果能成功，则没有太大问题，毕竟我们只是想写博客而已。当然，做任何事情之前，备份是必须的。
 
@@ -77,17 +77,17 @@ Your system is ready to brew.
 	
 执行以下命令安装 RVM，最新的稳定版 Ruby 也会随之安装：
 	
-{% codeblock %}
+{% coderay %}
 curl -L https://get.rvm.io | bash -s stable --ruby
-{% endcodeblock %}
+{% endcoderay %}
 	
 为避免出现问题，可执行以下命令安装 Ruby 2.0.0: 
 	
-{% codeblock %}
+{% coderay %}
 rvm install 2.0.0
 rvm use 2.0.0
 rvm rubygems latest
-{% endcodeblock %}
+{% endcoderay %}
 	
 可以执行 <code>ruby --version</code> 命令来查看现在使用的 Ruby 版本，确保正在使用的是 Ruby 2.0.0
 
@@ -111,10 +111,10 @@ rvm rubygems latest
 
 首先，打开终端 (Terminal) 执行如下命令：
 	
-{% codeblock %}
+{% coderay %}
 git clone git://github.com/imathis/octopress.git octopress
 cd octopress  
-{% endcodeblock %}
+{% endcoderay %}
 	
 上面的代码中，第一行的作用是把 Octopress 克隆到本地磁盘，将会在你的本地<code>~/user/yourusername</code> 这个文件夹下生成一个名为 octopress 的文件夹。如果你不知道 yourusername 是什么，其实就是你每次打开终端时，$ 这个符号前面显示的那玩意。
 
@@ -122,24 +122,24 @@ cd octopress
 
 然后我们开始安装 Octopress 所必需的依赖项(dependencies)，执行以下命令：
 
-{% codeblock %}
+{% coderay %}
 gem install bundler
 bundle install
-{% endcodeblock %}
+{% endcoderay %}
 
 然后执行如下命令安装默认主题：
 
-{% codeblock %}
+{% coderay %}
 rake install
-{% endcodeblock %}
+{% endcoderay %}
 
 本地安装完毕。顺便说一句，所谓 rake 就是 ruby make 的缩写。
 
 这时你执行如下命令：
 
-{% codeblock %}
+{% coderay %}
 rake preview
-{% endcodeblock %}
+{% endcoderay %}
 
 然后在浏览器内输入 <code>http://localhost:4000/</code>，即可看到我们搭建完成的博客。也许并不好看，但很令人开心，不是么？
 
@@ -161,19 +161,19 @@ rake preview
 
 打开终端 (Terminal)，执行以下命令：
 
-{% codeblock %}
+{% coderay %}
 cd octopress
 rake setup_github_pages
-{% endcodeblock %} 
+{% endcoderay %} 
 
 然后会出现一个问句，请把 4.1 步生成的 SSH 地址粘贴到这里，然后回车继续。
 
 执行以下命令：
 
-{% codeblock %}
+{% coderay %}
 rake generate
 rake deploy
-{% endcodeblock %}
+{% endcoderay %}
 
 第一行命令用来生成页面，第二行命令用来部署页面，可按照字面意思理解。如果理解不了，可以暂且不管。任何一步如果出现失败提示，请使用 <code>sudo</code>。
 
@@ -181,11 +181,11 @@ rake deploy
 
 然后，不要忘了把源文件全部发布到 <code>source</code> 分支下面，再一次可以看不懂[^4]，执行以下命令：
 
-{% codeblock %}
+{% coderay %}
 git add .
 git commit -m "备注内容"
 git push origin source
-{% endcodeblock %}
+{% endcoderay %}
 
 ### 4.3 使用自己的域名（可选）
 
@@ -193,16 +193,16 @@ git push origin source
 
 然后执行下面的命令，注意把 <code>your-domain.com</code> 换成你自己的域名。
 
-{% codeblock %}
+{% coderay %}
 echo 'your-domain.com' >> source/CNAME
-{% endcodeblock %}
+{% endcoderay %}
 
 然后再次执行以下命令：
 
-{% codeblock %}
+{% coderay %}
 rake generate
 rake deploy
-{% endcodeblock %}
+{% endcoderay %}
 
 这样你就可以使用自己的域名了。域名解析需要一段时间，如果没有马上生效，请不要着急。如果长时间没有生效，请确保完整执行了 2.4 节和本节内容。
 
@@ -210,17 +210,17 @@ rake deploy
 
 博客搭建好了，我们可以开始我们的第一贴了。那么怎么发布新贴呢？如果你真的想像个黑客一样写博客，我们可以继续使用我们的终端 (Terminal) 和命令行，执行以下命令：
 
-{% codeblock %}
+{% coderay %}
 cd octopress
 rake new_post["Post Title"]
-{% endcodeblock %}
+{% endcoderay %}
 
 把其中的 Post Title 替换为你想写的文章标题。然后会有一个名为 <code>yyyy-mm-dd-Post-Title.markdown</code> 的文件在 <code>octopress/source/_posts</code> 目录下生成，其中 yyyy-mm-dd 是你当时的日期。然后执行以下命令：
 
-{% codeblock %}
+{% coderay %}
 cd source/_posts/
 vim yyyy-mm-dd-Post-Title.markdown
-{% endcodeblock %}
+{% endcoderay %}
 
 即可用 vim 编辑器编辑的刚才的文章了，好吧我知道你作为这篇文章的读者并不是一个能熟练使用 vim 的人，那么请在命令行输入 <code>:q</code>退出这个编辑器。如果你不想假装是个黑客的话，其实发布文章并不需要这么麻烦。
 
@@ -242,9 +242,9 @@ vim yyyy-mm-dd-Post-Title.markdown
 
 在文章写好之后，使用命令行执行（仔细观察命令，像不像 generate 和 deploy 的合体？）：
 
-{% codeblock %}
+{% coderay %}
 rake gen_deploy
-{% endcodeblock %}
+{% endcoderay %}
 
 同样，如果在本节中，任何命令执行失败，没有取得想要结果，请在前面加 <code>sudo</code>。是时候说一说 <code>sudo</code> 命令了，这其实是 super do 的缩写，之所以用它是因为，一般而言 Mac 上最高权限的<code>root</code> 账户默认是关闭的。我们自己的账户哪怕是管理员也在一些地方没有权限操作，super do 其实就是越权操作的意思，因此也往往需要输入密码，一般而言短时间内不需要输入第二次。
 

@@ -41,12 +41,12 @@ categories: "Octopress"
 
 如果你能在上面的链接中找到满意的主题，按照主题的要求去安装部署即可。比如你喜欢 [CleanPress](https://github.com/macjasp/cleanpress) 这款主题，你可执行以下命令：
 
-{% codeblock %}
+{% coderay %}
 cd octopress
 git clone git://github.com/macjasp/cleanpress.git .themes/cleanpress
 rake install['cleanpress']
 rake generate
-{% endcodeblock %}
+{% endcoderay %}
 
 我个人看过很多主题，但最终还是用了简洁素雅的默认主题。我并不需要太多的装饰[^2]，只要版面布局符合基本审美要求即可。另外，我也喜欢这个浓浓的黑客范儿。
 
@@ -62,14 +62,14 @@ rake generate
 
 所有以上这些信息都可以通过基本配置文件 <code>_config.yml</code> 来修改。先在 <code>octopress</code> 文件夹下找到这个文件，用你喜欢的文本编辑器打开（我喜欢 TextMate 2），你会发现如下信息:
 
-{% codeblock lang:yaml _config.yml %}
+{% coderay lang:yaml _config.yml %}
 url: http://yoursite.com  #这里改为你网站的域名
 title: My Octopress Blog  #这里改为你想要的网站标题
 subtitle: A blogging framework for hackers. #这里改为你的博客副标题
 author: Your Name #这里改为博客作者的名字，也就是你的名字
 simple_search: https://www.google.com/search #这时默认搜索引擎，可以先不管
 description: #网站描述信息
-{% endcodeblock %}
+{% endcoderay %}
 
 按照我给出的 # 后面的提示信息做相应修改即可，请注意，诸如<code>url: </code>中的冒号必须是英文冒号，并且要符合英文标点符号使用规范：冒号后必须空格。
 
@@ -77,9 +77,9 @@ description: #网站描述信息
 
 我们暂且把 <code>_config.yml</code> 文件放到一边，再回头看博客主页，你会发现每条博客上面的日期和文章尾部的日期都是诸如 <code>Apr 28th 2014</code> 这样的格式。我们当然是想把它变成中文的「2014 年 4 月 28 日」这样的格式，那么再次回到 <code>_config.yml</code> 文件，顺着刚才那几行代码往下看，你会发现这样一行：
 
-{% codeblock lang:yaml _config.yml %}
+{% coderay lang:yaml _config.yml %}
 date_format: "ordinal" #默认日期显示方式
-{% endcodeblock %}
+{% endcoderay %}
 
 请把其中的 <code>"ordinal"</code> 改为 <code>"%Y年%-m月%d日"</code>，并保存。
 
@@ -96,16 +96,16 @@ date_format: "ordinal" #默认日期显示方式
 
 怎么实现呢？接着回到<code>_config.yml</code> 文件，往下看，找到：
 
-{% codeblock lang:yaml _config.yml %}
+{% coderay lang:yaml _config.yml %}
 permalink: /blog/:year/:month/:day/:title/ #文章固定链接
-{% endcodeblock %}
+{% endcoderay %}
 
 按照如下方式修改（二者任选其一）并保存：
 
-{% codeblock lang:yaml _config.yml %}
+{% coderay lang:yaml _config.yml %}
 permalink: /blog/:year:month:day/:title.html/ #实现第一种
 permalink: /blog/:title.html/ #实现第二种
-{% endcodeblock %}
+{% endcoderay %}
 
 ### 分类目录前缀
 
@@ -113,9 +113,9 @@ permalink: /blog/:title.html/ #实现第二种
 
 回到<code>_config.yml</code> 文件，添加下面一行代码并保存：
 
-{% codeblock lang:yaml _config.yml %}
+{% coderay lang:yaml _config.yml %}
 category_title_prefix: "分类：" # 修改分类前缀
-{% endcodeblock %}
+{% endcoderay %}
 
 理论上可以添加到任何位置，但为了显示直观，建议加到 <code>category_dir: blog/categories</code> 下一行。
 
@@ -125,18 +125,18 @@ category_title_prefix: "分类：" # 修改分类前缀
 
 回到<code>_config.yml</code> 文件，找到这一行：
 
-{% codeblock lang:yaml _config.yml %}
+{% coderay lang:yaml _config.yml %}
 excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
-{% endcodeblock %}
+{% endcoderay %}
 
 然后把引号中高亮现实的部分替换为你想要的文字，比如「阅读全文」，并保存。
 
 修改到这一步，你肯定很想看看效果，现在执行如下命令，重新生成并部署页面：
 
-{% codeblock %}
+{% coderay %}
 rake generate
 rake deploy
-{% endcodeblock %}
+{% endcoderay %}
 
 看看博客，我们想要的效果都已经实现了吧。
 
@@ -146,17 +146,17 @@ Octopress 默认日志文件后缀是 .markdown，但现在大多数 Markdown �
 
 用文本编辑器打开 rakefile 文件，找到如下两行行代码：
 
-{% codeblock lang:ruby rakefile %}
+{% coderay lang:ruby rakefile %}
 new_post_ext    = "markdown"  # default new post file extension when using the new_post task
 new_page_ext    = "markdown"  # default new page file extension when using the new_page task
-{% endcodeblock %}
+{% endcoderay %}
 
 改为：
 
-{% codeblock lang:ruby rakefile %}
+{% coderay lang:ruby rakefile %}
 new_post_ext    = "md"  # 默认新日志文件后缀
 new_page_ext    = "md"  # 默认新页面文件后缀
-{% endcodeblock %}
+{% endcoderay %}
 
 第二行是默认新页面文件后缀，如果不明白新页面具体指什么，后面的文章中会有讲解。
 
@@ -166,32 +166,32 @@ Octopress 默认的 Markdown 解释器是 rdiscount，个人更喜欢 [kramdown]
 
 首先用文本编辑器打开 <code>Gemfile</code> 文件，在文件末尾添加一行：
 
-{% codeblock lang:ruby Gemfile %}
+{% coderay lang:ruby Gemfile %}
 gem 'kramdown'
-{% endcodeblock %}
+{% endcoderay %}
 
 然后在终端 (Terminal) 执行如下命令：
 
-{% codeblock %}
+{% coderay %}
 sudo bundle install
-{% endcodeblock %}
+{% endcoderay %}
 
 回到<code>_config.yml</code> 文件，找到：
 
-{% codeblock lang:yaml _config.yml %}
+{% coderay lang:yaml _config.yml %}
 markdown: rdiscount
 rdiscount:
   extensions:
     - autolink
     - footnotes
     - smart
-{% endcodeblock %}
+{% endcoderay %}
 
 把其中的 <code>markdown: rdiscount</code> 改为 <code>markdown: kramdown</code> 并删掉下面几行。当然如果你想保留原来的代码，以便以后研究，可以考虑把原来这几行代码注释掉（对于  yml 文件，就是在前面加 # ），被注释掉的代码对文件没有任何影响，除了能让你看得更直观之外。[^4]
 
 为了能够显示数学公式，我们需要添加 [MathJax](http://www.mathjax.org) 支持，打开```source/_includes/custom/head.html``` 文件，添加如下代码：
 
-{% codeblock lang:html source/_includes/custom/head.html %}
+{% coderay lang:html source/_includes/custom/head.html %}
 <!-- MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
@@ -219,7 +219,7 @@ rdiscount:
 <script type="text/javascript"
    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
-{% endcodeblock %}
+{% endcoderay %}
 
 这样你就可以是所有 LaTeX 语法在网页中输入公式了，比如
 
@@ -229,19 +229,19 @@ $$
 
 上面这个公式的源代码为：
 
-{% codeblock %}
+{% coderay %}
 $$
 f'\left( x\right) = \lim _{x\rightarrow 0}\dfrac {f\left( x+\Delta x\right) - f\left( x\right)}{\Delta x}
 $$
-{% endcodeblock %}
+{% endcoderay %}
 
 每次完成更新都记得把原始文件重新放到 Github 上，还记得命令吧：
 
-{% codeblock %}
+{% coderay %}
 git add .
 git commit -m "备注内容"
 git push origin source
-{% endcodeblock %}
+{% endcoderay %}
 
 至此，我们博客的基本配置告一段落，你可以开始更新你的博客了。当然也许你注意到还有一些瑕疵，比如很多地方还是英文显示，不着急，先把问题记下来，等我Octopress 系列的下一篇文章。
 

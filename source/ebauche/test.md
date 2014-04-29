@@ -8,3 +8,14 @@ footer: true
 ---
 
 {% gistapi 11391053 %}
+
+~~~
+def hello
+  puts "hello world"
+end
+~~~
+{:lang="ruby"}
+
+{% coderay lang:html I-Love-you.html %}
+I love you
+{% endcoderay %}

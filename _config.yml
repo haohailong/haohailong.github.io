@@ -37,7 +37,7 @@ markdown: kramdown
 kramdown:
   use_coderay: true
   coderay:
-    coderay_line_numbers: nil
+    coderay_line_numbers: table
     coderay_css: class
 # markdown: rdiscount
 # rdiscount:
