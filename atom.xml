@@ -4,7 +4,7 @@
   <title><![CDATA[生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-30T00:18:23+02:00</updated>
+  <updated>2014-04-30T00:26:35+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -92,7 +92,7 @@ rake generate
 
 <p>所有以上这些信息都可以通过基本配置文件 <code>_config.yml</code> 来修改。先在 <code>octopress</code> 文件夹下找到这个文件，用你喜欢的文本编辑器打开（我喜欢 TextMate 2），你会发现如下信息:</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header"><span>_config.yml </span></figcaption>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>_config.yml </span></figcaption>
  <div class="CodeRay">
   <div class="code"><pre>
 <span class="key">url</span>: <span class="string"><span class="content">http://yoursite.com</span></span>  <span class="comment">#这里改为你网站的域名</span>
@@ -111,7 +111,7 @@ rake generate
 
 <p>我们暂且把 <code>_config.yml</code> 文件放到一边，再回头看博客主页，你会发现每条博客上面的日期和文章尾部的日期都是诸如 <code>Apr 28th 2014</code> 这样的格式。我们当然是想把它变成中文的「2014 年 4 月 28 日」这样的格式，那么再次回到 <code>_config.yml</code> 文件，顺着刚才那几行代码往下看，你会发现这样一行：</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header"><span>_config.yml </span></figcaption>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>_config.yml </span></figcaption>
  <div class="CodeRay">
   <div class="code"><pre>
 <span class="key">date_format</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">ordinal</span><span class="delimiter">&quot;</span></span> <span class="comment">#默认日期显示方式</span>
@@ -144,7 +144,7 @@ http://[your_domain_name]/blog/Post-Title.html/ # 这也是本博的生成方式
 
 <p>怎么实现呢？接着回到<code>_config.yml</code> 文件，往下看，找到：</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header"><span>_config.yml </span></figcaption>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>_config.yml </span></figcaption>
  <div class="CodeRay">
   <div class="code"><pre>
 <span class="key">permalink</span>: <span class="string"><span class="content">/blog/:year/:month/:day/:title/</span></span> <span class="comment">#文章固定链接</span>
@@ -154,7 +154,7 @@ http://[your_domain_name]/blog/Post-Title.html/ # 这也是本博的生成方式
 
 <p>按照如下方式修改（二者任选其一）并保存：</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header"><span>_config.yml </span></figcaption>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>_config.yml </span></figcaption>
  <div class="CodeRay">
   <div class="code"><pre>
 <span class="key">permalink</span>: <span class="string"><span class="content">/blog/:year:month:day/:title.html/</span></span> <span class="comment">#实现第一种</span>
@@ -169,7 +169,7 @@ http://[your_domain_name]/blog/Post-Title.html/ # 这也是本博的生成方式
 
 <p>回到<code>_config.yml</code> 文件，添加下面一行代码并保存：</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header"><span>_config.yml </span></figcaption>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>_config.yml </span></figcaption>
  <div class="CodeRay">
   <div class="code"><pre>
 <span class="key">category_title_prefix</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">分类：</span><span class="delimiter">&quot;</span></span> <span class="comment"># 修改分类前缀</span>
@@ -185,7 +185,7 @@ http://[your_domain_name]/blog/Post-Title.html/ # 这也是本博的生成方式
 
 <p>回到<code>_config.yml</code> 文件，找到这一行：</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header"><span>_config.yml </span></figcaption>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>_config.yml </span></figcaption>
  <div class="CodeRay">
   <div class="code"><pre>
 <span class="key">excerpt_link</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Read on &amp;rarr;</span><span class="delimiter">&quot;</span></span>  <span class="comment"># &quot;Continue reading&quot; link text at the bottom of excerpted articles</span>
@@ -213,7 +213,7 @@ rake deploy
 
 <p>用文本编辑器打开 rakefile 文件，找到如下两行代码：</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header"><span>rakefile </span></figcaption>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>rakefile </span></figcaption>
  <div class="CodeRay">
   <div class="code"><pre>
 new_post_ext    = <span class="string"><span class="delimiter">&quot;</span><span class="content">markdown</span><span class="delimiter">&quot;</span></span>  <span class="comment"># default new post file extension when using the new_post task</span>
@@ -224,7 +224,7 @@ new_page_ext    = <span class="string"><span class="delimiter">&quot;</span><spa
 
 <p>改为：</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header"><span>rakefile </span></figcaption>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>rakefile </span></figcaption>
  <div class="CodeRay">
   <div class="code"><pre>
 new_post_ext    = <span class="string"><span class="delimiter">&quot;</span><span class="content">md</span><span class="delimiter">&quot;</span></span>  <span class="comment"># 默认新日志文件后缀</span>
@@ -241,7 +241,7 @@ new_page_ext    = <span class="string"><span class="delimiter">&quot;</span><spa
 
 <p>首先用文本编辑器打开 <code>Gemfile</code> 文件，在文件末尾添加一行：</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header"><span>Gemfile </span></figcaption>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>Gemfile </span></figcaption>
  <div class="CodeRay">
   <div class="code"><pre>
 gem <span class="string"><span class="delimiter">'</span><span class="content">kramdown</span><span class="delimiter">'</span></span>
@@ -260,7 +260,7 @@ sudo bundle install
 
 <p>回到<code>_config.yml</code> 文件，找到：</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header"><span>_config.yml </span></figcaption>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>_config.yml </span></figcaption>
  <div class="CodeRay">
   <div class="code"><pre>
 <span class="key">markdown</span>: <span class="string"><span class="content">rdiscount</span></span>
@@ -277,7 +277,7 @@ sudo bundle install
 
 <p>为了能够显示数学公式，我们需要添加 <a href="http://www.mathjax.org">MathJax</a> 支持，打开<code>source/_includes/custom/head.html</code> 文件，添加如下代码：</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header"><span>source/_includes/custom/head.html </span></figcaption>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>source/_includes/custom/head.html </span></figcaption>
  <div class="CodeRay">
   <div class="code"><pre>
 <span class="comment">&lt;!-- MathJax --&gt;</span>
