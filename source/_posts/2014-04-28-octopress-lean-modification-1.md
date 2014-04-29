@@ -81,7 +81,7 @@ description: #网站描述信息
 date_format: "ordinal" #默认日期显示方式
 {% endcoderay %}
 
-请把其中的 <code>"ordinal"</code> 改为 <code>"%Y年%-m月%d日"</code>，并保存。
+请把其中的 <code>"ordinal"</code> 改为 <code>"%Y年%-m月%e日"</code>，并保存。
 
 ### 文章链接形式
 
