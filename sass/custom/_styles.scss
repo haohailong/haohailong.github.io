@@ -20,7 +20,7 @@ h1 {
 
 .info, .warning{
 	border: none;
-	padding: 0.6em 1.25em 0.4em 48px;
+	padding: 0.6em 1.25em 0.6em 48px;
 	margin-top: 0.25em;
 	margin-top: 0.25em;	
 	
@@ -43,3 +43,22 @@ h1 {
 .warning{
 	background:#f9d9d8 url(/images/tab_red.gif) no-repeat left top;
 }
+
+/*  Markdown 目录 */
+
+#markdown-toc:before {
+  content: "目录";
+  font-weight: bold;
+}
+ul#markdown-toc {
+  list-style: none;
+  float: right;
+  @include shadow-box;
+  background-color: white;
+}
+
+.blog-index #markdown-toc {
+  display: none;
+}
+
+
