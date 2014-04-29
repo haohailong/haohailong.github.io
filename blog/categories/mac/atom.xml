@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Mac | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/mac/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-29T03:56:14+02:00</updated>
+  <updated>2014-04-29T03:58:04+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -15,7 +15,7 @@
   
   <entry>
     <title type="html"><![CDATA[Day One]]></title>
-    <link href="http://shengmingzhiqing.com/blog/Day-One.html"/>
+    <link href="http://shengmingzhiqing.com/blog/Day-One.html/"/>
     <updated>2012-12-15T20:03:00+01:00</updated>
     <id>http://shengmingzhiqing.com/blog/Day-One</id>
     <content type="html"><![CDATA[<p>小学二年级的时候，老师开始强迫我们写日记。就我个人而言，懂事之前被强迫做的事情，绝大多数后来都放弃了。即使重新拣起来，也基本上要等到懂事之后过很长时间，并且认真考虑过这件事情的价值之后，比如<a href="http://haohailong.net/archives/294">记笔记</a>。</p>
@@ -39,7 +39,7 @@
   
   <entry>
     <title type="html"><![CDATA[Mac 的「剪切」快捷键]]></title>
-    <link href="http://shengmingzhiqing.com/blog/cut-shortcut-on-mac.html"/>
+    <link href="http://shengmingzhiqing.com/blog/cut-shortcut-on-mac.html/"/>
     <updated>2012-02-06T14:53:00+01:00</updated>
     <id>http://shengmingzhiqing.com/blog/cut-shortcut-on-mac</id>
     <content type="html"><![CDATA[<p>对于大部分 Windows 用户来说，最熟悉的一组快捷键莫过于 Ctrl+X, Ctrl+C, Ctrl+V 了，分别对应与剪贴板相关的三个功能：剪切、复制和粘贴。在 Mac 下 Ctrl 键的大部分功能被 Command 键取代，所以在 Mac 下 Command+X, Command+C, Command+V 也分别是剪切、拷贝<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>和粘贴。但是 Mac 下的 Command+X 的剪切功能却只对于编辑文本有效，也就是说，如果你想通过 Command+X 是无法把文件剪切到剪贴板的。这也是 Mac 系统经常被 Windows 用户诟病的一点。一直以来，Mac 下要实现直接移动文件，无非以下几个方法：</p>
