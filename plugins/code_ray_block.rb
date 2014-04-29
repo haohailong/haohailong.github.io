@@ -50,58 +50,58 @@ require './plugins/pygments_code'
 require './plugins/raw'
 
 module Jekyll
-    
-    class CodeRayBlock < Liquid::Block
-        include HighlightCode
-        include TemplateWrapper
-        CaptionUrlTitle = /(\S[\S\s]*)\s+(https?:\/\/\S+|\/\S+)\s*(.+)?/i
-        Caption = /(\S[\S\s]*)/
-        
-        def initialize(tag_name, markup, tokens)
-            @title = nil
-            @caption = nil
-            @filetype = nil
-            @highlight = true
-            @linenos = false
-            if markup =~ /\s*lang:(\S+)/i
-                @filetype = $1
-                markup = markup.sub(/\s*lang:(\S+)/i,'')
-            end
-            if markup =~/\s*linenos:(\S+)/i
-                markup = markup.sub(/\s*linenos:(\S+)/i, '')
-                @linenos = eval($1)
-            end
-            if markup =~ CaptionUrlTitle
-                @file = $1
-                @caption = "<figcaption class='code-header'><span>#{$1}</span> &mdash; <a href='#{$2}'>#{$3 || 'link'}</a></figcaption>"
-                elsif markup =~ Caption
-                @file = $1
-                @caption = "<figcaption class='code-header'><span>#{$1}</span></figcaption>\n"
-            end
-            if @file =~ /\S[\S\s]*\w+\.(\w+)/ && @filetype.nil?
-                @filetype = $1
-            end
-            super
-        end
-        
-        def render(context)
-            output = super
-            code = super
-            source = "<figure class='code'>"
-            source += @caption if @caption
-            coderay_css = context.registers[:site].config['kramdown']['coderay']['coderay_css'].to_sym
-            line_numbers = @linenos ? context.registers[:site].config['kramdown']['coderay']['coderay_line_numbers'].to_sym : nil
-            if @filetype
-                source += " #{CodeRay.scan(code, @filetype).div(:css => coderay_css, :line_numbers => line_numbers, :tab_width=>4)} </figure>"
-                else
-                source += " #{CodeRay.scan(code, :text).div(:css => coderay_css, :line_numbers => line_numbers)} </figure>"
-            end
-            source = safe_wrap(source)
-            source = context['pygments_prefix'] + source if context['pygments_prefix']
-            source = source + context['pygments_suffix'] if context['pygments_suffix']
-            source
-        end
+
+  class CodeRayBlock < Liquid::Block
+    include HighlightCode
+    include TemplateWrapper
+    CaptionUrlTitle = /(\S[\S\s]*)\s+(https?:\/\/\S+|\/\S+)\s*(.+)?/i
+    Caption = /(\S[\S\s]*)/
+
+    def initialize(tag_name, markup, tokens)
+      @title = nil
+      @caption = nil
+      @filetype = nil
+      @highlight = true
+      @linenos = false
+      if markup =~ /\s*lang:(\S+)/i
+        @filetype = $1
+        markup = markup.sub(/\s*lang:(\S+)/i,'')
+      end
+      if markup =~/\s*linenos:(\S+)/i
+        markup = markup.sub(/\s*linenos:(\S+)/i, '')
+        @linenos = eval($1)
+      end
+      if markup =~ CaptionUrlTitle
+        @file = $1
+        @caption = "<figcaption class='code-header' style='margin-bottom:-5px;'><span>#{$1}</span><a href='#{$2}'>#{$3 || 'link'}</a></figcaption>"
+      elsif markup =~ Caption
+        @file = $1
+        @caption = "<figcaption class='code-header' style='margin-bottom:-5px;'><span>#{$1}</span></figcaption>\n"
+      end
+      if @file =~ /\S[\S\s]*\w+\.(\w+)/ && @filetype.nil?
+        @filetype = $1
+      end
+      super
     end
+
+    def render(context)
+      output = super
+      code = super
+      source = "<figure class='code'>"
+      source += @caption if @caption
+      coderay_css = context.registers[:site].config['kramdown']['coderay']['coderay_css'].to_sym
+      line_numbers = @linenos ? context.registers[:site].config['kramdown']['coderay']['coderay_line_numbers'].to_sym : nil
+      if @filetype
+        source += " #{CodeRay.scan(code, @filetype).div(:css => coderay_css, :line_numbers => line_numbers, :tab_width=>4)} </figure>"
+      else
+        source += " #{CodeRay.scan(code, :text).div(:css => coderay_css, :line_numbers => line_numbers)} </figure>"
+      end
+      source = safe_wrap(source)
+      source = context['pygments_prefix'] + source if context['pygments_prefix']
+      source = source + context['pygments_suffix'] if context['pygments_suffix']
+      source
+    end
+  end
 end
 
 Liquid::Template.register_tag('coderay', Jekyll::CodeRayBlock)
