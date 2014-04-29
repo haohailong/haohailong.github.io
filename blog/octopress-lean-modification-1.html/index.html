@@ -274,14 +274,22 @@ rake generate
 
 <p>回到博客，点开你发表的文章，这是你看一下地址栏，发现网址（也就是这篇文章的链接）是类似这样的形式：</p>
 
-<pre><code>http://[your_domain_name]/blog/2014/04/28/Post-Title/
-</code></pre>
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="CodeRay">
+  <div class="code"><pre>
+http://[your_domain_name]/blog/2014/04/28/Post-Title/
+</pre></div>
+</div>
+ </figure></notextile></div>
 
 <p>对我们个人博客而言，这种层级显得太多，我个人推荐如下两种地址生成方式：</p>
 
-<pre><code>http://[your_domain_name]/blog/20140428/Post-Title.html/
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="CodeRay">
+  <div class="code"><pre>
+http://[your_domain_name]/blog/20140428/Post-Title.html/
 http://[your_domain_name]/blog/Post-Title.html/ # 这也是本博的生成方式
-</code></pre>
+</pre></div>
+</div>
+ </figure></notextile></div>
 
 <p>怎么实现呢？接着回到<code>_config.yml</code> 文件，往下看，找到：</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Octopress | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-29T09:41:54+02:00</updated>
+  <updated>2014-04-29T09:48:02+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -125,14 +125,22 @@ rake generate
 
 <p>回到博客，点开你发表的文章，这是你看一下地址栏，发现网址（也就是这篇文章的链接）是类似这样的形式：</p>
 
-<pre><code>http://[your_domain_name]/blog/2014/04/28/Post-Title/
-</code></pre>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
+  <div class="code"><pre>
+http://[your_domain_name]/blog/2014/04/28/Post-Title/
+</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>对我们个人博客而言，这种层级显得太多，我个人推荐如下两种地址生成方式：</p>
 
-<pre><code>http://[your_domain_name]/blog/20140428/Post-Title.html/
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
+  <div class="code"><pre>
+http://[your_domain_name]/blog/20140428/Post-Title.html/
 http://[your_domain_name]/blog/Post-Title.html/ # 这也是本博的生成方式
-</code></pre>
+</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>怎么实现呢？接着回到<code>_config.yml</code> 文件，往下看，找到：</p>
 
