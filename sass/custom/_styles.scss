@@ -16,6 +16,9 @@ h1 {
   line-height: 1.2em;
 }
 
+ul, ol {margin-bottom: 0.6em;}
+
+
 /* 提示框样式 */
 
 .info, .warning{
@@ -98,12 +101,13 @@ ul#markdown-toc {
 .postrevision {
   	list-style: none;
 	border: none;
-	padding: 0.6em 1.25em;
+	padding: 0.6em 1.25em 0.2em 1.25em;
 	margin-top: 0.25em;
-	margin-left: 0;	
+	margin-bottom: 0.8em;
+	margin-left: 0;
 	font-style: normal;
-	font-size: 1em;
-
+	//width: 40%;
+	
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
