@@ -6,9 +6,8 @@ comments: true
 categories: "Octopress"
 ---
 
-> 本文介绍如何在 Github Pages 上搭建 Octopress 博客，主要针对 IT 外行人士。科普文章用词未必精确，行家里手请不要太在意。主要参考 [Octopress 官网](http://octopress.org/)安装教程。
-> 
-> 对了，我用的是 Mac，Windows 我不熟，我只知道 IE 浏览器。
+本文介绍如何在 Github Pages 上搭建 Octopress 博客，主要针对 IT 外行人士。科普文章用词未必精确，行家里手请不要太在意。主要参考 [Octopress 官网](http://octopress.org/)安装教程。  
+对了，我用的是 Mac，Windows 我不熟，我只知道 IE 浏览器。
 {: .info}
 
 ## 1. 为什么是 Octopress & Github Pages?

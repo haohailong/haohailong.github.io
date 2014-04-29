@@ -31,9 +31,9 @@ h1 {
 	-moz-border-radius: 8px;
 	border-radius: 8px;
 	
-	-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-	-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	//-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	//-moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	//-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 .info{
@@ -47,14 +47,26 @@ h1 {
 /*  Markdown 目录 */
 
 #markdown-toc:before {
-  content: "目录";
-  font-weight: bold;
+  	content: "本页目录";
+  	font-weight: bold;
 }
 ul#markdown-toc {
-  list-style: none;
-  float: right;
-  @include shadow-box;
-  background-color: white;
+  	list-style: none;
+	border: none;
+	padding: 0.6em 1.25em;
+	margin-top: 0.25em;
+	margin-top: 0.25em;	
+	font-style: normal;
+	font-size: 1em;
+
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+
+	//-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	//-moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	//-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  	background-color: white;
 }
 
 .blog-index #markdown-toc {
