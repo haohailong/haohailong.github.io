@@ -23,9 +23,6 @@ h1 {
 	padding: 0.6em 1.25em 0.6em 48px;
 	margin-top: 0.25em;
 	margin-top: 0.25em;	
-	
-	font-style: normal;
-	font-size: 1em;
 
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
@@ -50,6 +47,7 @@ h1 {
   	content: "本页目录";
   	font-weight: bold;
 	font-size: 1.2em;
+	font-family: $sans;
 }
 ul#markdown-toc {
   	list-style: none;
