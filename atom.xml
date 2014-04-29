@@ -4,7 +4,7 @@
   <title><![CDATA[生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-29T03:59:16+02:00</updated>
+  <updated>2014-04-29T04:02:11+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -18,7 +18,23 @@
     <link href="http://shengmingzhiqing.com/blog/octopress-lean-modification-1.html/"/>
     <updated>2014-04-29T01:31:59+02:00</updated>
     <id>http://shengmingzhiqing.com/blog/octopress-lean-modification-1</id>
-    <content type="html"><![CDATA[<h2 id="section">永远的第二步</h2>
+    <content type="html"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#section">永远的第二步</a></li>
+  <li><a href="#section-1">简要说明</a></li>
+  <li><a href="#section-2">新主题安装</a></li>
+  <li><a href="#section-3">基本配置</a>    <ul>
+      <li><a href="#section-4">域名，网站标题，作者</a></li>
+      <li><a href="#section-5">日期格式</a></li>
+      <li><a href="#section-6">文章链接形式</a></li>
+      <li><a href="#section-7">分类目录前缀</a></li>
+      <li><a href="#section-8">「继续阅读」按钮</a></li>
+      <li><a href="#markdown-">修改 Markdown 文件后缀</a></li>
+      <li><a href="#markdown--1">修改默认 Markdown 解释器</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="section">永远的第二步</h2>
 
 <p>通过「<a href="http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/">Octopress 搭建流程 – Github Pages</a>」，我们搭建好了自己的 Octopress 博客并发布了第一篇文章。</p>
 
@@ -341,10 +357,7 @@ f'\left( x\right) = \lim _{x\rightarrow 0}\dfrac {f\left( x+\Delta x\right) - f\
     <link href="http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/"/>
     <updated>2014-04-28T06:33:33+02:00</updated>
     <id>http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages</id>
-    <content type="html"><![CDATA[<p>test
-- list element with functor item</p>
-
-<p class="info">本文介绍如何在 Github Pages 上搭建 Octopress 博客，主要针对 IT 外行人士。科普文章用词未必精确，行家里手请不要太在意。主要参考 <a href="http://octopress.org/">Octopress 官网</a>安装教程。<br />
+    <content type="html"><![CDATA[<p class="info">本文介绍如何在 Github Pages 上搭建 Octopress 博客，主要针对 IT 外行人士。科普文章用词未必精确，行家里手请不要太在意。主要参考 <a href="http://octopress.org/">Octopress 官网</a>安装教程。<br />
 对了，我用的是 Mac，Windows 我不熟，我只知道 IE 浏览器。</p>
 
 <h2 id="octopress--github-pages">1. 为什么是 Octopress &amp; Github Pages?</h2>
