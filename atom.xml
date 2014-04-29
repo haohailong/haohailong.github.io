@@ -4,7 +4,7 @@
   <title><![CDATA[生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-29T09:41:13+02:00</updated>
+  <updated>2014-04-29T09:41:54+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -512,10 +512,8 @@ rvm rubygems latest
 <div class="bogus-wrapper"><notextile><figure class="code"> <table class="CodeRay"><tr>
   <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
 <a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
 </pre></td>
-  <td class="code"><pre>
-git clone git://github.com/imathis/octopress.git octopress
+  <td class="code"><pre>git clone git://github.com/imathis/octopress.git octopress
 cd octopress</pre></td>
 </tr></table>
  </figure></notextile></div>
