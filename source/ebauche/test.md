@@ -7,4 +7,4 @@ sharing: true
 footer: true
 ---
 
-{% gist 11391053 %}
+{% gistapi 11391053 %}
