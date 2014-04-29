@@ -206,6 +206,72 @@ $(document).bind('DOMNodeInserted', function(event) {
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/setup-octopress-with-github-pages.html/">Octopress 搭建流程 – Github Pages</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-28T06:33:33+02:00" pubdate data-updated="true">2014年4月28日</time>
+        
+           | <a href="/blog/setup-octopress-with-github-pages.html/#disqus_thread"
+             data-disqus-identifier="http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/">评论</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><ul id="markdown-toc">
+  <li><a href="#octopress--github-pages">1. 为什么是 Octopress &amp; Github Pages?</a></li>
+  <li><a href="#section">2. 准备工作</a>    <ul>
+      <li><a href="#git-2">2.1 安装 git </a></li>
+      <li><a href="#ruby-3">2.2 安装 Ruby </a></li>
+      <li><a href="#github-">2.3 注册 Github 账号</a></li>
+      <li><a href="#section-1">2.4 域名指向（可选）</a></li>
+    </ul>
+  </li>
+  <li><a href="#octopress">3. 本地安装 Octopress</a></li>
+  <li><a href="#octopress--github-pages-1">4. 将 Octopress 部署到 Github Pages</a>    <ul>
+      <li><a href="#repository">4.1 新建库 (Repository)</a></li>
+      <li><a href="#octopress--github-pages-2">4.2 将本地部署的 Octopress 发布到 Github Pages</a></li>
+      <li><a href="#section-2">4.3 使用自己的域名（可选）</a></li>
+    </ul>
+  </li>
+  <li><a href="#section-3">5. 发布新贴</a></li>
+</ul>
+
+<p class="info">本文介绍如何在 Github Pages 上搭建 Octopress 博客，主要针对 IT 外行人士。科普文章用词未必精确，行家里手请不要太在意。主要参考 <a href="http://octopress.org/">Octopress 官网</a>安装教程。<br />
+对了，我用的是 Mac，Windows 我不熟，我只知道 IE 浏览器。</p>
+
+<h2 id="octopress--github-pages">1. 为什么是 Octopress &amp; Github Pages?</h2>
+
+<p>在做任何事情之前最好先问个为什么，尽管很多情况下未必有答案，但这个做法绝对有好处。用 Octopress 搭建博客，并托管到 Github Pages，撇除<a href="http://s.olo.la/KIoY">一些个人因素</a>之外，我想还有以下几点原因：</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/setup-octopress-with-github-pages.html/">阅读全文</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/everybody-should-build-his-own-writing-space.html/">Octopress 每个人都该为自己打造专属的写作环境</a></h1>
     
     
@@ -573,51 +639,6 @@ $(document).bind('DOMNodeInserted', function(event) {
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/why-enter-key-is-huiche-in-chinese.html/">为什么「Enter 键」要被翻译为「回车键」？</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-02-19T15:19:00+01:00" pubdate data-updated="true">2012年2月19日</time>
-        
-           | <a href="/blog/why-enter-key-is-huiche-in-chinese.html/#disqus_thread"
-             data-disqus-identifier="http://shengmingzhiqing.com/blog/why-enter-key-is-huiche-in-chinese.html/">评论</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img src="http://km.support.apple.com/library/APPLE/APPLECARE_ALLGEOS/HT1168/pc-enter.png" /></p>
-
-<p>自己刚开始使用电脑的时候，英文基础薄弱，只知道在键盘上有一个 “↵+Enter” 的一个键被称为「回车键」，这个键的作用是在写作的时候换行，在做其他事情的时候当做「输入」或者「确认」。至于 “enter” 这个单词与汉语「回车」有什么关系，一直也没有认真思考过。
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/why-enter-key-is-huiche-in-chinese.html/">阅读全文</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; 较早的文章</a>
@@ -637,6 +658,10 @@ $(document).bind('DOMNodeInserted', function(event) {
       </li>
     
       <li class="post">
+        <a href="/blog/setup-octopress-with-github-pages.html/">Octopress 搭建流程 – Github Pages</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/everybody-should-build-his-own-writing-space.html/">Octopress 每个人都该为自己打造专属的写作环境</a>
       </li>
     
@@ -646,10 +671,6 @@ $(document).bind('DOMNodeInserted', function(event) {
     
       <li class="post">
         <a href="/blog/Gain-from-LaTeX-homeowork-1.html/">第一份 LaTeX 作业心得</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/Is-Bicoin-a-Ponzi-scheme.html/">比特币是庞氏骗局吗？</a>
       </li>
     
   </ul>
