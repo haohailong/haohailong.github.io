@@ -98,7 +98,7 @@ module Jekyll
         link = File.join('https://github.com', site['github_user'], site['github_repo'],
                          'commits', branch, post['dir_name'], post['file_name'])
       end
-      html << 'View on <a href=' + link + ' target=_blank>Github</a>'
+      html << '在 <a href=' + link + ' target=_blank>Github</a> 上查看'<br />
 
       return html
     end #render
