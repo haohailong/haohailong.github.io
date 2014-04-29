@@ -191,7 +191,7 @@ rdiscount:
 
 为了能够显示数学公式，我们需要添加 [MathJax](http://www.mathjax.org) 支持，打开```source/_includes/custom/head.html``` 文件，添加如下代码：
 
-{% codeblock lang:javascript source/_includes/custom/head.html %}
+{% codeblock lang:html source/_includes/custom/head.html %}
 <!-- MathJax -->
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
