@@ -28,6 +28,8 @@ footer: true
 2014 年 4 月 28 日
 {:.info}
 
+## Octopress 精益修改 (2)
+
 郝海龙
 
 

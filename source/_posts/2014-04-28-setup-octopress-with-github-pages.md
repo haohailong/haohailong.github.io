@@ -11,7 +11,7 @@ categories: "Octopress"
 
 本文介绍如何在 Github Pages 上搭建 Octopress 博客，主要针对 IT 外行人士。科普文章用词未必精确，行家里手请不要太在意。主要参考 [Octopress 官网](http://octopress.org/)安装教程。  
 对了，我用的是 Mac，Windows 我不熟，我只知道 IE 浏览器。
-{: .info}
+{:.info}
 
 ## 1. 为什么是 Octopress & Github Pages?
 
@@ -89,7 +89,7 @@ rvm use 2.0.0
 rvm rubygems latest
 {% endcodeblock %}
 	
-可以执行 <code>ruby --version</code> 命令来查看现在使用的 Ruby 版本，确保正在使用的是 Ruby 2.o.o.
+可以执行 <code>ruby --version</code> 命令来查看现在使用的 Ruby 版本，确保正在使用的是 Ruby 2.0.0
 
 ### 2.3 注册 Github 账号
 
@@ -229,13 +229,11 @@ vim yyyy-mm-dd-Post-Title.markdown
 打开文件后，你会发现文章开头有这么一段信息
 
 {% codeblock %}
----
 layout: post
 title: "Post Title"
 date: yyyy-mm-dd hh:mm:ss
 comments: true
 categories: ""
----
 {% endcodeblock %}
 
 这其实是这篇文章的元数据：<code>layout</code> 暂时不要理会；<code>title</code> 是这篇文章显示在最终网页上的标题；<code>date</code> 部分是详细的文件生成时间，如 <code>2014-04-28 03:35:00</code>；<code>comment</code> 部分表示是否允许评论，目前显示是允许，如果想关闭评论，请改为 <code>false</code>；<code>categories</code> 指这篇文章的分类目录，请在后面引号中输入，如果没有该目录，则会自动生成。请不要删除这段信息，在这段信息下面开始你的文章内容。
