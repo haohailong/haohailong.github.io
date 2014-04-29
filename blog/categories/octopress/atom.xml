@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Octopress | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-29T03:38:15+02:00</updated>
+  <updated>2014-04-29T03:42:51+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -15,7 +15,7 @@
   
   <entry>
     <title type="html"><![CDATA[Octopress 精益修改 (1)]]></title>
-    <link href="http://shengmingzhiqing.com/blog/octopress-lean-modification-1.html/"/>
+    <link href="http://shengmingzhiqing.com/blog/octopress-lean-modification-1.html"/>
     <updated>2014-04-29T01:31:59+02:00</updated>
     <id>http://shengmingzhiqing.com/blog/octopress-lean-modification-1</id>
     <content type="html"><![CDATA[<h2 id="section">永远的第二步</h2>
@@ -282,7 +282,7 @@ git push origin source
   
   <entry>
     <title type="html"><![CDATA[Octopress 搭建流程 – Github Pages]]></title>
-    <link href="http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/"/>
+    <link href="http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html"/>
     <updated>2014-04-28T06:33:33+02:00</updated>
     <id>http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages</id>
     <content type="html"><![CDATA[<ul id="markdown-toc">
@@ -596,7 +596,7 @@ rake gen_deploy
   
   <entry>
     <title type="html"><![CDATA[Octopress 每个人都该为自己打造专属的写作环境]]></title>
-    <link href="http://shengmingzhiqing.com/blog/everybody-should-build-his-own-writing-space.html/"/>
+    <link href="http://shengmingzhiqing.com/blog/everybody-should-build-his-own-writing-space.html"/>
     <updated>2014-04-27T00:00:00+02:00</updated>
     <id>http://shengmingzhiqing.com/blog/everybody-should-build-his-own-writing-space</id>
     <content type="html"><![CDATA[<h2 id="section">我的博客史</h2>
