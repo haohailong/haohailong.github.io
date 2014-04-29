@@ -4,7 +4,7 @@
   <title><![CDATA[生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-29T09:50:44+02:00</updated>
+  <updated>2014-04-29T09:53:22+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -211,7 +211,7 @@ rake deploy
 
 <p>Octopress 默认日志文件后缀是 .markdown，但现在大多数 Markdown 文件的后缀是 .md，推荐使用这种更为简洁的后缀。</p>
 
-<p>用文本编辑器打开 rakefile 文件，找到如下两行行代码：</p>
+<p>用文本编辑器打开 rakefile 文件，找到如下两行代码：</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header"><span>rakefile </span></figcaption>
  <div class="CodeRay">
