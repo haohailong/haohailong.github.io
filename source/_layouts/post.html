@@ -15,6 +15,8 @@ single: true
     {% unless page.sharing == false %}
       {% include post/sharing.html %}
     {% endunless %}
+    {% include revision.html %}
+<hr />
     <p class="meta">
       {% if page.previous.url %}
         <a class="basic-alignment left" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a>
@@ -25,7 +27,6 @@ single: true
     </p>
   </footer>
 </article>
-{% include revision.html %}
 {% if site.disqus_short_name and page.comments == true %}
   <section>
     <h2>本文评论</h2>

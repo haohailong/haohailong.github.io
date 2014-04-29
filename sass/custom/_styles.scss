@@ -94,4 +94,23 @@ ul#markdown-toc {
 
 @import "custom/coderay";
 
+/* revision */
+.postrevision {
+  	list-style: none;
+	border: none;
+	padding: 0.6em 1.25em;
+	margin-top: 0.25em;
+	margin-left: 0;	
+	font-style: normal;
+	font-size: 1em;
+
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+
+	-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  	background-color: white;
+}
 
