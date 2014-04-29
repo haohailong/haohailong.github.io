@@ -169,8 +169,7 @@ rake setup_github_pages
 
 执行以下命令：
 
-{% coderay linenos:true %}
-rake generate
+{% coderay linenos:true %}rake generate
 rake deploy
 {% endcoderay %}
 
