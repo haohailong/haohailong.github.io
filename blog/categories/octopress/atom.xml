@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Octopress | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-29T06:40:48+02:00</updated>
+  <updated>2014-04-29T06:42:42+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -601,7 +601,6 @@ f'\left( x\right) = \lim _{x\rightarrow 0}\dfrac {f\left( x+\Delta x\right) - f\
 <p>打开文件后，你会发现文章开头有这么一段信息:</p>
 
 <p>      <div><script src='https://gist.github.com/11390583.js'></script>
-      <script type="text/javascript">$(".gist-file table tr td.line-numbers").remove();</script>
       <noscript><pre><code>---  
 layout: post  
 title: &quot;Post Title&quot;  
