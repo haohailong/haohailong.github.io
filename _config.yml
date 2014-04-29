@@ -45,7 +45,7 @@ kramdown:
 #     - autolink
 #     - footnotes
 #     - smart
-pygments: true # default python pygments have been replaced by pygments.rb
+pygments: false # default python pygments have been replaced by pygments.rb
 category_title_prefix: "分类：" # 修改分类前缀
 excerpt_separator: N/A-------N/A... Workaround for https://github.com/mojombo/jekyll/issues/1401
 

@@ -7,9 +7,6 @@ sharing: true
 footer: true
 ---
 
-- list element with functor item
-{:toc}
-
 ## 用 Mac 搞学术
 
 - [用 Mac 搞学术之 Papers]({{ root_url }}/mac-app-papers/)
