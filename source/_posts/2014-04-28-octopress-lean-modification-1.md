@@ -235,6 +235,14 @@ f'\left( x\right) = \lim _{x\rightarrow 0}\dfrac {f\left( x+\Delta x\right) - f\
 $$
 {% endcodeblock %}
 
+每次完成更新都记得把原始文件重新放到 Github 上，还记得命令吧：
+
+{% codeblock %}
+git add .
+git commit -m "备注内容"
+git push origin source
+{% endcodeblock %}
+
 至此，我们博客的基本配置告一段落，你可以开始更新你的博客了。当然也许你注意到还有一些瑕疵，比如很多地方还是英文显示，不着急，先把问题记下来，等我Octopress 系列的下一篇文章。
 
 [^1]: 想到这一节，我把博客的副标题也改为了「Hailong Hao's Laboratory」，这里不仅是我的博客，也是用来试错的地方。
