@@ -141,7 +141,8 @@ rake preview
 
 然后在浏览器内输入 <code>http://localhost:4000/</code>，即可看到我们搭建完成的博客。也许并不好看，但很令人开心，不是么？
 
-> 注意，以上各步中如果出现权限问题（关键词 permission），无法完成（关键词 abort）的话，请在各命令前加上 <code>sudo+空格</code>，如有提示，请输入电脑登录密码。
+注意，以上各步中如果出现权限问题（关键词 permission），无法完成（关键词 abort）的话，请在各命令前加上 <code>sudo+空格</code>，如有提示，请输入电脑登录密码。
+{:.warning}
 
 ## 4. 将 Octopress 部署到 Github Pages
 
