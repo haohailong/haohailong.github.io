@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Octopress | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-29T02:13:33+02:00</updated>
+  <updated>2014-04-29T02:36:20+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -307,6 +307,15 @@ f'\left( x\right) = \lim _{x\rightarrow 0}\dfrac {f\left( x+\Delta x\right) - f\
 </pre></td><td class='code'><pre><code class=''><span class='line'>$$
 </span><span class='line'>f’\left( x\right) = \lim _{x\rightarrow 0}\dfrac {f\left( x+\Delta x\right) - f\left( x\right)}{\Delta x}
 </span><span class='line'>$$</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>每次完成更新都记得把原始文件重新放到 Github 上，还记得命令吧：</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git add .
+</span><span class='line'>git commit -m “备注内容”
+</span><span class='line'>git push origin source</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>至此，我们博客的基本配置告一段落，你可以开始更新你的博客了。当然也许你注意到还有一些瑕疵，比如很多地方还是英文显示，不着急，先把问题记下来，等我 Octopress 系列的下一篇文章。</p>
 
