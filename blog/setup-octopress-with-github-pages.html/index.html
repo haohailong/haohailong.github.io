@@ -418,6 +418,10 @@ $(document).bind('DOMNodeInserted', function(event) {
 
 <p>打开文件后，你会发现文章开头有这么一段信息:</p>
 
+<pre><code>  &lt;div&gt;&lt;script src='https://gist.github.com/11390583.js'&gt;&lt;/script&gt;
+  &lt;noscript&gt;&lt;pre&gt;&lt;code&gt;---   layout: post   title: &amp;quot;Post Title&amp;quot;   date: yyyy-mm-dd hh:mm:ss   comments: true   categories: &amp;quot;&amp;quot;   ---&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/div&gt;
+</code></pre>
+
 <p>这其实是这篇文章的元数据：<code>layout</code> 暂时不要理会；<code>title</code> 是这篇文章显示在最终网页上的标题；<code>date</code> 部分是详细的文件生成时间，如 <code>2014-04-28 03:35:00</code>；<code>comment</code> 部分表示是否允许评论，目前显示是允许，如果想关闭评论，请改为 <code>false</code>；<code>categories</code> 指这篇文章的分类目录，请在后面引号中输入，如果没有该目录，则会自动生成。请不要删除这段信息，在这段信息下面开始你的文章内容。</p>
 
 <p>这件事情给我们的启发是，以后发布文章，其实并不需要使用终端命令行生成文件。可以直接将自己写好的文章放到这个文件夹下面，当然请按照 <code>yyyy-mm-dd-Post-Title.markdown</code> 这样的文件格式命名，同时记得在文章前面添加元数据信息。这种做法生成的文章与上面的方法无异。如果你觉得添加元数据信息过于麻烦，推荐一个非常好用的工具：<a href="https://smilesoftware.com/TextExpander/index.html">TextExpander</a>。</p>
