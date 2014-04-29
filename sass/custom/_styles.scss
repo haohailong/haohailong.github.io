@@ -31,9 +31,9 @@ h1 {
 	-moz-border-radius: 8px;
 	border-radius: 8px;
 	
-	//-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-	//-moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-	//-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 .info{
@@ -49,6 +49,7 @@ h1 {
 #markdown-toc:before {
   	content: "本页目录";
   	font-weight: bold;
+	font-size: 1.2em;
 }
 ul#markdown-toc {
   	list-style: none;
@@ -63,9 +64,9 @@ ul#markdown-toc {
 	-moz-border-radius: 8px;
 	border-radius: 8px;
 
-	//-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-	//-moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-	//-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
   	background-color: white;
 }
 
