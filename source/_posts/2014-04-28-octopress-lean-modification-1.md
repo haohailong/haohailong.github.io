@@ -148,7 +148,7 @@ rake deploy
 
 Octopress 默认日志文件后缀是 .markdown，但现在大多数 Markdown 文件的后缀是 .md，推荐使用这种更为简洁的后缀。
 
-用文本编辑器打开 rakefile 文件，找到如下两行行代码：
+用文本编辑器打开 rakefile 文件，找到如下两行代码：
 
 {% coderay lang:ruby rakefile %}
 new_post_ext    = "markdown"  # default new post file extension when using the new_post task
