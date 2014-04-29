@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Octopress | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-29T03:58:04+02:00</updated>
+  <updated>2014-04-29T03:59:16+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -52,12 +52,14 @@
 
 <p>如果你能在上面的链接中找到满意的主题，按照主题的要求去安装部署即可。比如你喜欢 <a href="https://github.com/macjasp/cleanpress">CleanPress</a> 这款主题，你可执行以下命令：</p>
 
-<p>{% codeblock %}
-cd octopress
-git clone git://github.com/macjasp/cleanpress.git .themes/cleanpress
-rake install[‘cleanpress’]
-rake generate
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd octopress
+</span><span class='line'>git clone git://github.com/macjasp/cleanpress.git .themes/cleanpress
+</span><span class='line'>rake install[‘cleanpress’]
+</span><span class='line'>rake generate</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>我个人看过很多主题，但最终还是用了简洁素雅的默认主题。我并不需要太多的装饰<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>，只要版面布局符合基本审美要求即可。另外，我也喜欢这个浓浓的黑客范儿。</p>
 
@@ -73,14 +75,20 @@ rake generate
 
 <p>所有以上这些信息都可以通过基本配置文件 <code>_config.yml</code> 来修改。先在 <code>octopress</code> 文件夹下找到这个文件，用你喜欢的文本编辑器打开（我喜欢 TextMate 2），你会发现如下信息:</p>
 
-<p>{% codeblock lang:yaml _config.yml %}
-url: http://yoursite.com  #这里改为你网站的域名
-title: My Octopress Blog  #这里改为你想要的网站标题
-subtitle: A blogging framework for hackers. #这里改为你的博客副标题
-author: Your Name #这里改为博客作者的名字，也就是你的名字
-simple_search: https://www.google.com/search #这时默认搜索引擎，可以先不管
-description: #网站描述信息
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>_config.yml </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">url</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">http://yoursite.com</span>  <span class="c1">#这里改为你网站的域名</span>
+</span><span class='line'><span class="l-Scalar-Plain">title</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">My Octopress Blog</span>  <span class="c1">#这里改为你想要的网站标题</span>
+</span><span class='line'><span class="l-Scalar-Plain">subtitle</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">A blogging framework for hackers.</span> <span class="c1">#这里改为你的博客副标题</span>
+</span><span class='line'><span class="l-Scalar-Plain">author</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">Your Name</span> <span class="c1">#这里改为博客作者的名字，也就是你的名字</span>
+</span><span class='line'><span class="l-Scalar-Plain">simple_search</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">https://www.google.com/search</span> <span class="c1">#这时默认搜索引擎，可以先不管</span>
+</span><span class='line'><span class="l-Scalar-Plain">description</span><span class="p-Indicator">:</span> <span class="c1">#网站描述信息</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>按照我给出的 # 后面的提示信息做相应修改即可，请注意，诸如<code>url: </code>中的冒号必须是英文冒号，并且要符合英文标点符号使用规范：冒号后必须空格。</p>
 
@@ -88,9 +96,10 @@ description: #网站描述信息
 
 <p>我们暂且把 <code>_config.yml</code> 文件放到一边，再回头看博客主页，你会发现每条博客上面的日期和文章尾部的日期都是诸如 <code>Apr 28th 2014</code> 这样的格式。我们当然是想把它变成中文的「2014 年 4 月 28 日」这样的格式，那么再次回到 <code>_config.yml</code> 文件，顺着刚才那几行代码往下看，你会发现这样一行：</p>
 
-<p>{% codeblock lang:yaml _config.yml %}
-date_format: “ordinal” #默认日期显示方式
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>_config.yml </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">date_format</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">“ordinal”</span> <span class="c1">#默认日期显示方式</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>请把其中的 <code>"ordinal"</code> 改为 <code>"%Y 年%-m 月%d 日"</code>，并保存。</p>
 
@@ -109,16 +118,19 @@ http://[your_domain_name]/blog/Post-Title.html/ # 这也是本博的生成方式
 
 <p>怎么实现呢？接着回到<code>_config.yml</code> 文件，往下看，找到：</p>
 
-<p>{% codeblock lang:yaml _config.yml %}
-permalink: /blog/:year/:month/:day/:title/ #文章固定链接
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>_config.yml </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">permalink</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/blog/:year/:month/:day/:title/</span> <span class="c1">#文章固定链接</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>按照如下方式修改（二者任选其一）并保存：</p>
 
-<p>{% codeblock lang:yaml _config.yml %}
-permalink: /blog/:year:month:day/:title.html/ #实现第一种
-permalink: /blog/:title.html/ #实现第二种
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>_config.yml </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">permalink</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/blog/:year:month:day/:title.html/</span> <span class="c1">#实现第一种</span>
+</span><span class='line'><span class="l-Scalar-Plain">permalink</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">/blog/:title.html/</span> <span class="c1">#实现第二种</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h3 id="section-7">分类目录前缀</h3>
 
@@ -126,9 +138,10 @@ permalink: /blog/:title.html/ #实现第二种
 
 <p>回到<code>_config.yml</code> 文件，添加下面一行代码并保存：</p>
 
-<p>{% codeblock lang:yaml _config.yml %}
-category_title_prefix: “分类：” # 修改分类前缀
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>_config.yml </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">category_title_prefix</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">“分类：”</span> <span class="c1"># 修改分类前缀</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>理论上可以添加到任何位置，但为了显示直观，建议加到 <code>category_dir: blog/categories</code> 下一行。</p>
 
@@ -138,18 +151,19 @@ category_title_prefix: “分类：” # 修改分类前缀
 
 <p>回到<code>_config.yml</code> 文件，找到这一行：</p>
 
-<p>{% codeblock lang:yaml _config.yml %}
-excerpt_link: “Read on →”  # “Continue reading” link text at the bottom of excerpted articles
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>_config.yml </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">excerpt_link</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">“Read on →”</span>  <span class="c1"># “Continue reading” link text at the bottom of excerpted articles</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>然后把引号中高亮现实的部分替换为你想要的文字，比如「阅读全文」，并保存。</p>
 
 <p>修改到这一步，你肯定很想看看效果，现在执行如下命令，重新生成并部署页面：</p>
 
-<p>{% codeblock %}
-rake generate
-rake deploy
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate
+</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>看看博客，我们想要的效果都已经实现了吧。</p>
 
@@ -159,17 +173,21 @@ rake deploy
 
 <p>用文本编辑器打开 rakefile 文件，找到如下两行行代码：</p>
 
-<p>{% codeblock lang:ruby rakefile %}
-new_post_ext    = “markdown”  # default new post file extension when using the new_post task
-new_page_ext    = “markdown”  # default new page file extension when using the new_page task
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>rakefile </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">new_post_ext</span>    <span class="o">=</span> <span class="err">“</span><span class="n">markdown</span><span class="err">”</span>  <span class="c1"># default new post file extension when using the new_post task</span>
+</span><span class='line'><span class="n">new_page_ext</span>    <span class="o">=</span> <span class="err">“</span><span class="n">markdown</span><span class="err">”</span>  <span class="c1"># default new page file extension when using the new_page task</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>改为：</p>
 
-<p>{% codeblock lang:ruby rakefile %}
-new_post_ext    = “md”  # 默认新日志文件后缀
-new_page_ext    = “md”  # 默认新页面文件后缀
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>rakefile </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">new_post_ext</span>    <span class="o">=</span> <span class="err">“</span><span class="n">md</span><span class="err">”</span>  <span class="c1"># 默认新日志文件后缀</span>
+</span><span class='line'><span class="n">new_page_ext</span>    <span class="o">=</span> <span class="err">“</span><span class="n">md</span><span class="err">”</span>  <span class="c1"># 默认新页面文件后缀</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>第二行是默认新页面文件后缀，如果不明白新页面具体指什么，后面的文章中会有讲解。</p>
 
@@ -179,63 +197,101 @@ new_page_ext    = “md”  # 默认新页面文件后缀
 
 <p>首先用文本编辑器打开 <code>Gemfile</code> 文件，在文件末尾添加一行：</p>
 
-<p>{% codeblock lang:ruby Gemfile %}
-gem ‘kramdown’
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>Gemfile </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">gem</span> <span class="err">‘</span><span class="n">kramdown</span><span class="err">’</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>然后在终端 (Terminal) 执行如下命令：</p>
 
-<p>{% codeblock %}
-sudo bundle install
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo bundle install</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>回到<code>_config.yml</code> 文件，找到：</p>
 
-<p>{% codeblock lang:yaml _config.yml %}
-markdown: rdiscount
-rdiscount:
-  extensions:
-    - autolink
-    - footnotes
-    - smart
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>_config.yml </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">markdown</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">rdiscount</span>
+</span><span class='line'><span class="l-Scalar-Plain">rdiscount</span><span class="p-Indicator">:</span>
+</span><span class='line'>  <span class="l-Scalar-Plain">extensions</span><span class="p-Indicator">:</span>
+</span><span class='line'>    <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">autolink</span>
+</span><span class='line'>    <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">footnotes</span>
+</span><span class='line'>    <span class="p-Indicator">-</span> <span class="l-Scalar-Plain">smart</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>把其中的 <code>markdown: rdiscount</code> 改为 <code>markdown: kramdown</code> 并删掉下面几行。当然如果你想保留原来的代码，以便以后研究，可以考虑把原来这几行代码注释掉（对于  yml 文件，就是在前面加 # ），被注释掉的代码对文件没有任何影响，除了能让你看得更直观之外。<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup></p>
 
 <p>为了能够显示数学公式，我们需要添加 <a href="http://www.mathjax.org">MathJax</a> 支持，打开<code>source/_includes/custom/head.html</code> 文件，添加如下代码：</p>
 
-<p>{% codeblock lang:javascript source/_includes/custom/head.html %}
-<!-- MathJax -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-</script></p>
-
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-      }
-    });
-</script>
-
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for(i=0; i < all.length; i += 1) {
-            all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-    });
-</script>
-
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
-<p>{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>source/_includes/custom/head.html </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="c">&lt;!--</span> <span class="nx">MathJax</span> <span class="o">--&gt;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/x-mathjax-config&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="nx">MathJax</span><span class="p">.</span><span class="nx">Hub</span><span class="p">.</span><span class="nx">Config</span><span class="p">({</span>
+</span><span class='line'>    <span class="nx">tex2jax</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">inlineMath</span><span class="o">:</span> <span class="p">[</span> <span class="p">[</span><span class="s1">&#39;$&#39;</span><span class="p">,</span><span class="s1">&#39;$&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;\\(&quot;</span><span class="p">,</span><span class="s2">&quot;\\)&quot;</span><span class="p">]</span> <span class="p">],</span>
+</span><span class='line'>      <span class="nx">processEscapes</span><span class="o">:</span> <span class="kc">true</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>  <span class="p">});</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/script&gt;&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/x-mathjax-config&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="nx">MathJax</span><span class="p">.</span><span class="nx">Hub</span><span class="p">.</span><span class="nx">Config</span><span class="p">({</span>
+</span><span class='line'>      <span class="nx">tex2jax</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">skipTags</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;script&#39;</span><span class="p">,</span> <span class="s1">&#39;noscript&#39;</span><span class="p">,</span> <span class="s1">&#39;style&#39;</span><span class="p">,</span> <span class="s1">&#39;textarea&#39;</span><span class="p">,</span> <span class="s1">&#39;pre&#39;</span><span class="p">,</span> <span class="s1">&#39;code&#39;</span><span class="p">]</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>    <span class="p">});</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/script&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/x-mathjax-config&quot;</span><span class="o">&gt;</span>
+</span><span class='line'>    <span class="nx">MathJax</span><span class="p">.</span><span class="nx">Hub</span><span class="p">.</span><span class="nx">Queue</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>        <span class="kd">var</span> <span class="nx">all</span> <span class="o">=</span> <span class="nx">MathJax</span><span class="p">.</span><span class="nx">Hub</span><span class="p">.</span><span class="nx">getAllJax</span><span class="p">(),</span> <span class="nx">i</span><span class="p">;</span>
+</span><span class='line'>        <span class="k">for</span><span class="p">(</span><span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">all</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>            <span class="nx">all</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">SourceElement</span><span class="p">().</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">className</span> <span class="o">+=</span> <span class="s1">&#39; has-jax&#39;</span><span class="p">;</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>    <span class="p">});</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/script&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">script</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text/javascript&quot;</span> <span class="nx">src</span><span class="o">=</span><span class="s2">&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;</span><span class="o">&gt;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/script&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>这样你就可以是所有 LaTeX 语法在网页中输入公式了，比如</p>
 
@@ -245,19 +301,21 @@ f'\left( x\right) = \lim _{x\rightarrow 0}\dfrac {f\left( x+\Delta x\right) - f\
 
 <p>上面这个公式的源代码为：</p>
 
-<p>{% codeblock %}
-$$
-f’\left( x\right) = \lim _{x\rightarrow 0}\dfrac {f\left( x+\Delta x\right) - f\left( x\right)}{\Delta x}
-$$
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$$
+</span><span class='line'>f’\left( x\right) = \lim _{x\rightarrow 0}\dfrac {f\left( x+\Delta x\right) - f\left( x\right)}{\Delta x}
+</span><span class='line'>$$</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>每次完成更新都记得把原始文件重新放到 Github 上，还记得命令吧：</p>
 
-<p>{% codeblock %}
-git add .
-git commit -m “备注内容”
-git push origin source
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git add .
+</span><span class='line'>git commit -m “备注内容”
+</span><span class='line'>git push origin source</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>至此，我们博客的基本配置告一段落，你可以开始更新你的博客了。当然也许你注意到还有一些瑕疵，比如很多地方还是英文显示，不着急，先把问题记下来，等我 Octopress 系列的下一篇文章。</p>
 
@@ -285,25 +343,8 @@ git push origin source
     <link href="http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/"/>
     <updated>2014-04-28T06:33:33+02:00</updated>
     <id>http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages</id>
-    <content type="html"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#octopress--github-pages">1. 为什么是 Octopress &amp; Github Pages?</a></li>
-  <li><a href="#section">2. 准备工作</a>    <ul>
-      <li><a href="#git-2">2.1 安装 git </a></li>
-      <li><a href="#ruby-3">2.2 安装 Ruby </a></li>
-      <li><a href="#github-">2.3 注册 Github 账号</a></li>
-      <li><a href="#section-1">2.4 域名指向（可选）</a></li>
-    </ul>
-  </li>
-  <li><a href="#octopress">3. 本地安装 Octopress</a></li>
-  <li><a href="#octopress--github-pages-1">4. 将 Octopress 部署到 Github Pages</a>    <ul>
-      <li><a href="#repository">4.1 新建库 (Repository)</a></li>
-      <li><a href="#octopress--github-pages-2">4.2 将本地部署的 Octopress 发布到 Github Pages</a></li>
-      <li><a href="#section-2">4.3 使用自己的域名（可选）</a></li>
-    </ul>
-  </li>
-  <li><a href="#section-3">5. 发布新贴</a></li>
-  <li><a href="#codeblock-">{% codeblock %}</a></li>
-</ul>
+    <content type="html"><![CDATA[<p>test
+- list element with functor item</p>
 
 <p class="info">本文介绍如何在 Github Pages 上搭建 Octopress 博客，主要针对 IT 外行人士。科普文章用词未必精确，行家里手请不要太在意。主要参考 <a href="http://octopress.org/">Octopress 官网</a>安装教程。<br />
 对了，我用的是 Mac，Windows 我不熟，我只知道 IE 浏览器。</p>
@@ -347,7 +388,7 @@ git push origin source
   <li>
     <p>找到下图所示的下载链接，按照提示下载并安装。</p>
 
-    <p>{% img http://s.olo.la/6JZw.png %}</p>
+    <p><img src="http://s.olo.la/6JZw.png"></p>
   </li>
 </ol>
 
@@ -363,23 +404,20 @@ git push origin source
 
 <p>安装 HomeBrew 非常简单，打开终端 (Terminal)，执行以下命令（所谓「执行」即「输入+回车」，下同）：</p>
 
-<p>{% codeblock %}
-ruby -e “$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)”
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>ruby -e “$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)”</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>如果在执行上如命令的时候弹出需要安装 Xcode Command Line Tool 的提示，直接点击安装即可。</p>
 
 <p>安装好之后最好先执行以下命令：</p>
 
-<p>{% codeblock %}
-brew doctor
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>brew doctor</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>此条命令用来诊断安装中出现的问题并提示修复方法，如果没有问题则会显示：</p>
 
-<p>{% codeblock %}
-Your system is ready to brew.
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Your system is ready to brew.</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>如遇问题，则按照提示处理，如果不懂如何处理可以先试着执行后面的步骤，如果能成功，则没有太大问题，毕竟我们只是想写博客而已。当然，做任何事情之前，备份是必须的。</p>
 
@@ -389,17 +427,17 @@ Your system is ready to brew.
 
 <p>执行以下命令安装 RVM，最新的稳定版 Ruby 也会随之安装：</p>
 
-<p>{% codeblock %}
-curl -L https://get.rvm.io | bash -s stable –ruby
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>curl -L https://get.rvm.io | bash -s stable –ruby</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>为避免出现问题，可执行以下命令安装 Ruby 2.0.0: </p>
 
-<p>{% codeblock %}
-rvm install 2.0.0
-rvm use 2.0.0
-rvm rubygems latest
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm install 2.0.0
+</span><span class='line'>rvm use 2.0.0
+</span><span class='line'>rvm rubygems latest</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>可以执行 <code>ruby --version</code> 命令来查看现在使用的 Ruby 版本，确保正在使用的是 Ruby 2.o.o.</p>
 
@@ -423,10 +461,10 @@ rvm rubygems latest
 
 <p>首先，打开终端 (Terminal) 执行如下命令：</p>
 
-<p>{% codeblock %}
-git clone git://github.com/imathis/octopress.git octopress
-cd octopress<br />
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git clone git://github.com/imathis/octopress.git octopress
+</span><span class='line'>cd octopress&lt;br /></span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>上面的代码中，第一行的作用是把 Octopress 克隆到本地磁盘，将会在你的本地<code>~/user/yourusername</code> 这个文件夹下生成一个名为 octopress 的文件夹。如果你不知道 yourusername 是什么，其实就是你每次打开终端时，$ 这个符号前面显示的那玩意。</p>
 
@@ -434,24 +472,22 @@ cd octopress<br />
 
 <p>然后我们开始安装 Octopress 所必需的依赖项(dependencies)，执行以下命令：</p>
 
-<p>{% codeblock %}
-gem install bundler
-bundle install
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install bundler
+</span><span class='line'>bundle install</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>然后执行如下命令安装默认主题：</p>
 
-<p>{% codeblock %}
-rake install
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake install</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>本地安装完毕。顺便说一句，所谓 rake 就是 ruby make 的缩写。</p>
 
 <p>这时你执行如下命令：</p>
 
-<p>{% codeblock %}
-rake preview
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake preview</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>然后在浏览器内输入 <code>http://localhost:4000/</code>，即可看到我们搭建完成的博客。也许并不好看，但很令人开心，不是么？</p>
 
@@ -465,7 +501,7 @@ rake preview
 
 <p>用刚刚注册的 Github 账号登录，然后在点击页面右上角的加号，在弹出菜单中点击 <code>New Repository</code>: 如图所示</p>
 
-<p>{% img http://s.olo.la/9TgX.png %}</p>
+<p><img src="http://s.olo.la/9TgX.png"></p>
 
 <p>然后会跳转到一个新建库 (Create new repository) 的页面，在<code>Repository name</code>一栏填 <code>[your_username].github.io</code>，[your_username] 是你 Github 上的用户名，请务必按照此格式填写，否则无法在 Github 上部署博客。然后点击 <code>Create repository</code> 按钮提交。</p>
 
@@ -475,19 +511,19 @@ rake preview
 
 <p>打开终端 (Terminal)，执行以下命令：</p>
 
-<p>{% codeblock %}
-cd octopress
-rake setup_github_pages
-{% endcodeblock %} </p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd octopress
+</span><span class='line'>rake setup_github_pages</span></code></pre></td></tr></table></div></figure></notextile></div> </p>
 
 <p>然后会出现一个问句，请把 4.1 步生成的 SSH 地址粘贴到这里，然后回车继续。</p>
 
 <p>执行以下命令：</p>
 
-<p>{% codeblock %}
-rake generate
-rake deploy
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate
+</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>第一行命令用来生成页面，第二行命令用来部署页面，可按照字面意思理解。如果理解不了，可以暂且不管。任何一步如果出现失败提示，请使用 <code>sudo</code>。</p>
 
@@ -495,11 +531,12 @@ rake deploy
 
 <p>然后，不要忘了把源文件全部发布到 <code>source</code> 分支下面，再一次可以看不懂<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup>，执行以下命令：</p>
 
-<p>{% codeblock %}
-git add .
-git commit -m “备注内容”
-git push origin source
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git add .
+</span><span class='line'>git commit -m “备注内容”
+</span><span class='line'>git push origin source</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h3 id="section-2">4.3 使用自己的域名（可选）</h3>
 
@@ -507,16 +544,15 @@ git push origin source
 
 <p>然后执行下面的命令，注意把 <code>your-domain.com</code> 换成你自己的域名。</p>
 
-<p>{% codeblock %}
-echo ‘your-domain.com’ » source/CNAME
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>echo ‘your-domain.com’ » source/CNAME</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>然后再次执行以下命令：</p>
 
-<p>{% codeblock %}
-rake generate
-rake deploy
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake generate
+</span><span class='line'>rake deploy</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>这样你就可以使用自己的域名了。域名解析需要一段时间，如果没有马上生效，请不要着急。如果长时间没有生效，请确保完整执行了 2.4 节和本节内容。</p>
 
@@ -524,17 +560,17 @@ rake deploy
 
 <p>博客搭建好了，我们可以开始我们的第一贴了。那么怎么发布新贴呢？如果你真的想像个黑客一样写博客，我们可以继续使用我们的终端 (Terminal) 和命令行，执行以下命令：</p>
 
-<p>{% codeblock %}
-cd octopress
-rake new_post[“Post Title”]
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd octopress
+</span><span class='line'>rake new_post[“Post Title”]</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>把其中的 Post Title 替换为你想写的文章标题。然后会有一个名为 <code>yyyy-mm-dd-Post-Title.markdown</code> 的文件在 <code>octopress/source/_posts</code> 目录下生成，其中 yyyy-mm-dd 是你当时的日期。然后执行以下命令：</p>
 
-<p>{% codeblock %}
-cd source/_posts/
-vim yyyy-mm-dd-Post-Title.markdown
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd source/_posts/
+</span><span class='line'>vim yyyy-mm-dd-Post-Title.markdown</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>即可用 vim 编辑器编辑的刚才的文章了，好吧我知道你作为这篇文章的读者并不是一个能熟练使用 vim 的人，那么请在命令行输入 <code>:q</code>退出这个编辑器。如果你不想假装是个黑客的话，其实发布文章并不需要这么麻烦。</p>
 
@@ -542,14 +578,20 @@ vim yyyy-mm-dd-Post-Title.markdown
 
 <p>打开文件后，你会发现文章开头有这么一段信息</p>
 
-<h2 id="codeblock-">{% codeblock %}</h2>
-<p>layout: post
-title: “Post Title”
-date: yyyy-mm-dd hh:mm:ss
-comments: true
-categories: “”
-—
-{% endcodeblock %}</p>
+<h2 id="codeblock-"><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/h2>
+</span><span class='line'>&lt;p>layout: post
+</span><span class='line'>title: “Post Title”
+</span><span class='line'>date: yyyy-mm-dd hh:mm:ss
+</span><span class='line'>comments: true
+</span><span class='line'>categories: “”
+</span><span class='line'>—</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>这其实是这篇文章的元数据：<code>layout</code> 暂时不要理会；<code>title</code> 是这篇文章显示在最终网页上的标题；<code>date</code> 部分是详细的文件生成时间，如 <code>2014-04-28 03:35:00</code>；<code>comment</code> 部分表示是否允许评论，目前显示是允许，如果想关闭评论，请改为 <code>false</code>；<code>categories</code> 指这篇文章的分类目录，请在后面引号中输入，如果没有该目录，则会自动生成。请不要删除这段信息，在这段信息下面开始你的文章内容。</p>
 
@@ -557,9 +599,8 @@ categories: “”
 
 <p>在文章写好之后，使用命令行执行（仔细观察命令，像不像 generate 和 deploy 的合体？）：</p>
 
-<p>{% codeblock %}
-rake gen_deploy
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake gen_deploy</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>同样，如果在本节中，任何命令执行失败，没有取得想要结果，请在前面加 <code>sudo</code>。是时候说一说 <code>sudo</code> 命令了，这其实是 super do 的缩写，之所以用它是因为，一般而言 Mac 上最高权限的<code>root</code> 账户默认是关闭的。我们自己的账户哪怕是管理员也在一些地方没有权限操作，super do 其实就是越权操作的意思，因此也往往需要输入密码，一般而言短时间内不需要输入第二次。</p>
 
