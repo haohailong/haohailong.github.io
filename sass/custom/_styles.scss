@@ -76,26 +76,24 @@ ul#markdown-toc {
 }
 
 /* Coderay */
+@import "custom/coderay";
 /* overrides of the lousy styles from _syntax.scss */
-.CodeRay pre {
-  background: none;
-  color: #000;
-}
-
-/* fixes issue where the whole line wouldn't get colored in a diff */
-.CodeRay span.insert, .CodeRay span.change, .CodeRay span.delete {
-        width: auto;
-}
-
 /* Coderay plugin 边框设定*/
 .CodeRay pre, p code, li code {
   border: 1px solid #565656;
   border-top-color: #cbcbcb;
   border-left-color: #a5a5a5;
   border-right-color: #a5a5a5;
+  background: none;
+  color: #000;
+  &::-webkit-scrollbar {  height: .5em; background: $solar-scroll-bg; }
+  &::-webkit-scrollbar-thumb:horizontal { background: $solar-scroll-thumb; border:solid #C0C0C0; -webkit-border-radius: 4px; border-radius: 4px }
 }
 
-@import "custom/coderay";
+/* fixes issue where the whole line wouldn't get colored in a diff */
+.CodeRay span.insert, .CodeRay span.change, .CodeRay span.delete {
+        width: auto;
+}
 
 /* revision */
 .postrevision {

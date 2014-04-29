@@ -1,15 +1,16 @@
+/* http://www.andrewthorp.com/posts/github-theme-for-coderay */
 .CodeRay {
   background-color: #efefef;
   font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
   color: #000;
   margin-bottom: 14px;
 }
- 
+
 .CodeRay pre {
   margin: 0px;
   padding: 1em;
 }
- 
+
 div.CodeRay { }
 span.CodeRay { white-space: pre; border: 0px; padding: 2px }
  
