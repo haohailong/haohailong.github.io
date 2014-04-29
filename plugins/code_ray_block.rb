@@ -1,6 +1,6 @@
 # Title: Simple CodeRay Blocks
-# Author: Jan Stevens (http://fritz-hut.com) based on the work of Kat Hagan (http://codebykat.com)
-# Description: Modified version of Brandon Mathis' code_block.rb that uses CodeRay for syntax highlighting, with figcaptions just like the original.
+# Author: Hailong Hao (http://shengmingzhiqing.com/) based on the work of Jan Stevens (http://fritz-hut.com), Kat Hagan (http://codebykat.com), and Brandon Mathis
+# Description: Modified version of Jan Steven and Brandon Mathis' code_block.rb that uses CodeRay for syntax highlighting. The Original Version by K. Hagan and B. Mathis has the Github style caption, but cannot add line nubmers, the 2nd Version by J. Steven has line number option, but with a new style. If you use J. Steven's version with original CSS/SASS, the capiton style cannot be displayed well. This plugin fixed that problem
 #
 # Syntax:
 # {% coderay [lang:lang] [linenos:true|false(default)] [title] [url] [link text] %}
