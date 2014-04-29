@@ -4,7 +4,7 @@
   <title><![CDATA[生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-29T09:21:03+02:00</updated>
+  <updated>2014-04-29T09:27:59+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -666,11 +666,11 @@ vim yyyy-mm-dd-Post-Title.markdown
 <div class="bogus-wrapper"><notextile><figure class="code"> <div class="CodeRay">
   <div class="code"><pre>
         ---  
-        layout: post  
-        title: &quot;Post Title&quot;  
-        date: yyyy-mm-dd hh:mm:ss  
-        comments: true  
-        categories: &quot;&quot;  
+layout: post  
+title: &quot;Post Title&quot;  
+date: yyyy-mm-dd hh:mm:ss  
+comments: true  
+categories: &quot;&quot;  
         ---
 </pre></div>
 </div>
