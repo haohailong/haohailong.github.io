@@ -4,7 +4,7 @@
   <title><![CDATA[生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-29T06:10:50+02:00</updated>
+  <updated>2014-04-29T06:13:48+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -607,11 +607,15 @@ f'\left( x\right) = \lim _{x\rightarrow 0}\dfrac {f\left( x+\Delta x\right) - f\
 <span class="line-number">3</span>
 <span class="line-number">4</span>
 <span class="line-number">5</span>
-</pre></td><td class="code"><pre><code class=""><span class="line">layout: post
-</span><span class="line">title: "Post Title"
-</span><span class="line">date: yyyy-mm-dd hh:mm:ss
-</span><span class="line">comments: true
-</span><span class="line">categories: ""</span></code></pre></td></tr></table></div></figure></notextile></div>
+<span class="line-number">6</span>
+<span class="line-number">7</span>
+</pre></td><td class="code"><pre><code class=""><span class="line">\---  
+</span><span class="line">layout: post  
+</span><span class="line">title: "Post Title"  
+</span><span class="line">date: yyyy-mm-dd hh:mm:ss  
+</span><span class="line">comments: true  
+</span><span class="line">categories: ""  
+</span><span class="line">\---</span></code></pre></td></tr></table></div></figure></notextile></div>
 
 <p>这其实是这篇文章的元数据：<code>layout</code> 暂时不要理会；<code>title</code> 是这篇文章显示在最终网页上的标题；<code>date</code> 部分是详细的文件生成时间，如 <code>2014-04-28 03:35:00</code>；<code>comment</code> 部分表示是否允许评论，目前显示是允许，如果想关闭评论，请改为 <code>false</code>；<code>categories</code> 指这篇文章的分类目录，请在后面引号中输入，如果没有该目录，则会自动生成。请不要删除这段信息，在这段信息下面开始你的文章内容。</p>
 
