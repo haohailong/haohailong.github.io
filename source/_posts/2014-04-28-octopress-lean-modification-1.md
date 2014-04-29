@@ -87,12 +87,16 @@ date_format: "ordinal" #默认日期显示方式
 
 回到博客，点开你发表的文章，这是你看一下地址栏，发现网址（也就是这篇文章的链接）是类似这样的形式：
 
-	http://[your_domain_name]/blog/2014/04/28/Post-Title/
+{% coderay %}
+http://[your_domain_name]/blog/2014/04/28/Post-Title/
+{% endcoderay %}
 
 对我们个人博客而言，这种层级显得太多，我个人推荐如下两种地址生成方式：
 
-	http://[your_domain_name]/blog/20140428/Post-Title.html/
-	http://[your_domain_name]/blog/Post-Title.html/ # 这也是本博的生成方式
+{% coderay %}
+http://[your_domain_name]/blog/20140428/Post-Title.html/
+http://[your_domain_name]/blog/Post-Title.html/ # 这也是本博的生成方式
+{% endcoderay %}
 
 怎么实现呢？接着回到<code>_config.yml</code> 文件，往下看，找到：
 

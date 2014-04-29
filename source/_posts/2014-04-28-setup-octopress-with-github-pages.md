@@ -111,10 +111,8 @@ rvm rubygems latest
 
 首先，打开终端 (Terminal) 执行如下命令：
 	
-{% coderay %}
-git clone git://github.com/imathis/octopress.git octopress
-cd octopress  
-{% endcoderay %}
+{% coderay linenos:true %}git clone git://github.com/imathis/octopress.git octopress
+cd octopress{% endcoderay %}
 	
 上面的代码中，第一行的作用是把 Octopress 克隆到本地磁盘，将会在你的本地<code>~/user/yourusername</code> 这个文件夹下生成一个名为 octopress 的文件夹。如果你不知道 yourusername 是什么，其实就是你每次打开终端时，$ 这个符号前面显示的那玩意。
 
@@ -170,7 +168,7 @@ rake setup_github_pages
 
 执行以下命令：
 
-{% coderay %}
+{% coderay linenos:true %}
 rake generate
 rake deploy
 {% endcoderay %}
@@ -228,13 +226,15 @@ vim yyyy-mm-dd-Post-Title.markdown
 
 打开文件后，你会发现文章开头有这么一段信息:
 
-	---  
-	layout: post  
-	title: "Post Title"  
-	date: yyyy-mm-dd hh:mm:ss  
-	comments: true  
-	categories: ""  
-	---
+{% coderay lang:markdown linenos:true %}---  
+layout: post  
+title: "Post Title"  
+date: yyyy-mm-dd hh:mm:ss  
+comments: true  
+categories: ""  
+---{% endcoderay %}
+
+注，为避免代码显示异常，我在第一行和第七行前面分别加了一个```Tab```。
 
 这其实是这篇文章的元数据：<code>layout</code> 暂时不要理会；<code>title</code> 是这篇文章显示在最终网页上的标题；<code>date</code> 部分是详细的文件生成时间，如 <code>2014-04-28 03:35:00</code>；<code>comment</code> 部分表示是否允许评论，目前显示是允许，如果想关闭评论，请改为 <code>false</code>；<code>categories</code> 指这篇文章的分类目录，请在后面引号中输入，如果没有该目录，则会自动生成。请不要删除这段信息，在这段信息下面开始你的文章内容。
 
