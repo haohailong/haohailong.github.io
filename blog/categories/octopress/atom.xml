@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Octopress | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-29T09:36:45+02:00</updated>
+  <updated>2014-04-29T09:39:02+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -676,17 +676,14 @@ vim yyyy-mm-dd-Post-Title.markdown
 <a href="#n5" name="n5">5</a>
 <a href="#n6" name="n6">6</a>
 <a href="#n7" name="n7">7</a>
-<a href="#n8" name="n8">8</a>
 </pre></td>
-  <td class="code"><pre>
-    —&lt;br /&gt;
+  <td class="code"><pre>—&lt;br /&gt;
 layout: post&lt;br /&gt;
 title: “Post Title”&lt;br /&gt;
 date: yyyy-mm-dd hh:mm:ss&lt;br /&gt;
 comments: true&lt;br /&gt;
 categories: “”  
-    —
-</pre></td>
+—</pre></td>
 </tr></table>
  </figure></notextile></div></p>
 
