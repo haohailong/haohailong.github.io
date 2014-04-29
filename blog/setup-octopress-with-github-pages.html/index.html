@@ -319,13 +319,16 @@ rvm rubygems latest
 
 <p>首先，打开终端 (Terminal) 执行如下命令：</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>linenos:true </span></figcaption>
- <div class="CodeRay">
-  <div class="code"><pre>
+<div class="bogus-wrapper"><notextile><figure class="code"> <table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+</pre></td>
+  <td class="code"><pre>
 git clone git://github.com/imathis/octopress.git octopress
 cd octopress  
-</pre></div>
-</div>
+</pre></td>
+</tr></table>
  </figure></notextile></div>
 
 <p>上面的代码中，第一行的作用是把 Octopress 克隆到本地磁盘，将会在你的本地<code>~/user/yourusername</code> 这个文件夹下生成一个名为 octopress 的文件夹。如果你不知道 yourusername 是什么，其实就是你每次打开终端时，$ 这个符号前面显示的那玩意。</p>
@@ -396,13 +399,16 @@ rake setup_github_pages
 
 <p>执行以下命令：</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>linenos:true </span></figcaption>
- <div class="CodeRay">
-  <div class="code"><pre>
+<div class="bogus-wrapper"><notextile><figure class="code"> <table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+</pre></td>
+  <td class="code"><pre>
 rake generate
 rake deploy
-</pre></div>
-</div>
+</pre></td>
+</tr></table>
  </figure></notextile></div>
 
 <p>第一行命令用来生成页面，第二行命令用来部署页面，可按照字面意思理解。如果理解不了，可以暂且不管。任何一步如果出现失败提示，请使用 <code>sudo</code>。</p>
@@ -473,18 +479,29 @@ vim yyyy-mm-dd-Post-Title.markdown
 
 <p>打开文件后，你会发现文章开头有这么一段信息:</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"> <div class="CodeRay">
-  <div class="code"><pre>
-        ---  
+<div class="bogus-wrapper"><notextile><figure class="code"> <table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+</pre></td>
+  <td class="code"><pre>
+    ---  
 layout: post  
 title: &quot;Post Title&quot;  
 date: yyyy-mm-dd hh:mm:ss  
 comments: true  
 categories: &quot;&quot;  
-        ---
-</pre></div>
-</div>
+    ---
+</pre></td>
+</tr></table>
  </figure></notextile></div>
+
+<p>注，为避免代码显示异常，我在第一行和第七行前面分别加了一个<code>Tab</code>。</p>
 
 <p>这其实是这篇文章的元数据：<code>layout</code> 暂时不要理会；<code>title</code> 是这篇文章显示在最终网页上的标题；<code>date</code> 部分是详细的文件生成时间，如 <code>2014-04-28 03:35:00</code>；<code>comment</code> 部分表示是否允许评论，目前显示是允许，如果想关闭评论，请改为 <code>false</code>；<code>categories</code> 指这篇文章的分类目录，请在后面引号中输入，如果没有该目录，则会自动生成。请不要删除这段信息，在这段信息下面开始你的文章内容。</p>
 
