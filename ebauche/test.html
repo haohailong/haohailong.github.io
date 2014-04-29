@@ -9,8 +9,7 @@
   <meta name="author" content="郝海龙">
 
   
-  <meta name="description" content="Test 2014年4月23日 function mine()
-{ while(true) { longestChain = getLongestValidChain() -- A number that changes every time, so that you don't waste &hellip;">
+  <meta name="description" content="Test 2014年4月23日 &lt;div&gt;&lt;script src='https://gist.github.com/11391053.js?file='&gt;&lt;/script&gt; &lt;noscript&gt;&lt;pre&gt;&lt;code&gt;{& &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -157,42 +156,9 @@ $(document).bind('DOMNodeInserted', function(event) {
 <time datetime="2014-04-23T16:06:00+02:00" pubdate data-updated="true">2014年4月23日</time></p>
   </header>
   
-  <div><script src="https://gist.github.com/11391053.js?file=test_gist"></script><noscript><pre><code>function mine()
-{
-    while(true)
-    {
-        longestChain = getLongestValidChain()
-
-        -- A number that changes every time, so that you don't waste time 
-        -- trying to calculate a valid blockHash with the same input.
-        nonce = getNewNonce()
-
-        currentTXs = getUnconfirmedTransactionsFromNetwork()
-
-        newBlock = getNewBlock(longestChain, currentTX, nonce)
-
-        -- http://en.wikipedia.org/wiki/SHA-2
-        -- and this is what all the "mining machines" are doing.
-        blockHash = sha256(newBlock)
-
-        if(meetReqirements(blockHash))
-        {
-            broadcast(newBlock)
-            -- Now the height the block chain is incremented by 1
-            -- (if the new block is accepted by other peers),
-            -- and all the TXs in the new block are "confirmed"
-        }
-    }
-}
-////////////////////////////////////////////////////////////////
-function sendBTC(amount)
-{
-    sourceTXs = pickConfirmedTransactionsToBeSpent(amount)
-    tx = generateTX(sourceTXs, targetAddrs, amount, fee)
-    signedTx = sign(tx, privateKeysOfAllInputAddress)
-    broadcast(signedTx)
-}
-////////////////////////////////////////////////////////////////</code></pre></noscript></div>
+  <pre><code>     &lt;div&gt;&lt;script src='https://gist.github.com/11391053.js?file='&gt;&lt;/script&gt;
+     &lt;noscript&gt;&lt;pre&gt;&lt;code&gt;{&amp;quot;url&amp;quot;:&amp;quot;https://api.github.com/gists/11391053&amp;quot;,&amp;quot;forks_url&amp;quot;:&amp;quot;https://api.github.com/gists/11391053/forks&amp;quot;,&amp;quot;commits_url&amp;quot;:&amp;quot;https://api.github.com/gists/11391053/commits&amp;quot;,&amp;quot;id&amp;quot;:&amp;quot;11391053&amp;quot;,&amp;quot;git_pull_url&amp;quot;:&amp;quot;https://gist.github.com/11391053.git&amp;quot;,&amp;quot;git_push_url&amp;quot;:&amp;quot;https://gist.github.com/11391053.git&amp;quot;,&amp;quot;html_url&amp;quot;:&amp;quot;https://gist.github.com/11391053&amp;quot;,&amp;quot;files&amp;quot;:{&amp;quot;test_gist&amp;quot;:{&amp;quot;filename&amp;quot;:&amp;quot;test_gist&amp;quot;,&amp;quot;type&amp;quot;:&amp;quot;text/plain&amp;quot;,&amp;quot;language&amp;quot;:null,&amp;quot;raw_url&amp;quot;:&amp;quot;https://gist.githubusercontent.com/haohailong/11391053/raw/6089bbeee4c3288e4d09602fa0e8f2e50c9e6c86/test_gist&amp;quot;,&amp;quot;size&amp;quot;:1181,&amp;quot;content&amp;quot;:&amp;quot;function mine()\n{\n    while(true)\n    {\n        longestChain = getLongestValidChain()\n\n        -- A number that changes every time, so that you don&amp;#39;t waste time \n        -- trying to calculate a valid blockHash with the same input.\n        nonce = getNewNonce()\n\n        currentTXs = getUnconfirmedTransactionsFromNetwork()\n\n        newBlock = getNewBlock(longestChain, currentTX, nonce)\n\n        -- http://en.wikipedia.org/wiki/SHA-2\n        -- and this is what all the \&amp;quot;mining machines\&amp;quot; are doing.\n        blockHash = sha256(newBlock)\n\n        if(meetReqirements(blockHash))\n        {\n            broadcast(newBlock)\n            -- Now the height the block chain is incremented by 1\n            -- (if the new block is accepted by other peers),\n            -- and all the TXs in the new block are \&amp;quot;confirmed\&amp;quot;\n        }\n    }\n}\n////////////////////////////////////////////////////////////////\nfunction sendBTC(amount)\n{\n    sourceTXs = pickConfirmedTransactionsToBeSpent(amount)\n    tx = generateTX(sourceTXs, targetAddrs, amount, fee)\n    signedTx = sign(tx, privateKeysOfAllInputAddress)\n    broadcast(signedTx)\n}\n////////////////////////////////////////////////////////////////&amp;quot;}},&amp;quot;public&amp;quot;:true,&amp;quot;created_at&amp;quot;:&amp;quot;2014-04-29T05:04:52Z&amp;quot;,&amp;quot;updated_at&amp;quot;:&amp;quot;2014-04-29T05:04:53Z&amp;quot;,&amp;quot;description&amp;quot;:&amp;quot;test file, 测试文件&amp;quot;,&amp;quot;comments&amp;quot;:0,&amp;quot;user&amp;quot;:null,&amp;quot;comments_url&amp;quot;:&amp;quot;https://api.github.com/gists/11391053/comments&amp;quot;,&amp;quot;owner&amp;quot;:{&amp;quot;login&amp;quot;:&amp;quot;haohailong&amp;quot;,&amp;quot;id&amp;quot;:4593372,&amp;quot;avatar_url&amp;quot;:&amp;quot;https://avatars.githubusercontent.com/u/4593372?&amp;quot;,&amp;quot;gravatar_id&amp;quot;:&amp;quot;6405322b2a97b1aaa0d92a4afe552cf1&amp;quot;,&amp;quot;url&amp;quot;:&amp;quot;https://api.github.com/users/haohailong&amp;quot;,&amp;quot;html_url&amp;quot;:&amp;quot;https://github.com/haohailong&amp;quot;,&amp;quot;followers_url&amp;quot;:&amp;quot;https://api.github.com/users/haohailong/followers&amp;quot;,&amp;quot;following_url&amp;quot;:&amp;quot;https://api.github.com/users/haohailong/following{/other_user}&amp;quot;,&amp;quot;gists_url&amp;quot;:&amp;quot;https://api.github.com/users/haohailong/gists{/gist_id}&amp;quot;,&amp;quot;starred_url&amp;quot;:&amp;quot;https://api.github.com/users/haohailong/starred{/owner}{/repo}&amp;quot;,&amp;quot;subscriptions_url&amp;quot;:&amp;quot;https://api.github.com/users/haohailong/subscriptions&amp;quot;,&amp;quot;organizations_url&amp;quot;:&amp;quot;https://api.github.com/users/haohailong/orgs&amp;quot;,&amp;quot;repos_url&amp;quot;:&amp;quot;https://api.github.com/users/haohailong/repos&amp;quot;,&amp;quot;events_url&amp;quot;:&amp;quot;https://api.github.com/users/haohailong/events{/privacy}&amp;quot;,&amp;quot;received_events_url&amp;quot;:&amp;quot;https://api.github.com/users/haohailong/received_events&amp;quot;,&amp;quot;type&amp;quot;:&amp;quot;User&amp;quot;,&amp;quot;site_admin&amp;quot;:false},&amp;quot;forks&amp;quot;:[],&amp;quot;history&amp;quot;:[{&amp;quot;user&amp;quot;:{&amp;quot;login&amp;quot;:&amp;quot;haohailong&amp;quot;,&amp;quot;id&amp;quot;:4593372,&amp;quot;avatar_url&amp;quot;:&amp;quot;https://avatars.githubusercontent.com/u/4593372?&amp;quot;,&amp;quot;gravatar_id&amp;quot;:&amp;quot;6405322b2a97b1aaa0d92a4afe552cf1&amp;quot;,&amp;quot;url&amp;quot;:&amp;quot;https://api.github.com/users/haohailong&amp;quot;,&amp;quot;html_url&amp;quot;:&amp;quot;https://github.com/haohailong&amp;quot;,&amp;quot;followers_url&amp;quot;:&amp;quot;https://api.github.com/users/haohailong/followers&amp;quot;,&amp;quot;following_url&amp;quot;:&amp;quot;https://api.github.com/users/haohailong/following{/other_user}&amp;quot;,&amp;quot;gists_url&amp;quot;:&amp;quot;https://api.github.com/users/haohailong/gists{/gist_id}&amp;quot;,&amp;quot;starred_url&amp;quot;:&amp;quot;https://api.github.com/users/haohailong/starred{/owner}{/repo}&amp;quot;,&amp;quot;subscriptions_url&amp;quot;:&amp;quot;https://api.github.com/users/haohailong/subscriptions&amp;quot;,&amp;quot;organizations_url&amp;quot;:&amp;quot;https://api.github.com/users/haohailong/orgs&amp;quot;,&amp;quot;repos_url&amp;quot;:&amp;quot;https://api.github.com/users/haohailong/repos&amp;quot;,&amp;quot;events_url&amp;quot;:&amp;quot;https://api.github.com/users/haohailong/events{/privacy}&amp;quot;,&amp;quot;received_events_url&amp;quot;:&amp;quot;https://api.github.com/users/haohailong/received_events&amp;quot;,&amp;quot;type&amp;quot;:&amp;quot;User&amp;quot;,&amp;quot;site_admin&amp;quot;:false},&amp;quot;version&amp;quot;:&amp;quot;08dc7e034ff5e7848a775bbb0fb0f3d925ad18af&amp;quot;,&amp;quot;committed_at&amp;quot;:&amp;quot;2014-04-29T05:04:52Z&amp;quot;,&amp;quot;change_status&amp;quot;:{&amp;quot;total&amp;quot;:36,&amp;quot;additions&amp;quot;:36,&amp;quot;deletions&amp;quot;:0},&amp;quot;url&amp;quot;:&amp;quot;https://api.github.com/gists/11391053/08dc7e034ff5e7848a775bbb0fb0f3d925ad18af&amp;quot;}]}&lt;/code&gt;&lt;/pre&gt;&lt;/noscript&gt;&lt;/div&gt;
+</code></pre>
 
   
     <footer>
