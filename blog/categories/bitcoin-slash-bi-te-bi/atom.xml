@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Bitcoin/比特币 | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/bitcoin-slash-bi-te-bi/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-29T03:20:55+02:00</updated>
+  <updated>2014-04-29T03:29:37+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -18,7 +18,9 @@
     <link href="http://shengmingzhiqing.com/blog/Bitcoin-QnA.html/"/>
     <updated>2014-04-23T00:57:00+02:00</updated>
     <id>http://shengmingzhiqing.com/blog/Bitcoin-QnA</id>
-    <content type="html"><![CDATA[<p>Surround your pullquote like this {" text to be quoted "}</p>
+    <content type="html"><![CDATA[<p>{% pullquote %}
+{“ 本文作者参与比特币经济活动的主要目的是实践自己的理想，所有关于比特币的看法都基于这个前提，不作为投资和投机建议。警告：伴随高收益的永远是高风险。 “}
+{% endpullquote %}</p>
 
 <ol>
   <li>
