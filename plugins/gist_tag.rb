@@ -39,13 +39,8 @@ module Jekyll
       code = CGI.escapeHTML code
       <<-HTML
       <div><script src='#{script_url}'></script>
-      <script type="text/javascript">$(".gist-file table tr td.line-numbers").remove();</script>
       <noscript><pre><code>#{code}</code></pre></noscript></div>
       HTML
-#      <<-HTML
-#      <div><script src='#{script_url}'></script>
-#      <noscript><pre><code>#{code}</code></pre></noscript></div>
-#      HTML
     end
 
     def script_url_for(gist_id, filename)
