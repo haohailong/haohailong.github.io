@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Misc | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/misc/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-30T05:23:10+02:00</updated>
+  <updated>2014-04-30T05:34:08+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Test]]></title>
+    <link href="http://shengmingzhiqing.com/blog/test.html/"/>
+    <updated>2014-04-30T07:33:48+02:00</updated>
+    <id>http://shengmingzhiqing.com/blog/test</id>
+    <content type="html"><![CDATA[<p><span><i class="fa fa-bell-o fa-2x" /></span></p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Summary on Chapter 1 of Microeconomic Theory]]></title>
