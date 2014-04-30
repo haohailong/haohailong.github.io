@@ -67,7 +67,7 @@ url: http://yoursite.com  #这里改为你网站的域名
 title: My Octopress Blog  #这里改为你想要的网站标题
 subtitle: A blogging framework for hackers. #这里改为你的博客副标题
 author: Your Name #这里改为博客作者的名字，也就是你的名字
-simple_search: https://www.google.com/search #这时默认搜索引擎，可以先不管
+simple_search: https://www.google.com/search #这是默认搜索引擎，可以先不管
 description: #网站描述信息
 {% endcoderay %}
 
