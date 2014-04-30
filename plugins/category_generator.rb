@@ -108,7 +108,8 @@ module Jekyll
       if self.layouts.key? 'category_index'
         dir = self.config['category_dir'] || 'categories'
         self.categories.keys.each do |category|
-          self.write_category_index(File.join(dir, category.to_url), category)
+          self.write_category_index(File.join(dir, category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').to_url.downcase), category)
+          # 以上为新添代码，取代本行代码，以实实现中文显示 self.write_category_index(File.join(dir, category.to_url), category)
         end
 
       # Throw an exception if the layout couldn't be found.
@@ -173,7 +174,8 @@ ERR
     #
     def category_link(category)
       dir = @context.registers[:site].config['category_dir']
-      "<a class='category' href='/#{dir}/#{category.to_url}/'>#{category}</a>"
+      "<a class='category' href='/#{dir}/#{category.gsub(/_|\P{Word}/, '-').gsub(/-{2,}/, '-').to_url.downcase}/'>#{category}</a>"
+      #以上为新添加代码，取代原有代码实现中文目录显示。"<a class='category' href='/#{dir}/#{category.to_url}/'>#{category}</a>"
     end
 
     # Outputs the post.date as formatted html, with hooks for CSS styling.
