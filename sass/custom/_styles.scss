@@ -10,6 +10,34 @@ body > header h1 {
   margin-bottom: 0.6667em;
 }
 */
+.sidebar {
+.search {
+  padding: 0.2em;
+  font-size: 1em;
+  font-family: $sans;
+  line-height: 1.4em;
+  margin-top: 0em;
+  margin-bottom: 1.6em;
+  width: 95%;
+  @include border-radius(.3em);
+  @include background-clip(padding-box);
+  //@include box-shadow(lighten($nav-bg, 2) 0 1px);
+  background-color: ($nav-bg, 15);
+  border: 1px solid $nav-border;
+  color: #888;
+  &:focus {
+    color: #444;
+    border-color: #80b1df;
+    @include box-shadow(#80b1df 0 0 4px, #80b1df 0 0 3px inset);
+    background-color: #fff;
+    outline: none;
+  }
+}
+fieldset[role=search]{ float: left; width: 100%; }
+fieldset.mobile-nav{ float: left; width: 48%;
+  select{ width: 100%; font-size: .8em; border: 1px solid #888;}
+}
+}
 
 h1 {
   font-size: 2.2em;
@@ -141,6 +169,7 @@ ul#markdown-toc {
 
 .sideabout {
 	text-align: justify;
+	margin-bottom: 0em;
 }
 
 
