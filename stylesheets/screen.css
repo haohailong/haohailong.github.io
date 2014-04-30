@@ -1,5 +1,5 @@
 /*
-Syntax error: Invalid CSS after "...wesome-webfont"": expected selector or at-rule, was "@import font-aw..."
+Syntax error: Invalid CSS after "...wesome-webfont"": expected selector or at-rule, was "@import "custom..."
         on line 121 of /Users/Hailong/octopress/sass/custom/_styles.scss
         from line 10 of /Users/Hailong/octopress/sass/screen.scss
 
@@ -55,4 +55,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"...wesome-webfont\"\": expected selector or at-rule, was \"@import font-aw...\"\A         on line 121 of /Users/Hailong/octopress/sass/custom/_styles.scss\A         from line 10 of /Users/Hailong/octopress/sass/screen.scss"; }
+  content: "Syntax error: Invalid CSS after \"...wesome-webfont\"\": expected selector or at-rule, was \"@import \"custom...\"\A         on line 121 of /Users/Hailong/octopress/sass/custom/_styles.scss\A         from line 10 of /Users/Hailong/octopress/sass/screen.scss"; }
