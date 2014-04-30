@@ -17,9 +17,9 @@ date_format: "%Y年%-m月%e日"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
 subscribe_rss: /atom.xml
-subscribe_email:
+subscribe_email: haohailong@gmail.com
 # RSS feeds can list your email address if you like
-email:
+email: haohailong@gmail.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
