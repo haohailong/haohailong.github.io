@@ -7,7 +7,7 @@ sharing: true
 footer: true
 ---
 
-<i class="fa fa-camera-retro"></i> fa-camera-retro
+<i class="fa fa-bell-o"></i> fa-bell-o
 
 ~~~
 def hello
