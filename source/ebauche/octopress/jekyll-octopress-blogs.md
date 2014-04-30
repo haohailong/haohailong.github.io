@@ -45,5 +45,6 @@ footer: true
 * [Heroic Yang's Blog](http://heroicyang.com/)
 * [武眉博](http://huobazi.aspxboy.com)
 * [Along's Blog](http://jinlong.github.io)
+* [Nate Dickson](http://natedickson.com)
 
 To be continued.

@@ -9,7 +9,7 @@ footer: true
 ### 郝海龙
 
 {::nomarkdown}
-<p class="info"><i class="fa fa-dot-circle-o"></i> ébauche [ebo∫]: 法文单词，意为草稿。<br />  
+<p class="info"><i class="fa fa-bell-o"></i> ébauche [ebo∫]: 法文单词，意为草稿。<br />  
 本页面所列文章均为未完成草稿，未经允许，请勿转载。</p>
 {:/nomarkdown}
 
