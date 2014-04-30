@@ -7,7 +7,7 @@ sharing: true
 footer: true
 ---
 
-{% gistapi 11391053 %}
+<i class="fa fa-camera-retro"></i> fa-camera-retro
 
 ~~~
 def hello
