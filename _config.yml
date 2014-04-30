@@ -113,15 +113,3 @@ google_analytics_tracking_id: UA-49889656-1
 # Facebook Like
 facebook_like: false
 
----
-# -------------------------- #
-#  App.net Configs           #
-# -------------------------- #
-
-adn: true
-  username: hailong
-  timeline: true
-    count: 15
-    avatars: false
-    replies: false
-    reposts: false
