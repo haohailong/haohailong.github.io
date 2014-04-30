@@ -9,8 +9,6 @@ footer: true
 
 <h3>郝海龙</h3>
 
-{% imgpop http://s.olo.la/nZKU.png 50% center Awesome image taken hundred years ago. %}
-
 <center><img alt="" src="http://s.olo.la/nZKU.png" width="256" height="256" /></center>
 <div class="cb-toc"><a>
 </a>
