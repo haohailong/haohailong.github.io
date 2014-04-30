@@ -7,18 +7,6 @@ sharing: true
 footer: true
 ---
 
-<i class="fa fa-bell-o"></i> fa-bell-o
-
-~~~
-def hello
-  puts "hello world"
-end
-~~~
-{:lang="ruby"}
-
-{% coderay lang:html linenos:true This is a great example! http://haohailong.net My Blog %}
-try I love you
-and you do not love me.
-{% endcoderay %}
+<span markdown="0"><i class="fa fa-bell-o fa-2x"></i></span>
 
 
