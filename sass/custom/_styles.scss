@@ -155,3 +155,61 @@ ul#markdown-toc {
         }
 }
 
+/* image pop imgpop*/
+
+.image-drag {
+    position: absolute !important;
+}
+
+.image-caption {
+    z-index: 2000;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    height: 24px;
+    padding: 10px;
+    
+}
+
+.image-caption:hover > div {
+    display: block;
+}
+
+.image-caption:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.capt-left {
+    display: none;
+    float: left;
+    color: white;
+}
+
+.capt-right {
+    display: none;
+    float: right;
+}
+
+.ui-widget-content .ui-dialog-content {
+    padding: 0px;
+}
+
+.ui-widget-content a {
+    color: white;
+}
+
+.noTitle .ui-dialog-titlebar { display: none; }
+
+.noTitle {
+    position: fixed;
+};
+
+.ui-widget-overlay {
+    position: fixed;
+}
+
+.proxy-container {
+    position: absolute;
+}
+
+

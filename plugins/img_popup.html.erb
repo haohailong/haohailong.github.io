@@ -1,0 +1,24 @@
+<!-- -*- html -*- -->
+<a href='<%= image %>' style="text-decoration: none" id="image-<%= id %>"><img src="<%= scaled_image %>" alt="Click me." class="<%= klass %>"/></a>
+  <div id="image-dialog-<%= id %>" style="display:none; overflow:hidden;" class="noTitle">
+    <div class="image-caption" align="center">
+      <div class="capt-left"><%= title %></div>
+      <div class="capt-right">
+        <a href="<%= image %>">permalink</a>
+      </div>
+    </div>
+    <div id="proxy<%= id %>" align="center" class="proxy-container">
+      <img class="image-drag" src="/images/1px.png" id="full_image-<%= id %>" />
+    </div>
+  </div>
+  <script type="text/javascript">
+    jQuery(document).ready(function() {
+        jQuery.imgpop({
+          id: "<%= id %>",
+          full_image: "<%= image %>",
+          full_width: <%= full_width %>,
+          full_height: <%= full_height %>,
+          title: "<%= title %>"
+        });
+    });
+  </script>

@@ -1,18 +1,17 @@
 ---
 layout: page
 title: "Octopress 任务列表"
-date: 2014-04-23
+author: 郝海龙
+date: 2014-04-30
 comments: true
 sharing: true
 footer: true
 ---
-### 郝海龙
-{:.no_toc}
 
 - list element with functor item
 {:toc}
 
-## 已完成：
+## 已完成
 - 站点相关
 	- 图床问题。
 - 配置博客
@@ -49,15 +48,11 @@ footer: true
 - 使用 FontAwesome 。
 - 侧边栏分类目录。
 
-## 待完成：
-
-* 添加 sitemap 生成器。
-
-## 现阶段可能做不到的事情：
+## 可能做不到
 
 * 自定义分类目录链接（目前是自动生成拼音）。
 
-## 不确定要不要做：
+## 暂未决定
 
 * 文章尾部添加赞助链接。
 * 更换搜索引擎。
