@@ -20,5 +20,5 @@ footer: true
 })();</script>
 
 {::nomarkdown}
-<a href="https://alpha.app.net/hailong" target="_blank"><code><i class="fa fa-adn"></i> 查看更多 <i class="fa fa-arrow-circle-right"></i></code></a>
+<h4><a href="https://alpha.app.net/hailong" target="_blank">还想要更多？<i class="fa fa-arrow-circle-right"></i></a></h4>
 {:/nomarkdown}
