@@ -2,7 +2,6 @@
 layout: page
 title: "断章"
 author: 郝海龙
-date: 2014-05-01 01:20:48
 comments: true
 sharing: true
 footer: true
@@ -19,3 +18,7 @@ footer: true
   s.src = 'http://output28.rssinclude.com/output?type=asyncjs&id=872722&hash=7d401f6cf9677afaf299493cbc14f63b';
   document.getElementsByTagName('head')[0].appendChild(s);
 })();</script>
+
+{::nomarkdown}
+<a href="https://alpha.app.net/hailong" target="_blank"><code><i class="fa fa-adn"></i> 查看更多 <i class="fa fa-arrow-circle-right"></i></code></a>
+{:/nomarkdown}
