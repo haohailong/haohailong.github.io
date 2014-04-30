@@ -51,7 +51,7 @@ excerpt_separator: N/A-------N/A... Workaround for https://github.com/mojombo/je
 
 paginate: 10          # Posts per page on the blog index
 pagination_dir: blog  # Directory base for pagination URLs eg. /blog/page/2/
-recent_posts: 5       # Posts in the sidebar Recent Posts section
+recent_posts: 7       # Posts in the sidebar Recent Posts section
 excerpt_link: "阅读全文"  # "Continue reading" link text at the bottom of excerpted articles
 
 titlecase: true       # Converts page and post titles to titlecase
