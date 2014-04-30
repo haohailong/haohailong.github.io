@@ -4,7 +4,7 @@
   <title><![CDATA[生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-30T05:35:39+02:00</updated>
+  <updated>2014-04-30T05:38:53+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -12,17 +12,6 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Test]]></title>
-    <link href="http://shengmingzhiqing.com/blog/test.html/"/>
-    <updated>2014-04-30T07:33:48+02:00</updated>
-    <id>http://shengmingzhiqing.com/blog/test</id>
-    <content type="html"><![CDATA[<p>我知道这样不好。
-也知道你的爱只能那么少。</p>
-
-]]></content>
-  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopress 精益修改 (1)]]></title>
@@ -1031,6 +1020,26 @@ rake gen_deploy
     </li>
   </ol>
 </div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Test]]></title>
+    <link href="http://shengmingzhiqing.com/blog/test.html/"/>
+    <updated>2014-04-01T07:33:48+02:00</updated>
+    <id>http://shengmingzhiqing.com/blog/test</id>
+    <content type="html"><![CDATA[<p>我知道这样不好。
+也知道你的爱只能那么少。</p>
+
+<ul class="nav nav-pills nav-stacked">
+  <li class="active"><a href="#"><i class="fa fa-home fa-fw" /> Home</a></li>
+  <li><a href="#"><i class="fa fa-book fa-fw" /> Library</a></li>
+  <li><a href="#"><i class="fa fa-pencil fa-fw" /> Applications</a></li>
+  <li><a href="#"><i class="fa fa-cogs fa-fw" /> Settings</a></li>
+</ul>
+
+<p>Test 我就不信。</p>
+
 ]]></content>
   </entry>
   
