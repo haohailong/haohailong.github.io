@@ -1,5 +1,5 @@
 /*
-Syntax error: File to import not found or unreadable: font-awesome/scss/font-awesome.
+Syntax error: File to import not found or unreadable: custom/font-awesome/scss/font-awesome.
               Load paths:
                 Sass::Globbing::Importer
                 /Users/Hailong/octopress/sass
@@ -65,4 +65,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: font-awesome/scss/font-awesome.\A               Load paths:\A                 Sass::Globbing::Importer\A                 /Users/Hailong/octopress/sass\A                 /Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 119 of /Users/Hailong/octopress/sass/custom/_styles.scss\A         from line 10 of /Users/Hailong/octopress/sass/screen.scss"; }
+  content: "Syntax error: File to import not found or unreadable: custom/font-awesome/scss/font-awesome.\A               Load paths:\A                 Sass::Globbing::Importer\A                 /Users/Hailong/octopress/sass\A                 /Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /Users/Hailong/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 119 of /Users/Hailong/octopress/sass/custom/_styles.scss\A         from line 10 of /Users/Hailong/octopress/sass/screen.scss"; }
