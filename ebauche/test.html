@@ -9,8 +9,13 @@
   <meta name="author" content="郝海龙">
 
   
-  <meta name="description" content="Test 2014年4月23日 function mine()
-{ while(true) { longestChain = getLongestValidChain() -- A number that changes every time, so that you don't waste &hellip;">
+  <meta name="description" content="Test 2014年4月23日 test fa-tags 1
+2
+3 def hello puts &quot;hello world&quot;
+end This is a great example!My Blog 1
+2
+3 try I love you
+and you do not &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -157,42 +162,7 @@ $(document).bind('DOMNodeInserted', function(event) {
 <time datetime="2014-04-23T16:06:00+02:00" pubdate data-updated="true">2014年4月23日</time></p>
   </header>
   
-  <div><script src="https://gist.github.com/11391053.js?file=test_gist"></script><noscript><pre><code>function mine()
-{
-    while(true)
-    {
-        longestChain = getLongestValidChain()
-
-        -- A number that changes every time, so that you don't waste time 
-        -- trying to calculate a valid blockHash with the same input.
-        nonce = getNewNonce()
-
-        currentTXs = getUnconfirmedTransactionsFromNetwork()
-
-        newBlock = getNewBlock(longestChain, currentTX, nonce)
-
-        -- http://en.wikipedia.org/wiki/SHA-2
-        -- and this is what all the "mining machines" are doing.
-        blockHash = sha256(newBlock)
-
-        if(meetReqirements(blockHash))
-        {
-            broadcast(newBlock)
-            -- Now the height the block chain is incremented by 1
-            -- (if the new block is accepted by other peers),
-            -- and all the TXs in the new block are "confirmed"
-        }
-    }
-}
-////////////////////////////////////////////////////////////////
-function sendBTC(amount)
-{
-    sourceTXs = pickConfirmedTransactionsToBeSpent(amount)
-    tx = generateTX(sourceTXs, targetAddrs, amount, fee)
-    signedTx = sign(tx, privateKeysOfAllInputAddress)
-    broadcast(signedTx)
-}
-////////////////////////////////////////////////////////////////</code></pre></noscript></div>
+  <p>test <i class="fa fa-tags" /> fa-tags</p>
 
 <div><table class="CodeRay"><tr>
   <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
