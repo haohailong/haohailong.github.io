@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Octopress | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-04-30T09:12:06+02:00</updated>
+  <updated>2014-04-30T09:34:52+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -99,7 +99,7 @@ rake generate
 <span class="key">title</span>: <span class="string"><span class="content">My Octopress Blog</span></span>  <span class="comment">#这里改为你想要的网站标题</span>
 <span class="key">subtitle</span>: <span class="string"><span class="content">A blogging framework for hackers.</span></span> <span class="comment">#这里改为你的博客副标题</span>
 <span class="key">author</span>: <span class="string"><span class="content">Your Name</span></span> <span class="comment">#这里改为博客作者的名字，也就是你的名字</span>
-<span class="key">simple_search</span>: <span class="string"><span class="content">https://www.google.com/search</span></span> <span class="comment">#这时默认搜索引擎，可以先不管</span>
+<span class="key">simple_search</span>: <span class="string"><span class="content">https://www.google.com/search</span></span> <span class="comment">#这是默认搜索引擎，可以先不管</span>
 <span class="key">description</span>: <span class="comment">#网站描述信息</span>
 </pre></div>
 </div>
