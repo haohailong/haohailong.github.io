@@ -7,8 +7,6 @@ sharing: true
 footer: true
 ---
 
-<p><i class="fa fa-instagram fa-5x fa-spin"></i></p>
-
 {% gistapi 11391053 %}
 
 ~~~
