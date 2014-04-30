@@ -46,5 +46,6 @@ footer: true
 * [武眉博](http://huobazi.aspxboy.com)
 * [Along's Blog](http://jinlong.github.io)
 * [Nate Dickson](http://natedickson.com)
+* [Keen on Art of Tech](http://blog.tinyxd.me/)
 
 To be continued.
