@@ -8,11 +8,10 @@ footer: true
 ---
 ### 郝海龙
 
->ébauche [ebo∫]: 法文单词，意为草稿。
-
-test fontawesome: <i class="fa fa-flag"></i> fa-flag
-
-本页面所列文章均为未完成草稿，未经允许，请勿转载。
+{::nomarkdown}
+<p class="info"><i class="fa fa-dot-circle-o"></i> ébauche [ebo∫]: 法文单词，意为草稿。<br />  
+本页面所列文章均为未完成草稿，未经允许，请勿转载。</p>
+{:/nomarkdown}
 
 #### Octopress 相关：
 * [Octopress 搭建日志]({{ root_url }}/ebauche/octopress/build-log.html)
