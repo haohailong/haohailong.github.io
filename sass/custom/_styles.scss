@@ -143,3 +143,15 @@ ul#markdown-toc {
 	text-align: justify;
 }
 
+
+/* 导航栏倒圆角 */
+@media only screen and (min-width: 1040px) {
+        body > nav {
+                @include border-top-radius(.4em);
+        }
+
+        body > footer {
+                @include border-bottom-radius(.4em);
+        }
+}
+
