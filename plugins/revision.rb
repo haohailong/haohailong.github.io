@@ -70,14 +70,16 @@ module Jekyll
         return ''
       end
 
-      cmd = 'git log --date=local --pretty="%cd|%s" --max-count=' + @limit.to_s + ' ' + full_path
+      cmd = 'git log --date=short --pretty="format: %cd |%s" --max-count=' + @limit.to_s + ' ' + full_path
+      # cmd = 'git log --date=local --pretty="%cd|%s" --max-count=' + @limit.to_s + ' ' + full_path
       logs = `#{cmd}`
 
       html = '<ul>'
       logs.each_line do |line|
         parts = line.split('|')
         date, msg = parts[0], parts[1..-1].join('|') # keep origin pileline from logs
-        html << '<li><strong>' + date + '</strong><br/>' + msg + '</li>'
+        html << '<li><strong>' + msg + '</strong>&nbsp;' + date + '</li>'
+        # html << '<li><strong>' + date + '</strong><br/>' + msg + '</li>'
       end
       html << '</ul>'
 
@@ -91,8 +93,8 @@ module Jekyll
       branch = `#{cmd}`.chop
       if site['source'] != nil
         # for Octopress sites
-        link = File.join('https://github.com', site['github_user'], site['github_repo'],
-                         'commits', branch, site['source'], post['dir_name'], post['file_name'])
+        link = File.join('https://github.com', site['github_user'], site['github_repo'], 
+                        'commits', branch, site['source'], post['dir_name'], post['file_name'])
       else
         # for Jekyll sites
         link = File.join('https://github.com', site['github_user'], site['github_repo'],
