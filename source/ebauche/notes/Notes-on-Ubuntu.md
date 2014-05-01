@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Notes on Ubuntu"
+author: 郝海龙
 date: 2014-04-02
 comments: true
 sharing: true
@@ -73,7 +74,5 @@ footer: true
 		ls 列出目录下文件
 		rmdir 移除空目录，remove directory
 		rm -rf 移除目录及该目录下所有文件及目录
-
-郝海龙
 		
 

@@ -1,12 +1,12 @@
 ---
 layout: page
 title: "WordPress 常用插件"
+author: 郝海龙
 date: 2014-04-27 17:24:10
 comments: true
 sharing: true
 footer: true
 ---
-### 郝海龙
 
 我的主博客 <haohailong.net> 使用的一些 WordPress 插件，留此存档。
 

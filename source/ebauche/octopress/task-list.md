@@ -8,8 +8,10 @@ sharing: true
 footer: true
 ---
 
-## Octopress 教程：
-### 已写入教程
+- list element with functor item
+{:toc}
+
+## 已写入教程
 
 **Octopress 搭建流程 – Github Pages：**
 
@@ -39,7 +41,7 @@ footer: true
 		- 添加数学公式
 
 
-### 待写入教程
+## 待写入教程
 
 **Octopress 精益修改 (2)：**
 
@@ -66,7 +68,7 @@ footer: true
 	- 修改连接样式
 	- 给中英文添加空格
 
-**Octopress 精益修改 (2)：**
+**Octopress 精益修改 (3)：**
 
 - 推荐功能：
 	- Coderay 实现更美观的代码显示。 
@@ -79,7 +81,8 @@ footer: true
 	- 长文档自动生成目录
 	- 文章尾部添加版本修订信息
 
-- 暂不计划写入：
-	- 添加 ADN 页面
-	- 图床问题
-	- SEO 优化
+### 暂不计划写入教程
+
+- 添加 ADN 页面
+- 图床问题
+- SEO 优化
