@@ -81,6 +81,11 @@ github_skip_forks: true
 # twitter_user:
 # twitter_tweet_button: true
 
+# App.net
+adn_user: hailong
+adn_post_count: 5
+adn_show_replies: false
+
 # Google +1
 google_plus_one: false
 google_plus_one_size: medium

@@ -4,7 +4,7 @@
     color: darken($sidebar-bg, 18);
     text-shadow: $main-bg 0 1px;
     text-align: center;
-    padding: 2.5em 0 .5em;
+    padding: 2.5em 0 0em;
     &.error {
       background: inline-image('adn_32_gray.png') no-repeat center .5em;
     }
@@ -12,11 +12,12 @@
   p {
     position: relative;
     padding-right: 1em;
-    font-size: .9em;
+    font-size: 1em;
   }
+  
   a.author {
-    float: left;
-    padding: 0 0 1em .1em;
+    display: none;;
+    padding: 0 0 1em 1em;
     position: relative;
     text-shadow: #fff 0 1px;
     font-size: .7em;
@@ -29,9 +30,9 @@
   }
   a.timestamp {
     color: lighten($sidebar-link-color-subdued, 15);
-    float: right;
-    padding: 0 0 .1em 1em;
-    position: relative; right: -1.3em;
+    float: left;
+    padding: 0 0 .1em .5em;
+    position: relative; //right: -1.3em;
     text-shadow: #fff 0 1px;
     font-size: .7em;
     span { font-size: 1.5em; }

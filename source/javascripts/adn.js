@@ -7,15 +7,15 @@ function prettyDate(time) {
     return "<span>&infin;</span>"; // because IE date parsing isn't fun.
   }
   var say = {
-    just_now:    " now",
-    minute_ago:  "1m",
-    minutes_ago: "m",
-    hour_ago:    "1h",
-    hours_ago:   "h",
-    yesterday:   "1d",
-    days_ago:    "d",
-    last_week:   "1w",
-    weeks_ago:   "w"
+    just_now:    "刚刚发布",
+    minute_ago:  "1 分钟之前发布",
+    minutes_ago: " 分钟之前发布",
+    hour_ago:    "1 小时之前发布",
+    hours_ago:   "小时之前发布",
+    yesterday:   "1 天之前发布",
+    days_ago:    " 天之前发布",
+    last_week:   "1 周之前发布",
+    weeks_ago:   " 周之前发布"
   };
 
   var current_date = new Date(),
