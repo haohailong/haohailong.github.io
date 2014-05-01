@@ -72,7 +72,7 @@ a {
 }
 
 html {
-  background: #191919; //$page-bg image-url('line-tile.png') top left;
+  background: #191919 image-url('line-tile.png') top left; //$page-bg image-url('line-tile.png') top left;
 }
 body {
   > div {
