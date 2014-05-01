@@ -1,0 +1,206 @@
+/* 凡是用到圆角矩形，阴影，特殊色彩背景的框，都在本文件下定义 */
+
+/* 范本：
+
+.border_case:before {
+  	content: "标题文字";
+  	font-weight: bold;
+	font-size: 1.2em;
+	font-family: $sans;
+	line-height: 2em;
+}
+
+.border_case {
+  	list-style: none;
+	border: none;
+	padding: 0.6em 1.25em 0.6em 1.25em;
+	margin-top: 0.25em;
+	margin-bottom: 0.8em;
+	margin-left: 0;
+	font-style: normal;
+	width: 40%; // 宽度
+	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+
+	-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  	background-color: white url(/images/tab_info.gif) no-repeat left top; //后面为背景图
+}
+
+*/
+
+
+.borders, .borderwhite, .borderblue, .bordergrey, .borderred, .borderskyblue, .borderpurple, .borderdreamblue, .borderorange, .bordergirlskin {
+  	list-style: none;
+	border: none;
+	padding: 0.6em 1.25em 0.6em 1.25em;
+	margin-top: 0.25em;
+	margin-bottom: 0.8em;
+	margin-left: 0;
+	font-style: normal;
+	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+
+	-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.borderwhite {
+	background-color: white;
+}
+
+.borderblue {
+	background: #d5e9f6;
+}
+
+.bordergrey {
+	background: #d3d3d3;
+}
+
+.borderred {
+	background: #f9d9d8;
+}
+
+.borderskyblue {
+	background: #00BFFF;
+}
+
+.borderpurple {
+	background: #9999ff;
+}
+
+.borderdreamblue {
+	background: #06b9d1;
+}
+
+.borderorange {
+	background: #F5AD3B;
+}
+
+.bordergirlskin {
+	background: #fedcbd;
+}
+
+/* post revision */
+
+.postrevision:before {
+  	content: "本文版本信息";
+  	font-weight: bold;
+	font-size: 1.2em;
+	font-family: $sans;
+	line-height: 2em;
+}
+
+.postrevision {
+  	list-style: none;
+	border: none;
+	padding: 0.6em 1.25em 0.6em 1.25em;
+	margin-top: 0.25em;
+	margin-bottom: 0.8em;
+	margin-left: 0;
+	font-style: normal;
+	//width: 40%;
+	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+
+	-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  	background-color: white;
+}
+
+/* 提示框样式 */
+
+.info, .warning{
+	border: none;
+	padding: 0.6em 1.25em 0.6em 48px;
+	margin-top: 0.25em;	
+
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	
+	-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.info{
+	background: #d5e9f6 url(/images/tab_info.gif) no-repeat left top;
+}
+
+.warning{
+	background: #f9d9d8 url(/images/tab_red.gif) no-repeat left top;
+}
+
+
+/*  Markdown 目录 */
+
+#markdown-toc:before {
+  	content: "本页目录";
+  	font-weight: bold;
+	font-size: 1.2em;
+	font-family: $sans;
+	line-height: 2em;
+}
+ul#markdown-toc {
+  	list-style: none;
+	border: none;
+	padding: 0.6em 1.25em 1.2em;
+	margin-top: 0.25em;
+	margin-left: 0;	
+	font-style: normal;
+	font-size: 1em;
+
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+
+	-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  	background-color: #D3D3D3;
+}
+
+.blog-index #markdown-toc {
+  	display: none;
+}
+
+/* post revision */
+
+.postrevision:before {
+  	content: "本文版本信息";
+  	font-weight: bold;
+	font-size: 1.2em;
+	font-family: $sans;
+	line-height: 2em;
+}
+
+.postrevision {
+  	list-style: none;
+	border: none;
+	padding: 0.6em 1.25em 0.6em 1.25em;
+	margin-top: 0.25em;
+	margin-bottom: 0.8em;
+	margin-left: 0;
+	font-style: normal;
+	font-size: 0.8em;
+	//width: 40%;
+	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+
+	-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  	background-color: #D3D3D3;
+}

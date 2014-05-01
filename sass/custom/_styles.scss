@@ -46,63 +46,6 @@ h1 {
 
 ul, ol {margin-bottom: 0.6em;}
 
-
-/* 提示框样式 */
-
-.info, .warning{
-	border: none;
-	padding: 0.6em 1.25em 0.6em 48px;
-	margin-top: 0.25em;	
-
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-radius: 8px;
-	
-	-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-}
-
-.info{
-	background:#d5e9f6 url(/images/tab_info.gif) no-repeat left top;
-}
-
-.warning{
-	background:#f9d9d8 url(/images/tab_red.gif) no-repeat left top;
-}
-
-/*  Markdown 目录 */
-
-#markdown-toc:before {
-  	content: "本页目录";
-  	font-weight: bold;
-	font-size: 1.2em;
-	font-family: $sans;
-	line-height: 2em;
-}
-ul#markdown-toc {
-  	list-style: none;
-	border: none;
-	padding: 0.6em 1.25em;
-	margin-top: 0.25em;
-	margin-left: 0;	
-	font-style: normal;
-	font-size: 1em;
-
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-radius: 8px;
-
-	-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-  	background-color: white;
-}
-
-.blog-index #markdown-toc {
-  	display: none;
-}
-
 /* Coderay */
 @import "custom/coderay";
 /* overrides of the lousy styles from _syntax.scss */
@@ -122,28 +65,6 @@ ul#markdown-toc {
 .CodeRay span.insert, .CodeRay span.change, .CodeRay span.delete {
         width: auto;
 }
-
-/* revision */
-.postrevision {
-  	list-style: none;
-	border: none;
-	padding: 0.6em 1.25em 0.2em 1.25em;
-	margin-top: 0.25em;
-	margin-bottom: 0.8em;
-	margin-left: 0;
-	font-style: normal;
-	//width: 40%;
-	
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-radius: 8px;
-
-	//-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-	//-moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-	//-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
-  	background-color: white;
-}
-
 
 /*!
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
