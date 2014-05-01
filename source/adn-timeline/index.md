@@ -12,7 +12,7 @@ footer: true
 {:.info}
 
 <div>
-  <ul id="adn_posts">
+  <ul id="adn_posts"   class="ul-adn">
     <li class="loading">加载中……</li>
   </ul>
   <script type="text/javascript">
