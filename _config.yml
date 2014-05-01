@@ -83,7 +83,7 @@ github_skip_forks: true
 
 # App.net
 adn_user: hailong
-adn_post_count: 5
+adn_post_count: 15
 adn_show_replies: false
 
 # Google +1
