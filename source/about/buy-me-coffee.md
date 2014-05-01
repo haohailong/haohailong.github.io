@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "请我喝咖啡"
+author: 郝海龙
 date: 2014-04-30 08:56:08
 comments: true
 sharing: true

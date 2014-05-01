@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "系列文章目录"
+author: 郝海龙
 date: 2014-04-28 20:20
 comments: true
 sharing: true

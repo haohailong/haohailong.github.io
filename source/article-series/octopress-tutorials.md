@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Octopress 教程目录"
+author: 郝海龙
 date: 2014-04-28 23:41:43
 comments: true
 sharing: true
