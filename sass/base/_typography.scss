@@ -63,7 +63,7 @@ h6, section h5, section section h4, section section section h3 {
   font-size: .8em;
 }
 
-p, article blockquote, ul, ol { margin-bottom: 1.5em; @extend .sans; text-align: justify;}
+p, article blockquote, ul, ol { margin-bottom: 1.5em; text-align: justify;}
 
 ul { list-style-type: disc;
   ul { list-style-type: circle; margin-bottom: 0px;
