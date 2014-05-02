@@ -9,7 +9,7 @@ categories: "Octopress"
 - list element with functor item
 {:toc}
 
-## 永远的第二步
+## 1. 永远的第二步
 
 通过「[Octopress 搭建流程 – Github Pages](http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/)」，我们搭建好了自己的 Octopress 博客并发布了第一篇文章。
 
@@ -23,7 +23,7 @@ categories: "Octopress"
 
 为了行文简化，再说一点：本文中凡出现需要执行的命令，默认使用终端 (Terminal)。如不做特殊说明，请首先使用 <code>cd octopress</code> 命令进 <code>octopress</code> 文件夹，所出现的文件夹或者目录都以此目录为根目录。
 
-## 简要说明
+## 2. 简要说明
 
 对于博客系统的个性化修改，一般来说分为如下几个方面：
 
@@ -35,7 +35,7 @@ categories: "Octopress"
 
 一般的 Octopress 教程会按照上面的列表分别进行讲解，而我们的修改方式是针对具体问题进行的，同一个问题可能会涉及到以上多方面的修改。这种分类讲解模式可能并不是很方便。所以我会把一些后期基本上不用做太多修改的，类别属性比较明显的放在前面单独讲，之后就按照单个问题来讲解。
 
-## 新主题安装
+## 3. 新主题安装
 
 在你搭建博客的时候，Octopress 会为你安装默认的主题 Classic，但这个主题第一眼看上去很难说好看，所以可以考虑选择安装[第三方主题](https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes)。
 
@@ -52,9 +52,9 @@ rake generate
 
 当然默认主题也有很多令人不满意的地方，好在我们还可以修改，不着急，慢慢来。
 
-## 基本配置
+## 4. 基本配置
 
-### 域名，网站标题，作者
+### 4.1 域名，网站标题，作者
 
 当你打开搭建好的博客后，你会发现博客的标题是 My Octopress Blog，副标题是 A blogging framework for hackers.
 
@@ -73,7 +73,7 @@ description: #网站描述信息
 
 按照我给出的 # 后面的提示信息做相应修改即可，请注意，诸如<code>url: </code>中的冒号必须是英文冒号，并且要符合英文标点符号使用规范：冒号后必须空格。
 
-### 日期格式
+### 4.2 日期格式
 
 我们暂且把 <code>_config.yml</code> 文件放到一边，再回头看博客主页，你会发现每条博客上面的日期和文章尾部的日期都是诸如 <code>Apr 28th 2014</code> 这样的格式。我们当然是想把它变成中文的「2014 年 4 月 28 日」这样的格式，那么再次回到 <code>_config.yml</code> 文件，顺着刚才那几行代码往下看，你会发现这样一行：
 
@@ -81,9 +81,9 @@ description: #网站描述信息
 date_format: "ordinal" #默认日期显示方式
 {% endcoderay %}
 
-请把其中的 <code>"ordinal"</code> 改为 <code>"%Y年%-m月%e日"</code>，并保存。
+请把其中的 <code>"ordinal"</code> 改为 <code>"%Y年%-m月%-d日"</code>，并保存。
 
-### 文章链接形式
+### 4.3 文章链接形式
 
 回到博客，点开你发表的文章，这是你看一下地址栏，发现网址（也就是这篇文章的链接）是类似这样的形式：
 
@@ -111,7 +111,7 @@ permalink: /blog/:year:month:day/:title.html/ #实现第一种
 permalink: /blog/:title.html/ #实现第二种
 {% endcoderay %}
 
-### 分类目录前缀
+### 4.4 分类目录前缀
 
 在你文章底部日期右边是该文章所属的分类，点击它，会显示该分类下所有的文章[^3]。但你发现该目录标题前有一个前缀 "Categories"，这当然没错，但我们希望它是汉语。
 
@@ -123,7 +123,7 @@ category_title_prefix: "分类：" # 修改分类前缀
 
 理论上可以添加到任何位置，但为了显示直观，建议加到 <code>category_dir: blog/categories</code> 下一行。
 
-### 「继续阅读」按钮
+### 4.5「继续阅读」按钮
 
 如果你希望你的文章在首页显示摘要，点击类似「继续阅读」这样的按钮查看全文，可以在你的文章中插入 <code><!--more--></code>，这样在这个标记之前的内容会出现在首页。你可以试着在你的文章中插入这个标签，会发现首页会在这里出现一个<code>Read on &rarr;</code>这样的按钮，当然我们也希望他是汉语。
 
@@ -144,7 +144,7 @@ rake deploy
 
 看看博客，我们想要的效果都已经实现了吧。
 
-### 修改 Markdown 文件后缀
+### 4.6 修改 Markdown 文件后缀
 
 Octopress 默认日志文件后缀是 .markdown，但现在大多数 Markdown 文件的后缀是 .md，推荐使用这种更为简洁的后缀。
 
@@ -164,7 +164,7 @@ new_page_ext    = "md"  # 默认新页面文件后缀
 
 第二行是默认新页面文件后缀，如果不明白新页面具体指什么，后面的文章中会有讲解。
 
-### 修改默认 Markdown 解释器
+### 4.7 修改默认 Markdown 解释器
 
 Octopress 默认的 Markdown 解释器是 rdiscount，个人更喜欢 [kramdown](http://kramdown.gettalong.org/quickref.html)，支持 [Multi Markdown](https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide)语法和 LaTeX，对于理工科博客 LaTeX 必不可少，而且据说 kramdown 更快，也是 Github 推荐的 Markdown 解释器。
 
