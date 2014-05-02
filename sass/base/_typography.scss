@@ -63,7 +63,7 @@ h6, section h5, section section h4, section section section h3 {
   font-size: .8em;
 }
 
-p, article blockquote, ul, ol { margin-bottom: 1.5em; }
+p, article blockquote, ul, ol { margin-bottom: 1.5em; @extend .sans; text-align: justify;}
 
 ul { list-style-type: disc;
   ul { list-style-type: circle; margin-bottom: 0px;
@@ -112,6 +112,7 @@ article blockquote {
   font-style: normal;
   position: relative;
   font-size: 1em;
+  color: #555555;
   line-height: 1.5em;
   padding-left: 1em;
   border-left: 4px solid rgba($text-color-light, .5);
