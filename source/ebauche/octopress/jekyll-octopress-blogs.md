@@ -50,5 +50,6 @@ footer: true
 * [Keen on Art of Tech](http://blog.tinyxd.me/)
 * [iTimothy](http://www.xiaozhou.net/blog/archives)
 * [DINEVER'S BLOG](http://dinever.com) 
+* [Lucifr](http://lucifr.com) 最早是搜 Afred Workflows 的时候发现的。
 
 To be continued.
