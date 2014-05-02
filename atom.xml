@@ -4,7 +4,7 @@
   <title><![CDATA[生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-05-02T10:08:11+02:00</updated>
+  <updated>2014-05-02T10:13:54+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -772,9 +772,15 @@ rake gen_deploy
 <p>要实现不同类型文章独立显示，一个理念上最简单直接的办法就是，再搭建一个新的博客专门显示其中一类文章。当然，实际操作起来，可能在原博客上把文章分开更简单。但我还是选择了再搭建一个新站，主要有以下几个原因：</p>
 
 <ol>
-  <li>虽然不是科班出身，但从小对 IT 感兴趣，如果有机会练练手自然不愿意放过。</li>
-  <li>一直对 <a href="http://git-scm.com/">Git</a> 和 <a href="https://github.com/">Github</a> 很感兴趣，想通过这个 Github Pages 上搭建的新博客开始自己的 Github 之旅。</li>
-  <li>受阳志平先生影响，觉得 Github Pages 非常适合用来写偏向理工科的博客。</li>
+  <li>
+    <p>虽然不是科班出身，但从小对 IT 感兴趣，如果有机会练练手自然不愿意放过。</p>
+  </li>
+  <li>
+    <p>一直对 <a href="http://git-scm.com/">Git</a> 和 <a href="https://github.com/">Github</a> 很感兴趣，想通过这个 Github Pages 上搭建的新博客开始自己的 Github 之旅。</p>
+  </li>
+  <li>
+    <p>受阳志平先生影响，觉得 Github Pages 非常适合用来写偏向理工科的博客。</p>
+  </li>
 </ol>
 
 <p>搭建新站的过程一波三折：一开始，我想直接使用 Jekyll 来搭建博客，最终碍于没有好看的博客主题，选择放弃。后来又试了很多人推荐的轻量级博客系统 Hexo，结果发现这货仅有的模板都太偏文艺，这与我搭建一个理工类博客的初衷不符。最后还是选择了一开始就知道的，最为大众的 Octopress。<sup id="fnref:7"><a href="#fn:7" rel="footnote">7</a></sup></p>
