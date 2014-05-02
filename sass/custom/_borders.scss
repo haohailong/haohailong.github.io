@@ -160,7 +160,7 @@ ul#markdown-toc {
 	font-style: normal;
 	font-size: 1em;
 	line-height: 1.75em;
-
+	
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
@@ -169,7 +169,21 @@ ul#markdown-toc {
 	-moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
   	background-color: #ebc9eb; //#D3D3D3;
+	a:link {
+		text-decoration: none; 
+		color: lighten(#165b94, 3);
+	}
+	a:active { 
+		color: adjust-color($link-color-hover, $lightness: -15);
+	}
+	a:hover { 
+		color: adjust-color($link-color, $lightness: 10, $saturation: 25);
+	} 
+	a:visited { 
+		color: adjust-color($link-color, $hue: 80, $lightness: -4);
+	}
 }
+
 
 .blog-index #markdown-toc {
   	display: none;

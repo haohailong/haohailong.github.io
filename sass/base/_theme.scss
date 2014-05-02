@@ -62,6 +62,7 @@ $page-border-bottom: darken($footer-bg, 5) !default;
 /* Core theme application */
 
 a {
+  text-decoration: none; //此行新添
   @include link-colors($link-color, $hover: $link-color-hover, $focus: $link-color-hover, $visited: $link-color-visited, $active: $link-color-active);
 }
 aside.sidebar a {
