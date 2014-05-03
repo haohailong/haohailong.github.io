@@ -133,7 +133,7 @@ category_title_prefix: "分类：" # 修改分类前缀
 excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
 {% endcoderay %}
 
-然后把引号中高亮现实的部分替换为你想要的文字，比如「阅读全文」，并保存。
+然后把引号中高亮显示的部分替换为你想要的文字，比如「阅读全文」，并保存。
 
 修改到这一步，你肯定很想看看效果，现在执行如下命令，重新生成并部署页面：
 
