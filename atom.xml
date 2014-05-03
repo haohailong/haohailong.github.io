@@ -4,7 +4,7 @@
   <title><![CDATA[生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-05-02T10:39:09+02:00</updated>
+  <updated>2014-05-04T00:21:55+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -193,7 +193,7 @@ http://[your_domain_name]/blog/Post-Title.html/ # 这也是本博的生成方式
 </div>
  </figure></notextile></div>
 
-<p>然后把引号中高亮现实的部分替换为你想要的文字，比如「阅读全文」，并保存。</p>
+<p>然后把引号中高亮显示的部分替换为你想要的文字，比如「阅读全文」，并保存。</p>
 
 <p>修改到这一步，你肯定很想看看效果，现在执行如下命令，重新生成并部署页面：</p>
 
