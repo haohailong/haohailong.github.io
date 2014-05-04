@@ -4,7 +4,7 @@
   <title><![CDATA[生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-05-04T09:01:45+02:00</updated>
+  <updated>2014-05-04T09:02:54+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -161,7 +161,7 @@ footer: true
 
 <p>我们刚刚已经顺手汉化了导航栏左侧的页面链接，现在剩下的是导航栏右侧的搜索框和 RSS 订阅链接。这部分内容在 <code>source/_includes/navigation.html</code> 文件中，注意文件路径，与刚才我们修改的 navigation.html 文件不是一个文件。</p>
 
-<p class="warning">在这里顺便说一句，通常只主张修改<code>custom</code> 文件夹下的内容，因为这部分内容会覆盖掉主题默认的内容，这样可以在不影响原主题代码的情况下，完成我们想要的效果，同时保证了即使我们自己写的代码有问题，系统也有一个默认的代码可以执行。当然对于我们的汉化工作来说，这样不会有太大影响。</p>
+<p class="warning">在这里顺便说一句，通常只主张修改 <code>custom</code> 目录下的内容，因为这部分内容会覆盖掉主题默认的内容，这样可以在不影响原主题代码的情况下，完成我们想要的效果，同时保证了即使我们自己写的代码有问题，系统也有一个默认的代码可以执行。当然对于我们的汉化工作来说，这样不会有太大影响。</p>
 
 <p>打开之后找到如下两行代码：</p>
 
