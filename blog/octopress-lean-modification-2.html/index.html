@@ -267,16 +267,31 @@ footer: true
 
 <p>首先，请打开<code>source/_includes/custom/navigation.html</code> 这个文件，你会看到：</p>
 
-<p>{% coderay lang:html linenos:true source/_includes/custom/navigation.html %}&lt;ul class=&#8221;main-navigation&#8221;&gt;</p>
-<li><a href="{{ root_url }}/">Blog</a></li>
-<li><a href="{{ root_url }}/blog/archives">Archives</a></li>
-<p>&lt;/ul&gt;{% endcoderay %}</p>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>source/_includes/custom/navigation.html </span></figcaption>
+ <table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+</pre></td>
+  <td class="code"><pre><span class="tag">&lt;ul</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">main-navigation</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{{ root_url }}/</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>Blog<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{{ root_url }}/blog/archives</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>Archives<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span></pre></td>
+</tr></table>
+ </figure></notextile></div>
 
 <p>这里就是导航栏里所有链接的列表，你只需要依样画葫芦即可完成页面添加。比如你想把刚刚生成的 your-title 页面和 mylove 页面添加到导航栏中，你可以在第三行下面再加如下两行：</p>
 
-<p>{% coderay lang:html linenos:true source/_includes/custom/navigation.html %}  &lt;li&gt;<a href="{{ root_url }}/your-title/">your-title</a>&lt;/li&gt;</p>
-<li><a href="{{ root_url }}/your-title/mylove.html">mylove</a></li>
-<p>{% endcoderay %}</p>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>source/_includes/custom/navigation.html </span></figcaption>
+ <table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+</pre></td>
+  <td class="code"><pre>  <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{{ root_url }}/your-title/</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>your-title<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{{ root_url }}/your-title/mylove.html</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>mylove<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span></pre></td>
+</tr></table>
+ </figure></notextile></div>
 
 <p>当然，我们也可以顺手汉化系统默认的两个页面，只要你把上面的 <code>Blog</code> 和 <code>Archives</code> 分别修改成你想要的信息，比如「首页」和「文章列表」，即可像本博客这样显示。</p>
 
@@ -294,7 +309,7 @@ footer: true
 
 <h3 id="section-5">2.1 汉化导航栏</h3>
 
-<p>我们刚刚已经顺手汉化了导航栏左侧的页面链接，现在剩下的是导航栏右侧的搜索框和 RSS 订阅链接。这部分内容在 <code>source/_includes/navigation.html</code>文件中，注意文件路径，与刚才我们修改的 navigation.html 文件不是一个文件。</p>
+<p>我们刚刚已经顺手汉化了导航栏左侧的页面链接，现在剩下的是导航栏右侧的搜索框和 RSS 订阅链接。这部分内容在 <code>source/_includes/navigation.html</code> 文件中，注意文件路径，与刚才我们修改的 navigation.html 文件不是一个文件。</p>
 
 <p class="warning">在这里顺便说一句，通常只主张修改<code>custom</code> 文件夹下的内容，因为这部分内容会覆盖掉主题默认的内容，这样可以在不影响原主题代码的情况下，完成我们想要的效果，同时保证了即使我们自己写的代码有问题，系统也有一个默认的代码可以执行。当然对于我们的汉化工作来说，这样不会有太大影响。</p>
 
