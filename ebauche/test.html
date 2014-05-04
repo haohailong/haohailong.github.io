@@ -244,19 +244,10 @@ footer: true
 
 <p>首先，请打开<code>source/_includes/custom/navigation.html</code> 这个文件，你会看到：</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>source/_includes/custom/navigation.html </span></figcaption>
- <table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-<a href="#n4" name="n4">4</a>
-</pre></td>
-  <td class="code"><pre><span class="tag">&lt;ul</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">main-navigation</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
-  <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">/</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>Blog<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
-  <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">/blog/archives</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>Archives<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
-<span class="tag">&lt;/ul&gt;</span></pre></td>
-</tr></table>
- </figure></notextile></div>
+<p>{% coderay lang:html linenos:true source/_includes/custom/navigation.html %}&lt;ul class=&#8221;main-navigation&#8221;&gt;</p>
+<li><a href="{{ root_url }}/">Blog</a></li>
+<li><a href="{{ root_url }}/blog/archives">Archives</a></li>
+<p>&lt;/ul&gt;{% endcoderay %}</p>
 
 <p>这里就是导航栏里所有链接的列表，你只需要依样画葫芦即可完成页面添加。比如你想把刚刚生成的 your-title 页面和 mylove 页面添加到导航栏中，你可以在第三行下面再加如下两行：</p>
 
@@ -274,7 +265,7 @@ footer: true
 
 <p>你也可以在这里添加站外链接，只需要把 <code>a href</code> 后面引号中的部分改为相应的网站链接即可。</p>
 
-<p>有一点需要说明，这里出现的 <code /> 是你网站的根目录，一般而言就是你的主域名。比如对于我这个博客来说，只要这个链接在站内：<code>/page.html</code> 和 <code>http://shengmingzhiqing.com/page.html</code> 是一个意思。前者给出的是 page.html 相对于根目录的路径，后者给出的是在 <code>shengmingzhiqing.com</code> 这个目录下的路径。简单来说，前者是页面的相对路径，后者是页面的绝对路径。</p>
+<p>有一点需要说明，这里出现的 <code>{{ root_url }}</code> 是你网站的根目录，一般而言就是你的主域名。比如对于我这个博客来说，只要这个链接在站内：<code>{{ root_url }}/page.html</code> 和 <code>http://shengmingzhiqing.com/page.html</code> 是一个意思。前者给出的是 page.html 相对于根目录的路径，后者给出的是在 <code>shengmingzhiqing.com</code> 这个目录下的路径。简单来说，前者是页面的相对路径，后者是页面的绝对路径。</p>
 
 <p>一般而言，站内连接的使用原则是，能使用相对路径就不要使用绝对路径。 因为域名一旦变更，相对路径继续有效，绝对路径将依然指向原域名下的页面，这本来就不是我们的本本意，而如果原来的域名废弃了，链接将直接失效。最为直接的影响是，如果我们在一个指向页面的超链接中使用了绝对路径，我们本地预览页面中的链接与已经部署到网络上的页面链接将指向相同的内容，这样我们就无法通过这个已经设好的超链接来追踪页面的实时效果。</p>
 

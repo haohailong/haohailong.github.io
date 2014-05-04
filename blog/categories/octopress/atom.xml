@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Octopress | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-05-04T08:46:29+02:00</updated>
+  <updated>2014-05-04T08:55:47+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -115,45 +115,28 @@ footer: true
 
 <p>你可以直接把链接放到文章中，和你插入别的超链接的方式没有任何区别。但很多时候我们会把一些重要页面的链接放在导航栏：</p>
 
-<p>首先，请打开<code>source/_includes/custom/navigation.html</code> 这个文件，你会看到：</p>
+<p>首先，请打开<code>source/_includes/custom/navigation.html</code> 这个文件，你会看到：
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>source/_includes/custom/navigation.html </span></figcaption>
- <table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-<a href="#n4" name="n4">4</a>
-</pre></td>
-  <td class="code"><pre><span class="entity">&amp;lt;</span>ul class=&quot;main-navigation&quot;<span class="entity">&amp;gt;</span><span class="tag">&lt;/p&gt;</span>
-<span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">/</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>Blog<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
-<span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">/blog/archives</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>Archives<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
-<span class="tag">&lt;p&gt;</span><span class="entity">&amp;lt;</span>/ul<span class="entity">&amp;gt;</span></pre></td>
-</tr></table>
- </figure></notextile></div></p>
+{% coderay lang:html linenos:true source/_includes/custom/navigation.html %}&lt;ul class="main-navigation"&gt;</p>
+<li><a href="{{ root_url }}/">Blog</a></li>
+<li><a href="{{ root_url }}/blog/archives">Archives</a></li>
+<p>&lt;/ul&gt;{% endcoderay %}
 
-<p>这里就是导航栏里所有链接的列表，你只需要依样画葫芦即可完成页面添加。比如你想把刚刚生成的 your-title 页面和 mylove 页面添加到导航栏中，你可以在第三行下面再加如下两行：</p>
+这里就是导航栏里所有链接的列表，你只需要依样画葫芦即可完成页面添加。比如你想把刚刚生成的 your-title 页面和 mylove 页面添加到导航栏中，你可以在第三行下面再加如下两行：
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>source/_includes/custom/navigation.html </span></figcaption>
- <table class="CodeRay"><tr>
-  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
-<a href="#n2" name="n2">2</a>
-<a href="#n3" name="n3">3</a>
-</pre></td>
-  <td class="code"><pre>  <span class="entity">&amp;lt;</span>li<span class="entity">&amp;gt;</span><span class="tag">&lt;a</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">/your-title/</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>your-title<span class="tag">&lt;/a&gt;</span><span class="entity">&amp;lt;</span>/li<span class="entity">&amp;gt;</span><span class="tag">&lt;/p&gt;</span>
-<span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">/your-title/mylove.html</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>mylove<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
-<span class="tag">&lt;p&gt;</span></pre></td>
-</tr></table>
- </figure></notextile></div></p>
+{% coderay lang:html linenos:true source/_includes/custom/navigation.html %}  &lt;li&gt;<a href="{{ root_url }}/your-title/">your-title</a>&lt;/li&gt;</p>
+<li><a href="{{ root_url }}/your-title/mylove.html">mylove</a></li>
+<p>{% endcoderay %}
 
-<p>当然，我们也可以顺手汉化系统默认的两个页面，只要你把上面的 <code>Blog</code> 和 <code>Archives</code> 分别修改成你想要的信息，比如「首页」和「文章列表」，即可像本博客这样显示。</p>
+当然，我们也可以顺手汉化系统默认的两个页面，只要你把上面的 <code>Blog</code> 和 <code>Archives</code> 分别修改成你想要的信息，比如「首页」和「文章列表」，即可像本博客这样显示。</p>
 
 <p>你也可以在这里添加站外链接，只需要把 <code>a href</code> 后面引号中的部分改为相应的网站链接即可。</p>
 
-<p>有一点需要说明，这里出现的 <code></code> 是你网站的根目录，一般而言就是你的主域名。比如对于我这个博客来说，只要这个链接在站内：<code>/page.html</code> 和 <code>http://shengmingzhiqing.com/page.html</code> 是一个意思。前者给出的是 page.html 相对于根目录的路径，后者给出的是在 <code>shengmingzhiqing.com</code> 这个目录下的路径。简单来说，前者是页面的相对路径，后者是页面的绝对路径。</p>
+<p>有一点需要说明，这里出现的 <code>{{ root_url }}</code> 是你网站的根目录，一般而言就是你的主域名。比如对于我这个博客来说，只要这个链接在站内：<code>{{ root_url }}/page.html</code> 和 <code>http://shengmingzhiqing.com/page.html</code> 是一个意思。前者给出的是 page.html 相对于根目录的路径，后者给出的是在 <code>shengmingzhiqing.com</code> 这个目录下的路径。简单来说，前者是页面的相对路径，后者是页面的绝对路径。</p>
 
 <p>一般而言，站内连接的使用原则是，能使用相对路径就不要使用绝对路径。 因为域名一旦变更，相对路径继续有效，绝对路径将依然指向原域名下的页面，这本来就不是我们的本本意，而如果原来的域名废弃了，链接将直接失效。最为直接的影响是，如果我们在一个指向页面的超链接中使用了绝对路径，我们本地预览页面中的链接与已经部署到网络上的页面链接将指向相同的内容，这样我们就无法通过这个已经设好的超链接来追踪页面的实时效果。</p>
 
-<p>在本文后面的部分以及后面的文章中，我将使用 <code></code> 来代替你网站的根目录（域名）。</p>
+<p>在本文后面的部分以及后面的文章中，我将使用 <code>{{ root_url }}</code> 来代替你网站的根目录（域名）。</p>
 
 <h2 id="section-4">2. 主题汉化</h2>
 
@@ -168,9 +151,9 @@ footer: true
 <p>打开之后找到如下两行代码：</p>
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
-  <div class="code"><pre>&amp;lt;li&amp;gt;&lt;a href=&quot;/atom.xml&quot; rel=&quot;subscribe-rss&quot; title=&quot;subscribe via RSS&quot;&gt;RSS&lt;/a&gt;&amp;lt;/li&amp;gt;
+  <div class="code"><pre><span class="entity">&amp;lt;</span>li<span class="entity">&amp;gt;</span><span class="tag">&lt;a</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">/atom.xml</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">rel</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">subscribe-rss</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">title</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">subscribe via RSS</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>RSS<span class="tag">&lt;/a&gt;</span><span class="entity">&amp;lt;</span>/li<span class="entity">&amp;gt;</span>
   …
-&lt;input class=&quot;search&quot; type=&quot;text&quot; name=&quot;q&quot; results=&quot;0&quot; placeholder=&quot;Search&quot; /&gt;</pre></div>
+<span class="tag">&lt;input</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">search</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">text</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">q</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">results</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">placeholder</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">Search</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span></pre></div>
 </div>
  </figure></notextile></div></p>
 
@@ -182,7 +165,7 @@ footer: true
 
 <h3 id="section-7">2.3 汉化归档页面</h3>
 
-<p>汉化完导航栏之后，我们打开归档页面 (<code>http:///blog/archives</code>)，你会发现这个页面上的日期和分类 (Posted in) 还是用英文显示的。要汉化这个内容，我们应该找到相应的页面文件。</p>
+<p>汉化完导航栏之后，我们打开归档页面 (http://{{ root_url }}/blog/archives)，你会发现这个页面上的日期和分类 (Posted in) 还是用英文显示的。要汉化这个内容，我们应该找到相应的页面文件。</p>
 
 <p>不妨根据我们刚才新建页面时对目录的理解，推测一下它在哪个目录。没错，它应该是在 <code>source/blog/archives</code> 目录下的 <code>index.html</code> 文件。但我们打开这个文件之后，发现并没有日期和分类这两项，不过不要着急，仔细观察，你会发现页面的主体内容部分被如下一句代码所代替：</p>
 
@@ -195,9 +178,9 @@ footer: true
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
   <div class="code"><pre>
-&lt;time datetime=&quot;{{ post.date | datetime | date_to_xmlschema }}&quot; pubdate=&quot;&quot;&gt;{{ post.date | date: &quot;&lt;span class=&quot;month&quot;&gt;%b&lt;/span&gt; &lt;span class=&quot;day&quot;&gt;%d&lt;/span&gt; &lt;span class=&quot;year&quot;&gt;%Y&lt;/span&gt;&quot;}}&lt;/time&gt;
+<span class="tag">&lt;time</span> <span class="attribute-name">datetime</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{{ post.date | datetime | date_to_xmlschema }}</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">pubdate</span>=<span class="string"><span class="delimiter">&quot;</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>{{ post.date | date: &quot;<span class="tag">&lt;span</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">month</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>%b<span class="tag">&lt;/span&gt;</span> <span class="tag">&lt;span</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">day</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>%d<span class="tag">&lt;/span&gt;</span> <span class="tag">&lt;span</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">year</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>%Y<span class="tag">&lt;/span&gt;</span>&quot;}}<span class="tag">&lt;/time&gt;</span>
 …
-&lt;span class=&quot;categories&quot;&gt;posted in {{ post.categories | category_links }}&lt;/span&gt;
+<span class="tag">&lt;span</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">categories</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>posted in {{ post.categories | category_links }}<span class="tag">&lt;/span&gt;</span>
 </pre></div>
 </div>
  </figure></notextile></div></p>
