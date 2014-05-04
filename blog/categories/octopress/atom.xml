@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Octopress | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-05-04T03:42:24+02:00</updated>
+  <updated>2014-05-04T03:44:21+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -128,7 +128,7 @@ footer: true
 
 <p>{% coderay %}&lt;li&gt;<a href="{{ site.subscribe_rss }}" rel="subscribe-rss" title="subscribe via RSS">RSS</a>&lt;/li&gt;
   …
-<input class="search" type="text" name="q" results="0" placeholder="Search" />{% coderay %}</p>
+<input class="search" type="text" name="q" results="0" placeholder="Search" />{% endcoderay %}</p>
 
 <p>把其中的 “subscribe via RSS” 和 “Search” (“pacehoder=” 后面那个) 分别换成「订阅 RSS」和「搜索」即可。</p>
 
