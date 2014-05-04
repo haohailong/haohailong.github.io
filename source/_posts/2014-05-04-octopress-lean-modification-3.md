@@ -63,7 +63,7 @@ $sidebar-width-wide: 260px;
 
 由上至下定义了「衬线字体」「无衬线字体」「等宽字体」「标题字体」「网站主标题字体」「网站副标题字体」，在其中添加你喜欢的字体即可。字体的优先级是由先到后的。当然别忘了去掉注释符号。
 
-对于英文字体，你还可以去 [Google Webfonts](http://www.google.com/fonts/) 查找你喜欢的字体并使用，比如你想用 PT Sans 这个字体，你只需要在 <code>source/_includes/custom/head.html</code> 中添加如下代码即可：
+对于英文字体，你还可以去 [Google Webfonts](http://www.google.com/fonts/) 查找你喜欢的字体并使用，比如你想用 PT Serif 这个字体，你只需要在 <code>source/_includes/custom/head.html</code> 中添加如下代码即可：
 
 {% coderay lang:html source/_includes/custom/head.html %}
 <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css"> {% endcoderay %}
