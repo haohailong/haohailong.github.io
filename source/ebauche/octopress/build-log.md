@@ -11,23 +11,26 @@ footer: true
 ## Octopress 每个人都该为自己打造专属的写作环境
 
 本节内容已作为单篇文章发布，点此查看：[Octopress 每个人都该为自己打造专属的写作环境]({{ root_url }}/blog/everybody-should-build-his-own-writing-space.html) 。  
-2014 年 4 月 27 日
+2014年4月27日
 {:.info}
 
 ## Octopress 搭建流程 – Github Pages
 
 本节内容已作为单篇文章发布，点此查看：[Octopress 搭建流程 – Github Pages]({{ root_url }}/blog/setup-octopress-with-github-pages.html) 。  
-2014 年 4 月 28 日
+2014年4月28日
 {:.info}
 
 ## Octopress 精益修改 (1)
 
 本节内容已作为单篇文章发布，点此查看：[Octopress 精益修改 (1)]({{ root_url }}/blog/octopress-lean-modification-1.html) 。  
-2014 年 4 月 28 日
+2014年4月28日
 {:.info}
 
 ## Octopress 精益修改 (2)
 
+本节内容已作为单篇文章发布，点此查看：[Octopress 精益修改 (2)]({{ root_url }}/blog/octopress-lean-modification-2.html) 。  
+2014年5月4日
+{:.info}
 
 
 
