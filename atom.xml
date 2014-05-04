@@ -4,7 +4,7 @@
   <title><![CDATA[生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-05-04T09:04:06+02:00</updated>
+  <updated>2014-05-04T09:12:55+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -18,9 +18,29 @@
     <link href="http://shengmingzhiqing.com/blog/octopress-lean-modification-2.html/"/>
     <updated>2014-05-04T05:41:14+02:00</updated>
     <id>http://shengmingzhiqing.com/blog/octopress-lean-modification-2</id>
-    <content type="html"><![CDATA[<p>通过前面的教程，我们成功搭建起了自己的 Octopress 博客，并对博客框架做了基本配置。这已经可以算是一个真正意义上的个人博客了：1. 确实可以在互联网上看到；2. 文章有自己的署名；3. 甚至可以撰写有公式的科技文章。</p>
+    <content type="html"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#section">1. 页面相关设置</a>    <ul>
+      <li><a href="#section-1">1.1 新建页面</a></li>
+    </ul>
+  </li>
+  <li><a href="#section-2">1.2 添加公益 404 页面</a></li>
+  <li><a href="#section-3">1.3 添加页面和其他链接至导航栏</a></li>
+  <li><a href="#section-4">2. 主题汉化</a>    <ul>
+      <li><a href="#section-5">2.1 汉化导航栏</a></li>
+      <li><a href="#section-6">2.2 汉化移动设备导航栏</a></li>
+      <li><a href="#section-7">2.3 汉化归档页面</a></li>
+      <li><a href="#section-8">2.4 汉化侧边栏</a></li>
+      <li><a href="#section-9">2.5 汉化其他部分</a></li>
+    </ul>
+  </li>
+  <li><a href="#section-10">3. 网站底部</a></li>
+  <li><a href="#section-11">4. 添加侧边栏</a></li>
+  <li><a href="#section-12">5. 添加评论系统</a></li>
+</ul>
 
-<p>但我们对于网站的个性化修改并没有结束：首先，网站整体显得很粗糙，很多必要的信息，比如作者简介，并没有呈现；其次，虽然我们对基本配置中涉及到的部分做了有限的汉化，但也正因为我们做了部分汉化，其余的英文部分显得更加不伦不类。针对这些问题，本文将继续我们「精益修改」之路。</p>
+<p>通过前面的教程，我们成功搭建起了自己的 Octopress 博客，并对博客框架做了基本配置。这已经可以算是一个真正意义上的个人博客了：1. 确实可以在互联网上看到；2. 文章有自己的署名；3. 甚至可以撰写有公式的科技文章。</p>
+
+<p>但我们对于网站的个性化修改并没有结束：首先，网站整体显得很粗糙，很多必要的信息，比如作者简介，并没有呈现；其次，虽然我们对基本配置中涉及到的部分做了有限的汉化，但也正因为我们做了部分汉化，其余的英文部分显得更加不伦不类。针对这些问题，本文将继续我们「精益修改」之路。<!--more--></p>
 
 <p>在正式进入主题之前，先给大家一个小技巧：我们可以先在终端执行命令 <code>sudo rake preview</code>，然后使用 <code>http://localhost:4000/</code> 这个网址对我们的网站进行预览。然后我们再修改相关属性，在修改过程中，只要刷新页面就可以看到实时效果，等效果没有问题了，我们再执行 <code>sudo rake generate</code> 和 <code>sudo rake deploy</code> 发布到网络上。<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>当然，最后还要记得使用 git 命令把修改后的源文件传到 Github 上。</p>
 
@@ -159,14 +179,14 @@ footer: true
 
 <h3 id="section-5">2.1 汉化导航栏</h3>
 
-<p>我们刚刚已经顺手汉化了导航栏左侧的页面链接，现在剩下的是导航栏右侧的搜索框和 RSS 订阅链接。这部分内容在 <code>source/_includes/navigation.html</code> 文件中，注意文件路径，与刚才我们修改的 navigation.html 文件不是一个文件。</p>
+<p>在给导航栏添加页面连接时，我们已经完成了左侧链接部分的汉化，现在剩下的是导航栏右侧的搜索框和 RSS 订阅链接。这部分内容在 <code>source/_includes/navigation.html</code> 文件中，注意文件路径，与刚才我们修改的 navigation.html 文件不是一个文件。</p>
 
 <p class="warning">在这里顺便说一句，通常只主张修改 <code>custom</code> 目录下的内容，因为这部分内容会覆盖掉主题默认的内容，这样可以在不影响原主题代码的情况下，完成我们想要的效果，同时保证了即使我们自己写的代码有问题，系统也有一个默认的代码可以执行。当然对于我们的汉化工作来说，这样不会有太大影响。</p>
 
 <p>打开之后找到如下两行代码：</p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"> <div class="CodeRay">
-  <div class="code"><pre><span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">/atom.xml</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">rel</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">subscribe-rss</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">title</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">subscribe via RSS</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>RSS<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+  <div class="code"><pre><span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{{ site.subscribe_rss }}</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">rel</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">subscribe-rss</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">title</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">subscribe via RSS</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>RSS<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
   …
 <span class="tag">&lt;input</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">search</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">text</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">q</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">results</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">placeholder</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">Search</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span></pre></div>
 </div>
