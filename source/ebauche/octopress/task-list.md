@@ -40,9 +40,6 @@ footer: true
 	- 修改默认 Markdown 解释器 (Rdiscount to kramdown)
 		- 添加数学公式
 
-
-## 待写入教程
-
 **Octopress 精益修改 (2)：**
 
 - 主题修改
@@ -59,6 +56,8 @@ footer: true
 	- 网站底部
 	- 添加侧边栏
 	- 添加评论系统
+
+## 待写入教程
 
 **Octopress 精益修改 (3)：**
 
