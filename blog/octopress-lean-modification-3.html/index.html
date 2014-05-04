@@ -191,7 +191,7 @@ $(document).bind('DOMNodeInserted', function(event) {
 
 <p>打开 <code>sass/custom/_layout.scss</code> 这个文件，找到如下两行：</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>sass/custom/</span></figcaption>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>sass/custom/_layout.scss </span></figcaption>
  <div class="CodeRay">
   <div class="code"><pre>//<span class="error">$</span><span class="tag">max-width</span>: <span class="float">1350px</span>;
 <span class="error">…</span>
@@ -204,7 +204,7 @@ $(document).bind('DOMNodeInserted', function(event) {
 
 <p>修改完之后，记得把这两行前面的 <code>//</code> 去掉，因为在样式表中，这个符号后面的内容默认是注释内容，会被自动忽略。比如，按照我的设置改完之后，这两行应该变为：</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>sass/custom/</span></figcaption>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>sass/custom/_layout.scss </span></figcaption>
  <div class="CodeRay">
   <div class="code"><pre><span class="error">$</span><span class="tag">max-width</span>: <span class="float">1000px</span>;
 <span class="error">…</span>
@@ -217,7 +217,7 @@ $(document).bind('DOMNodeInserted', function(event) {
 
 <p>修改完框架宽度之后，我们可以预览一下效果，会发现，由于宽度变窄，文章内容距离框架的边界就显得过宽了，所以我们也要对文章内容的宽度进行修改。同样还是在刚才的 <code>sass/custom/_layout.scss</code> 文件，找到：</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>sass/custom/</span></figcaption>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>sass/custom/_layout.scss </span></figcaption>
  <div class="CodeRay">
   <div class="code"><pre>//<span class="error">$</span><span class="tag">pad-wide</span>: <span class="float">55px</span>;
 <span class="error">…</span>
@@ -236,7 +236,7 @@ $(document).bind('DOMNodeInserted', function(event) {
 
 <p>布局修改好之后，我们接着来修改文字字体。打开 <code>sass/custom/_font.scss</code> 这个文件，你会发现如下几行代码：</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>sass/custom/</span></figcaption>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>sass/custom/_font.scss </span></figcaption>
  <div class="CodeRay">
   <div class="code"><pre>//<span class="error">$</span><span class="tag">sans</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Optima</span><span class="delimiter">&quot;</span></span>, <span class="tag">sans-serif</span>;
 //<span class="error">$</span><span class="tag">serif</span>: <span class="string"><span class="delimiter">&quot;</span><span class="content">Baskerville</span><span class="delimiter">&quot;</span></span>, <span class="tag">serif</span>;
@@ -262,7 +262,7 @@ $(document).bind('DOMNodeInserted', function(event) {
 
 <p>字体选好之后，我们还需要调整不同文字字体的大小。这部分内容是在 <code>sass/base/_typography.scss</code> 这个样式表中定义的。注意它并不在 <code>sass/custom</code> 目录下。打开之后，你会看到对于不同内容字体样式的定义，比如：</p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>sass/base/_typography.scss</span></figcaption>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>sass/base/_typography.scss </span></figcaption>
  <div class="CodeRay">
   <div class="code"><pre><span class="tag">body</span> &gt; <span class="tag">header</span> <span class="tag">h1</span> {
   <span class="key">font-size</span>: <span class="float">2.2em</span>;
