@@ -116,7 +116,7 @@ footer: true
 
 {% coderay %}<li><a href="{{ site.subscribe_rss }}" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
   …
-<input class="search" type="text" name="q" results="0" placeholder="Search"/>{% coderay %}
+<input class="search" type="text" name="q" results="0" placeholder="Search"/>{% endcoderay %}
 
 把其中的 "subscribe via RSS" 和 "Search" ("pacehoder=" 后面那个) 分别换成「订阅 RSS」和「搜索」即可。
 
