@@ -6,9 +6,12 @@ comments: true
 categories: "Octopress"
 ---
 
+- list element with functor item
+{:toc}
+
 通过前面的教程，我们成功搭建起了自己的 Octopress 博客，并对博客框架做了基本配置。这已经可以算是一个真正意义上的个人博客了：1. 确实可以在互联网上看到；2. 文章有自己的署名；3. 甚至可以撰写有公式的科技文章。
 
-但我们对于网站的个性化修改并没有结束：首先，网站整体显得很粗糙，很多必要的信息，比如作者简介，并没有呈现；其次，虽然我们对基本配置中涉及到的部分做了有限的汉化，但也正因为我们做了部分汉化，其余的英文部分显得更加不伦不类。针对这些问题，本文将继续我们「精益修改」之路。
+但我们对于网站的个性化修改并没有结束：首先，网站整体显得很粗糙，很多必要的信息，比如作者简介，并没有呈现；其次，虽然我们对基本配置中涉及到的部分做了有限的汉化，但也正因为我们做了部分汉化，其余的英文部分显得更加不伦不类。针对这些问题，本文将继续我们「精益修改」之路。<!--more-->
 
 在正式进入主题之前，先给大家一个小技巧：我们可以先在终端执行命令 <code>sudo rake preview</code>，然后使用 <code>http://localhost:4000/</code> 这个网址对我们的网站进行预览。然后我们再修改相关属性，在修改过程中，只要刷新页面就可以看到实时效果，等效果没有问题了，我们再执行 <code>sudo rake generate</code> 和 <code>sudo rake deploy</code> 发布到网络上。[^1]当然，最后还要记得使用 git 命令把修改后的源文件传到 Github 上。
 
@@ -107,16 +110,16 @@ footer: true
 
 ### 2.1 汉化导航栏
 
-我们刚刚已经顺手汉化了导航栏左侧的页面链接，现在剩下的是导航栏右侧的搜索框和 RSS 订阅链接。这部分内容在 <code>source/_includes/navigation.html</code> 文件中，注意文件路径，与刚才我们修改的 navigation.html 文件不是一个文件。
+在给导航栏添加页面连接时，我们已经完成了左侧链接部分的汉化，现在剩下的是导航栏右侧的搜索框和 RSS 订阅链接。这部分内容在 <code>source/_includes/navigation.html</code> 文件中，注意文件路径，与刚才我们修改的 navigation.html 文件不是一个文件。
 
 在这里顺便说一句，通常只主张修改 <code>custom</code> 目录下的内容，因为这部分内容会覆盖掉主题默认的内容，这样可以在不影响原主题代码的情况下，完成我们想要的效果，同时保证了即使我们自己写的代码有问题，系统也有一个默认的代码可以执行。当然对于我们的汉化工作来说，这样不会有太大影响。
 {:.warning}
 
 打开之后找到如下两行代码：
 
-{% coderay lang:html %}<li><a href="{{ site.subscribe_rss }}" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+{% coderay lang:html %}{% raw %}<li><a href="{{ site.subscribe_rss }}" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
   …
-<input class="search" type="text" name="q" results="0" placeholder="Search"/>{% endcoderay %}
+<input class="search" type="text" name="q" results="0" placeholder="Search"/>{% endraw %}{% endcoderay %}
 
 把其中的 "subscribe via RSS" 和 "Search" ("pacehoder=" 后面那个) 分别换成「订阅 RSS」和「搜索」即可。
 
