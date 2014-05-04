@@ -1,10 +1,9 @@
 ---
-layout: page
-title: "test"
-author: 郝海龙
+layout: post
+title: "Octopress 精益修改 (2)"
+date: 2014-05-04 03:41:14
 comments: true
-sharing: true
-footer: true
+categories: "Octopress"
 ---
 
 通过前面的教程，我们成功搭建起了自己的 Octopress 博客，并对博客框架做了基本配置。这已经可以算是一个真正意义上的个人博客了：1. 确实可以在互联网上看到；2. 文章有自己的署名；3. 甚至可以撰写有公式的科技文章。
@@ -81,16 +80,16 @@ footer: true
 你可以直接把链接放到文章中，和你插入别的超链接的方式没有任何区别。但很多时候我们会把一些重要页面的链接放在导航栏：
 
 首先，请打开<code>source/_includes/custom/navigation.html</code> 这个文件，你会看到：
-{% raw %}
-{% coderay lang:html linenos:true source/_includes/custom/navigation.html %}<ul class="main-navigation">
+
+{% coderay lang:html linenos:true source/_includes/custom/navigation.html %}{% raw %}<ul class="main-navigation">
   <li><a href="{{ root_url }}/">Blog</a></li>
   <li><a href="{{ root_url }}/blog/archives">Archives</a></li>
-</ul>{% endcoderay %}
-{% endraw %}
+</ul>{% endraw %}{% endcoderay %}
+
 这里就是导航栏里所有链接的列表，你只需要依样画葫芦即可完成页面添加。比如你想把刚刚生成的 your-title 页面和 mylove 页面添加到导航栏中，你可以在第三行下面再加如下两行：
 
-{% coderay lang:html linenos:true source/_includes/custom/navigation.html %} <li><a href="{{ root_url }}/your-title/">your-title</a></li>
-  <li><a href="{{ root_url }}/your-title/mylove.html">mylove</a></li>{% endcoderay %}
+{% coderay lang:html linenos:true source/_includes/custom/navigation.html %}{% raw %}  <li><a href="{{ root_url }}/your-title/">your-title</a></li>
+  <li><a href="{{ root_url }}/your-title/mylove.html">mylove</a></li>{% endraw %}{% endcoderay %}
 
 当然，我们也可以顺手汉化系统默认的两个页面，只要你把上面的 <code>Blog</code> 和 <code>Archives</code> 分别修改成你想要的信息，比如「首页」和「文章列表」，即可像本博客这样显示。
 
@@ -100,7 +99,7 @@ footer: true
 
 一般而言，站内连接的使用原则是，能使用相对路径就不要使用绝对路径。 因为域名一旦变更，相对路径继续有效，绝对路径将依然指向原域名下的页面，这本来就不是我们的本本意，而如果原来的域名废弃了，链接将直接失效。最为直接的影响是，如果我们在一个指向页面的超链接中使用了绝对路径，我们本地预览页面中的链接与已经部署到网络上的页面链接将指向相同的内容，这样我们就无法通过这个已经设好的超链接来追踪页面的实时效果。
 
-在本文后面的部分以及后面的文章中，我将使用 <code>{{ root_url }}</code> 来代替你网站的根目录（域名）。
+在本文后面的部分以及后面的文章中，我将使用 {% raw %}<code>{{ root_url }}</code>{% endraw %} 来代替你网站的根目录（域名）。
 
 ## 2. 主题汉化
 
@@ -108,14 +107,14 @@ footer: true
 
 ### 2.1 汉化导航栏
 
-我们刚刚已经顺手汉化了导航栏左侧的页面链接，现在剩下的是导航栏右侧的搜索框和 RSS 订阅链接。这部分内容在 <code>source/_includes/navigation.html</code>文件中，注意文件路径，与刚才我们修改的 navigation.html 文件不是一个文件。
+我们刚刚已经顺手汉化了导航栏左侧的页面链接，现在剩下的是导航栏右侧的搜索框和 RSS 订阅链接。这部分内容在 <code>source/_includes/navigation.html</code> 文件中，注意文件路径，与刚才我们修改的 navigation.html 文件不是一个文件。
 
-在这里顺便说一句，通常只主张修改<code>custom</code> 文件夹下的内容，因为这部分内容会覆盖掉主题默认的内容，这样可以在不影响原主题代码的情况下，完成我们想要的效果，同时保证了即使我们自己写的代码有问题，系统也有一个默认的代码可以执行。当然对于我们的汉化工作来说，这样不会有太大影响。
+在这里顺便说一句，通常只主张修改 <code>custom</code> 目录下的内容，因为这部分内容会覆盖掉主题默认的内容，这样可以在不影响原主题代码的情况下，完成我们想要的效果，同时保证了即使我们自己写的代码有问题，系统也有一个默认的代码可以执行。当然对于我们的汉化工作来说，这样不会有太大影响。
 {:.warning}
 
 打开之后找到如下两行代码：
 
-{% coderay %}<li><a href="{{ site.subscribe_rss }}" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+{% coderay lang:html %}<li><a href="{{ site.subscribe_rss }}" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
   …
 <input class="search" type="text" name="q" results="0" placeholder="Search"/>{% endcoderay %}
 
@@ -127,7 +126,7 @@ Octopress 默认采用了响应式设计，也就是说会根据不同的浏览�
 
 ### 2.3 汉化归档页面
 
-汉化完导航栏之后，我们打开归档页面 (http://{{ root_url }}/blog/archives)，你会发现这个页面上的日期和分类 (Posted in) 还是用英文显示的。要汉化这个内容，我们应该找到相应的页面文件。
+汉化完导航栏之后，我们打开归档页面 ({% raw %}http://{{ root_url }}/blog/archives{% endraw %})，你会发现这个页面上的日期和分类 (Posted in) 还是用英文显示的。要汉化这个内容，我们应该找到相应的页面文件。
 
 不妨根据我们刚才新建页面时对目录的理解，推测一下它在哪个目录。没错，它应该是在 <code>source/blog/archives</code> 目录下的 <code>index.html</code> 文件。但我们打开这个文件之后，发现并没有日期和分类这两项，不过不要着急，仔细观察，你会发现页面的主体内容部分被如下一句代码所代替：
 
@@ -135,7 +134,7 @@ Octopress 默认采用了响应式设计，也就是说会根据不同的浏览�
 
 也就是说，真正出现文字的地方应该在 <code>archive_post.html</code> 这个文件中。那么哪里去找这个文件呢？你当然可以用搜索功能，但在这里，为了更好的了解目录结构，不妨再推测一下。<code>archive_post.html</code> 前面有个 <code>include</code>，通常用这个命令包含的网页，都在 <code>source/_include</code> 这个目录下。打开这个目录，你果然找到了 <code>archive_post.html</code> ，打开之后会找到如下两行代码：
 
-{% coderay %}{% raw %}
+{% coderay lang:html %}{% raw %}
 <time datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate>{{ post.date | date: "<span class='month'>%b</span> <span class='day'>%d</span> <span class='year'>%Y</span>"}}</time>
 …
 <span class="categories">posted in {{ post.categories | category_links }}</span>{% endraw %}
@@ -179,11 +178,11 @@ Octopress 所有侧边栏页面都在 <code>source/_includes/asides</code>文件
 
 ## 4. 添加侧边栏
 
-我们刚刚说过，所有的侧边栏页面都在 <code>source/_include/asides</code> 目录下，我们可以把我们想要的侧边栏工具放到这里。系统自带了一些侧边栏小工具，比如我们刚刚已经看到的 Recent post。
+我们刚刚说过，所有的侧边栏页面都在 <code>source/_include/asides</code> 目录下，我们可以把我们想要的侧边栏工具放到这里。系统自带了一些侧边栏小工具，比如我们刚刚已经看到的 Recent posts。
 
 如果我们想让系统自带的这些侧边栏工具显示出来的话，需要在 _config.yml 文件下作相应的设置。比如你想添加 pinboard 的小工具，在 _config.yml 中找到如下代码做相应修改即可：
 
-{% coderay %}
+{% coderay lang:yml %}
 # Pinboard
 pinboard_user: #在这里添加你的 pinboard 用户名
 pinboard_count: 3 #这里的数字是默认现实的 pinboard 书签数量，可以任意修改
@@ -191,7 +190,7 @@ pinboard_count: 3 #这里的数字是默认现实的 pinboard 书签数量，可
 
 还有一行代码需要注意：
 
-{% coderay %}
+{% coderay lang:yml %}
 default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]
 {% endcoderay %}
 
@@ -205,7 +204,7 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 
 到目前为止，我们都忽略了一个博客系统非常重要的组成部分，就是与读者的互动。这需要我们加入一个评论系统。Octopress 默认支持 Disqus 评论系统，你需要先到 disqus.com 注册一个账号。然后在 _config.yml 中找到：
 
-{% coderay %}
+{% coderay lang:yml %}
 # Disqus Comments
 disqus_short_name: 
 disqus_show_comment_count: false {% endcoderay %}
