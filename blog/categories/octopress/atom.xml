@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Octopress | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-05-04T11:39:58+02:00</updated>
+  <updated>2014-05-04T11:42:33+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -43,9 +43,9 @@
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>sass/custom/</span></figcaption>
  <div class="CodeRay">
-  <div class="code"><pre>//$max-width: 1350px;
-…
-//$sidebar-width-wide: 300px;
+  <div class="code"><pre>//<span class="error">$</span><span class="tag">max-width</span>: <span class="float">1350px</span>;
+<span class="error">…</span>
+//<span class="error">$</span><span class="tag">sidebar-width-wide</span>: <span class="float">300px</span>;
 </pre></div>
 </div>
  </figure></notextile></div></p>
@@ -56,9 +56,9 @@
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>sass/custom/</span></figcaption>
  <div class="CodeRay">
-  <div class="code"><pre>$max-width: 1000px;
-…
-$sidebar-width-wide: 260px;
+  <div class="code"><pre><span class="error">$</span><span class="tag">max-width</span>: <span class="float">1000px</span>;
+<span class="error">…</span>
+<span class="error">$</span><span class="tag">sidebar-width-wide</span>: <span class="float">260px</span>;
 </pre></div>
 </div>
  </figure></notextile></div></p>
@@ -69,9 +69,9 @@ $sidebar-width-wide: 260px;
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>sass/custom/</span></figcaption>
  <div class="CodeRay">
-  <div class="code"><pre>//$pad-wide: 55px;
-…
-//$sidebar-pad-wide: 20px;
+  <div class="code"><pre>//<span class="error">$</span><span class="tag">pad-wide</span>: <span class="float">55px</span>;
+<span class="error">…</span>
+//<span class="error">$</span><span class="tag">sidebar-pad-wide</span>: <span class="float">20px</span>;
 </pre></div>
 </div>
  </figure></notextile></div></p>
@@ -88,12 +88,12 @@ $sidebar-width-wide: 260px;
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>sass/custom/</span></figcaption>
  <div class="CodeRay">
-  <div class="code"><pre>//$sans: “Optima”, sans-serif;
-//$serif: “Baskerville”, serif;
-//$mono: “Courier”, monospace;
-//$heading-font-family: “Verdana”, sans-serif;
-//$header-title-font-family: “Futura”, sans-serif;
-//$header-subtitle-font-family: “Futura”, sans-serif</pre></div>
+  <div class="code"><pre>//<span class="error">$</span><span class="tag">sans</span>: <span class="error">“</span><span class="tag">Optima</span><span class="error">”</span>, <span class="tag">sans-serif</span>;
+//<span class="error">$</span><span class="tag">serif</span>: <span class="error">“</span><span class="tag">Baskerville</span><span class="error">”</span>, <span class="tag">serif</span>;
+//<span class="error">$</span><span class="tag">mono</span>: <span class="error">“</span><span class="tag">Courier</span><span class="error">”</span>, <span class="tag">monospace</span>;
+//<span class="error">$</span><span class="tag">heading-font-family</span>: <span class="error">“</span><span class="tag">Verdana</span><span class="error">”</span>, <span class="tag">sans-serif</span>;
+//<span class="error">$</span><span class="tag">header-title-font-family</span>: <span class="error">“</span><span class="tag">Futura</span><span class="error">”</span>, <span class="tag">sans-serif</span>;
+//<span class="error">$</span><span class="tag">header-subtitle-font-family</span>: <span class="error">“</span><span class="tag">Futura</span><span class="error">”</span>, <span class="tag">sans-serif</span></pre></div>
 </div>
  </figure></notextile></div></p>
 
@@ -114,13 +114,13 @@ $sidebar-width-wide: 260px;
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>sass/base/_typography.scss</span></figcaption>
  <div class="CodeRay">
-  <div class="code"><pre>body &amp;gt; header h1 {
-  font-size: 2.2em;
-  @extend .heading;
-  font-family: $header-title-font-family;
-  font-weight: normal;
-  line-height: 1.2em;
-  margin-bottom: 0.6667em;
+  <div class="code"><pre><span class="tag">body</span> <span class="error">&amp;</span><span class="tag">gt</span>; <span class="tag">header</span> <span class="tag">h1</span> {
+  <span class="key">font-size</span>: <span class="float">2.2em</span>;
+  <span class="directive">@extend</span> .<span class="key">heading</span>;
+  <span class="key">font-family</span>: <span class="error">$</span><span class="value">header-title-font-family</span>;
+  <span class="key">font-weight</span>: <span class="value">normal</span>;
+  <span class="key">line-height</span>: <span class="float">1.2em</span>;
+  <span class="key">margin-bottom</span>: <span class="float">0.6667em</span>;
 }</pre></div>
 </div>
  </figure></notextile></div></p>
@@ -132,16 +132,16 @@ $sidebar-width-wide: 260px;
 <p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>sass/screen.scss </span></figcaption>
  <div class="CodeRay">
   <div class="code"><pre>
-@import “compass”;
-@include global-reset;&lt;/p&gt;
+<span class="directive">@import</span> <span class="error">“</span><span class="tag">compass</span><span class="error">”</span>;
+<span class="directive">@include</span> <span class="tag">global-reset</span>;<span class="error">&lt;</span>/<span class="tag">p</span>&gt;
 
-&lt;p&gt;@import “custom/colors”;
-@import “custom/fonts”;
-@import “custom/layout”;
-@import “base”;
-@import “partials”;
-@import “plugins/&lt;em&gt;*/&lt;/em&gt;”;
-@import “custom/styles”;</pre></div>
+<span class="error">&lt;</span><span class="tag">p</span>&gt;<span class="directive">@import</span> <span class="error">“</span><span class="tag">custom</span>/<span class="tag">colors</span><span class="error">”</span>;
+<span class="directive">@import</span> <span class="error">“</span><span class="tag">custom</span>/<span class="tag">fonts</span><span class="error">”</span>;
+<span class="directive">@import</span> <span class="error">“</span><span class="tag">custom</span>/<span class="tag">layout</span><span class="error">”</span>;
+<span class="directive">@import</span> <span class="error">“</span><span class="tag">base</span><span class="error">”</span>;
+<span class="directive">@import</span> <span class="error">“</span><span class="tag">partials</span><span class="error">”</span>;
+<span class="directive">@import</span> <span class="error">“</span><span class="tag">plugins</span>/<span class="error">&lt;</span><span class="tag">em</span>&gt;<span class="tag">*</span>/<span class="error">&lt;</span>/<span class="tag">em</span>&gt;<span class="error">”</span>;
+<span class="directive">@import</span> <span class="error">“</span><span class="tag">custom</span>/<span class="tag">styles</span><span class="error">”</span>;</pre></div>
 </div>
  </figure></notextile></div></p>
 
@@ -156,8 +156,8 @@ $sidebar-width-wide: 260px;
 <p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>sass/base/_theme.scss </span></figcaption>
  <div class="CodeRay">
   <div class="code"><pre>
-a {
-  @include link-colors($link-color, $hover: $link-color-hover, $focus: $link-color-hover, $visited: $link-color-visited, $active: $link-color-active);
+<span class="tag">a</span> {
+  <span class="directive">@include</span> <span class="error">l</span><span class="error">i</span><span class="error">n</span><span class="error">k</span><span class="error">-</span><span class="error">c</span><span class="error">o</span><span class="error">l</span><span class="error">o</span><span class="error">r</span><span class="error">s</span>(<span class="error">$</span><span class="key">link-color</span>, <span class="error">$</span><span class="key">hover</span>: <span class="error">$</span><span class="value">link-color-hover</span>, <span class="error">$</span><span class="value">focus</span>: <span class="error">$</span><span class="value">link-color-hover</span>, <span class="error">$</span><span class="value">visited</span>: <span class="error">$</span><span class="value">link-color-visited</span>, <span class="error">$</span><span class="value">active</span>: <span class="error">$</span><span class="value">link-color-active</span>);
 }
 </pre></div>
 </div>
