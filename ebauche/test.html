@@ -9,7 +9,7 @@
   <meta name="author" content="郝海龙">
 
   
-  <meta name="description" content="Test 加载中…… $(document).ready(function(){ getADNFeed("hailong", 15, false); }); 郝海龙 本页评论 Please enable JavaScript to view the comments powered by &hellip;">
+  <meta name="description" content="Test 通过前面的教程，我们成功搭建起了自己的 Octopress 博客，并对博客框架做了基本配置。这已经可以算是一个真正意义上的个人博客了：1. 确实可以在互联网上看到；2. 文章有自己的署名；3. 甚至可以撰写有公式的科技文章。 但我们对于网站的个性化修改并没有结束：首先， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -145,17 +145,140 @@ $(document).bind('DOMNodeInserted', function(event) {
     
   </header>
   
-  <section>
-  <ul id="adn_posts">
-    <li class="loading">加载中……</li>
-  </ul>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      getADNFeed("hailong", 15, false);
-    });
-  </script>
-  <script src="/javascripts/adn.js" type="text/javascript"> </script>
-</section>
+  <p>通过前面的教程，我们成功搭建起了自己的 Octopress 博客，并对博客框架做了基本配置。这已经可以算是一个真正意义上的个人博客了：1. 确实可以在互联网上看到；2. 文章有自己的署名；3. 甚至可以撰写有公式的科技文章。</p>
+
+<p>但我们对于网站的个性化修改并没有结束：首先，网站整体显得很粗糙，很多必要的信息，比如作者简介，并没有呈现；其次，虽然我们对基本配置中涉及到的部分做了有限的汉化，但也正因为我们做了部分汉化，其余的英文部分显得更加不伦不类。针对这些问题，本文将继续我们「精益修改」之路。</p>
+
+<p>在正式进入主题之前，先给大家一个小技巧：我们可以先在终端执行命令 <code>sudo rake preview</code>，然后使用 <code>http://localhost:4000/</code> 这个网址对我们的网站进行预览。然后我们再修改相关属性，在修改过程中，只要刷新页面就可以看到实时效果，等效果没有问题了，我们再执行 <code>sudo rake generate</code> 和 <code>sudo rake deploy</code> 发布到网络上。[^1]当然，最后还要记得使用 git 命令把修改后的源文件传到 Github 上。</p>
+
+<h2 id="section">1. 页面相关设置</h2>
+
+<h3 id="section-1">1.1 新建页面</h3>
+
+<p>对于一个博客来说，仅仅有按时间发布的文章或日志是不够的，我们还需要在上面放一些其他页面。对于 Octopress 来说，系统默认只有两个页面，一个是 Blog 页面，上面按照时间顺序显示着我们发布的日志，另一个是 Archives (归档) 页面，也是我们的文章列表，只是用一种更为简洁的方式呈现，只有标题，时间，和分类描述。</p>
+
+<p>但仅有这两个页面对很多人来说并不够，我们需要更多，比如在我的博客中，还有一个「<a href="http://shengmingzhiqing.com/article-series/">系列文章</a>」页面，里面放的是我成系列的文章，更加方便读者阅读，也方便自己查阅。那么像这样一个页面该如何生成呢？很简单，执行以下命令：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="CodeRay">
+  <div class="code"><pre>
+sudo rake new_page[your-title]
+</pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>然后你会发现，在你 <code>source</code>  文件夹下会出现一个名为 <code>your-title</code> 的文件夹，里面会有一个名为 index.md 的文件。还记得我们在「<a href="http://shengmingzhiqing.com/blog/octopress-lean-modification-1.html/#markdown-">精益修改 (1)</a>」中修改过 rakefile 里的 Markdown 文件的 后缀，其中有一行是 <code>new_page_ext</code>，这里改动的正式新页面的后缀。</p>
+
+<p>在你重新部署后，这个文件将会生成一个名为<code>index.html</code> 的文件。可以用以下链接来访问这个页面：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="CodeRay">
+  <div class="code"><pre>
+http://[your_domain]/your-title/
+</pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>当然如果你现在访问的话，页面的标题将会是 “your title”，而内容是空白，这简直太合理了，因为我们真的就什么都没写。</p>
+
+<p>那么该怎么修改页面的内容呢？不用我说你也知道，只要修改那个 <code>your-title</code> 文件夹下的 index.md 文件即可，具体方法和修改文章一样，在此我不再赘述。</p>
+
+<p>当然有时候我们并不想让每个页面都生成一个新的文件夹，那么你可以考虑执行以下命令：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="CodeRay">
+  <div class="code"><pre>
+sudo rake new_page[your-title/mylove.html]
+</pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>这样你将在 <code>your-title</code> 文件夹下生成一个 mylove.html 的文件，部署后即可用以下地址访问：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="CodeRay">
+  <div class="code"><pre>
+http://[your_domain]/your-title/mylove.html
+</pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>当你打开这些新页面文件的时候，你会发现和新文章类似的元数据：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"> <table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+</pre></td>
+  <td class="code"><pre>---
+layout: page
+title: &quot;your-title&quot;
+date: 
+comments: true
+sharing: true
+footer: true
+---</pre></td>
+</tr></table>
+ </figure></notextile></div>
+
+<p>如果你想让页面显示作者，可以在中间加一行 <code>author: </code> 后面接作者名字即可。顺便说一说第一行的 <code>layout: </code> 属性，指的是这个页面用什么样的布局来显示。比如这里是页面布局，之前我们发的文章是 post 布局。具体什么布局是什么样子，通过 <code>source/_layout</code> 这个文件夹下的文件来定义。如果你有一点点模仿能力，你可以根据里面已有的文件，设计出自己的布局。</p>
+
+<p>和生成新文章一样，你可以自己在相应的文件夹下新建 Markdown 文件来生成相应的页面，并不是一定要用命令行的方式实现。当然，记得要给文件添加上面的元数据。</p>
+
+<h2 id="section-2">1.2 添加公益 404 页面</h2>
+
+<p>对于一个网站来说，有一个页面我们很少会注意到，那就是这个网站的 404 页面——当网站找不到用户访问的页面（通常是不存在）时的替代页面。</p>
+
+<p>这个页面对我们来说并不重要，但却是经常被访问到的页面之一。很多聪明人就想到了这一点：我们可以用它来做公益。你可以试着访问以下我的 404 页面：<a href="http://shengmingzhiqing.com/404">http://shengmingzhiqing.com/404</a>，你会发现一条寻人的公益广告。那么这是如何实现的呢？</p>
+
+<p>首先在 <code>source</code> 文件夹下新建一个 404.md 页面文件，然后到 <a href="http://notfound.org/">http://notfound.org/</a> 这里复制粘贴相应的代码即可。</p>
+
+<p>当然如果你更愿意用中文的产品，可以考虑益云的公益 404 项目，我的<a href="http://haohailong.net/">另一个博客</a>用的就是这个方案。不过益云生成的页面并不是响应式设计[^2]，所以手机浏览效果比较差。</p>
+
+<h2 id="section-3">1.3 添加页面和其他链接至导航栏</h2>
+
+<p>我们现在知道了新页面的生成方式，知道了页面生成后的链接，你可以通过这个链接来访问，但你博客的读者却并不知道这个页面在哪里，因此我们需要给他一个快速找到这个页面的方式，毕竟我们不能把所有的页面都当成 404 页面。</p>
+
+<p>你可以直接把链接放到文章中，和你插入别的超链接的方式没有任何区别。但很多时候我们会把一些重要页面的链接放在导航栏：</p>
+
+<p>首先，请打开<code>source/_includes/custom/navigation.html</code> 这个文件，你会看到：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>source/_includes/custom/navigation.html </span></figcaption>
+ <table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+</pre></td>
+  <td class="code"><pre><span class="tag">&lt;ul</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">main-navigation</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">/</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>Blog<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">/blog/archives</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>Archives<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;/ul&gt;</span></pre></td>
+</tr></table>
+ </figure></notextile></div>
+
+<p>这里就是导航栏里所有链接的列表，你只需要依样画葫芦即可完成页面添加。比如你想把刚刚生成的 your-title 页面和 mylove 页面添加到导航栏中，你可以在第三行下面再加如下两行：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>source/_includes/custom/navigation.html </span></figcaption>
+ <table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+</pre></td>
+  <td class="code"><pre> <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">/your-title/</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>your-title<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+  <span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">/your-title/mylove.html</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>mylove<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span></pre></td>
+</tr></table>
+ </figure></notextile></div>
+
+<p>当然，我们也可以顺手汉化系统默认的两个页面，只要你把上面的 <code>Blog</code> 和 <code>Archives</code> 分别修改成你想要的信息，比如「首页」和「文章列表」，即可像本博客这样显示。</p>
+
+<p>你也可以在这里添加站外链接，只需要把 <code>a href</code> 后面引号中的部分改为相应的网站链接即可。</p>
+
+<p>有一点需要说明，这里出现的 <code /> 是你网站的根目录，一般而言就是你的主域名。比如对于我这个博客来说，只要这个链接在站内：/page.html 和 http://shengmingzhiqing.com/page.html 是一个意思。前者给出的是 page.html 相对于根目录的路径，后者给出的是在 <code>shengmingzhiqing.com</code> 这个目录下的路径。简单来说，前者是页面的相对路径，后者是页面的绝对路径。</p>
+
+<p>一般而言，站内连接的使用原则是，能使用相对路径就不要使用绝对路径。 因为域名一旦变更，相对路径继续有效，绝对路径将依然指向原域名下的页面，这本来就不是我们的本本意，而如果原来的域名废弃了，链接将直接失效。最为直接的影响是，如果我们在一个指向页面的超链接中使用了绝对路径，我们本地预览页面中的链接与已经部署到网络上的页面链接将指向相同的内容，这样我们就无法通过这个已经设好的超链接来追踪页面的实时效果。</p>
+
+<p>在本文后面的部分以及后面的文章中，我将使用 <code /> 来代替你网站的根目录（域名）。</p>
 
   
     <footer>
