@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Octopress | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-05-04T09:00:24+02:00</updated>
+  <updated>2014-05-04T09:01:45+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -258,9 +258,9 @@ footer: true
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
   <div class="code"><pre>
-# Pinboard
-pinboard_user: #在这里添加你的 pinboard 用户名
-pinboard_count: 3 #这里的数字是默认现实的 pinboard 书签数量，可以任意修改
+<span class="comment"># Pinboard</span>
+<span class="key">pinboard_user</span>: <span class="comment">#在这里添加你的 pinboard 用户名</span>
+<span class="key">pinboard_count</span>: <span class="string"><span class="content">3</span></span> <span class="comment">#这里的数字是默认现实的 pinboard 书签数量，可以任意修改</span>
 </pre></div>
 </div>
  </figure></notextile></div></p>
@@ -269,7 +269,7 @@ pinboard_count: 3 #这里的数字是默认现实的 pinboard 书签数量，可
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
   <div class="code"><pre>
-default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]
+<span class="key">default_asides</span>: <span class="string"><span class="content">[asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]</span></span>
 </pre></div>
 </div>
  </figure></notextile></div></p>
@@ -286,9 +286,9 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
   <div class="code"><pre>
-# Disqus Comments
-disqus_short_name: 
-disqus_show_comment_count: false </pre></div>
+<span class="comment"># Disqus Comments</span>
+<span class="key">disqus_short_name</span>: 
+<span class="key">disqus_show_comment_count</span>: <span class="string"><span class="content">false </span></span></pre></div>
 </div>
  </figure></notextile></div></p>
 
