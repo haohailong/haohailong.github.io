@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Octopress | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-05-05T17:22:42+02:00</updated>
+  <updated>2014-05-05T17:25:37+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -148,7 +148,7 @@ bundle install
 </div>
  </figure></notextile></div></p>
 
-<p>然后你看中哪个 Logo，直接敲使用官方的 Logo 代码，就可以让 Logo 出现在页面相应位置。比如你想显示照相机的 Logo：</p>
+<p>安装工作就完成了。然后你看中哪个 Logo，直接输入官方的 Logo 代码，就可以让 Logo 出现在页面相应位置。比如你想显示照相机的 Logo：</p>
 
 <i class="fa fa-camera-retro fa-5x"></i>
 
