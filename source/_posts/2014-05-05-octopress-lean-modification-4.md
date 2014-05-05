@@ -103,7 +103,7 @@ kramdown:
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 {% endcoderay %}
 
-然后你看中哪个 Logo，直接敲使用官方的 Logo 代码，就可以让 Logo 出现在页面相应位置。比如你想显示照相机的 Logo：
+安装工作就完成了。然后你看中哪个 Logo，直接输入官方的 Logo 代码，就可以让 Logo 出现在页面相应位置。比如你想显示照相机的 Logo：
 
 {::nomarkdown}
 <i class="fa fa-camera-retro fa-5x"></i>
