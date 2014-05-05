@@ -9,7 +9,7 @@
   <meta name="author" content="郝海龙">
 
   
-  <meta name="description" content="1. CodeRay Block 代码块插件 1.1 安装 kramdown, CodeRay 1.2 修改样式表 1.3 使用方法 2. 给图片添加标题 (Caption) 3. 使用 FontAwesome 1. CodeRay Block 代码块插件 用 Octopress &hellip;">
+  <meta name="description" content="1. CodeRay Block 代码块插件 1.1 安装 kramdown, CodeRay 1.2 修改样式表 1.3 使用方法 2. 给图片添加说明 (Caption) 2.1 制作并添加插件 2.2 修改样式表 2.3 使用方法 3. 使用 FontAwesome 1. CodeRay &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -178,7 +178,12 @@ $(document).bind('DOMNodeInserted', function(event) {
       <li><a href="#section-1">1.3 使用方法</a></li>
     </ul>
   </li>
-  <li><a href="#caption">2. 给图片添加标题 (Caption)</a></li>
+  <li><a href="#caption">2. 给图片添加说明 (Caption)</a>    <ul>
+      <li><a href="#section-2">2.1 制作并添加插件</a></li>
+      <li><a href="#section-3">2.2 修改样式表</a></li>
+      <li><a href="#section-4">2.3 使用方法</a></li>
+    </ul>
+  </li>
   <li><a href="#fontawesome">3. 使用 FontAwesome</a></li>
 </ul>
 
@@ -282,11 +287,125 @@ bundle install
 
 <p>你可以看到这个使用方法与官方的 CodeBlock 插件非常像，其中：<code>lang:</code> 定义了代码的语言，<code>linenos:</code> 定义了是否显示行号（默认不显示），<code>title</code> 是代码框标题，<code>url</code> 是链接，<code>link text</code> 是链接文本。</p>
 
-<h2 id="caption">2. 给图片添加标题 (Caption)</h2>
+<h2 id="caption">2. 给图片添加说明 (Caption)</h2>
 
 <p>在我们发布文章的时候，难免会插入图片。你可以把你想插入的图片（比如 dream.jpg）放到 <code>source/images/</code> 文件夹下。重新生成部署站点之后，图片的地址为 <code>{{ root_url }}/source/images/dream.jpg</code>，当然你也可以给 images 文件夹下再添加其他文件夹，只要你加到图片最终的路径上即可。</p>
 
-<p>具体使用图片时，官方自带了图片插件 (Image Tag)，使用非常方便，具体方法可以参考<a href="http://octopress.org/docs/plugins/image-tag/">官方说明</a>。但有时候，我们需要给图片添加标题 (Caption)，比如在我的文章「<a href="http://shengmingzhiqing.com/blog/why-enter-key-is-huiche-in-chinese.html/">为什么「Enter 键」要被翻译为「回车键」？</a>」中的第二张图。这时官方的插件就显得不够用了，如果你也需要这样的功能，请参照 <a href="http://blog.zerosharp.com/image-captions-for-octopress/"><em>Image Captions for Octopress</em></a> .</p>
+<p>具体使用图片时，官方自带了图片插件 (Image Tag)，使用非常方便，具体方法可以参考<a href="http://octopress.org/docs/plugins/image-tag/">官方说明</a>。但有时候，我们需要给图片添加说明 (Caption)，比如在我的文章「<a href="http://shengmingzhiqing.com/blog/why-enter-key-is-huiche-in-chinese.html/">为什么「Enter 键」要被翻译为「回车键」？</a>」中的第二张图。这时官方的插件就显得不够用了，参照 <a href="http://blog.zerosharp.com/image-captions-for-octopress/"><em>Image Captions for Octopress</em></a> , 我们可以按如下步骤实现想要的功能：</p>
+
+<h3 id="section-2">2.1 制作并添加插件</h3>
+
+<p>首先新建一个文本文件，复制如下代码，另存为 <code>image_caption_tag.rb</code> 文件，注意要使用 .rb 后缀。然后再把这个文件放到 <code>plugins</code> 目录下。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>plugins/image_caption_tag.rb </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+<span class="comment"># Title: Image tag with caption for Jekyll</span>
+<span class="comment"># Description: Easily output images with captions</span>
+
+<span class="keyword">module</span> <span class="class">Jekyll</span>
+
+  <span class="keyword">class</span> <span class="class">CaptionImageTag</span> &lt; <span class="constant">Liquid</span>::<span class="constant">Tag</span>
+    <span class="instance-variable">@img</span> = <span class="predefined-constant">nil</span>
+    <span class="instance-variable">@title</span> = <span class="predefined-constant">nil</span>
+    <span class="instance-variable">@class</span> = <span class="string"><span class="delimiter">'</span><span class="delimiter">'</span></span>
+    <span class="instance-variable">@width</span> = <span class="string"><span class="delimiter">'</span><span class="delimiter">'</span></span>
+    <span class="instance-variable">@height</span> = <span class="string"><span class="delimiter">'</span><span class="delimiter">'</span></span>
+
+    <span class="keyword">def</span> <span class="function">initialize</span>(tag_name, markup, tokens)
+      <span class="keyword">if</span> markup =~ <span class="regexp"><span class="delimiter">/</span><span class="content">(</span><span class="char">\S</span><span class="content">.*</span><span class="char">\s</span><span class="content">+)?(https?:</span><span class="char">\/</span><span class="char">\/</span><span class="content">|</span><span class="char">\/</span><span class="content">)(</span><span class="char">\S</span><span class="content">+)(</span><span class="char">\s</span><span class="content">+</span><span class="char">\d</span><span class="content">+</span><span class="char">\s</span><span class="content">+</span><span class="char">\d</span><span class="content">+)?(</span><span class="char">\s</span><span class="content">+.+)?</span><span class="delimiter">/</span><span class="modifier">i</span></span>
+        <span class="instance-variable">@class</span> = <span class="global-variable">$1</span> || <span class="string"><span class="delimiter">'</span><span class="delimiter">'</span></span>
+        <span class="instance-variable">@img</span> = <span class="global-variable">$2</span> + <span class="global-variable">$3</span>
+        <span class="keyword">if</span> <span class="global-variable">$5</span>
+          <span class="instance-variable">@title</span> = <span class="global-variable">$5</span>.strip
+        <span class="keyword">end</span>
+        <span class="keyword">if</span> <span class="global-variable">$4</span> =~ <span class="regexp"><span class="delimiter">/</span><span class="char">\s</span><span class="content">*(</span><span class="char">\d</span><span class="content">+)</span><span class="char">\s</span><span class="content">+(</span><span class="char">\d</span><span class="content">+)</span><span class="delimiter">/</span></span>
+          <span class="instance-variable">@width</span> = <span class="global-variable">$1</span>
+          <span class="instance-variable">@height</span> = <span class="global-variable">$2</span>
+        <span class="keyword">end</span>
+      <span class="keyword">end</span>
+      <span class="keyword">super</span>
+    <span class="keyword">end</span>
+
+    <span class="keyword">def</span> <span class="function">render</span>(context)
+      output = <span class="keyword">super</span>
+      <span class="keyword">if</span> <span class="instance-variable">@img</span>
+        <span class="string"><span class="delimiter">&quot;</span><span class="content">&lt;span class='</span><span class="inline"><span class="inline-delimiter">#{</span>(<span class="string"><span class="delimiter">'</span><span class="content">caption-wrapper </span><span class="delimiter">'</span></span> + <span class="instance-variable">@class</span>).rstrip<span class="inline-delimiter">}</span></span><span class="content">'&gt;</span><span class="delimiter">&quot;</span></span> +
+          <span class="string"><span class="delimiter">&quot;</span><span class="content">&lt;img class='caption' src='</span><span class="inline"><span class="inline-delimiter">#{</span><span class="instance-variable">@img</span><span class="inline-delimiter">}</span></span><span class="content">' width='</span><span class="inline"><span class="inline-delimiter">#{</span><span class="instance-variable">@width</span><span class="inline-delimiter">}</span></span><span class="content">' height='</span><span class="inline"><span class="inline-delimiter">#{</span><span class="instance-variable">@height</span><span class="inline-delimiter">}</span></span><span class="content">' title='</span><span class="inline"><span class="inline-delimiter">#{</span><span class="instance-variable">@title</span><span class="inline-delimiter">}</span></span><span class="content">'&gt;</span><span class="delimiter">&quot;</span></span> +
+          <span class="string"><span class="delimiter">&quot;</span><span class="content">&lt;span class='caption-text'&gt;</span><span class="inline"><span class="inline-delimiter">#{</span><span class="instance-variable">@title</span><span class="inline-delimiter">}</span></span><span class="content">&lt;/span&gt;</span><span class="delimiter">&quot;</span></span> +
+        <span class="string"><span class="delimiter">&quot;</span><span class="content">&lt;/span&gt;</span><span class="delimiter">&quot;</span></span>
+      <span class="keyword">else</span>
+        <span class="string"><span class="delimiter">&quot;</span><span class="content">Error processing input, expected syntax: &lt;img class=</span><span class="delimiter">&quot;</span></span>[<span class="keyword">class</span> <span class="class">name</span>(s)]<span class="string"><span class="delimiter">&quot;</span><span class="content"> src=</span><span class="delimiter">&quot;</span></span>/url/to/image<span class="string"><span class="delimiter">&quot;</span><span class="content"> title=</span><span class="delimiter">&quot;</span></span>[width height] [title text]<span class="string"><span class="delimiter">&quot;</span><span class="content"> &gt;</span><span class="delimiter">&quot;</span></span>
+      <span class="keyword">end</span>
+    <span class="keyword">end</span>
+  <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="constant">Liquid</span>::<span class="constant">Template</span>.register_tag(<span class="string"><span class="delimiter">'</span><span class="content">imgcap</span><span class="delimiter">'</span></span>, <span class="constant">Jekyll</span>::<span class="constant">CaptionImageTag</span></pre></div>
+</div>
+ </figure></notextile></div>
+
+<h3 id="section-3">2.2 修改样式表</h3>
+
+<p>在 <code>sass/base/_utilities.scss</code> 文件中添加如下几行代码：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>sass/base/_utilities.scss </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+<span class="directive">@mixin</span> <span class="error">r</span><span class="error">e</span><span class="error">s</span><span class="error">e</span><span class="error">t</span><span class="error">-</span><span class="error">s</span><span class="error">h</span><span class="error">a</span><span class="error">d</span><span class="error">o</span><span class="error">w</span><span class="error">-</span><span class="error">b</span><span class="error">o</span><span class="error">x</span>() {
+  <span class="directive">@include</span> <span class="error">s</span><span class="error">h</span><span class="error">a</span><span class="error">d</span><span class="error">o</span><span class="error">w</span><span class="error">-</span><span class="error">b</span><span class="error">o</span><span class="error">x</span>(<span class="float">0px</span>, <span class="float">0px</span>, <span class="float">0px</span>);
+}</pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>最后，打开 <code>sass/partials/_blog.scss</code> 文件，作如下修改：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>sass/partials/_blog.scss </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+   <span class="tag">article</span> {
+     <span class="key">font-size</span>: <span class="float">2.0em</span>; <span class="key">font-style</span>: <span class="value">italic</span>;
+     <span class="key">line-height</span>: <span class="float">1.3em</span>;
+   }
+<span class="error">-</span>  <span class="tag">img</span>, <span class="tag">video</span>, <span class="class">.flash-video</span> {
++  <span class="key">img</span>, <span class="key">video</span>, .<span class="key">flash-video</span>, .<span class="key">caption-wrapper</span> {
+     <span class="directive">@extend</span> .<span class="key">flex-content</span>;
+     <span class="directive">@extend</span> .<span class="key">basic-alignment</span>;
+     <span class="directive">@include</span> <span class="key">shadow-box</span>;
++    <span class="error">&amp;</span>.<span class="key">caption</span> {
++      <span class="directive">@include</span> <span class="key">reset-shadow-box</span>;
++    }
++  }
++  .<span class="key">caption-wrapper</span> {
++    <span class="key">display</span>: <span class="value">inline-block</span>;
++    <span class="key">margin-bottom</span>: <span class="float">10px</span>;
++    .<span class="key">caption-text</span> {
++      <span class="key">background</span>: <span class="color">#fff</span>;
++      <span class="key">text-align</span>: <span class="value">center</span>;
++      <span class="key">font-size</span>: <span class="float">.8em</span>;
++      <span class="key">color</span>: <span class="color">#666</span>;
++      <span class="key">display</span>: <span class="value">block</span>;
++    }
+   }
+   <span class="key">video</span>, .<span class="key">flash-video</span> { <span class="key">margin</span>: <span class="float">0</span> <span class="value">auto</span> <span class="float">1.5em</span>; }
+   <span class="key">video</span> { <span class="key">display</span>: <span class="value">block</span>; <span class="key">width</span>: <span class="float">100%</span>; }</pre></div>
+</div>
+ </figure></notextile></div>
+
+<h3 id="section-4">2.3 使用方法</h3>
+
+<p>按照如下代码将图片插入文中：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="CodeRay">
+  <div class="code"><pre>
+&lt;span <span class="keyword">class</span>=<span class="string"><span class="delimiter">'</span><span class="content">caption-wrapper</span><span class="delimiter">'</span></span>&gt;&lt;img <span class="keyword">class</span>=<span class="string"><span class="delimiter">'</span><span class="content">caption</span><span class="delimiter">'</span></span> src=<span class="string"><span class="delimiter">'</span><span class="content">/right]</span><span class="delimiter">'</span></span> width=<span class="string"><span class="delimiter">'</span><span class="delimiter">'</span></span> height=<span class="string"><span class="delimiter">'</span><span class="delimiter">'</span></span> title=<span class="string"><span class="delimiter">'</span><span class="content">[url] [caption] [width] [height] [title text] [alt text]</span><span class="delimiter">'</span></span>&gt;&lt;span <span class="keyword">class</span>=<span class="string"><span class="delimiter">'</span><span class="content">caption-text</span><span class="delimiter">'</span></span>&gt;[url] [caption] [width] [height] [title text] [alt text]&lt;<span class="regexp"><span class="delimiter">/</span><span class="content">span&gt;&lt;</span><span class="delimiter">/</span><span class="modifier">s</span></span>pan&gt; 
+</pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>其中，<code>[left/right]</code> 是表示图片显示在页面上的位置，<code>[url]</code> 是图片完整链接，<code>[caption]</code> 是图片说明，<code>[width]</code> 和 <code>[height]</code> 分别是图片的宽度和高度，<code>[title]</code> 是图片标题，<code>[alt text]</code> 是图片替代文字。</p>
+
+<p>有必要区别一下 <code>[caption]</code>,  <code>[title]</code>, 和 <code>[alt text]</code> 三个图片属性。<code>[caption]</code> 指显示在图片下方的说明文字，<code>[title]</code> 指鼠标悬停在图片上时显示出来的文字，<code>[alt text]</code> 指图片无法加载时，该图片的位置所显示的文字。</p>
 
 <h2 id="fontawesome">3. 使用 FontAwesome</h2>
 
