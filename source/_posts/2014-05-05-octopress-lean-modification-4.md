@@ -29,7 +29,7 @@ if rv.isvalid:
     print "The address that you provided is valid"
 else:
     print "The address that you provided is invalid, please correct"
-{% endcoderay %}
+{% endcoderay %}<!--more-->
 
 最早看到这种风格的显示是在 [Kat Hagan 的博客](http://blog.codebykat.com/2013/05/23/gorgeous-octopress-codeblocks-with-coderay/)，她在文章中介绍了一种新的语法高亮工具——[CodeRay](http://coderay.rubychan.de)，使用这种工具即可实现上面浅色圆角的代码块。作者同时也是一位极具分享精神的 Web 开发者，为了方便大家使用 CodeRay，她还专门制作了一个可直接安装的 Octopress 插件。
 
