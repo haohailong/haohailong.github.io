@@ -31,7 +31,7 @@ else:
     print "The address that you provided is invalid, please correct"
 {% endcoderay %}
 
-最早看到这种风格的显示是在 [Kat Hagan 的博客](http://blog.codebykat.com/2013/05/23/gorgeous-octopress-codeblocks-with-coderay/)，她在文章中介绍了一种新的语法高亮工具——[CodeRay](http://coderay.rubychan.de)，使用这种工具即可实现上面浅色圆角的代码块。作者同时也是一位极具分享精神的 Web 开发者，为了方便大家使用 CodeRay，她还专门制作了一个非常方便安装的 Octopress 插件。
+最早看到这种风格的显示是在 [Kat Hagan 的博客](http://blog.codebykat.com/2013/05/23/gorgeous-octopress-codeblocks-with-coderay/)，她在文章中介绍了一种新的语法高亮工具——[CodeRay](http://coderay.rubychan.de)，使用这种工具即可实现上面浅色圆角的代码块。作者同时也是一位极具分享精神的 Web 开发者，为了方便大家使用 CodeRay，她还专门制作了一个可直接安装的 Octopress 插件。
 
 但是她这个插件取消了 CodeRay 自带的行号功能，在当你需要指出某一行代码时，就非常不方便。为了解决这个问题，[Jan Stevens](http://www.fritz-hut.com/2013/11/24/github-style-code-highlighting-for-octopress/) 在 Kat 的插件基础上，开发了可以添加行号的 CodeRay 插件，但为了适应他自己博客的风格，同时也写了新的样式表。
 
@@ -87,11 +87,110 @@ kramdown:
 
 你可以看到这个使用方法与官方的 CodeBlock 插件非常像，其中：```lang:``` 定义了代码的语言，```linenos:``` 定义了是否显示行号（默认不显示），```title``` 是代码框标题，```url``` 是链接，```link text``` 是链接文本。
 
-## 2. 给图片添加标题 (Caption)
+## 2. 给图片添加说明 (Caption)
 
 在我们发布文章的时候，难免会插入图片。你可以把你想插入的图片（比如 dream.jpg）放到 ```source/images/``` 文件夹下。重新生成部署站点之后，图片的地址为 ```{% raw %}{{ root_url }}/source/images/dream.jpg{% endraw %}```，当然你也可以给 images 文件夹下再添加其他文件夹，只要你加到图片最终的路径上即可。
 
-具体使用图片时，官方自带了图片插件 (Image Tag)，使用非常方便，具体方法可以参考[官方说明](http://octopress.org/docs/plugins/image-tag/)。但有时候，我们需要给图片添加标题 (Caption)，比如在我的文章「[为什么「Enter 键」要被翻译为「回车键」？](http://shengmingzhiqing.com/blog/why-enter-key-is-huiche-in-chinese.html/)」中的第二张图。这时官方的插件就显得不够用了，如果你也需要这样的功能，请参照 [*Image Captions for Octopress*](http://blog.zerosharp.com/image-captions-for-octopress/) .
+具体使用图片时，官方自带了图片插件 (Image Tag)，使用非常方便，具体方法可以参考[官方说明](http://octopress.org/docs/plugins/image-tag/)。但有时候，我们需要给图片添加说明 (Caption)，比如在我的文章「[为什么「Enter 键」要被翻译为「回车键」？](http://shengmingzhiqing.com/blog/why-enter-key-is-huiche-in-chinese.html/)」中的第二张图。这时官方的插件就显得不够用了，参照 [*Image Captions for Octopress*](http://blog.zerosharp.com/image-captions-for-octopress/) , 我们可以按如下步骤实现想要的功能：
+
+### 2.1 制作并添加插件
+
+首先新建一个文本文件，复制如下代码，另存为 ```image_caption_tag.rb``` 文件，注意要使用 .rb 后缀。然后再把这个文件放到 ```plugins``` 目录下。
+
+{% coderay lang:ruby plugins/image_caption_tag.rb %}
+# Title: Image tag with caption for Jekyll
+# Description: Easily output images with captions
+
+module Jekyll
+
+  class CaptionImageTag < Liquid::Tag
+    @img = nil
+    @title = nil
+    @class = ''
+    @width = ''
+    @height = ''
+
+    def initialize(tag_name, markup, tokens)
+      if markup =~ /(\S.*\s+)?(https?:\/\/|\/)(\S+)(\s+\d+\s+\d+)?(\s+.+)?/i
+        @class = $1 || ''
+        @img = $2 + $3
+        if $5
+          @title = $5.strip
+        end
+        if $4 =~ /\s*(\d+)\s+(\d+)/
+          @width = $1
+          @height = $2
+        end
+      end
+      super
+    end
+
+    def render(context)
+      output = super
+      if @img
+        "<span class='#{('caption-wrapper ' + @class).rstrip}'>" +
+          "<img class='caption' src='#{@img}' width='#{@width}' height='#{@height}' title='#{@title}'>" +
+          "<span class='caption-text'>#{@title}</span>" +
+        "</span>"
+      else
+        "Error processing input, expected syntax: {% img [class name(s)] /url/to/image [width height] [title text] %}"
+      end
+    end
+  end
+end
+
+Liquid::Template.register_tag('imgcap', Jekyll::CaptionImageTag{% endcoderay %}
+
+### 2.2 修改样式表
+
+在 ```sass/base/_utilities.scss``` 文件中添加如下几行代码：
+
+{% coderay lang:css sass/base/_utilities.scss %}
+@mixin reset-shadow-box() {
+  @include shadow-box(0px, 0px, 0px);
+}{% endcoderay %}
+
+最后，打开 ```sass/partials/_blog.scss``` 文件，作如下修改：
+
+{% coderay lang:css sass/partials/_blog.scss %}
+   article {
+     font-size: 2.0em; font-style: italic;
+     line-height: 1.3em;
+   }
+-  img, video, .flash-video {
++  img, video, .flash-video, .caption-wrapper {
+     @extend .flex-content;
+     @extend .basic-alignment;
+     @include shadow-box;
++    &.caption {
++      @include reset-shadow-box;
++    }
++  }
++  .caption-wrapper {
++    display: inline-block;
++    margin-bottom: 10px;
++    .caption-text {
++      background: #fff;
++      text-align: center;
++      font-size: .8em;
++      color: #666;
++      display: block;
++    }
+   }
+   video, .flash-video { margin: 0 auto 1.5em; }
+   video { display: block; width: 100%; }{% endcoderay %}
+
+### 2.3 使用方法
+
+按照如下代码将图片插入文中：
+
+{% coderay lang:ruby %}
+{% imgcap [left/right] [url] [caption] [width] [height] [title text] [alt text] %} 
+{% endcoderay %}
+
+其中，```[left/right]``` 是表示图片显示在页面上的位置，```[url]``` 是图片完整链接，```[caption]``` 是图片说明，```[width]``` 和 ```[height]``` 分别是图片的宽度和高度，```[title]``` 是图片标题，```[alt text]``` 是图片替代文字。
+
+有必要区别一下 ```[caption]```,  ```[title]```, 和 ```[alt text]``` 三个图片属性。```[caption]``` 指显示在图片下方的说明文字，```[title]``` 指鼠标悬停在图片上时显示出来的文字，```[alt text]``` 指图片无法加载时，该图片的位置所显示的文字。
 
 ## 3. 使用 FontAwesome
 
