@@ -4,7 +4,7 @@
   <title><![CDATA[生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-05-05T19:51:21+02:00</updated>
+  <updated>2014-05-05T20:06:37+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -64,6 +64,7 @@ rv = conn.validateaddress(foo)
 </pre></div>
 </div>
  </figure></notextile></div>
+<!--more-->
 
 <p>最早看到这种风格的显示是在 <a href="http://blog.codebykat.com/2013/05/23/gorgeous-octopress-codeblocks-with-coderay/">Kat Hagan 的博客</a>，她在文章中介绍了一种新的语法高亮工具——<a href="http://coderay.rubychan.de">CodeRay</a>，使用这种工具即可实现上面浅色圆角的代码块。作者同时也是一位极具分享精神的 Web 开发者，为了方便大家使用 CodeRay，她还专门制作了一个可直接安装的 Octopress 插件。</p>
 
