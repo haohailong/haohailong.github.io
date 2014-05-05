@@ -150,7 +150,7 @@ Liquid::Template.register_tag('imgcap', Jekyll::CaptionImageTag{% endcoderay %}
   @include shadow-box(0px, 0px, 0px);
 }{% endcoderay %}
 
-最后，打开 ```sass/partials/_blog.scss``` 文件，作如下修改：
+最后，打开 ```sass/partials/_blog.scss``` 文件，作如下修改，其中减号表示删掉该行，加号表述出新添改行。
 
 {% coderay lang:css sass/partials/_blog.scss %}
    article {
