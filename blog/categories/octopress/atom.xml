@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Octopress | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-05-05T16:57:28+02:00</updated>
+  <updated>2014-05-05T16:59:08+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -126,7 +126,7 @@ code snippet
 
 <p>然后你看中哪个 Logo，直接敲使用官方的 Logo 代码，就可以让 Logo 出现在页面相应位置。比如你想显示照相机的 Logo：</p>
 
-<i class="fa-camera-retro fa-5x"></i>
+<p><i class="fa-camera-retro fa-5x"></i></p>
 
 <p>你只需要输入如下代码：</p>
 
@@ -135,9 +135,9 @@ code snippet
 
 <p>有时候 Font Awesome 可能会出现与 kramdown 解析器相冲突的情况，导致全局样式发生变化，这是你只需要在 Logo 的代码前后分别添加 <code>{% raw %}{::nomarkdown}{% endraw %}</code> 和 <code>{% raw %}{:/nomarkdown}{% endraw %}</code>强制 kramdown 不去解析这段语句即可，比如上面的代码可以改为：</p>
 
-<p>{% coderay %}{% raw %}
-<i class="fa-camera-retro fa-5x"></i>
-{% endraw %}{% endcoderay %}</p>
+<p>{% coderay %}{% raw %}{::nomarkdown}</p>
+<p><i class="fa-camera-retro fa-5x" /></p>
+<p>{:/nomarkdown}{% endraw %}{% endcoderay %}</p>
 ]]></content>
   </entry>
   
