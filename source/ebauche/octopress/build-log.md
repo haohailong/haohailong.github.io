@@ -38,5 +38,10 @@ footer: true
 2014年5月4日
 {:.info}
 
+## Octopress 精益修改 (4)
+
+本节内容已作为单篇文章发布，点此查看：[Octopress 精益修改 (3)]({{ root_url }}/blog/octopress-lean-modification-4.html) 。  
+2014年5月5日
+{:.info}
 
 
