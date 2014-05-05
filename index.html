@@ -9,7 +9,7 @@
   <meta name="author" content="郝海龙">
 
   
-  <meta name="description" content="1. 网站布局 1.1 修改框架宽度 1.2 修改内容宽度 2. 页面字体 3. 修改链接样式 4. 给中英文间添加空格 在主题的框架部署完成之后，我们的博客已经可以算是一个五脏俱全的个人网站了，下一步网站变成什么样子，主要看我们往里面加什么样的内容。但在你发表几篇文章之后，你可能就会发现， &hellip;">
+  <meta name="description" content="CodeRay Block 代码块插件 1. 安装 kramdown, CodeRay 2. 修改样式表 使用方法 给图片添加标题 (Caption) 使用 FontAwesome CodeRay Block 代码块插件 用 Octopress 写博客的很多朋友需要在博客内容当中添加代码块， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -139,6 +139,190 @@ $(document).bind('DOMNodeInserted', function(event) {
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/octopress-lean-modification-4.html/">Octopress 精益修改 (4)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-05T18:52:14+02:00" pubdate data-updated="true">2014年 5月 5日</time>
+        
+           | <a href="/blog/octopress-lean-modification-4.html/#disqus_thread"
+             data-disqus-identifier="http://shengmingzhiqing.com/blog/octopress-lean-modification-4.html/">评论</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><ul id="markdown-toc">
+  <li><a href="#coderay-block-">CodeRay Block 代码块插件</a>    <ul>
+      <li><a href="#kramdown-coderay">1. 安装 kramdown, CodeRay</a></li>
+      <li><a href="#section">2. 修改样式表</a></li>
+      <li><a href="#section-1">使用方法</a></li>
+    </ul>
+  </li>
+  <li><a href="#caption">给图片添加标题 (Caption)</a></li>
+  <li><a href="#fontawesome">使用 FontAwesome</a></li>
+</ul>
+
+<h2 id="coderay-block-">CodeRay Block 代码块插件</h2>
+
+<p>用 Octopress 写博客的很多朋友需要在博客内容当中添加代码块，毕竟这是一个「为黑客而生的博客框架」。Octopress 除了可以使用 Markdown 语言默认的代码块实现方式之外，本身也集成了很强大的代码块 (Code Block) 插件，按照<a href="http://octopress.org/docs/plugins/codeblock/">官方的说明</a>调用即可，比如：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption><span>节选自比特币 Python API </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class="line-number">1</span>
+<span class="line-number">2</span>
+<span class="line-number">3</span>
+<span class="line-number">4</span>
+<span class="line-number">5</span>
+</pre></td><td class="code"><pre><code class="python"><span class="line"><span class="n">rv</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">validateaddress</span><span class="p">(</span><span class="n">foo</span><span class="p">)</span>
+</span><span class="line"><span class="k">if</span> <span class="n">rv</span><span class="o">.</span><span class="n">isvalid</span><span class="p">:</span>
+</span><span class="line">    <span class="k">print</span> <span class="s">&quot;The address that you provided is valid&quot;</span>
+</span><span class="line"><span class="k">else</span><span class="p">:</span>
+</span><span class="line">    <span class="k">print</span> <span class="s">&quot;The address that you provided is invalid, please correct&quot;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+
+<p>官方的 Code Block 插件支持语法高亮，本身的显示效果也非常不错，可以与博客大背景的深色形成呼应。但如果你的文章中出现大量的代码块，黑色背景看起来可能不那么舒服。这时，你可能想要使用浅色系的代码块，比如：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>节选自比特币 Python API </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+rv = conn.validateaddress(foo)
+<span class="keyword">if</span> rv.isvalid:
+    <span class="keyword">print</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">The address that you provided is valid</span><span class="delimiter">&quot;</span></span>
+<span class="keyword">else</span>:
+    <span class="keyword">print</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">The address that you provided is invalid, please correct</span><span class="delimiter">&quot;</span></span>
+</pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>最早看到这种风格的显示是在 <a href="http://blog.codebykat.com/2013/05/23/gorgeous-octopress-codeblocks-with-coderay/">Kat Hagan 的博客</a>，她在文章中介绍了一种新的语法高亮工具——<a href="http://coderay.rubychan.de">CodeRay</a>，使用这种工具即可实现上面浅色圆角的代码块。作者同时也是一位极具分享精神的 Web 开发者，为了方便大家使用 CodeRay，她还专门制作了一个非常方便安装的 Octopress 插件。</p>
+
+<p>但是她这个插件取消了 CodeRay 自带的行号功能，在当你需要指出某一行代码时，就非常不方便。为了解决这个问题，<a href="http://www.fritz-hut.com/2013/11/24/github-style-code-highlighting-for-octopress/">Jan Stevens</a> 在 Kat 的插件基础上，开发了可以添加行号的 CodeRay 插件，但为了适应他自己博客的风格，同时也写了新的样式表。</p>
+
+<p>由于 Kat 用的是 Octopress 默认主题，从总体风格上而言，Kat 的插件样式更适合我们的博客，于是我尝试着用 Kat 的样式表配合 Jan 的插件使用，在在代码块没有标题框 (Caption) 的情况下表现完美。但一旦加上标题框，问题就出现了：代码块主体部分与标题框的连接处出现了不必要的圆角，显得非常难看。为了解决这一问题，我在他们的基础上修改了 Coderay Block 插件，如果你需要，在这里：<a href="http://s.olo.la/iqLp">Octopress CodeRay Block</a>.</p>
+
+<p>具体安装方法如下：</p>
+
+<h3 id="kramdown-coderay">1. 安装 kramdown, CodeRay</h3>
+
+<p>首先你需要在你的博客程序中安装 kramdown 和 CodeRay（如果你已经安装过，则可以跳过此步）：</p>
+
+<p>在 <code>Gemfile</code> 中添加如下两行代码：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="CodeRay">
+  <div class="code"><pre>
+gem <span class="string"><span class="delimiter">'</span><span class="content">kramdown</span><span class="delimiter">'</span></span>
+gem <span class="string"><span class="delimiter">'</span><span class="content">coderay</span><span class="delimiter">'</span></span>
+</pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>在终端执行如下命令：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="CodeRay">
+  <div class="code"><pre>
+bundle install
+</pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>然后修改 <code>_config.yml</code> 文件中相关内容如下：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>_config.yml </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+<span class="key">markdown</span>: <span class="string"><span class="content">kramdown</span></span>
+<span class="key">kramdown</span>:
+    <span class="key">use_coderay</span>: <span class="string"><span class="content">true</span></span>
+    <span class="key">coderay</span>:
+        <span class="key">coderay_line_numbers</span>: <span class="string"><span class="content">table</span></span>
+        <span class="key">coderay_css</span>: <span class="string"><span class="content">class</span></span>
+</pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>其中 <code>coderay_line_numbers: table</code> 表示激活 CodeRay 的行号功能。</p>
+
+<h3 id="section">2. 修改样式表</h3>
+
+<p>把 <code>/sass/custom/_coderay.scss</code> 文件复制到你自己的 <code>/sass/custom/</code> 文件夹下。</p>
+
+<p>把 <code>/sass/custom/_styles.scss</code> <strong>文件中的代码</strong>添加到你自己的 <code>/sass/custom/_styles.scss</code>文件夹中。</p>
+
+<p>安装完成。</p>
+
+<h3 id="section-1">使用方法</h3>
+
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="CodeRay">
+  <div class="code"><pre>
+    { <span class="string"><span class="delimiter">% </span><span class="content">coderay</span><span class="delimiter"> </span></span>[<span class="key">lang</span>:lang] [<span class="key">linenos</span>:<span class="predefined-constant">true</span>|<span class="predefined-constant">false</span>(default)] [title] [url] [link text] % }
+    code snippet
+    { <span class="string"><span class="delimiter">% </span><span class="content">endcoderay</span><span class="delimiter"> </span></span>% }
+    </pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>你可以看到这个使用方法与官方的 CodeBlock 插件非常像，其中：<code>lang:</code> 定义了代码的语言，<code>linenos:</code> 定义了是否显示行号（默认不显示），<code>title</code> 是代码框标题，<code>url</code> 是链接，<code>link text</code> 是链接文本。</p>
+
+<h2 id="caption">给图片添加标题 (Caption)</h2>
+
+<p>在我们发布文章的时候，难免会插入图片。你可以把你想插入的图片（比如 dream.jpg）放到 <code>source/images/</code> 文件夹下。重新生成部署站点之后，图片的地址为 <code>{{ root_url }}/source/images/dream.jpg</code>，当然你也可以给 images 文件夹下再添加其他文件夹，只要你加到图片最终的路径上即可。</p>
+
+<p>具体使用图片时，官方自带了图片插件 (Image Tag)，使用非常方便，具体方法可以参考<a href="http://octopress.org/docs/plugins/image-tag/">官方说明</a>。但有时候，我们需要给图片添加标题 (Caption)，比如在我的文章「<a href="http://shengmingzhiqing.com/blog/why-enter-key-is-huiche-in-chinese.html/">为什么「Enter 键」要被翻译为「回车键」？</a>」中的第二张图。这时官方的插件就显得不够用了，如果你也需要这样的功能，请参照 <a href="http://blog.zerosharp.com/image-captions-for-octopress/"><em>Image Captions for Octopress</em></a> .</p>
+
+<h2 id="fontawesome">使用 FontAwesome</h2>
+
+<p>装饰网站和撰写文章，不可避免的要使用到一些 Logo 和图标，对于一个非设计专业人士来说，该如何轻松获取图标呢？这里有一个巨大的图标库 <a href="http://fortawesome.github.io/Font-Awesome/icons/">Font Awesome</a>，事实上，我博客导航栏和侧边栏使用的 Logo 就来自 Font Awesome.</p>
+
+<p>要使用 Font Awesome，你只需要简单地在 <code>source/_includes/custom/head.html</code> 中添加如下一行代码：</p>
+
+<p>{% coderay lang:html source/_includes/custom/head.html http://fortawesome.github.io/Font-Awesome/get-started/ %}
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+{% endcoderay %}</p>
+
+<p>然后你看中哪个 Logo，直接敲使用官方的 Logo 代码，就可以让 Logo 出现在页面相应位置。比如你想显示照相机的 Logo：</p>
+
+<i class="fa-camera-retro fa-5x"></i>
+
+<p>你只需要输入如下代码：</p>
+
+<p>{% coderay %}
+<i class="fa-camera-retro fa-5x" />{% endcoderay %}</p>
+
+<p>有时候 Font Awesome 可能会出现与 kramdown 解析器相冲突的情况，导致全局样式发生变化，这是你只需要在 Logo 的代码前后分别添加 <code>{% raw %}{::nomarkdown}</code> 和 <code>{:/nomarkdown}</code>强制 kramdown 不去解析这段语句即可，比如上面的代码可以改为：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="CodeRay">
+  <div class="code"><pre>
+{::nomarkdown}
+&lt;i class=&quot;fa-camera-retro fa-5x&quot;&gt;&lt;/i&gt;
+{:/nomarkdown}</pre></div>
+</div>
+ </figure></notextile></div>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -656,51 +840,6 @@ $(document).bind('DOMNodeInserted', function(event) {
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/public-key-cryptography-for-dummies.html/">写给大家看的公钥加密算法原理</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-07-02T00:00:00+02:00" pubdate data-updated="true">2013年 7月 2日</time>
-        
-           | <a href="/blog/public-key-cryptography-for-dummies.html/#disqus_thread"
-             data-disqus-identifier="http://shengmingzhiqing.com/blog/public-key-cryptography-for-dummies.html/">评论</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>相信很多朋友和我一样，都有传递情书的经历。在我中小学那个还没有陌陌的时代，写纸条应该算是与女同学建立感情的最佳手段——至少是之一。</p>
-
-<p>既然是传递纸条就难免会假他人之手，尤其是在上课这种不方便走动，班主任又有意把长得有夫妻相的男女生分在不同角落的情况下。是以这种原始的通讯手段虽然能使大名鼎鼎而或臭名昭著的「棱镜」计划丧失用武之地，但却躲不过最原始的监控手段——直接打开看。中国人好奇心最大的地方莫过于别人的私生活，可以想象纸条上不可能有什么秘密存在，肉麻的情话最终往往会成为大家的笑柄。如何才能有效传递情书，但又不让情书的信息在传递过程中泄露出去就成了困扰我很长时间的问题。
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/public-key-cryptography-for-dummies.html/">阅读全文</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; 较早的文章</a>
@@ -733,6 +872,10 @@ $(document).bind('DOMNodeInserted', function(event) {
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/octopress-lean-modification-4.html/">Octopress 精益修改 (4)</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/octopress-lean-modification-3.html/">Octopress 精益修改 (3)</a>
       </li>
     
@@ -756,10 +899,6 @@ $(document).bind('DOMNodeInserted', function(event) {
         <a href="/blog/Bitcoin-QnA.html/">比特币问答录</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/Gain-from-LaTeX-homeowork-1.html/">第一份 LaTeX 作业心得</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -770,7 +909,7 @@ $(document).bind('DOMNodeInserted', function(event) {
 <li class='category'><a href='/blog/categories/latex/'>LaTeX (1)</a></li>
 <li class='category'><a href='/blog/categories/mac/'>Mac (2)</a></li>
 <li class='category'><a href='/blog/categories/misc/'>Misc (1)</a></li>
-<li class='category'><a href='/blog/categories/octopress/'>Octopress (5)</a></li>
+<li class='category'><a href='/blog/categories/octopress/'>Octopress (6)</a></li>
 <li class='category'><a href='/blog/categories/si-kao/'>思考 (2)</a></li>
 
   </ul>
