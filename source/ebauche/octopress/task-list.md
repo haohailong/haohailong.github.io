@@ -97,6 +97,7 @@ footer: true
 	本博客作为个人学习使用的博客，并没有做 SEO（或许哪天学习 SEO 时会做一下），有需要的朋友请参考丁培轩翻译的这篇文章：<http://s.olo.la/s5Ue>
 
 - 脚注：Bigfoot
+	
 	请参考 Bigfoot 官网：<http://www.bigfootjs.com>
 
 - 添加提示框
