@@ -35,7 +35,7 @@ else:
 
 但是她这个插件取消了 CodeRay 自带的行号功能，在当你需要指出某一行代码时，就非常不方便。为了解决这个问题，[Jan Stevens](http://www.fritz-hut.com/2013/11/24/github-style-code-highlighting-for-octopress/) 在 Kat 的插件基础上，开发了可以添加行号的 CodeRay 插件，但为了适应他自己博客的风格，同时也写了新的样式表。
 
-由于 Kat 用的是 Octopress 默认主题，从总体风格上而言，Kat 的插件样式更适合我们的博客，于是我尝试着用 Kat 的样式表配合 Jan 的插件使用，在在代码块没有标题框 (Caption) 的情况下表现完美。但一旦加上标题框，问题就出现了：代码块主体部分与标题框的连接处出现了不必要的圆角，显得非常难看。为了解决这一问题，我在他们的基础上修改了 Coderay Block 插件，如果你需要，在这里：[Octopress CodeRay Block](http://s.olo.la/iqLp).
+由于 Kat 用的是 Octopress 默认主题，从总体风格上而言，Kat 的插件样式更适合我们的博客，于是我尝试着用 Kat 的样式表配合 Jan 的插件使用，在代码块没有标题框 (Caption) 的情况下表现完美。但一旦加上标题框，问题就出现了：代码块主体部分与标题框的连接处出现了不必要的圆角，显得非常难看。为了解决这一问题，我在他们的基础上修改了 Coderay Block 插件，如果你需要，在这里：[Octopress CodeRay Block](http://s.olo.la/iqLp).
 
 具体安装和使用方法如下：
 
