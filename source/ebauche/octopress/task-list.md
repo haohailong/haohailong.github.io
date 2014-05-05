@@ -85,7 +85,12 @@ footer: true
 ## 暂不计划写入教程
 
 - 添加 ADN 页面
+	我使用了[ADN侧边栏插件](https://github.com/octopress/adn)，但用它生成了一个页面，解决得并不完美，想来大部分人也用不着这个功能，就不专门写了。
 - 图床问题
-- SEO 优化
+	可以直接使用 Github 在[精益修改 (4)](http://s.olo.la/eay3) 中有介绍，我用的是 [Droplr](https://droplr.com/join/d/kJSa8cTQ).
+- 搜索引擎优化
+	本博客作为个人学习使用的博客，并没有做 SEO（或许哪天学习 SEO 时会做一下），有需要的朋友请参考丁培轩翻译的这篇文章：<http://s.olo.la/s5Ue>
 - 脚注：Bigfoot
-- 文章摘要信息框
+	请参考 Bigfoot 官网：<http://www.bigfootjs.com>
+- 添加提示框
+	本文文章前面的 info 信息框以及文章中的 warning 警告框，其实都是用样式表制作出来的，使用了两幅简易的背景图片，具体请参考雁起平沙的 Octopress 样式表：<http://s.olo.la/xFy5>
