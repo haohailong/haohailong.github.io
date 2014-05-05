@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Octopress | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-05-05T16:59:08+02:00</updated>
+  <updated>2014-05-05T17:00:31+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -121,7 +121,7 @@ code snippet
 <p>要使用 Font Awesome，你只需要简单地在 <code>source/_includes/custom/head.html</code> 中添加如下一行代码：</p>
 
 <p>{% coderay lang:html source/_includes/custom/head.html http://fortawesome.github.io/Font-Awesome/get-started/ %}
-<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+{% raw %}<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />{% endraw %}
 {% endcoderay %}</p>
 
 <p>然后你看中哪个 Logo，直接敲使用官方的 Logo 代码，就可以让 Logo 出现在页面相应位置。比如你想显示照相机的 Logo：</p>
