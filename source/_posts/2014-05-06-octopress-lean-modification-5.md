@@ -110,14 +110,14 @@ html << "<li class='category'><a href='/blog/categories/#{category.to_url.downca
 
 3. 复制 ```source/_includes/post/revision.html``` 到你自己的 ```source/_includes/post``` 目录下。
 
-4. 在 ```_config.yml``` 文件中，添加你的 Github 账户信息，如下： <br /><br />
+4. 在 ```_config.yml``` 文件中，添加你的 Github 账户信息，如下： <br />
 {% coderay lang:yml _config.yml %}
 github_user: # 这你填你的 Github 用户名
 github_repo: # 这里填你博客的库名，即 [your_user_name].github.io
-{% endcoderay %}<br /><br />
-5. 在 ```source/_layouts/post.html``` 的 ```<footer>``` 和 ```</footer>``` 之间，你想要的位置，添加如下代码，此处即为文章修改记录的显示位置：<br /><br />
-{% coderay lang:html source/_layouts/post.html` %}
-{% include revision.html %}{% endcoderay %}
+{% endcoderay %}<br />
+5. 在 ```source/_layouts/post.html``` 的 ```<footer>``` 和 ```</footer>``` 之间，你想要的位置，添加如下代码，此处即为文章修改记录的显示位置：<br />
+{% coderay lang:html source/_layouts/post.html %}{% raw %}
+{% include revision.html %}{% endraw %}{% endcoderay %}
 
 这样，我们就可以在文章末尾看到本文的修改记录了。
 
