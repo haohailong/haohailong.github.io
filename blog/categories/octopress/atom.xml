@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Octopress | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-05-06T10:32:11+02:00</updated>
+  <updated>2014-05-06T10:35:04+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -165,24 +165,22 @@ html « “&amp;lt;li <span class="keyword">class</span>=<span class="string"><
     <p>复制 <code>source/_includes/post/revision.html</code> 到你自己的 <code>source/_includes/post</code> 目录下。</p>
   </li>
   <li>
-    <p>在 <code>_config.yml</code> 文件中，添加你的 Github 账户信息，如下： </p>
-
-    <p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>_config.yml </span></figcaption>
+    <p>在 <code>_config.yml</code> 文件中，添加你的 Github 账户信息，如下： <br /><br />
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>_config.yml </span></figcaption>
  <div class="CodeRay">
   <div class="code"><pre>
- <span class="key">github_user</span>: <span class="comment"># 这你填你的 Github 用户名</span>
- <span class="key">github_repo</span>: <span class="comment"># 这里填你博客的库名，即 [your_user_name].github.io</span>
- </pre></div>
+<span class="key">github_user</span>: <span class="comment"># 这你填你的 Github 用户名</span>
+<span class="key">github_repo</span>: <span class="comment"># 这里填你博客的库名，即 [your_user_name].github.io</span>
+</pre></div>
 </div>
  </figure></notextile></div>  </p>
   </li>
   <li>
-    <p>在 <code>source/_layouts/post.html</code> 的 <code>&lt;footer&gt;</code> 和 <code>&lt;/footer&gt;</code> 之间，你想要的位置，添加如下代码，此处即为文章修改记录的显示位置：</p>
-
-    <p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>source/_layouts/post.html` </span></figcaption>
+    <p>在 <code>source/_layouts/post.html</code> 的 <code>&lt;footer&gt;</code> 和 <code>&lt;/footer&gt;</code> 之间，你想要的位置，添加如下代码，此处即为文章修改记录的显示位置：<br /><br />
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>source/_layouts/post.html` </span></figcaption>
  <div class="CodeRay">
   <div class="code"><pre>
- <span class="tag">&lt;section</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">postrevision</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+<span class="tag">&lt;section</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">postrevision</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
     
 <span class="tag">&lt;/section&gt;</span></pre></div>
 </div>
