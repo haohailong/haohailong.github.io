@@ -40,13 +40,13 @@ Liquid::Template.register_tag('category_list', Jekyll::CategoryListTag){% endcod
 
 然后我们使用如下代码新建 ```category_list.html``` 文件，并放到 ```source/_includes/custom/asides/``` 文件夹下。
 
-{% coderay lang:ruby source/_includes/custom/asides/category_list.html %}
+{% coderay lang:ruby source/_includes/custom/asides/category_list.html %}{% raw %}
 <section>
   <h1>Categories</h1>
   <ul id="categories">
     {% category_list %}
   </ul>
-</section>{% endcoderay %}
+</section>{% endraw %}{% endcoderay %}
 
 最后，我们在 ```_config.yml``` 文件中 ```default_asides:``` 后面的方括号中，添加一项 ```custom/asides/category_list.html```，放到你喜欢的位置。
 
@@ -114,8 +114,7 @@ html << "<li class='category'><a href='/blog/categories/#{category.to_url.downca
 {% coderay lang:yml _config.yml %}
 github_user: # 这你填你的 Github 用户名
 github_repo: # 这里填你博客的库名，即 [your_user_name].github.io
-{% endcoderay %}  
-
+{% endcoderay %}<br /><br />
 5. 在 ```source/_layouts/post.html``` 的 ```<footer>``` 和 ```</footer>``` 之间，你想要的位置，添加如下代码，此处即为文章修改记录的显示位置：<br /><br />
 {% coderay lang:html source/_layouts/post.html` %}
 {% include revision.html %}{% endcoderay %}
