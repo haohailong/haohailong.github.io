@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Octopress | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-05-06T13:52:30+02:00</updated>
+  <updated>2014-05-06T13:54:04+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -18,7 +18,8 @@
     <link href="http://shengmingzhiqing.com/blog/octopress-tutorials-toc.html/"/>
     <updated>2014-05-06T15:50:25+02:00</updated>
     <id>http://shengmingzhiqing.com/blog/octopress-tutorials-toc</id>
-    <content type="html"><![CDATA[<p class="info">经过近十天的撰写，这份被自己当做备忘录的 Octopress 教程终于算是告一段落了，相信遵照这份教程可以生成一个不错的 Octopress 独立博客。当然正如在教程里说的，对于主题的修改是「永远的第二步」，所以我不敢说这份教程已经完成，又或者说永远都不可能完成。姑且把完成的部分的目录放在这里，供大家参考。</p>
+    <content type="html"><![CDATA[<p>经过近十天的撰写，这份被自己当做备忘录的 Octopress 教程终于算是告一段落了，相信遵照这份教程可以生成一个不错的 Octopress 独立博客。当然正如在教程里说的，对于主题的修改是「永远的第二步」，所以我不敢说这份教程已经完成，又或者说永远都不可能完成。姑且把完成的部分的目录放在这里，供大家参考。
+{:.info}<!--more--></p>
 
 <div class="bordergrey">
 
