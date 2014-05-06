@@ -14,15 +14,24 @@ footer: true
 {:/nomarkdown}
 
 #### Octopress 相关：
-* [Octopress 搭建日志]({{ root_url }}/ebauche/octopress/build-log.html)
-* [Octopress 任务列表]({{ root_url }}/ebauche/octopress/task-list.html)
-* [Octopress/Jekyll 博客]({{ root_url }}/ebauche/octopress/jekyll-octopress-blogs.html)
 
-#### 52Podcast 相关：
-* [52Podcast 内部教学视频]({{ root_url }}/ebauche/52podcast/52podcast-internal-training-videos.html)
+* [Octopress/Jekyll 博客]({{ root_url }}/ebauche/octopress/jekyll-octopress-blogs.html)
 
 #### WordPress 相关：
 * [WordPress 常用插件]({{ root_url }}/ebauche/wordpress/wordpress-plugins-in-use.html)
 
+#### 52Podcast 相关：
+* [52Podcast 内部教学视频]({{ root_url }}/ebauche/52podcast/52podcast-internal-training-videos.html)
+
 #### Notes: 
 * [Notes on Ubuntu]({{ root_url }}/ebauche/notes/Notes-on-Ubuntu.html)
+
+## 已发布：
+
+#### Octopress 相关：
+
+本部分内容已经作为正式文章发布，请点此查看[Octopress 教程目录](http://s.olo.la/rRRf)
+{:.info}
+
+* [Octopress 搭建日志]({{ root_url }}/ebauche/octopress/build-log.html)
+* [Octopress 任务列表]({{ root_url }}/ebauche/octopress/task-list.html)
