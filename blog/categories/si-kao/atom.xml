@@ -4,7 +4,7 @@
   <title><![CDATA[分类：思考 | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/si-kao/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-05-06T14:24:35+02:00</updated>
+  <updated>2014-05-06T14:37:53+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -18,7 +18,7 @@
     <link href="http://shengmingzhiqing.com/blog/why-enter-key-is-huiche-in-chinese.html/"/>
     <updated>2012-02-19T15:19:00+01:00</updated>
     <id>http://shengmingzhiqing.com/blog/why-enter-key-is-huiche-in-chinese</id>
-    <content type="html"><![CDATA[<p><img src="http://km.support.apple.com/library/APPLE/APPLECARE_ALLGEOS/HT1168/pc-enter.png"></p>
+    <content type="html"><![CDATA[<p>{% img http://km.support.apple.com/library/APPLE/APPLECARE_ALLGEOS/HT1168/pc-enter.png %}</p>
 
 <p>自己刚开始使用电脑的时候，英文基础薄弱，只知道在键盘上有一个 “↵+Enter” 的一个键被称为「回车键」，这个键的作用是在写作的时候换行，在做其他事情的时候当做「输入」或者「确认」。至于 “enter” 这个单词与汉语「回车」有什么关系，一直也没有认真思考过。
 <!--more--></p>
@@ -33,7 +33,7 @@
 
 <p>不过有句话我还是忍不住想说，既然现在回车键在英文中更多的是 Enter 的作用，在英文中也被称作 Enter 键，在汉语中把这个名称也译过来又何妨？对于电脑老手这可能是无所谓的事情，但这样可以减少新手不少困惑。即便这个键的译名不改，我想作为一个负责任的计算机老师，应该告诉学生这个键的由来并简单介绍 一下 Enter 这个英文单词的含义，这样新手至少不会为「为什么经常做完一个事情就要敲一下回车键？」这样的问题而摸不着头脑了。不幸的是，我所见过的所有计算机老师没有一个给我讲过 enter 的含义。</p>
 
-<p><span class='caption-wrapper'><img class='caption' src='http://km.support.apple.com/library/APPLE/APPLECARE_ALLGEOS/HT1220/return.png' width='' height='' title='Enter Key on Mac'><span class='caption-text'>Enter Key on Mac</span></span></p>
+<p>{% imgcap http://km.support.apple.com/library/APPLE/APPLECARE_ALLGEOS/HT1220/return.png Enter Key on Mac %}</p>
 ]]></content>
   </entry>
   
