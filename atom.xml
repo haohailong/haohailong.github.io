@@ -4,7 +4,7 @@
   <title><![CDATA[生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-05-06T10:35:37+02:00</updated>
+  <updated>2014-05-06T10:37:56+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -65,16 +65,9 @@
 &lt;section&gt;
   &lt;h1&gt;<span class="constant">Categories</span>&lt;<span class="regexp"><span class="delimiter">/</span><span class="content">h1&gt;
   &lt;ul id=&quot;categories&quot;&gt;
-    &lt;li class='category'&gt;&lt;a href='</span><span class="delimiter">/</span></span>blog/categories/bitcoin-slash-bi-te-bi/<span class="string"><span class="delimiter">'</span><span class="content">&gt;Bitcoin/比特币 (3)&lt;/a&gt;&lt;/li&gt;
-&lt;li class=</span><span class="delimiter">'</span></span>category<span class="string"><span class="delimiter">'</span><span class="content">&gt;&lt;a href=</span><span class="delimiter">'</span></span>/blog/categories/it-general/<span class="string"><span class="delimiter">'</span><span class="content">&gt;IT(General) (1)&lt;/a&gt;&lt;/li&gt;
-&lt;li class=</span><span class="delimiter">'</span></span>category<span class="string"><span class="delimiter">'</span><span class="content">&gt;&lt;a href=</span><span class="delimiter">'</span></span>/blog/categories/latex/<span class="string"><span class="delimiter">'</span><span class="content">&gt;LaTeX (1)&lt;/a&gt;&lt;/li&gt;
-&lt;li class=</span><span class="delimiter">'</span></span>category<span class="string"><span class="delimiter">'</span><span class="content">&gt;&lt;a href=</span><span class="delimiter">'</span></span>/blog/categories/mac/<span class="string"><span class="delimiter">'</span><span class="content">&gt;Mac (2)&lt;/a&gt;&lt;/li&gt;
-&lt;li class=</span><span class="delimiter">'</span></span>category<span class="string"><span class="delimiter">'</span><span class="content">&gt;&lt;a href=</span><span class="delimiter">'</span></span>/blog/categories/misc/<span class="string"><span class="delimiter">'</span><span class="content">&gt;Misc (1)&lt;/a&gt;&lt;/li&gt;
-&lt;li class=</span><span class="delimiter">'</span></span>category<span class="string"><span class="delimiter">'</span><span class="content">&gt;&lt;a href=</span><span class="delimiter">'</span></span>/blog/categories/octopress/<span class="string"><span class="delimiter">'</span><span class="content">&gt;Octopress (7)&lt;/a&gt;&lt;/li&gt;
-&lt;li class=</span><span class="delimiter">'</span></span>category<span class="string"><span class="delimiter">'</span><span class="content">&gt;&lt;a href=</span><span class="delimiter">'</span></span>/blog/categories/si-kao/<span class="string"><span class="delimiter">'</span><span class="content">&gt;思考 (2)&lt;/a&gt;&lt;/li&gt;
-
-  &lt;/ul&gt;
-&lt;/section&gt;</span></span></pre></div>
+    {% category_list %}
+  &lt;</span><span class="delimiter">/</span><span class="modifier">u</span></span>l&gt;
+&lt;<span class="regexp"><span class="delimiter">/</span><span class="content">section&gt;</span></span></pre></div>
 </div>
  </figure></notextile></div>
 
@@ -176,16 +169,15 @@ html &lt;&lt; <span class="string"><span class="delimiter">&quot;</span><span cl
 </pre></div>
 </div>
  </figure></notextile></div>
-
-<ol>
-  <li>在 <code>source/_layouts/post.html</code> 的 <code>&lt;footer&gt;</code> 和 <code>&lt;/footer&gt;</code> 之间，你想要的位置，添加如下代码，此处即为文章修改记录的显示位置：<br /><br /></li>
-</ol>
+<p><br /><br />
+5. 在 <code>source/_layouts/post.html</code> 的 <code>&lt;footer&gt;</code> 和 <code>&lt;/footer&gt;</code> 之间，你想要的位置，添加如下代码，此处即为文章修改记录的显示位置：<br /><br /></p>
 
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>source/_layouts/post.html` </span></figcaption>
  <div class="CodeRay">
   <div class="code"><pre>
 <span class="tag">&lt;section</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">postrevision</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
-    <span class="tag">&lt;ul&gt;</span><span class="tag">&lt;li&gt;</span><span class="tag">&lt;strong&gt;</span>格式调整
+    <span class="tag">&lt;ul&gt;</span><span class="tag">&lt;li&gt;</span><span class="tag">&lt;strong&gt;</span>代码块格式调整
+<span class="tag">&lt;/strong&gt;</span><span class="entity">&amp;nbsp;</span> 2014-05-06 <span class="tag">&lt;/li&gt;</span><span class="tag">&lt;li&gt;</span><span class="tag">&lt;strong&gt;</span>格式调整
 <span class="tag">&lt;/strong&gt;</span><span class="entity">&amp;nbsp;</span> 2014-05-06 <span class="tag">&lt;/li&gt;</span><span class="tag">&lt;li&gt;</span><span class="tag">&lt;strong&gt;</span>新文章发布<span class="tag">&lt;/strong&gt;</span><span class="entity">&amp;nbsp;</span> 2014-05-06 <span class="tag">&lt;/li&gt;</span><span class="tag">&lt;/ul&gt;</span>
 <span class="tag">&lt;/section&gt;</span></pre></div>
 </div>

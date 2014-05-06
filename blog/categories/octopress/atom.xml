@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Octopress | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-05-06T10:35:37+02:00</updated>
+  <updated>2014-05-06T10:37:56+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -65,14 +65,7 @@
 &lt;section&gt;
   &lt;h1&gt;Categories&lt;</span><span class="delimiter">/</span></span>h1&gt;
   &lt;ul id=<span class="string"><span class="delimiter">&quot;</span><span class="content">categories</span><span class="delimiter">&quot;</span></span>&gt;
-    &lt;li <span class="keyword">class</span>=<span class="string"><span class="delimiter">'</span><span class="content">category</span><span class="delimiter">'</span></span>&gt;&lt;a href=<span class="string"><span class="delimiter">'</span><span class="content">/blog/categories/bitcoin-slash-bi-te-bi/</span><span class="delimiter">'</span></span>&gt;<span class="constant">Bitcoin</span>/比特币 (<span class="integer">3</span>)&lt;<span class="regexp"><span class="delimiter">/</span><span class="content">a&gt;&lt;</span><span class="delimiter">/</span></span>li&gt;
-&lt;li <span class="keyword">class</span>=<span class="string"><span class="delimiter">'</span><span class="content">category</span><span class="delimiter">'</span></span>&gt;&lt;a href=<span class="string"><span class="delimiter">'</span><span class="content">/blog/categories/it-general/</span><span class="delimiter">'</span></span>&gt;IT(<span class="constant">General</span>) (<span class="integer">1</span>)&lt;<span class="regexp"><span class="delimiter">/</span><span class="content">a&gt;&lt;</span><span class="delimiter">/</span></span>li&gt;
-&lt;li <span class="keyword">class</span>=<span class="string"><span class="delimiter">'</span><span class="content">category</span><span class="delimiter">'</span></span>&gt;&lt;a href=<span class="string"><span class="delimiter">'</span><span class="content">/blog/categories/latex/</span><span class="delimiter">'</span></span>&gt;<span class="constant">LaTeX</span> (<span class="integer">1</span>)&lt;<span class="regexp"><span class="delimiter">/</span><span class="content">a&gt;&lt;</span><span class="delimiter">/</span></span>li&gt;
-&lt;li <span class="keyword">class</span>=<span class="string"><span class="delimiter">'</span><span class="content">category</span><span class="delimiter">'</span></span>&gt;&lt;a href=<span class="string"><span class="delimiter">'</span><span class="content">/blog/categories/mac/</span><span class="delimiter">'</span></span>&gt;<span class="constant">Mac</span> (<span class="integer">2</span>)&lt;<span class="regexp"><span class="delimiter">/</span><span class="content">a&gt;&lt;</span><span class="delimiter">/</span></span>li&gt;
-&lt;li <span class="keyword">class</span>=<span class="string"><span class="delimiter">'</span><span class="content">category</span><span class="delimiter">'</span></span>&gt;&lt;a href=<span class="string"><span class="delimiter">'</span><span class="content">/blog/categories/misc/</span><span class="delimiter">'</span></span>&gt;<span class="constant">Misc</span> (<span class="integer">1</span>)&lt;<span class="regexp"><span class="delimiter">/</span><span class="content">a&gt;&lt;</span><span class="delimiter">/</span></span>li&gt;
-&lt;li <span class="keyword">class</span>=<span class="string"><span class="delimiter">'</span><span class="content">category</span><span class="delimiter">'</span></span>&gt;&lt;a href=<span class="string"><span class="delimiter">'</span><span class="content">/blog/categories/octopress/</span><span class="delimiter">'</span></span>&gt;<span class="constant">Octopress</span> (<span class="integer">7</span>)&lt;<span class="regexp"><span class="delimiter">/</span><span class="content">a&gt;&lt;</span><span class="delimiter">/</span></span>li&gt;
-&lt;li <span class="keyword">class</span>=<span class="string"><span class="delimiter">'</span><span class="content">category</span><span class="delimiter">'</span></span>&gt;&lt;a href=<span class="string"><span class="delimiter">'</span><span class="content">/blog/categories/si-kao/</span><span class="delimiter">'</span></span>&gt;思考 (<span class="integer">2</span>)&lt;<span class="regexp"><span class="delimiter">/</span><span class="content">a&gt;&lt;</span><span class="delimiter">/</span></span>li&gt;
-
+    {<span class="string"><span class="delimiter">% </span><span class="content">category_list</span><span class="delimiter"> </span></span>%}
   &lt;<span class="regexp"><span class="delimiter">/</span><span class="content">ul&gt;
 &lt;</span><span class="delimiter">/</span><span class="modifier">se</span></span>ction&gt;
 &lt;p&gt;</pre></div>
@@ -164,8 +157,7 @@ html « “&amp;lt;li <span class="keyword">class</span>=<span class="string"><
   <li>
     <p>复制 <code>source/_includes/post/revision.html</code> 到你自己的 <code>source/_includes/post</code> 目录下。</p>
   </li>
-  <li>
-    <p>在 <code>_config.yml</code> 文件中，添加你的 Github 账户信息，如下： <br /><br />
+  <li>在 <code>_config.yml</code> 文件中，添加你的 Github 账户信息，如下： <br /><br />
 <div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>_config.yml </span></figcaption>
  <div class="CodeRay">
   <div class="code"><pre>
@@ -173,10 +165,8 @@ html « “&amp;lt;li <span class="keyword">class</span>=<span class="string"><
 <span class="key">github_repo</span>: <span class="comment"># 这里填你博客的库名，即 [your_user_name].github.io</span>
 </pre></div>
 </div>
- </figure></notextile></div>  </p>
-  </li>
-  <li>
-    <p>在 <code>source/_layouts/post.html</code> 的 <code>&lt;footer&gt;</code> 和 <code>&lt;/footer&gt;</code> 之间，你想要的位置，添加如下代码，此处即为文章修改记录的显示位置：<br /><br />
+ </figure></notextile></div><br /><br /></li>
+  <li>在 <code>source/_layouts/post.html</code> 的 <code>&lt;footer&gt;</code> 和 <code>&lt;/footer&gt;</code> 之间，你想要的位置，添加如下代码，此处即为文章修改记录的显示位置：<br /><br />
 <div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>source/_layouts/post.html` </span></figcaption>
  <div class="CodeRay">
   <div class="code"><pre>
@@ -184,8 +174,7 @@ html « “&amp;lt;li <span class="keyword">class</span>=<span class="string"><
     
 <span class="tag">&lt;/section&gt;</span></pre></div>
 </div>
- </figure></notextile></div></p>
-  </li>
+ </figure></notextile></div></li>
 </ol>
 
 <p>这样，我们就可以在文章末尾看到本文的修改记录了。</p>
