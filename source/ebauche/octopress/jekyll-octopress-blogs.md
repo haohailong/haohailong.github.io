@@ -38,7 +38,6 @@ footer: true
 * [Honekamp](http://blog.honekamp.net) 一个德国软件工程师的博客，Bigfoot 就是从他网站上看到的。
 * [And now it’s all this](http://www.leancrew.com/all-this/) Dr Drang. 貌似很有名？
 * [Smarterhjw's Blog](http://smarterhjw.com) 进一步改造 Octopress 可能用得着。
-* [站内搜索页面改造](http://qxxqxx.com/blog/octopress-search-page/)
 * [比特币实验室 by 潘志彪](http://618.io)
 * [不歸錄](http://tonytonyjan.net)
 * [Macdrifter](http://www.macdrifter.com) 使用 Pelican 搭建的。

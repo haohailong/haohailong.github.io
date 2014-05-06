@@ -11,7 +11,7 @@ footer: true
 - list element with functor item
 {:toc}
 
-## 已写入教程
+## 已写入教程的任务
 
 **Octopress 搭建流程 – Github Pages：**
 
