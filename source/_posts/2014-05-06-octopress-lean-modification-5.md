@@ -40,7 +40,7 @@ Liquid::Template.register_tag('category_list', Jekyll::CategoryListTag){% endcod
 
 然后我们使用如下代码新建 ```category_list.html``` 文件，并放到 ```source/_includes/custom/asides/``` 文件夹下。
 
-{% coderay lang:ruby source/_includes/custom/asides/category_list.html %}{% raw %}
+{% coderay lang:html source/_includes/custom/asides/category_list.html %}{% raw %}
 <section>
   <h1>Categories</h1>
   <ul id="categories">
