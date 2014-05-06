@@ -8,14 +8,7 @@ sharing: true
 footer: true
 ---
 
-- 用 Mac 搞学术  
-	- [用 Mac 搞学术之 Papers]({{ root_url }}/mac-app-papers/)
+## [Octopress 系列教程目录]({{ root_url }}/blog/octopress-tutorials-toc.html/)
 
-- [Octopress 教程]({{ root_url }}/article-series/octopress-tutorials.html)
-	1. [每个人都该为自己打造专属的写作环境]({{ root_url }}/blog/everybody-should-build-his-own-writing-space.html/)
-	2. [搭建流程 – Github Pages]({{ root_url }}/blog/setup-octopress-with-github-pages.html/)
-	3. [精益修改 (1) – 基本配置]({{ root_url }}/blog/octopress-lean-modification-1.html/)
-	4. [精益修改 (2) – 主题修改]({{ root_url }}/blog/octopress-lean-modification-2.html/)
-	5. [精益修改 (3) – 样式修改]({{ root_url }}/blog/octopress-lean-modification-3.html/)
-	6. [精益修改 (4) – 元素美化]({{ root_url }}/blog/octopress-lean-modification-4.html/)
-	7. [精益修改 (5) – 必备功能]({{ root_url }}/blog/octopress-lean-modification-5.html/)
+## 用 Mac 搞学术系列
+- [用 Mac 搞学术之 Papers]({{ root_url }}/mac-app-papers/)
