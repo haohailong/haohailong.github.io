@@ -4,7 +4,7 @@
   <title><![CDATA[生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-05-06T10:35:04+02:00</updated>
+  <updated>2014-05-06T10:35:37+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -185,7 +185,8 @@ html &lt;&lt; <span class="string"><span class="delimiter">&quot;</span><span cl
  <div class="CodeRay">
   <div class="code"><pre>
 <span class="tag">&lt;section</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">postrevision</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
-    <span class="tag">&lt;ul&gt;</span><span class="tag">&lt;li&gt;</span><span class="tag">&lt;strong&gt;</span>新文章发布<span class="tag">&lt;/strong&gt;</span><span class="entity">&amp;nbsp;</span> 2014-05-06 <span class="tag">&lt;/li&gt;</span><span class="tag">&lt;/ul&gt;</span>
+    <span class="tag">&lt;ul&gt;</span><span class="tag">&lt;li&gt;</span><span class="tag">&lt;strong&gt;</span>格式调整
+<span class="tag">&lt;/strong&gt;</span><span class="entity">&amp;nbsp;</span> 2014-05-06 <span class="tag">&lt;/li&gt;</span><span class="tag">&lt;li&gt;</span><span class="tag">&lt;strong&gt;</span>新文章发布<span class="tag">&lt;/strong&gt;</span><span class="entity">&amp;nbsp;</span> 2014-05-06 <span class="tag">&lt;/li&gt;</span><span class="tag">&lt;/ul&gt;</span>
 <span class="tag">&lt;/section&gt;</span></pre></div>
 </div>
  </figure></notextile></div>
