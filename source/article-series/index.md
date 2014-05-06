@@ -18,3 +18,4 @@ footer: true
 	4. [精益修改 (2) – 主题修改]({{ root_url }}/blog/octopress-lean-modification-2.html/)
 	5. [精益修改 (3) – 样式修改]({{ root_url }}/blog/octopress-lean-modification-3.html/)
 	6. [精益修改 (4) – 元素美化]({{ root_url }}/blog/octopress-lean-modification-4.html/)
+	7. [精益修改 (5) – 必备功能]({{ root_url }}/blog/octopress-lean-modification-5.html/)
