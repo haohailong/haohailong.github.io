@@ -70,17 +70,16 @@ footer: true
 **Octopress 精益修改 (4)：**
 
 - 元素美化
-	- Coderay 实现更美观的代码显示。 
-		自己做了个插件修改版……
-	- 给图片添加 Caption 
-	- 使用 FontAwesome 
+	- [CodeRay Block 代码块插件](http://s.olo.la/iqLp)
+	- 给图片添加说明 (Caption) 
+	- 使用 FontAwesome
 
-## 待写入教程
+**Octopress 精益修改 (5)：**
 
 - 必备功能
-	- 侧边栏分类目录
-	- 长文档自动生成目录
-	- 文章尾部添加版本修订信息
+	- 侧边栏显示分类目录
+	- 自动生成文章目录
+	- 自动添加文章修改记录
 
 ## 暂不计划写入教程的功能及原因
 
