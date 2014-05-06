@@ -4,7 +4,7 @@
   <title><![CDATA[生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-05-06T10:37:56+02:00</updated>
+  <updated>2014-05-06T10:39:17+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -62,12 +62,12 @@
 <div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>source/_includes/custom/asides/category_list.html </span></figcaption>
  <div class="CodeRay">
   <div class="code"><pre>
-&lt;section&gt;
-  &lt;h1&gt;<span class="constant">Categories</span>&lt;<span class="regexp"><span class="delimiter">/</span><span class="content">h1&gt;
-  &lt;ul id=&quot;categories&quot;&gt;
+<span class="tag">&lt;section&gt;</span>
+  <span class="tag">&lt;h1&gt;</span>Categories<span class="tag">&lt;/h1&gt;</span>
+  <span class="tag">&lt;ul</span> <span class="attribute-name">id</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">categories</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
     {% category_list %}
-  &lt;</span><span class="delimiter">/</span><span class="modifier">u</span></span>l&gt;
-&lt;<span class="regexp"><span class="delimiter">/</span><span class="content">section&gt;</span></span></pre></div>
+  <span class="tag">&lt;/ul&gt;</span>
+<span class="tag">&lt;/section&gt;</span></pre></div>
 </div>
  </figure></notextile></div>
 
@@ -176,7 +176,8 @@ html &lt;&lt; <span class="string"><span class="delimiter">&quot;</span><span cl
  <div class="CodeRay">
   <div class="code"><pre>
 <span class="tag">&lt;section</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">postrevision</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
-    <span class="tag">&lt;ul&gt;</span><span class="tag">&lt;li&gt;</span><span class="tag">&lt;strong&gt;</span>代码块格式调整
+    <span class="tag">&lt;ul&gt;</span><span class="tag">&lt;li&gt;</span><span class="tag">&lt;strong&gt;</span>代码块语言修正
+<span class="tag">&lt;/strong&gt;</span><span class="entity">&amp;nbsp;</span> 2014-05-06 <span class="tag">&lt;/li&gt;</span><span class="tag">&lt;li&gt;</span><span class="tag">&lt;strong&gt;</span>代码块格式调整
 <span class="tag">&lt;/strong&gt;</span><span class="entity">&amp;nbsp;</span> 2014-05-06 <span class="tag">&lt;/li&gt;</span><span class="tag">&lt;li&gt;</span><span class="tag">&lt;strong&gt;</span>格式调整
 <span class="tag">&lt;/strong&gt;</span><span class="entity">&amp;nbsp;</span> 2014-05-06 <span class="tag">&lt;/li&gt;</span><span class="tag">&lt;li&gt;</span><span class="tag">&lt;strong&gt;</span>新文章发布<span class="tag">&lt;/strong&gt;</span><span class="entity">&amp;nbsp;</span> 2014-05-06 <span class="tag">&lt;/li&gt;</span><span class="tag">&lt;/ul&gt;</span>
 <span class="tag">&lt;/section&gt;</span></pre></div>
