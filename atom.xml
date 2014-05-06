@@ -4,7 +4,7 @@
   <title><![CDATA[生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-05-05T20:11:32+02:00</updated>
+  <updated>2014-05-06T10:32:11+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -12,6 +12,188 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress 精益修改 (5)]]></title>
+    <link href="http://shengmingzhiqing.com/blog/octopress-lean-modification-5.html/"/>
+    <updated>2014-05-06T12:31:11+02:00</updated>
+    <id>http://shengmingzhiqing.com/blog/octopress-lean-modification-5</id>
+    <content type="html"><![CDATA[<ul id="markdown-toc">
+  <li><a href="#section">1. 侧边栏显示分类目录</a></li>
+  <li><a href="#section-1">2. 自动生成文章目录</a></li>
+  <li><a href="#section-2">3. 自动添加文章修改记录</a></li>
+</ul>
+
+<h2 id="section">1. 侧边栏显示分类目录</h2>
+
+<p>随着文章数量的增多，为了更方便检索，我们需要对文章进行整理。整理的方式一般分为两种：1. 「分类目录」，这是一种收敛式的整理方式，也是 Octopress 的默认方式；2. 「标签」，这是一种扩散式的整理方式，使用这种方式的典范是 <a href="http://www.tumblr.com">Tumblr</a> 轻博客。</p>
+
+<p>对我个人而言，搭建这个新博客主要是为了存放自己撰写的与理工（目前看来是 IT 和经济学）相关的文章，主题比较收敛，本身文章也不多，所以采用了 Octopress 默认的「分类目录」整理方式。<!--more--></p>
+
+<p>但我们的目的是方便检索，仅仅给每篇文章设置分类还不够，还需要专门找个地方显示分类列表。由于 Wordpress 的习惯，我更愿意把分类目录放到侧边栏显示。那么该如何实现这一功能呢？在自己动手写代码之前，先看看有没有巨人的肩膀可以踩是个非常好的习惯。Google 之后，我们找到这样一篇文章：《<a href="http://codemacro.com/2012/07/18/add-category-list-to-octopress/">为 octopress 添加分类(category)列表</a>》。参考这篇文章的方法，具体实现步骤如下：</p>
+
+<p>首先，用如下代码新建文本文件，另存为 <code>category_list_tag.rb</code>，并把这个文件放到 <code>plugins</code> 目录下。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>plugins/category_list_tag.rb </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+<span class="keyword">module</span> <span class="class">Jekyll</span>
+  <span class="keyword">class</span> <span class="class">CategoryListTag</span> &lt; <span class="constant">Liquid</span>::<span class="constant">Tag</span>
+    <span class="keyword">def</span> <span class="function">render</span>(context)
+      html = <span class="string"><span class="delimiter">&quot;</span><span class="delimiter">&quot;</span></span>
+      categories = context.registers[<span class="symbol">:site</span>].categories.keys
+      categories.sort.each <span class="keyword">do</span> |category|
+        posts_in_category = context.registers[<span class="symbol">:site</span>].categories[category].size
+        category_dir = context.registers[<span class="symbol">:site</span>].config[<span class="string"><span class="delimiter">'</span><span class="content">category_dir</span><span class="delimiter">'</span></span>]
+        category_url = <span class="constant">File</span>.join(category_dir, category.gsub(<span class="regexp"><span class="delimiter">/</span><span class="content">_|</span><span class="char">\P</span><span class="content">{Word}</span><span class="delimiter">/</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">-</span><span class="delimiter">'</span></span>).gsub(<span class="regexp"><span class="delimiter">/</span><span class="content">-{2,}</span><span class="delimiter">/</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">-</span><span class="delimiter">'</span></span>).downcase)
+        html &lt;&lt; <span class="string"><span class="delimiter">&quot;</span><span class="content">&lt;li class='category'&gt;&lt;a href='http://shengmingzhiqing.com/</span><span class="inline"><span class="inline-delimiter">#{</span>category_url<span class="inline-delimiter">}</span></span><span class="content">/'&gt;</span><span class="inline"><span class="inline-delimiter">#{</span>category<span class="inline-delimiter">}</span></span><span class="content"> (</span><span class="inline"><span class="inline-delimiter">#{</span>posts_in_category<span class="inline-delimiter">}</span></span><span class="content">)&lt;/a&gt;&lt;/li&gt;</span><span class="char">\n</span><span class="delimiter">&quot;</span></span>
+      <span class="keyword">end</span>
+      html
+    <span class="keyword">end</span>
+  <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="constant">Liquid</span>::<span class="constant">Template</span>.register_tag(<span class="string"><span class="delimiter">'</span><span class="content">category_list</span><span class="delimiter">'</span></span>, <span class="constant">Jekyll</span>::<span class="constant">CategoryListTag</span>)</pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>然后我们使用如下代码新建 <code>category_list.html</code> 文件，并放到 <code>source/_includes/custom/asides/</code> 文件夹下。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>source/_includes/custom/asides/category_list.html </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+&lt;section&gt;
+  &lt;h1&gt;<span class="constant">Categories</span>&lt;<span class="regexp"><span class="delimiter">/</span><span class="content">h1&gt;
+  &lt;ul id=&quot;categories&quot;&gt;
+    &lt;li class='category'&gt;&lt;a href='</span><span class="delimiter">/</span></span>blog/categories/bitcoin-slash-bi-te-bi/<span class="string"><span class="delimiter">'</span><span class="content">&gt;Bitcoin/比特币 (3)&lt;/a&gt;&lt;/li&gt;
+&lt;li class=</span><span class="delimiter">'</span></span>category<span class="string"><span class="delimiter">'</span><span class="content">&gt;&lt;a href=</span><span class="delimiter">'</span></span>/blog/categories/it-general/<span class="string"><span class="delimiter">'</span><span class="content">&gt;IT(General) (1)&lt;/a&gt;&lt;/li&gt;
+&lt;li class=</span><span class="delimiter">'</span></span>category<span class="string"><span class="delimiter">'</span><span class="content">&gt;&lt;a href=</span><span class="delimiter">'</span></span>/blog/categories/latex/<span class="string"><span class="delimiter">'</span><span class="content">&gt;LaTeX (1)&lt;/a&gt;&lt;/li&gt;
+&lt;li class=</span><span class="delimiter">'</span></span>category<span class="string"><span class="delimiter">'</span><span class="content">&gt;&lt;a href=</span><span class="delimiter">'</span></span>/blog/categories/mac/<span class="string"><span class="delimiter">'</span><span class="content">&gt;Mac (2)&lt;/a&gt;&lt;/li&gt;
+&lt;li class=</span><span class="delimiter">'</span></span>category<span class="string"><span class="delimiter">'</span><span class="content">&gt;&lt;a href=</span><span class="delimiter">'</span></span>/blog/categories/misc/<span class="string"><span class="delimiter">'</span><span class="content">&gt;Misc (1)&lt;/a&gt;&lt;/li&gt;
+&lt;li class=</span><span class="delimiter">'</span></span>category<span class="string"><span class="delimiter">'</span><span class="content">&gt;&lt;a href=</span><span class="delimiter">'</span></span>/blog/categories/octopress/<span class="string"><span class="delimiter">'</span><span class="content">&gt;Octopress (7)&lt;/a&gt;&lt;/li&gt;
+&lt;li class=</span><span class="delimiter">'</span></span>category<span class="string"><span class="delimiter">'</span><span class="content">&gt;&lt;a href=</span><span class="delimiter">'</span></span>/blog/categories/si-kao/<span class="string"><span class="delimiter">'</span><span class="content">&gt;思考 (2)&lt;/a&gt;&lt;/li&gt;
+
+  &lt;/ul&gt;
+&lt;/section&gt;</span></span></pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>最后，我们在 <code>_config.yml</code> 文件中 <code>default_asides:</code> 后面的方括号中，添加一项 <code>custom/asides/category_list.html</code>，放到你喜欢的位置。</p>
+
+<p>这样我们就可以在侧边栏看到分类目录列表了。不过且慢，每个功能实现之后，我们还是测试一下为好。如果你的分类名称中有中文，你就会发现这个链接并不能正确指向该分类的页面，那么该怎么办呢？</p>
+
+<p>打开 <code>plugins/category_list_tag.rb</code>，找到如下一行代码：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>plugins/category_list_tag.rb </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+html &lt;&lt; <span class="string"><span class="delimiter">&quot;</span><span class="content">&lt;li class='category'&gt;&lt;a href='http://shengmingzhiqing.com/</span><span class="inline"><span class="inline-delimiter">#{</span>category_url<span class="inline-delimiter">}</span></span><span class="content">/'&gt;</span><span class="inline"><span class="inline-delimiter">#{</span>category<span class="inline-delimiter">}</span></span><span class="content"> (</span><span class="inline"><span class="inline-delimiter">#{</span>posts_in_category<span class="inline-delimiter">}</span></span><span class="content">)&lt;/a&gt;&lt;/li&gt;</span><span class="char">\n</span><span class="delimiter">&quot;</span></span>
+</pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>替换为：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>plugins/category_list_tag.rb </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+html &lt;&lt; <span class="string"><span class="delimiter">&quot;</span><span class="content">&lt;li class='category'&gt;&lt;a href='http://shengmingzhiqing.com/blog/categories/</span><span class="inline"><span class="inline-delimiter">#{</span>category.to_url.downcase<span class="inline-delimiter">}</span></span><span class="content">/'&gt;</span><span class="inline"><span class="inline-delimiter">#{</span>category<span class="inline-delimiter">}</span></span><span class="content"> (</span><span class="inline"><span class="inline-delimiter">#{</span>posts_in_category<span class="inline-delimiter">}</span></span><span class="content">)&lt;/a&gt;&lt;/li&gt;</span><span class="char">\n</span><span class="delimiter">&quot;</span></span>
+</pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>完工。</p>
+
+<h2 id="section-1">2. 自动生成文章目录</h2>
+
+<p>博客文章不想报纸杂志，自然有长有短：短文章可以短到只有标题，而长文章往往会分为好多个章节。为了方便阅读，我们往往会把一篇长文章分为好几篇来发布，比如我们的「Octopress 精益修改」，但即便如此，有些文章还是会超出最适宜阅读的长度，同样比如我们这个 Octopress 教程。那么有没有什么办法能够解决这个不宜阅读的问题呢？</p>
+
+<p>我们知道，使用 Markdown 语言撰写的文章，只要你把章节题目标清楚，本身会生成一个内在的文档结构，如果我们直接把这个结构提取出来，作为文章的目录，放到文章开头，这样就能一举解决我们刚才所说的问题。那么有没有这样的实现方式呢？带着这个问题，我们找到了这样一篇文章：<a href="http://blog.riemann.cc/2013/04/10/table-of-contents-in-octopress/"><em>Table Of Contents in Octopress</em></a>，参考此文，具体实现步骤如下：</p>
+
+<p>首先，请使用 kramdown 作为 Octopress 默认的 Markdown 解析器，具体如何设置请参照先前的教程。</p>
+
+<p>然后只要你在想插入目录的地方，插入如下一段代码即可：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="CodeRay">
+  <div class="code"><pre>
+* list element with functor item
+{:toc}
+</pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>没错，就这么简单。当然你可能希望能在这个目录前面自动添加，类似本文前面的「本页目录」四个字，只需要修改样式表 <code>sass/custom/_style.scss</code>，添加如下代码：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>sass/custom/_style.scss </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+#markdown-toc:before {
+  content: &quot;本页目录&quot;;
+  font-weight: bold;
+}</pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>最后，可能还有一个问题，有些朋友和我一样会在文章中使用 <code>&lt;!-- more --&gt;</code> 标签，在首页只显示部分文章，这时这个目录生成可能就会出现错误，而且事实上我们也没必要在文章的摘要中放置一个目录，所以我们可以在 <code>sass/custom/_style.scss</code> 添加如下代码，让主页不出现目录：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>sass/custom/_style.scss </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+.blog-index #markdown-toc {
+  display: none;
+}</pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>如果你对这个目录的样式不满意，还可以在样式表中进一步修改，改成什么样就看你个人喜好了。</p>
+
+<h2 id="section-2">3. 自动添加文章修改记录</h2>
+
+<p><a href="http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/#octopress--github-pages">前面我们说过</a>，写文章，建网站都难免要修改，而且会反复修改。如果能把这些修改过程记录下来，本身就是很好的学习资料，那么有没有办法实现这一点呢？Git 就是干这个的，而且也正是我们前面说的 Octopress + Github Pages 相比其他博客系统的优势之一。</p>
+
+<p>事实上，我们每一次更新文章后提交至 Github 的 Commit 就可以当做是文章的修改记录和说明，如果我们能让这个信息自动出现在文章末尾，就可以实现我们想要的功能。同样，百事未行先 Google，我们发现了这样一篇文章：<a href="http://jhshi.me/2013/11/17/post-revision-plugin-for-octopress/"><em>Post Revision Plugin for Octopress</em></a>，参考此文，具体实现步骤如下：</p>
+
+<ol>
+  <li>
+    <p>到这里 <a href="http://s.olo.la/a6cM">http://s.olo.la/a6cM</a> 找到 Octopress Post Revision 插件。</p>
+  </li>
+  <li>
+    <p>复制 <code>plugins/revision.rb</code> 到你自己的 <code>plugins</code> 目录下。</p>
+  </li>
+  <li>
+    <p>复制 <code>source/_includes/post/revision.html</code> 到你自己的 <code>source/_includes/post</code> 目录下。</p>
+  </li>
+  <li>
+    <p>在 <code>_config.yml</code> 文件中，添加你的 Github 账户信息，如下： </p>
+  </li>
+</ol>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>_config.yml </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+<span class="error">    </span><span class="key">github_user</span>: <span class="comment"># 这你填你的 Github 用户名</span>
+<span class="error">    </span><span class="key">github_repo</span>: <span class="comment"># 这里填你博客的库名，即 [your_user_name].github.io</span>
+<span class="error">    </span></pre></div>
+</div>
+ </figure></notextile></div>
+
+<ol>
+  <li>在 <code>source/_layouts/post.html</code> 的 <code>&lt;footer&gt;</code> 和 <code>&lt;/footer&gt;</code> 之间，你想要的位置，添加如下代码，此处即为文章修改记录的显示位置：</li>
+</ol>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>source/_layouts/post.html` </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+    <span class="tag">&lt;section</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">postrevision</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;ul&gt;</span><span class="tag">&lt;/ul&gt;</span>
+<span class="tag">&lt;/section&gt;</span></pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>这样，我们就可以在文章末尾看到本文的修改记录了。</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopress 精益修改 (4)]]></title>

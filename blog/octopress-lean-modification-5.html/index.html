@@ -1,0 +1,515 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Octopress 精益修改 (5) - 生命之氢</title>
+  <meta name="author" content="郝海龙">
+
+  
+  <meta name="description" content="1. 侧边栏显示分类目录 2. 自动生成文章目录 3. 自动添加文章修改记录 1. 侧边栏显示分类目录 随着文章数量的增多，为了更方便检索，我们需要对文章进行整理。整理的方式一般分为两种：1. 「分类目录」，这是一种收敛式的整理方式，也是 Octopress 的默认方式；2. 「标签」， &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://shengmingzhiqing.com/blog/octopress-lean-modification-5.html/">
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="生命之氢" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Special+Elite:regular" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Marko+One:regular" rel="stylesheet" type="text/css">
+
+<!-- adn app.net-->
+<script type="text/javascript" src="/javascripts/adn-timeline.min.js"></script>
+
+<!-- mathjax config similar to math.stackexchange -->
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+  </script>
+
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+          var all = MathJax.Hub.getAllJax(), i;
+          for(i=0; i < all.length; i += 1) {
+              all[i].SourceElement().parentNode.className += ' has-jax';
+          }
+      });
+  </script>
+
+  <script type="text/javascript"
+     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+<!--新窗口中打开链接-->
+<script type="text/javascript">
+function addBlankTargetForLinks () {
+  $('a[href^="http"]').each(function(){
+      $(this).attr('target', '_blank');
+  });
+}
+$(document).bind('DOMNodeInserted', function(event) {
+  addBlankTargetForLinks();
+});
+</script>
+
+<!--bigfoot-->
+<style>@import url("/stylesheets/bigfoot-number.scss");</style>
+<script type="text/javascript" src="/javascripts/libs/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/bigfoot.js"></script>
+<script type="text/javascript">
+    $.bigfoot();
+</script>
+
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-49889656-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/"><i class="fa fa-h-square"></i>&nbsp;生命之氢</a></h1>
+  
+  <h2>Hailong Hao's Laboratory</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<!--  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:shengmingzhiqing.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="搜索 = 输入 + 回车"/>
+  </fieldset>
+</form>
+   -->
+<ul class="main-navigation">
+  <li><a href="/"><i class="fa fa-home"></i> 首页</a></li>
+  <li><a href="/blog/archives/"><i class="fa fa-list-ul"></i> 文章列表</a></li>
+  <li><a href="/article-series/"><i class="fa fa-compass"></i> 系列文章</a></li>
+  <li><a href="/adn-timeline/"><i class="fa fa-flask"></i> 断章</a></li>
+  <li><a href="/ebauche/"><i class="fa fa-gavel"></i> Ébauche</a></li>
+  <li><a href="http://haohailong.net"><i class="fa fa-leaf"></i> 另一面</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Octopress 精益修改 (5)</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-06T12:31:11+02:00" pubdate data-updated="true">2014年 5月 6日</time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://shengmingzhiqing.com">评论</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><ul id="markdown-toc">
+  <li><a href="#section">1. 侧边栏显示分类目录</a></li>
+  <li><a href="#section-1">2. 自动生成文章目录</a></li>
+  <li><a href="#section-2">3. 自动添加文章修改记录</a></li>
+</ul>
+
+<h2 id="section">1. 侧边栏显示分类目录</h2>
+
+<p>随着文章数量的增多，为了更方便检索，我们需要对文章进行整理。整理的方式一般分为两种：1. 「分类目录」，这是一种收敛式的整理方式，也是 Octopress 的默认方式；2. 「标签」，这是一种扩散式的整理方式，使用这种方式的典范是 <a href="http://www.tumblr.com">Tumblr</a> 轻博客。</p>
+
+<p>对我个人而言，搭建这个新博客主要是为了存放自己撰写的与理工（目前看来是 IT 和经济学）相关的文章，主题比较收敛，本身文章也不多，所以采用了 Octopress 默认的「分类目录」整理方式。<!--more--></p>
+
+<p>但我们的目的是方便检索，仅仅给每篇文章设置分类还不够，还需要专门找个地方显示分类列表。由于 Wordpress 的习惯，我更愿意把分类目录放到侧边栏显示。那么该如何实现这一功能呢？在自己动手写代码之前，先看看有没有巨人的肩膀可以踩是个非常好的习惯。Google 之后，我们找到这样一篇文章：《<a href="http://codemacro.com/2012/07/18/add-category-list-to-octopress/">为 octopress 添加分类(category)列表</a>》。参考这篇文章的方法，具体实现步骤如下：</p>
+
+<p>首先，用如下代码新建文本文件，另存为 <code>category_list_tag.rb</code>，并把这个文件放到 <code>plugins</code> 目录下。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>plugins/category_list_tag.rb </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+<span class="keyword">module</span> <span class="class">Jekyll</span>
+  <span class="keyword">class</span> <span class="class">CategoryListTag</span> &lt; <span class="constant">Liquid</span>::<span class="constant">Tag</span>
+    <span class="keyword">def</span> <span class="function">render</span>(context)
+      html = <span class="string"><span class="delimiter">&quot;</span><span class="delimiter">&quot;</span></span>
+      categories = context.registers[<span class="symbol">:site</span>].categories.keys
+      categories.sort.each <span class="keyword">do</span> |category|
+        posts_in_category = context.registers[<span class="symbol">:site</span>].categories[category].size
+        category_dir = context.registers[<span class="symbol">:site</span>].config[<span class="string"><span class="delimiter">'</span><span class="content">category_dir</span><span class="delimiter">'</span></span>]
+        category_url = <span class="constant">File</span>.join(category_dir, category.gsub(<span class="regexp"><span class="delimiter">/</span><span class="content">_|</span><span class="char">\P</span><span class="content">{Word}</span><span class="delimiter">/</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">-</span><span class="delimiter">'</span></span>).gsub(<span class="regexp"><span class="delimiter">/</span><span class="content">-{2,}</span><span class="delimiter">/</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">-</span><span class="delimiter">'</span></span>).downcase)
+        html &lt;&lt; <span class="string"><span class="delimiter">&quot;</span><span class="content">&lt;li class='category'&gt;&lt;a href='/</span><span class="inline"><span class="inline-delimiter">#{</span>category_url<span class="inline-delimiter">}</span></span><span class="content">/'&gt;</span><span class="inline"><span class="inline-delimiter">#{</span>category<span class="inline-delimiter">}</span></span><span class="content"> (</span><span class="inline"><span class="inline-delimiter">#{</span>posts_in_category<span class="inline-delimiter">}</span></span><span class="content">)&lt;/a&gt;&lt;/li&gt;</span><span class="char">\n</span><span class="delimiter">&quot;</span></span>
+      <span class="keyword">end</span>
+      html
+    <span class="keyword">end</span>
+  <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="constant">Liquid</span>::<span class="constant">Template</span>.register_tag(<span class="string"><span class="delimiter">'</span><span class="content">category_list</span><span class="delimiter">'</span></span>, <span class="constant">Jekyll</span>::<span class="constant">CategoryListTag</span>)</pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>然后我们使用如下代码新建 <code>category_list.html</code> 文件，并放到 <code>source/_includes/custom/asides/</code> 文件夹下。</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>source/_includes/custom/asides/category_list.html </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+&lt;section&gt;
+  &lt;h1&gt;<span class="constant">Categories</span>&lt;<span class="regexp"><span class="delimiter">/</span><span class="content">h1&gt;
+  &lt;ul id=&quot;categories&quot;&gt;
+    &lt;li class='category'&gt;&lt;a href='</span><span class="delimiter">/</span></span>blog/categories/bitcoin-slash-bi-te-bi/<span class="string"><span class="delimiter">'</span><span class="content">&gt;Bitcoin/比特币 (3)&lt;/a&gt;&lt;/li&gt;
+&lt;li class=</span><span class="delimiter">'</span></span>category<span class="string"><span class="delimiter">'</span><span class="content">&gt;&lt;a href=</span><span class="delimiter">'</span></span>/blog/categories/it-general/<span class="string"><span class="delimiter">'</span><span class="content">&gt;IT(General) (1)&lt;/a&gt;&lt;/li&gt;
+&lt;li class=</span><span class="delimiter">'</span></span>category<span class="string"><span class="delimiter">'</span><span class="content">&gt;&lt;a href=</span><span class="delimiter">'</span></span>/blog/categories/latex/<span class="string"><span class="delimiter">'</span><span class="content">&gt;LaTeX (1)&lt;/a&gt;&lt;/li&gt;
+&lt;li class=</span><span class="delimiter">'</span></span>category<span class="string"><span class="delimiter">'</span><span class="content">&gt;&lt;a href=</span><span class="delimiter">'</span></span>/blog/categories/mac/<span class="string"><span class="delimiter">'</span><span class="content">&gt;Mac (2)&lt;/a&gt;&lt;/li&gt;
+&lt;li class=</span><span class="delimiter">'</span></span>category<span class="string"><span class="delimiter">'</span><span class="content">&gt;&lt;a href=</span><span class="delimiter">'</span></span>/blog/categories/misc/<span class="string"><span class="delimiter">'</span><span class="content">&gt;Misc (1)&lt;/a&gt;&lt;/li&gt;
+&lt;li class=</span><span class="delimiter">'</span></span>category<span class="string"><span class="delimiter">'</span><span class="content">&gt;&lt;a href=</span><span class="delimiter">'</span></span>/blog/categories/octopress/<span class="string"><span class="delimiter">'</span><span class="content">&gt;Octopress (7)&lt;/a&gt;&lt;/li&gt;
+&lt;li class=</span><span class="delimiter">'</span></span>category<span class="string"><span class="delimiter">'</span><span class="content">&gt;&lt;a href=</span><span class="delimiter">'</span></span>/blog/categories/si-kao/<span class="string"><span class="delimiter">'</span><span class="content">&gt;思考 (2)&lt;/a&gt;&lt;/li&gt;
+
+  &lt;/ul&gt;
+&lt;/section&gt;</span></span></pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>最后，我们在 <code>_config.yml</code> 文件中 <code>default_asides:</code> 后面的方括号中，添加一项 <code>custom/asides/category_list.html</code>，放到你喜欢的位置。</p>
+
+<p>这样我们就可以在侧边栏看到分类目录列表了。不过且慢，每个功能实现之后，我们还是测试一下为好。如果你的分类名称中有中文，你就会发现这个链接并不能正确指向该分类的页面，那么该怎么办呢？</p>
+
+<p>打开 <code>plugins/category_list_tag.rb</code>，找到如下一行代码：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>plugins/category_list_tag.rb </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+html &lt;&lt; <span class="string"><span class="delimiter">&quot;</span><span class="content">&lt;li class='category'&gt;&lt;a href='/</span><span class="inline"><span class="inline-delimiter">#{</span>category_url<span class="inline-delimiter">}</span></span><span class="content">/'&gt;</span><span class="inline"><span class="inline-delimiter">#{</span>category<span class="inline-delimiter">}</span></span><span class="content"> (</span><span class="inline"><span class="inline-delimiter">#{</span>posts_in_category<span class="inline-delimiter">}</span></span><span class="content">)&lt;/a&gt;&lt;/li&gt;</span><span class="char">\n</span><span class="delimiter">&quot;</span></span>
+</pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>替换为：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>plugins/category_list_tag.rb </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+html &lt;&lt; <span class="string"><span class="delimiter">&quot;</span><span class="content">&lt;li class='category'&gt;&lt;a href='/blog/categories/</span><span class="inline"><span class="inline-delimiter">#{</span>category.to_url.downcase<span class="inline-delimiter">}</span></span><span class="content">/'&gt;</span><span class="inline"><span class="inline-delimiter">#{</span>category<span class="inline-delimiter">}</span></span><span class="content"> (</span><span class="inline"><span class="inline-delimiter">#{</span>posts_in_category<span class="inline-delimiter">}</span></span><span class="content">)&lt;/a&gt;&lt;/li&gt;</span><span class="char">\n</span><span class="delimiter">&quot;</span></span>
+</pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>完工。</p>
+
+<h2 id="section-1">2. 自动生成文章目录</h2>
+
+<p>博客文章不想报纸杂志，自然有长有短：短文章可以短到只有标题，而长文章往往会分为好多个章节。为了方便阅读，我们往往会把一篇长文章分为好几篇来发布，比如我们的「Octopress 精益修改」，但即便如此，有些文章还是会超出最适宜阅读的长度，同样比如我们这个 Octopress 教程。那么有没有什么办法能够解决这个不宜阅读的问题呢？</p>
+
+<p>我们知道，使用 Markdown 语言撰写的文章，只要你把章节题目标清楚，本身会生成一个内在的文档结构，如果我们直接把这个结构提取出来，作为文章的目录，放到文章开头，这样就能一举解决我们刚才所说的问题。那么有没有这样的实现方式呢？带着这个问题，我们找到了这样一篇文章：<a href="http://blog.riemann.cc/2013/04/10/table-of-contents-in-octopress/"><em>Table Of Contents in Octopress</em></a>，参考此文，具体实现步骤如下：</p>
+
+<p>首先，请使用 kramdown 作为 Octopress 默认的 Markdown 解析器，具体如何设置请参照先前的教程。</p>
+
+<p>然后只要你在想插入目录的地方，插入如下一段代码即可：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"> <div class="CodeRay">
+  <div class="code"><pre>
+* list element with functor item
+{:toc}
+</pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>没错，就这么简单。当然你可能希望能在这个目录前面自动添加，类似本文前面的「本页目录」四个字，只需要修改样式表 <code>sass/custom/_style.scss</code>，添加如下代码：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>sass/custom/_style.scss </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+#markdown-toc:before {
+  content: &quot;本页目录&quot;;
+  font-weight: bold;
+}</pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>最后，可能还有一个问题，有些朋友和我一样会在文章中使用 <code>&lt;!-- more --&gt;</code> 标签，在首页只显示部分文章，这时这个目录生成可能就会出现错误，而且事实上我们也没必要在文章的摘要中放置一个目录，所以我们可以在 <code>sass/custom/_style.scss</code> 添加如下代码，让主页不出现目录：</p>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>sass/custom/_style.scss </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+.blog-index #markdown-toc {
+  display: none;
+}</pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>如果你对这个目录的样式不满意，还可以在样式表中进一步修改，改成什么样就看你个人喜好了。</p>
+
+<h2 id="section-2">3. 自动添加文章修改记录</h2>
+
+<p><a href="http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/#octopress--github-pages">前面我们说过</a>，写文章，建网站都难免要修改，而且会反复修改。如果能把这些修改过程记录下来，本身就是很好的学习资料，那么有没有办法实现这一点呢？Git 就是干这个的，而且也正是我们前面说的 Octopress + Github Pages 相比其他博客系统的优势之一。</p>
+
+<p>事实上，我们每一次更新文章后提交至 Github 的 Commit 就可以当做是文章的修改记录和说明，如果我们能让这个信息自动出现在文章末尾，就可以实现我们想要的功能。同样，百事未行先 Google，我们发现了这样一篇文章：<a href="http://jhshi.me/2013/11/17/post-revision-plugin-for-octopress/"><em>Post Revision Plugin for Octopress</em></a>，参考此文，具体实现步骤如下：</p>
+
+<ol>
+  <li>
+    <p>到这里 <a href="http://s.olo.la/a6cM">http://s.olo.la/a6cM</a> 找到 Octopress Post Revision 插件。</p>
+  </li>
+  <li>
+    <p>复制 <code>plugins/revision.rb</code> 到你自己的 <code>plugins</code> 目录下。</p>
+  </li>
+  <li>
+    <p>复制 <code>source/_includes/post/revision.html</code> 到你自己的 <code>source/_includes/post</code> 目录下。</p>
+  </li>
+  <li>
+    <p>在 <code>_config.yml</code> 文件中，添加你的 Github 账户信息，如下： </p>
+  </li>
+</ol>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>_config.yml </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+<span class="error">    </span><span class="key">github_user</span>: <span class="comment"># 这你填你的 Github 用户名</span>
+<span class="error">    </span><span class="key">github_repo</span>: <span class="comment"># 这里填你博客的库名，即 [your_user_name].github.io</span>
+<span class="error">    </span></pre></div>
+</div>
+ </figure></notextile></div>
+
+<ol>
+  <li>在 <code>source/_layouts/post.html</code> 的 <code>&lt;footer&gt;</code> 和 <code>&lt;/footer&gt;</code> 之间，你想要的位置，添加如下代码，此处即为文章修改记录的显示位置：</li>
+</ol>
+
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>source/_layouts/post.html` </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+    <span class="tag">&lt;section</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">postrevision</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
+    <span class="tag">&lt;ul&gt;</span><span class="tag">&lt;/ul&gt;</span>
+<span class="tag">&lt;/section&gt;</span></pre></div>
+</div>
+ </figure></notextile></div>
+
+<p>这样，我们就可以在文章末尾看到本文的修改记录了。</p>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard"><span class="fn">郝海龙</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-06T12:31:11+02:00" pubdate data-updated="true">2014年 5月 6日</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/octopress/'>Octopress</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/octopress-lean-modification-4.html/" title="Previous Post: Octopress 精益修改 (4)">&laquo; Octopress 精益修改 (4)</a>
+      
+      
+    </p>
+      <section class="postrevision">
+	<ul></ul>
+</section>
+  </footer>
+</article>
+
+  <section>
+    <h2>本文评论</h2>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>郝海龙</h1>
+  <p>80后诗人，独立译者，GRE讲师，Podcastor，现居巴黎。 </p>
+  <p> 生命之氢是我两个博客之一，以 IT 和经济学相关内容为主。想看另一个博客请点「<a href="http://haohailong.net/" target="_blank"><i class="fa fa-leaf"></i> 另一面</a>」。 </p>
+  <p class="sideabout">&nbsp;<a href="http://weibo.com/haohailong" target="_blank" title=" 我的微博"><i class="fa fa-weibo fa-2x"></i></a>&nbsp;<a href="https://twitter.com/haohailong" target="_blank" title="My Twitter"><i class="fa fa-twitter fa-2x"></i></a>&nbsp;<a href="https://facebook.com/haohailong" target="_blank" title="My Facebook"><i class="fa fa-facebook-square fa-2x"></i> </a>&nbsp;<a href="https://itunes.apple.com/cn/podcast/hai-long-yi-sheng-hou/id603056780" target="_blank" title="My Podcast: 海龙一声吼"><i class="fa fa-microphone fa-2x"></i></a>&nbsp;<a href="http://haohailong.net/archives/animal-farm-chinese-simplified-translated-by-hailong-hao.vie" target="_blank" title="我翻译的《动物庄园》"><i class="fa fa-book fa-2x"></i></a>&nbsp;<a href="/about/buy-me-coffee.html" target="_blank" title="请郝海龙喝咖啡"><i class="fa fa-coffee fa-2x"></i></a></p>
+<p><div class=".siderbar">
+  
+  <form action="https://www.google.com/search" method="get">
+    <fieldset role="search">
+      <input type="hidden" name="q" value="site:shengmingzhiqing.com" />
+      <input class="search" type="text" name="q" results="0" placeholder=" 站内搜索 = 输入+回车" />
+    </fieldset>
+  </form>
+    
+</div>
+</p>
+</section>
+<section>
+  <h1>最新发布</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/octopress-lean-modification-5.html/">Octopress 精益修改 (5)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/octopress-lean-modification-4.html/">Octopress 精益修改 (4)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/octopress-lean-modification-3.html/">Octopress 精益修改 (3)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/octopress-lean-modification-2.html/">Octopress 精益修改 (2)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/octopress-lean-modification-1.html/">Octopress 精益修改 (1)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/setup-octopress-with-github-pages.html/">Octopress 搭建流程 – Github Pages</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/everybody-should-build-his-own-writing-space.html/">Octopress 每个人都该为自己打造专属的写作环境</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>分类目录</h1>
+  <ul id="categories">
+  <li class='category'><a href='/blog/categories/bitcoin-slash-bi-te-bi/'>Bitcoin/比特币 (3)</a></li>
+<li class='category'><a href='/blog/categories/it-general/'>IT(General) (1)</a></li>
+<li class='category'><a href='/blog/categories/latex/'>LaTeX (1)</a></li>
+<li class='category'><a href='/blog/categories/mac/'>Mac (2)</a></li>
+<li class='category'><a href='/blog/categories/misc/'>Misc (1)</a></li>
+<li class='category'><a href='/blog/categories/octopress/'>Octopress (7)</a></li>
+<li class='category'><a href='/blog/categories/si-kao/'>思考 (2)</a></li>
+
+  </ul>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - 郝海龙 - <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">署名 -  非商业 - 非衍生</a> - <span class="credit">Powered by <a href="http://octopress.org">Octopress</a>, Customized by <a href="http://haohailong.net/" target="_blank">Haohailong.net</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'shengmingzhiqing';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://shengmingzhiqing.com/blog/octopress-lean-modification-5.html/';
+        var disqus_url = 'http://shengmingzhiqing.com/blog/octopress-lean-modification-5.html/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
