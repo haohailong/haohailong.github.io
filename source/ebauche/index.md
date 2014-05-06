@@ -1,12 +1,12 @@
 ---
 layout: page
 title: "Ébauche"
+author: 郝海龙
 date: 2014-04-23 16:06
 comments: true
 sharing: true
 footer: true
 ---
-### 郝海龙
 
 {::nomarkdown}
 <p class="info"><i class="fa fa-bell-o"></i> ébauche [ebo∫]: 法文单词，意为草稿。<br />  
@@ -26,7 +26,7 @@ footer: true
 #### Notes: 
 * [Notes on Ubuntu]({{ root_url }}/ebauche/notes/Notes-on-Ubuntu.html)
 
-## 已发布：
+## 已正式发布的内容：
 
 #### Octopress 相关：
 
