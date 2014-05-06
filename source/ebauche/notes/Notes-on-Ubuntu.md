@@ -15,19 +15,14 @@ footer: true
 在 Linode 上选的系统是 Ubuntu 12.04 LTS，这也是我生平第一次接触 Linux 命令行操作，多少有点不太适应，要知道上一次接触命令行操作还是在用 DOS 的时候（虽然时隔多年又碰到了命令行，我还是不理解为什么初中生要学 DOS）。作为一个外行人，顺便把搭建过程中用到的一些命令放到这里，权做备忘。事实上，这些命令也是 Ubuntu 系统常用命令。
 
 1. 安装命令
-	
-		apt-get install
-		e. g. apt-get install nano, 安装 nano 文本编辑器
-		
+```apt-get install
+e. g. apt-get install nano, 安装 nano 文本编辑器```	
 2. echo 命令
-		
-		echo
-		e. g. echo "www" > /etc/hostname, 把 www 输出到 hostname 文件中。实际效果为重命名 hostname 。
-		
+```echo
+e. g. echo "www" > /etc/hostname, 把 www 输出到 hostname 文件中。实际效果为重命名 hostname 。```
 3. 升级软件
-		
-		apt-get update 更新软件源 (/etc/apt/sources.list) 中软件包列表。
-		apt-get upgrade 根据上一步操作得到的源软件库与本地已安装软件对比，如果需要就升级。(--show-upgraded)
+```apt-get update 更新软件源 (/etc/apt/sources.list) 中软件包列表。
+apt-get upgrade 根据上一步操作得到的源软件库与本地已安装软件对比，如果需要就升级。(--show-upgraded)```
 
 4. 添加用户 HH，并给 HH 授予 sudo (super do) 权限
 		
