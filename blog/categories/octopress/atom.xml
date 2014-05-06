@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Octopress | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-05-06T11:51:46+02:00</updated>
+  <updated>2014-05-06T13:51:53+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -12,6 +12,127 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress 教程目录]]></title>
+    <link href="http://shengmingzhiqing.com/blog/octopress-tutorials-toc.html/"/>
+    <updated>2014-05-06T15:50:25+02:00</updated>
+    <id>http://shengmingzhiqing.com/blog/octopress-tutorials-toc</id>
+    <content type="html"><![CDATA[<p class="info">经过近十天的撰写，这份被自己当做备忘录的 Octopress 教程终于算是告一段落了，相信遵照这份教程可以生成一个不错的 Octopress 独立博客。当然正如在教程里说的，对于主题的修改是「永远的第二步」，所以我不敢说这份教程已经完成，又或者说永远都不可能完成。姑且把完成的部分的目录放在这里，供大家参考。</p>
+
+<div class="bordergrey">
+
+<h2><a href="/blog/everybody-should-build-his-own-writing-space.html/" target="_blank">每个人都该为自己打造专属的写作环境</a></h2>
+<ul>
+  <li><a href="/blog/everybody-should-build-his-own-writing-space.html/#section">我的博客史</a></li>
+  <li><a href="/blog/everybody-should-build-his-own-writing-space.html/#section-1">每个人都该为自己打造专属的写作环境</a></li>
+  <li><a href="/blog/everybody-should-build-his-own-writing-space.html/#wordpress--octopress">WordPress &amp; Octopress</a></li>
+  <li><a href="/blog/everybody-should-build-his-own-writing-space.html/#octopress-">关于 Octopress 搭建</a></li>
+</ul>
+
+<h2><a href="/blog/setup-octopress-with-github-pages.html/" target="_blank">Octopress 搭建流程 – Github Pages</a></h2>
+
+<ul>
+  <li><a href="/blog/setup-octopress-with-github-pages.html/#octopress--github-pages">1. 为什么是 Octopress &amp; Github Pages?</a></li>
+  <li><a href="/blog/setup-octopress-with-github-pages.html/#section">2. 准备工作</a>    <ul>
+      <li><a href="/blog/setup-octopress-with-github-pages.html/#git-2">2.1 安装 git </a></li>
+      <li><a href="/blog/setup-octopress-with-github-pages.html/#ruby-3">2.2 安装 Ruby </a></li>
+      <li><a href="/blog/setup-octopress-with-github-pages.html/#github-">2.3 注册 Github 账号</a></li>
+      <li><a href="/blog/setup-octopress-with-github-pages.html/#section-1">2.4 域名指向（可选）</a></li>
+    </ul>
+  </li>
+  <li><a href="/blog/setup-octopress-with-github-pages.html/#octopress">3. 本地安装 Octopress</a></li>
+  <li><a href="/blog/setup-octopress-with-github-pages.html/#octopress--github-pages-1">4. 将 Octopress 部署到 Github Pages</a>    <ul>
+      <li><a href="/blog/setup-octopress-with-github-pages.html/#repository">4.1 新建库 (Repository)</a></li>
+      <li><a href="/blog/setup-octopress-with-github-pages.html/#octopress--github-pages-2">4.2 将本地部署的 Octopress 发布到 Github Pages</a></li>
+      <li><a href="/blog/setup-octopress-with-github-pages.html/#section-2">4.3 使用自己的域名（可选）</a></li>
+    </ul>
+  </li>
+  <li><a href="/blog/setup-octopress-with-github-pages.html/#section-3">5. 发布新贴</a></li>
+</ul>
+
+<h2><a href="/blog/octopress-lean-modification-1.html/" target="_blank">精益修改 (1) – 基本配置</a></h2>
+
+<ul>
+  <li><a href="/blog/octopress-lean-modification-1.html/#section">1. 永远的第二步</a></li>
+  <li><a href="/blog/octopress-lean-modification-1.html/#section-1">2. 简要说明</a></li>
+  <li><a href="/blog/octopress-lean-modification-1.html/#section-2">3. 新主题安装</a></li>
+  <li><a href="/blog/octopress-lean-modification-1.html/#section-3">4. 基本配置</a>    <ul>
+      <li><a href="/blog/octopress-lean-modification-1.html/#section-4">4.1 域名，网站标题，作者</a></li>
+      <li><a href="/blog/octopress-lean-modification-1.html/#section-5">4.2 日期格式</a></li>
+      <li><a href="/blog/octopress-lean-modification-1.html/#section-6">4.3 文章链接形式</a></li>
+      <li><a href="/blog/octopress-lean-modification-1.html/#section-7">4.4 分类目录前缀</a></li>
+      <li><a href="/blog/octopress-lean-modification-1.html/#section-8">4.5「继续阅读」按钮</a></li>
+      <li><a href="/blog/octopress-lean-modification-1.html/#markdown-">4.6 修改 Markdown 文件后缀</a></li>
+      <li><a href="/blog/octopress-lean-modification-1.html/#markdown--1">4.7 修改默认 Markdown 解释器</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2><a href="/blog/octopress-lean-modification-2.html/" target="_blank">精益修改 (2) – 主题修改</a></h2>
+
+<ul>
+  <li><a href="/blog/octopress-lean-modification-2.html/#section">1. 页面相关设置</a>    <ul>
+      <li><a href="/blog/octopress-lean-modification-2.html/#section-1">1.1 新建页面</a></li>
+      <li><a href="/blog/octopress-lean-modification-2.html/#section-2">1.2 添加公益 404 页面</a></li>
+      <li><a href="/blog/octopress-lean-modification-2.html/#section-3">1.3 添加页面和其他链接至导航栏</a></li>
+    </ul>
+  </li>
+  <li><a href="/blog/octopress-lean-modification-2.html/#section-4">2. 主题汉化</a>    <ul>
+      <li><a href="/blog/octopress-lean-modification-2.html/#section-5">2.1 汉化导航栏</a></li>
+      <li><a href="/blog/octopress-lean-modification-2.html/#section-6">2.2 汉化移动设备导航栏</a></li>
+      <li><a href="/blog/octopress-lean-modification-2.html/#section-7">2.3 汉化归档页面</a></li>
+      <li><a href="/blog/octopress-lean-modification-2.html/#section-8">2.4 汉化侧边栏</a></li>
+      <li><a href="/blog/octopress-lean-modification-2.html/#section-9">2.5 汉化其他部分</a></li>
+    </ul>
+  </li>
+  <li><a href="/blog/octopress-lean-modification-2.html/#section-10">3. 网站底部</a></li>
+  <li><a href="/blog/octopress-lean-modification-2.html/#section-11">4. 添加侧边栏</a></li>
+  <li><a href="/blog/octopress-lean-modification-2.html/#section-12">5. 添加评论系统</a></li>
+</ul>
+
+<h2><a href="/blog/octopress-lean-modification-3.html/" target="_blank">精益修改 (3) – 样式修改</a></h2>
+
+<ul>
+  <li><a href="/blog/octopress-lean-modification-3.html/#section">1. 网站布局</a>    <ul>
+      <li><a href="/blog/octopress-lean-modification-3.html/#section-1">1.1 修改框架宽度</a></li>
+      <li><a href="/blog/octopress-lean-modification-3.html/#section-2">1.2 修改内容宽度</a></li>
+    </ul>
+  </li>
+  <li><a href="/blog/octopress-lean-modification-3.html/#section-3">2. 页面字体</a></li>
+  <li><a href="/blog/octopress-lean-modification-3.html/#section-4">3. 修改链接样式</a></li>
+  <li><a href="/blog/octopress-lean-modification-3.html/#section-5">4. 给中英文间添加空格</a></li>
+</ul>
+
+<h2><a href="/blog/octopress-lean-modification-4.html/" target="_blank">精益修改 (4) – 元素美化</a></h2>
+
+<ul>
+  <li><a href="/blog/octopress-lean-modification-4.html/#coderay-block-">1.  CodeRay Block 代码块插件</a>    <ul>
+      <li><a href="/blog/octopress-lean-modification-4.html/#kramdown-coderay">1.1 安装 kramdown, CodeRay</a></li>
+      <li><a href="/blog/octopress-lean-modification-4.html/#section">1.2 修改样式表</a></li>
+      <li><a href="/blog/octopress-lean-modification-4.html/#section-1">1.3 使用方法</a></li>
+    </ul>
+  </li>
+  <li><a href="/blog/octopress-lean-modification-4.html/#caption">2. 给图片添加说明 (Caption)</a>    <ul>
+      <li><a href="/blog/octopress-lean-modification-4.html/#section-2">2.1 制作并添加插件</a></li>
+      <li><a href="/blog/octopress-lean-modification-4.html/#section-3">2.2 修改样式表</a></li>
+      <li><a href="/blog/octopress-lean-modification-4.html/#section-4">2.3 使用方法</a></li>
+    </ul>
+  </li>
+  <li><a href="/blog/octopress-lean-modification-4.html/#fontawesome">3. 使用 FontAwesome</a></li>
+</ul>
+
+<h2><a href="/blog/octopress-lean-modification-5.html/" target="_blank">精益修改 (5) – 必备功能</a></h2>
+
+<ul>
+  <li><a href="/blog/octopress-lean-modification-5.html/#section">1. 侧边栏显示分类目录</a></li>
+  <li><a href="/blog/octopress-lean-modification-5.html/#section-1">2. 自动生成文章目录</a></li>
+  <li><a href="/blog/octopress-lean-modification-5.html/#section-2">3. 自动添加文章修改记录</a></li>
+</ul>
+
+</div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopress 精益修改 (5)]]></title>
@@ -957,352 +1078,6 @@ footer: true
     </li>
     <li id="fn:2">
       <p>不要被这个唬人的术语吓住，其实就是原来的自适应设计的新名字。<a href="#fnref:2" rel="reference">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Octopress 精益修改 (1)]]></title>
-    <link href="http://shengmingzhiqing.com/blog/octopress-lean-modification-1.html/"/>
-    <updated>2014-04-29T01:31:59+02:00</updated>
-    <id>http://shengmingzhiqing.com/blog/octopress-lean-modification-1</id>
-    <content type="html"><![CDATA[<ul id="markdown-toc">
-  <li><a href="#section">1. 永远的第二步</a></li>
-  <li><a href="#section-1">2. 简要说明</a></li>
-  <li><a href="#section-2">3. 新主题安装</a></li>
-  <li><a href="#section-3">4. 基本配置</a>    <ul>
-      <li><a href="#section-4">4.1 域名，网站标题，作者</a></li>
-      <li><a href="#section-5">4.2 日期格式</a></li>
-      <li><a href="#section-6">4.3 文章链接形式</a></li>
-      <li><a href="#section-7">4.4 分类目录前缀</a></li>
-      <li><a href="#section-8">4.5「继续阅读」按钮</a></li>
-      <li><a href="#markdown-">4.6 修改 Markdown 文件后缀</a></li>
-      <li><a href="#markdown--1">4.7 修改默认 Markdown 解释器</a></li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="section">1. 永远的第二步</h2>
-
-<p>通过「<a href="http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/">Octopress 搭建流程 – Github Pages</a>」，我们搭建好了自己的 Octopress 博客并发布了第一篇文章。</p>
-
-<p>但这只是我们 Octopress 博客之旅的第一步，说白了，我们不过是把别人已经做好的程序成功的安装到了网上，并且试运行了一下。但博客终究是个讲究个性化的地方，个性化就意味着需要自己动手进行修改。我们的第二步就是对安装好的 Octopress 做个性化修改。<!--more--></p>
-
-<p><a href="http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/">前面我们说过</a>，对于实用性的知识，我向来秉承「精益学习」的态度。对我来说，「如何对一个网站进行个性化修改」正是这类知识，所以我们这篇文章的标题叫做「Octopress 精益修改」。</p>
-
-<p>我们会在使用博客系统的过程中不断发现问题，发现一例解决一例即可，如果一次性发现了很多个问题，可以做一个<a href="http://shengmingzhiqing.com/ebauche/octopress/task-list.html">任务列表</a>逐一解决。如果遇到暂时解决不了的问题，那么恭喜你，这是你学习的机会，不妨就花一段时间学学相关知识。</p>
-
-<p>当然永远都会出现新的问题，我们的修改过程也就永远不会终止，所以我们的第二步是「永远的第二步」。<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></p>
-
-<p>为了行文简化，再说一点：本文中凡出现需要执行的命令，默认使用终端 (Terminal)。如不做特殊说明，请首先使用 <code>cd octopress</code> 命令进 <code>octopress</code> 文件夹，所出现的文件夹或者目录都以此目录为根目录。</p>
-
-<h2 id="section-1">2. 简要说明</h2>
-
-<p>对于博客系统的个性化修改，一般来说分为如下几个方面：</p>
-
-<ul>
-  <li>新主题安装：Octopress 本身有很多<a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">第三方主题</a>可以直接安装使用。</li>
-  <li>基本配置：主要指博客作者，时间显示方式，目录层级关系等等。这部分信息主要通过 <code>_config.yml</code> 这个配置文件来修改。</li>
-  <li>自定义主题模板：主要指顶部导航栏显示内容，侧边栏显示内容等等。这部分内容主要通过 <code>/source/_includes/custom</code> 这个目录下的相关文件来修改。</li>
-  <li>插件安装：安装第三方插件以实现相应效果，比如侧边栏显示 Twitter 时间线等等。 主要与 <code>/plugins</code> 这个目录有关。</li>
-  <li>样式修改：字体，配色等通过样式表修改的属性。主要通过修改 <code>/sass/custom/_styles.scss</code> 来实现。</li>
-</ul>
-
-<p>一般的 Octopress 教程会按照上面的列表分别进行讲解，而我们的修改方式是针对具体问题进行的，同一个问题可能会涉及到以上多方面的修改。这种分类讲解模式可能并不是很方便。所以我会把一些后期基本上不用做太多修改的，类别属性比较明显的放在前面单独讲，之后就按照单个问题来讲解。</p>
-
-<h2 id="section-2">3. 新主题安装</h2>
-
-<p>在你搭建博客的时候，Octopress 会为你安装默认的主题 Classic，但这个主题第一眼看上去很难说好看，所以可以考虑选择安装<a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">第三方主题</a>。</p>
-
-<p>如果你能在上面的链接中找到满意的主题，按照主题的要求去安装部署即可。比如你喜欢 <a href="https://github.com/macjasp/cleanpress">CleanPress</a> 这款主题，你可执行以下命令：</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
-  <div class="code"><pre>
-cd octopress
-git clone git://github.com/macjasp/cleanpress.git .themes/cleanpress
-rake install[‘cleanpress’]
-rake generate
-</pre></div>
-</div>
- </figure></notextile></div></p>
-
-<p>我个人看过很多主题，但最终还是用了简洁素雅的默认主题。我并不需要太多的装饰<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>，只要版面布局符合基本审美要求即可。另外，我也喜欢这个浓浓的黑客范儿。</p>
-
-<p>当然默认主题也有很多令人不满意的地方，好在我们还可以修改，不着急，慢慢来。</p>
-
-<h2 id="section-3">4. 基本配置</h2>
-
-<h3 id="section-4">4.1 域名，网站标题，作者</h3>
-
-<p>当你打开搭建好的博客后，你会发现博客的标题是 My Octopress Blog，副标题是 A blogging framework for hackers.</p>
-
-<p>当你把第一篇文章发布到博客的时候，你会发现文章底部显示 “posted by Your Name”，也就是说原本应该出现你名字的地方成了系统默认的两个英文单词 “Your Name”。</p>
-
-<p>所有以上这些信息都可以通过基本配置文件 <code>_config.yml</code> 来修改。先在 <code>octopress</code> 文件夹下找到这个文件，用你喜欢的文本编辑器打开（我喜欢 TextMate 2），你会发现如下信息:</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>_config.yml </span></figcaption>
- <div class="CodeRay">
-  <div class="code"><pre>
-<span class="key">url</span>: <span class="string"><span class="content">http://yoursite.com</span></span>  <span class="comment">#这里改为你网站的域名</span>
-<span class="key">title</span>: <span class="string"><span class="content">My Octopress Blog</span></span>  <span class="comment">#这里改为你想要的网站标题</span>
-<span class="key">subtitle</span>: <span class="string"><span class="content">A blogging framework for hackers.</span></span> <span class="comment">#这里改为你的博客副标题</span>
-<span class="key">author</span>: <span class="string"><span class="content">Your Name</span></span> <span class="comment">#这里改为博客作者的名字，也就是你的名字</span>
-<span class="key">simple_search</span>: <span class="string"><span class="content">https://www.google.com/search</span></span> <span class="comment">#这是默认搜索引擎，可以先不管</span>
-<span class="key">description</span>: <span class="comment">#网站描述信息</span>
-</pre></div>
-</div>
- </figure></notextile></div></p>
-
-<p>按照我给出的 # 后面的提示信息做相应修改即可，请注意，诸如<code>url: </code>中的冒号必须是英文冒号，并且要符合英文标点符号使用规范：冒号后必须空格。</p>
-
-<h3 id="section-5">4.2 日期格式</h3>
-
-<p>我们暂且把 <code>_config.yml</code> 文件放到一边，再回头看博客主页，你会发现每条博客上面的日期和文章尾部的日期都是诸如 <code>Apr 28th 2014</code> 这样的格式。我们当然是想把它变成中文的「2014 年 4 月 28 日」这样的格式，那么再次回到 <code>_config.yml</code> 文件，顺着刚才那几行代码往下看，你会发现这样一行：</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>_config.yml </span></figcaption>
- <div class="CodeRay">
-  <div class="code"><pre>
-<span class="key">date_format</span>: <span class="string"><span class="content">“ordinal”</span></span> <span class="comment">#默认日期显示方式</span>
-</pre></div>
-</div>
- </figure></notextile></div></p>
-
-<p>请把其中的 <code>"ordinal"</code> 改为 <code>"%Y 年%-m 月%-d 日"</code>，并保存。</p>
-
-<h3 id="section-6">4.3 文章链接形式</h3>
-
-<p>回到博客，点开你发表的文章，这是你看一下地址栏，发现网址（也就是这篇文章的链接）是类似这样的形式：</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
-  <div class="code"><pre>
-http://[your_domain_name]/blog/2014/04/28/Post-Title/
-</pre></div>
-</div>
- </figure></notextile></div></p>
-
-<p>对我们个人博客而言，这种层级显得太多，我个人推荐如下两种地址生成方式：</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
-  <div class="code"><pre>
-http://[your_domain_name]/blog/20140428/Post-Title.html/
-http://[your_domain_name]/blog/Post-Title.html/ # 这也是本博的生成方式
-</pre></div>
-</div>
- </figure></notextile></div></p>
-
-<p>怎么实现呢？接着回到<code>_config.yml</code> 文件，往下看，找到：</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>_config.yml </span></figcaption>
- <div class="CodeRay">
-  <div class="code"><pre>
-<span class="key">permalink</span>: <span class="string"><span class="content">/blog/:year/:month/:day/:title/</span></span> <span class="comment">#文章固定链接</span>
-</pre></div>
-</div>
- </figure></notextile></div></p>
-
-<p>按照如下方式修改（二者任选其一）并保存：</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>_config.yml </span></figcaption>
- <div class="CodeRay">
-  <div class="code"><pre>
-<span class="key">permalink</span>: <span class="string"><span class="content">/blog/:year:month:day/:title.html/</span></span> <span class="comment">#实现第一种</span>
-<span class="key">permalink</span>: <span class="string"><span class="content">/blog/:title.html/</span></span> <span class="comment">#实现第二种</span>
-</pre></div>
-</div>
- </figure></notextile></div></p>
-
-<h3 id="section-7">4.4 分类目录前缀</h3>
-
-<p>在你文章底部日期右边是该文章所属的分类，点击它，会显示该分类下所有的文章<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup>。但你发现该目录标题前有一个前缀 “Categories”，这当然没错，但我们希望它是汉语。</p>
-
-<p>回到<code>_config.yml</code> 文件，添加下面一行代码并保存：</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>_config.yml </span></figcaption>
- <div class="CodeRay">
-  <div class="code"><pre>
-<span class="key">category_title_prefix</span>: <span class="string"><span class="content">“分类：”</span></span> <span class="comment"># 修改分类前缀</span>
-</pre></div>
-</div>
- </figure></notextile></div></p>
-
-<p>理论上可以添加到任何位置，但为了显示直观，建议加到 <code>category_dir: blog/categories</code> 下一行。</p>
-
-<h3 id="section-8">4.5「继续阅读」按钮</h3>
-
-<p>如果你希望你的文章在首页显示摘要，点击类似「继续阅读」这样的按钮查看全文，可以在你的文章中插入 <code><!--more--></code>，这样在这个标记之前的内容会出现在首页。你可以试着在你的文章中插入这个标签，会发现首页会在这里出现一个<code>Read on &rarr;</code>这样的按钮，当然我们也希望他是汉语。</p>
-
-<p>回到<code>_config.yml</code> 文件，找到这一行：</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>_config.yml </span></figcaption>
- <div class="CodeRay">
-  <div class="code"><pre>
-<span class="key">excerpt_link</span>: <span class="string"><span class="content">“Read on →”</span></span>  <span class="comment"># “Continue reading” link text at the bottom of excerpted articles</span>
-</pre></div>
-</div>
- </figure></notextile></div></p>
-
-<p>然后把引号中高亮显示的部分替换为你想要的文字，比如「阅读全文」，并保存。</p>
-
-<p>修改到这一步，你肯定很想看看效果，现在执行如下命令，重新生成并部署页面：</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
-  <div class="code"><pre>
-rake generate
-rake deploy
-</pre></div>
-</div>
- </figure></notextile></div></p>
-
-<p>看看博客，我们想要的效果都已经实现了吧。</p>
-
-<h3 id="markdown-">4.6 修改 Markdown 文件后缀</h3>
-
-<p>Octopress 默认日志文件后缀是 .markdown，但现在大多数 Markdown 文件的后缀是 .md，推荐使用这种更为简洁的后缀。</p>
-
-<p>用文本编辑器打开 rakefile 文件，找到如下两行代码：</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>rakefile </span></figcaption>
- <div class="CodeRay">
-  <div class="code"><pre>
-new_post_ext    = “markdown”  <span class="comment"># default new post file extension when using the new_post task</span>
-new_page_ext    = “markdown”  <span class="comment"># default new page file extension when using the new_page task</span>
-</pre></div>
-</div>
- </figure></notextile></div></p>
-
-<p>改为：</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>rakefile </span></figcaption>
- <div class="CodeRay">
-  <div class="code"><pre>
-new_post_ext    = “md”  <span class="comment"># 默认新日志文件后缀</span>
-new_page_ext    = “md”  <span class="comment"># 默认新页面文件后缀</span>
-</pre></div>
-</div>
- </figure></notextile></div></p>
-
-<p>第二行是默认新页面文件后缀，如果不明白新页面具体指什么，后面的文章中会有讲解。</p>
-
-<h3 id="markdown--1">4.7 修改默认 Markdown 解释器</h3>
-
-<p>Octopress 默认的 Markdown 解释器是 rdiscount，个人更喜欢 <a href="http://kramdown.gettalong.org/quickref.html">kramdown</a>，支持 <a href="https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide">Multi Markdown</a> 语法和 LaTeX，对于理工科博客 LaTeX 必不可少，而且据说 kramdown 更快，也是 Github 推荐的 Markdown 解释器。</p>
-
-<p>首先用文本编辑器打开 <code>Gemfile</code> 文件，在文件末尾添加一行：</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>Gemfile </span></figcaption>
- <div class="CodeRay">
-  <div class="code"><pre>
-gem ‘kramdown’
-</pre></div>
-</div>
- </figure></notextile></div></p>
-
-<p>然后在终端 (Terminal) 执行如下命令：</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
-  <div class="code"><pre>
-sudo bundle install
-</pre></div>
-</div>
- </figure></notextile></div></p>
-
-<p>回到<code>_config.yml</code> 文件，找到：</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>_config.yml </span></figcaption>
- <div class="CodeRay">
-  <div class="code"><pre>
-<span class="key">markdown</span>: <span class="string"><span class="content">rdiscount</span></span>
-<span class="key">rdiscount</span>:
-  <span class="key">extensions</span>:
-    - <span class="string"><span class="content">autolink</span></span>
-    - <span class="string"><span class="content">footnotes</span></span>
-    - <span class="string"><span class="content">smart</span></span>
-</pre></div>
-</div>
- </figure></notextile></div></p>
-
-<p>把其中的 <code>markdown: rdiscount</code> 改为 <code>markdown: kramdown</code> 并删掉下面几行。当然如果你想保留原来的代码，以便以后研究，可以考虑把原来这几行代码注释掉（对于  yml 文件，就是在前面加 # ），被注释掉的代码对文件没有任何影响，除了能让你看得更直观之外。<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup></p>
-
-<p>为了能够显示数学公式，我们需要添加 <a href="http://www.mathjax.org">MathJax</a> 支持，打开<code>source/_includes/custom/head.html</code> 文件，添加如下代码：</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>source/_includes/custom/head.html </span></figcaption>
- <div class="CodeRay">
-  <div class="code"><pre>
-<span class="comment">&lt;!-- MathJax --&gt;</span>
-<span class="tag">&lt;script</span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">text/x-mathjax-config</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
-<span class="inline">  MathJax.Hub.Config({
-    <span class="key">tex2jax</span>: {
-      <span class="key">inlineMath</span>: [ [<span class="string"><span class="delimiter">'</span><span class="content">$</span><span class="delimiter">'</span></span>,<span class="string"><span class="delimiter">'</span><span class="content">$</span><span class="delimiter">'</span></span>], [<span class="string"><span class="delimiter">&quot;</span><span class="char">\\</span><span class="content">(</span><span class="delimiter">&quot;</span></span>,<span class="string"><span class="delimiter">&quot;</span><span class="char">\\</span><span class="content">)</span><span class="delimiter">&quot;</span></span>] ],
-      <span class="key">processEscapes</span>: <span class="predefined-constant">true</span>
-    }
-  });</span>
-<span class="tag">&lt;/script&gt;</span>
-<span class="tag">&lt;script</span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">text/x-mathjax-config</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
-<span class="inline">    MathJax.Hub.Config({
-      <span class="key">tex2jax</span>: {
-        <span class="key">skipTags</span>: [<span class="string"><span class="delimiter">'</span><span class="content">script</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">noscript</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">style</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">textarea</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">pre</span><span class="delimiter">'</span></span>, <span class="string"><span class="delimiter">'</span><span class="content">code</span><span class="delimiter">'</span></span>]
-      }
-    });</span>
-<span class="tag">&lt;/script&gt;</span>
-<span class="tag">&lt;script</span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">text/x-mathjax-config</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
-<span class="inline">    MathJax.Hub.Queue(<span class="keyword">function</span>() {
-        <span class="keyword">var</span> all = MathJax.Hub.getAllJax(), i;
-        <span class="keyword">for</span>(i=<span class="integer">0</span>; i &amp;lt; all.length; i += <span class="integer">1</span>) {
-            all[i].SourceElement().parentNode.className += <span class="string"><span class="delimiter">'</span><span class="content"> has-jax</span><span class="delimiter">'</span></span>;
-        }
-    });</span>
-<span class="tag">&lt;/script&gt;</span>
-<span class="tag">&lt;script</span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">text/javascript</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">src</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
-<span class="tag">&lt;/script&gt;</span>
-</pre></div>
-</div>
- </figure></notextile></div></p>
-
-<p>这样你就可以是所有 LaTeX 语法在网页中输入公式了，比如</p>
-
-<script type="math/tex; mode=display">
-f'\left( x\right) = \lim _{x\rightarrow 0}\dfrac {f\left( x+\Delta x\right) - f\left( x\right)}{\Delta x}
-</script>
-
-<p>上面这个公式的源代码为：</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
-  <div class="code"><pre>
-$$
-f’\left( x\right) = \lim _{x\rightarrow 0}\dfrac {f\left( x+\Delta x\right) - f\left( x\right)}{\Delta x}
-$$
-</pre></div>
-</div>
- </figure></notextile></div></p>
-
-<p>每次完成更新都记得把原始文件重新放到 Github 上，还记得命令吧：</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
-  <div class="code"><pre>
-git add .
-git commit -m “备注内容”
-git push origin source
-</pre></div>
-</div>
- </figure></notextile></div></p>
-
-<p>至此，我们博客的基本配置告一段落，你可以开始更新你的博客了。当然也许你注意到还有一些瑕疵，比如很多地方还是英文显示，不着急，先把问题记下来，等我 Octopress 系列的下一篇文章。</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>想到这一节，我把博客的副标题也改为了「Hailong Hao’s Laboratory」，这里不仅是我的博客，也是用来试错的地方。<a href="#fnref:1" rel="reference">&#8617;</a></p>
-    </li>
-    <li id="fn:2">
-      <p>这我留给了 <a href="http://haohailong.net/">http://haohailong.net/</a><a href="#fnref:2" rel="reference">&#8617;</a></p>
-    </li>
-    <li id="fn:3">
-      <p>当然如果你现在只有这一篇文章，也只会显示这一篇。<a href="#fnref:3" rel="reference">&#8617;</a></p>
-    </li>
-    <li id="fn:4">
-      <p>你会发现，之前在代码中的说明文字都是注释掉的。<a href="#fnref:4" rel="reference">&#8617;</a></p>
     </li>
   </ol>
 </div>
