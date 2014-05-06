@@ -114,7 +114,7 @@ html << "<li class='category'><a href='/blog/categories/#{category.to_url.downca
 {% coderay lang:yml _config.yml %}
 github_user: # 这你填你的 Github 用户名
 github_repo: # 这里填你博客的库名，即 [your_user_name].github.io
-{% endcoderay %}<br />
+{% endcoderay %}
 5. 在 ```source/_layouts/post.html``` 的 ```<footer>``` 和 ```</footer>``` 之间，你想要的位置，添加如下代码，此处即为文章修改记录的显示位置：<br />
 {% coderay lang:html source/_layouts/post.html %}{% raw %}
 {% include revision.html %}{% endraw %}{% endcoderay %}
