@@ -307,7 +307,7 @@ html &lt;&lt; <span class="string"><span class="delimiter">&quot;</span><span cl
     <p>复制 <code>source/_includes/post/revision.html</code> 到你自己的 <code>source/_includes/post</code> 目录下。</p>
   </li>
   <li>
-    <p>在 <code>_config.yml</code> 文件中，添加你的 Github 账户信息，如下： <br /><br /></p>
+    <p>在 <code>_config.yml</code> 文件中，添加你的 Github 账户信息，如下： <br /></p>
   </li>
 </ol>
 
@@ -319,18 +319,13 @@ html &lt;&lt; <span class="string"><span class="delimiter">&quot;</span><span cl
 </pre></div>
 </div>
  </figure></notextile></div>
-<p><br /><br />
-5. 在 <code>source/_layouts/post.html</code> 的 <code>&lt;footer&gt;</code> 和 <code>&lt;/footer&gt;</code> 之间，你想要的位置，添加如下代码，此处即为文章修改记录的显示位置：<br /><br /></p>
+<p><br />
+5. 在 <code>source/_layouts/post.html</code> 的 <code>&lt;footer&gt;</code> 和 <code>&lt;/footer&gt;</code> 之间，你想要的位置，添加如下代码，此处即为文章修改记录的显示位置：<br /></p>
 
-<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>source/_layouts/post.html` </span></figcaption>
+<div class="bogus-wrapper"><notextile><figure class="code"><figcaption class="code-header" style="margin-bottom:-5px;"><span>source/_layouts/post.html </span></figcaption>
  <div class="CodeRay">
   <div class="code"><pre>
-<span class="tag">&lt;section</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">postrevision</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
-    <span class="tag">&lt;ul&gt;</span><span class="tag">&lt;li&gt;</span><span class="tag">&lt;strong&gt;</span>代码块语言修正
-<span class="tag">&lt;/strong&gt;</span><span class="entity">&amp;nbsp;</span> 2014-05-06 <span class="tag">&lt;/li&gt;</span><span class="tag">&lt;li&gt;</span><span class="tag">&lt;strong&gt;</span>代码块格式调整
-<span class="tag">&lt;/strong&gt;</span><span class="entity">&amp;nbsp;</span> 2014-05-06 <span class="tag">&lt;/li&gt;</span><span class="tag">&lt;li&gt;</span><span class="tag">&lt;strong&gt;</span>格式调整
-<span class="tag">&lt;/strong&gt;</span><span class="entity">&amp;nbsp;</span> 2014-05-06 <span class="tag">&lt;/li&gt;</span><span class="tag">&lt;li&gt;</span><span class="tag">&lt;strong&gt;</span>新文章发布<span class="tag">&lt;/strong&gt;</span><span class="entity">&amp;nbsp;</span> 2014-05-06 <span class="tag">&lt;/li&gt;</span><span class="tag">&lt;/ul&gt;</span>
-<span class="tag">&lt;/section&gt;</span></pre></div>
+{% include revision.html %}</pre></div>
 </div>
  </figure></notextile></div>
 
@@ -384,7 +379,8 @@ html &lt;&lt; <span class="string"><span class="delimiter">&quot;</span><span cl
       
     </p>
       <section class="postrevision">
-	<ul><li><strong>代码块语言修正
+	<ul><li><strong>修正代码块显示
+</strong>&nbsp; 2014-05-06 </li><li><strong>代码块语言修正
 </strong>&nbsp; 2014-05-06 </li><li><strong>代码块格式调整
 </strong>&nbsp; 2014-05-06 </li><li><strong>格式调整
 </strong>&nbsp; 2014-05-06 </li><li><strong>新文章发布</strong>&nbsp; 2014-05-06 </li></ul>
