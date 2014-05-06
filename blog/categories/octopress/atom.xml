@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Octopress | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-05-06T14:37:53+02:00</updated>
+  <updated>2014-05-06T14:48:12+02:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -22,112 +22,112 @@
 <!--more-->
 <div class="bordergrey">
 
-<h2><a href="{{ root_url }}/blog/everybody-should-build-his-own-writing-space.html/" target="_blank">每个人都该为自己打造专属的写作环境</a></h2>
+<h2><a href="/blog/everybody-should-build-his-own-writing-space.html/" target="_blank">每个人都该为自己打造专属的写作环境</a></h2>
 <ul>
-  <li><a href="{{ root_url }}/blog/everybody-should-build-his-own-writing-space.html/#section">我的博客史</a></li>
-  <li><a href="{{ root_url }}/blog/everybody-should-build-his-own-writing-space.html/#section-1">每个人都该为自己打造专属的写作环境</a></li>
-  <li><a href="{{ root_url }}/blog/everybody-should-build-his-own-writing-space.html/#wordpress--octopress">WordPress &amp; Octopress</a></li>
-  <li><a href="{{ root_url }}/blog/everybody-should-build-his-own-writing-space.html/#octopress-">关于 Octopress 搭建</a></li>
+  <li><a href="/blog/everybody-should-build-his-own-writing-space.html/#section">我的博客史</a></li>
+  <li><a href="/blog/everybody-should-build-his-own-writing-space.html/#section-1">每个人都该为自己打造专属的写作环境</a></li>
+  <li><a href="/blog/everybody-should-build-his-own-writing-space.html/#wordpress--octopress">WordPress &amp; Octopress</a></li>
+  <li><a href="/blog/everybody-should-build-his-own-writing-space.html/#octopress-">关于 Octopress 搭建</a></li>
 </ul>
 
-<h2><a href="{{ root_url }}/blog/setup-octopress-with-github-pages.html/" target="_blank">Octopress 搭建流程 – Github Pages</a></h2>
+<h2><a href="/blog/setup-octopress-with-github-pages.html/" target="_blank">Octopress 搭建流程 – Github Pages</a></h2>
 
 <ul>
-  <li><a href="{{ root_url }}/blog/setup-octopress-with-github-pages.html/#octopress--github-pages">1. 为什么是 Octopress &amp; Github Pages?</a></li>
-  <li><a href="{{ root_url }}/blog/setup-octopress-with-github-pages.html/#section">2. 准备工作</a>    <ul>
-      <li><a href="{{ root_url }}/blog/setup-octopress-with-github-pages.html/#git-2">2.1 安装 git </a></li>
-      <li><a href="{{ root_url }}/blog/setup-octopress-with-github-pages.html/#ruby-3">2.2 安装 Ruby </a></li>
-      <li><a href="{{ root_url }}/blog/setup-octopress-with-github-pages.html/#github-">2.3 注册 Github 账号</a></li>
-      <li><a href="{{ root_url }}/blog/setup-octopress-with-github-pages.html/#section-1">2.4 域名指向（可选）</a></li>
+  <li><a href="/blog/setup-octopress-with-github-pages.html/#octopress--github-pages">1. 为什么是 Octopress &amp; Github Pages?</a></li>
+  <li><a href="/blog/setup-octopress-with-github-pages.html/#section">2. 准备工作</a>    <ul>
+      <li><a href="/blog/setup-octopress-with-github-pages.html/#git-2">2.1 安装 git </a></li>
+      <li><a href="/blog/setup-octopress-with-github-pages.html/#ruby-3">2.2 安装 Ruby </a></li>
+      <li><a href="/blog/setup-octopress-with-github-pages.html/#github-">2.3 注册 Github 账号</a></li>
+      <li><a href="/blog/setup-octopress-with-github-pages.html/#section-1">2.4 域名指向（可选）</a></li>
     </ul>
   </li>
-  <li><a href="{{ root_url }}/blog/setup-octopress-with-github-pages.html/#octopress">3. 本地安装 Octopress</a></li>
-  <li><a href="{{ root_url }}/blog/setup-octopress-with-github-pages.html/#octopress--github-pages-1">4. 将 Octopress 部署到 Github Pages</a>    <ul>
-      <li><a href="{{ root_url }}/blog/setup-octopress-with-github-pages.html/#repository">4.1 新建库 (Repository)</a></li>
-      <li><a href="{{ root_url }}/blog/setup-octopress-with-github-pages.html/#octopress--github-pages-2">4.2 将本地部署的 Octopress 发布到 Github Pages</a></li>
-      <li><a href="{{ root_url }}/blog/setup-octopress-with-github-pages.html/#section-2">4.3 使用自己的域名（可选）</a></li>
+  <li><a href="/blog/setup-octopress-with-github-pages.html/#octopress">3. 本地安装 Octopress</a></li>
+  <li><a href="/blog/setup-octopress-with-github-pages.html/#octopress--github-pages-1">4. 将 Octopress 部署到 Github Pages</a>    <ul>
+      <li><a href="/blog/setup-octopress-with-github-pages.html/#repository">4.1 新建库 (Repository)</a></li>
+      <li><a href="/blog/setup-octopress-with-github-pages.html/#octopress--github-pages-2">4.2 将本地部署的 Octopress 发布到 Github Pages</a></li>
+      <li><a href="/blog/setup-octopress-with-github-pages.html/#section-2">4.3 使用自己的域名（可选）</a></li>
     </ul>
   </li>
-  <li><a href="{{ root_url }}/blog/setup-octopress-with-github-pages.html/#section-3">5. 发布新贴</a></li>
+  <li><a href="/blog/setup-octopress-with-github-pages.html/#section-3">5. 发布新贴</a></li>
 </ul>
 
-<h2><a href="{{ root_url }}/blog/octopress-lean-modification-1.html/" target="_blank">精益修改 (1) – 基本配置</a></h2>
+<h2><a href="/blog/octopress-lean-modification-1.html/" target="_blank">精益修改 (1) – 基本配置</a></h2>
 
 <ul>
-  <li><a href="{{ root_url }}/blog/octopress-lean-modification-1.html/#section">1. 永远的第二步</a></li>
-  <li><a href="{{ root_url }}/blog/octopress-lean-modification-1.html/#section-1">2. 简要说明</a></li>
-  <li><a href="{{ root_url }}/blog/octopress-lean-modification-1.html/#section-2">3. 新主题安装</a></li>
-  <li><a href="{{ root_url }}/blog/octopress-lean-modification-1.html/#section-3">4. 基本配置</a>    <ul>
-      <li><a href="{{ root_url }}/blog/octopress-lean-modification-1.html/#section-4">4.1 域名，网站标题，作者</a></li>
-      <li><a href="{{ root_url }}/blog/octopress-lean-modification-1.html/#section-5">4.2 日期格式</a></li>
-      <li><a href="{{ root_url }}/blog/octopress-lean-modification-1.html/#section-6">4.3 文章链接形式</a></li>
-      <li><a href="{{ root_url }}/blog/octopress-lean-modification-1.html/#section-7">4.4 分类目录前缀</a></li>
-      <li><a href="{{ root_url }}/blog/octopress-lean-modification-1.html/#section-8">4.5「继续阅读」按钮</a></li>
-      <li><a href="{{ root_url }}/blog/octopress-lean-modification-1.html/#markdown-">4.6 修改 Markdown 文件后缀</a></li>
-      <li><a href="{{ root_url }}/blog/octopress-lean-modification-1.html/#markdown--1">4.7 修改默认 Markdown 解释器</a></li>
+  <li><a href="/blog/octopress-lean-modification-1.html/#section">1. 永远的第二步</a></li>
+  <li><a href="/blog/octopress-lean-modification-1.html/#section-1">2. 简要说明</a></li>
+  <li><a href="/blog/octopress-lean-modification-1.html/#section-2">3. 新主题安装</a></li>
+  <li><a href="/blog/octopress-lean-modification-1.html/#section-3">4. 基本配置</a>    <ul>
+      <li><a href="/blog/octopress-lean-modification-1.html/#section-4">4.1 域名，网站标题，作者</a></li>
+      <li><a href="/blog/octopress-lean-modification-1.html/#section-5">4.2 日期格式</a></li>
+      <li><a href="/blog/octopress-lean-modification-1.html/#section-6">4.3 文章链接形式</a></li>
+      <li><a href="/blog/octopress-lean-modification-1.html/#section-7">4.4 分类目录前缀</a></li>
+      <li><a href="/blog/octopress-lean-modification-1.html/#section-8">4.5「继续阅读」按钮</a></li>
+      <li><a href="/blog/octopress-lean-modification-1.html/#markdown-">4.6 修改 Markdown 文件后缀</a></li>
+      <li><a href="/blog/octopress-lean-modification-1.html/#markdown--1">4.7 修改默认 Markdown 解释器</a></li>
     </ul>
   </li>
 </ul>
 
-<h2><a href="{{ root_url }}/blog/octopress-lean-modification-2.html/" target="_blank">精益修改 (2) – 主题修改</a></h2>
+<h2><a href="/blog/octopress-lean-modification-2.html/" target="_blank">精益修改 (2) – 主题修改</a></h2>
 
 <ul>
-  <li><a href="{{ root_url }}/blog/octopress-lean-modification-2.html/#section">1. 页面相关设置</a>    <ul>
-      <li><a href="{{ root_url }}/blog/octopress-lean-modification-2.html/#section-1">1.1 新建页面</a></li>
-      <li><a href="{{ root_url }}/blog/octopress-lean-modification-2.html/#section-2">1.2 添加公益 404 页面</a></li>
-      <li><a href="{{ root_url }}/blog/octopress-lean-modification-2.html/#section-3">1.3 添加页面和其他链接至导航栏</a></li>
+  <li><a href="/blog/octopress-lean-modification-2.html/#section">1. 页面相关设置</a>    <ul>
+      <li><a href="/blog/octopress-lean-modification-2.html/#section-1">1.1 新建页面</a></li>
+      <li><a href="/blog/octopress-lean-modification-2.html/#section-2">1.2 添加公益 404 页面</a></li>
+      <li><a href="/blog/octopress-lean-modification-2.html/#section-3">1.3 添加页面和其他链接至导航栏</a></li>
     </ul>
   </li>
-  <li><a href="{{ root_url }}/blog/octopress-lean-modification-2.html/#section-4">2. 主题汉化</a>    <ul>
-      <li><a href="{{ root_url }}/blog/octopress-lean-modification-2.html/#section-5">2.1 汉化导航栏</a></li>
-      <li><a href="{{ root_url }}/blog/octopress-lean-modification-2.html/#section-6">2.2 汉化移动设备导航栏</a></li>
-      <li><a href="{{ root_url }}/blog/octopress-lean-modification-2.html/#section-7">2.3 汉化归档页面</a></li>
-      <li><a href="{{ root_url }}/blog/octopress-lean-modification-2.html/#section-8">2.4 汉化侧边栏</a></li>
-      <li><a href="{{ root_url }}/blog/octopress-lean-modification-2.html/#section-9">2.5 汉化其他部分</a></li>
+  <li><a href="/blog/octopress-lean-modification-2.html/#section-4">2. 主题汉化</a>    <ul>
+      <li><a href="/blog/octopress-lean-modification-2.html/#section-5">2.1 汉化导航栏</a></li>
+      <li><a href="/blog/octopress-lean-modification-2.html/#section-6">2.2 汉化移动设备导航栏</a></li>
+      <li><a href="/blog/octopress-lean-modification-2.html/#section-7">2.3 汉化归档页面</a></li>
+      <li><a href="/blog/octopress-lean-modification-2.html/#section-8">2.4 汉化侧边栏</a></li>
+      <li><a href="/blog/octopress-lean-modification-2.html/#section-9">2.5 汉化其他部分</a></li>
     </ul>
   </li>
-  <li><a href="{{ root_url }}/blog/octopress-lean-modification-2.html/#section-10">3. 网站底部</a></li>
-  <li><a href="{{ root_url }}/blog/octopress-lean-modification-2.html/#section-11">4. 添加侧边栏</a></li>
-  <li><a href="{{ root_url }}/blog/octopress-lean-modification-2.html/#section-12">5. 添加评论系统</a></li>
+  <li><a href="/blog/octopress-lean-modification-2.html/#section-10">3. 网站底部</a></li>
+  <li><a href="/blog/octopress-lean-modification-2.html/#section-11">4. 添加侧边栏</a></li>
+  <li><a href="/blog/octopress-lean-modification-2.html/#section-12">5. 添加评论系统</a></li>
 </ul>
 
-<h2><a href="{{ root_url }}/blog/octopress-lean-modification-3.html/" target="_blank">精益修改 (3) – 样式修改</a></h2>
+<h2><a href="/blog/octopress-lean-modification-3.html/" target="_blank">精益修改 (3) – 样式修改</a></h2>
 
 <ul>
-  <li><a href="{{ root_url }}/blog/octopress-lean-modification-3.html/#section">1. 网站布局</a>    <ul>
-      <li><a href="{{ root_url }}/blog/octopress-lean-modification-3.html/#section-1">1.1 修改框架宽度</a></li>
-      <li><a href="{{ root_url }}/blog/octopress-lean-modification-3.html/#section-2">1.2 修改内容宽度</a></li>
+  <li><a href="/blog/octopress-lean-modification-3.html/#section">1. 网站布局</a>    <ul>
+      <li><a href="/blog/octopress-lean-modification-3.html/#section-1">1.1 修改框架宽度</a></li>
+      <li><a href="/blog/octopress-lean-modification-3.html/#section-2">1.2 修改内容宽度</a></li>
     </ul>
   </li>
-  <li><a href="{{ root_url }}/blog/octopress-lean-modification-3.html/#section-3">2. 页面字体</a></li>
-  <li><a href="{{ root_url }}/blog/octopress-lean-modification-3.html/#section-4">3. 修改链接样式</a></li>
-  <li><a href="{{ root_url }}/blog/octopress-lean-modification-3.html/#section-5">4. 给中英文间添加空格</a></li>
+  <li><a href="/blog/octopress-lean-modification-3.html/#section-3">2. 页面字体</a></li>
+  <li><a href="/blog/octopress-lean-modification-3.html/#section-4">3. 修改链接样式</a></li>
+  <li><a href="/blog/octopress-lean-modification-3.html/#section-5">4. 给中英文间添加空格</a></li>
 </ul>
 
-<h2><a href="{{ root_url }}/blog/octopress-lean-modification-4.html/" target="_blank">精益修改 (4) – 元素美化</a></h2>
+<h2><a href="/blog/octopress-lean-modification-4.html/" target="_blank">精益修改 (4) – 元素美化</a></h2>
 
 <ul>
-  <li><a href="{{ root_url }}/blog/octopress-lean-modification-4.html/#coderay-block-">1.  CodeRay Block 代码块插件</a>    <ul>
-      <li><a href="{{ root_url }}/blog/octopress-lean-modification-4.html/#kramdown-coderay">1.1 安装 kramdown, CodeRay</a></li>
-      <li><a href="{{ root_url }}/blog/octopress-lean-modification-4.html/#section">1.2 修改样式表</a></li>
-      <li><a href="{{ root_url }}/blog/octopress-lean-modification-4.html/#section-1">1.3 使用方法</a></li>
+  <li><a href="/blog/octopress-lean-modification-4.html/#coderay-block-">1.  CodeRay Block 代码块插件</a>    <ul>
+      <li><a href="/blog/octopress-lean-modification-4.html/#kramdown-coderay">1.1 安装 kramdown, CodeRay</a></li>
+      <li><a href="/blog/octopress-lean-modification-4.html/#section">1.2 修改样式表</a></li>
+      <li><a href="/blog/octopress-lean-modification-4.html/#section-1">1.3 使用方法</a></li>
     </ul>
   </li>
-  <li><a href="{{ root_url }}/blog/octopress-lean-modification-4.html/#caption">2. 给图片添加说明 (Caption)</a>    <ul>
-      <li><a href="{{ root_url }}/blog/octopress-lean-modification-4.html/#section-2">2.1 制作并添加插件</a></li>
-      <li><a href="{{ root_url }}/blog/octopress-lean-modification-4.html/#section-3">2.2 修改样式表</a></li>
-      <li><a href="{{ root_url }}/blog/octopress-lean-modification-4.html/#section-4">2.3 使用方法</a></li>
+  <li><a href="/blog/octopress-lean-modification-4.html/#caption">2. 给图片添加说明 (Caption)</a>    <ul>
+      <li><a href="/blog/octopress-lean-modification-4.html/#section-2">2.1 制作并添加插件</a></li>
+      <li><a href="/blog/octopress-lean-modification-4.html/#section-3">2.2 修改样式表</a></li>
+      <li><a href="/blog/octopress-lean-modification-4.html/#section-4">2.3 使用方法</a></li>
     </ul>
   </li>
-  <li><a href="{{ root_url }}/blog/octopress-lean-modification-4.html/#fontawesome">3. 使用 FontAwesome</a></li>
+  <li><a href="/blog/octopress-lean-modification-4.html/#fontawesome">3. 使用 FontAwesome</a></li>
 </ul>
 
-<h2><a href="{{ root_url }}/blog/octopress-lean-modification-5.html/" target="_blank">精益修改 (5) – 必备功能</a></h2>
+<h2><a href="/blog/octopress-lean-modification-5.html/" target="_blank">精益修改 (5) – 必备功能</a></h2>
 
 <ul>
-  <li><a href="{{ root_url }}/blog/octopress-lean-modification-5.html/#section">1. 侧边栏显示分类目录</a></li>
-  <li><a href="{{ root_url }}/blog/octopress-lean-modification-5.html/#section-1">2. 自动生成文章目录</a></li>
-  <li><a href="{{ root_url }}/blog/octopress-lean-modification-5.html/#section-2">3. 自动添加文章修改记录</a></li>
+  <li><a href="/blog/octopress-lean-modification-5.html/#section">1. 侧边栏显示分类目录</a></li>
+  <li><a href="/blog/octopress-lean-modification-5.html/#section-1">2. 自动生成文章目录</a></li>
+  <li><a href="/blog/octopress-lean-modification-5.html/#section-2">3. 自动添加文章修改记录</a></li>
 </ul>
 
 </div>
@@ -155,35 +155,43 @@
 
 <p>首先，用如下代码新建文本文件，另存为 <code>category_list_tag.rb</code>，并把这个文件放到 <code>plugins</code> 目录下。</p>
 
-<p>{% coderay lang:ruby plugins/category_list_tag.rb %}
-module Jekyll
-  class CategoryListTag &lt; Liquid::Tag
-    def render(context)
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>plugins/category_list_tag.rb </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+<span class="keyword">module</span> <span class="class">Jekyll</span>
+  <span class="keyword">class</span> <span class="class">CategoryListTag</span> &amp;lt; <span class="constant">Liquid</span>::<span class="constant">Tag</span>
+    <span class="keyword">def</span> <span class="function">render</span>(context)
       html = “”
-      categories = context.registers[:site].categories.keys
-      categories.sort.each do |category|
-        posts_in_category = context.registers[:site].categories[category].size
-        category_dir = context.registers[:site].config[‘category_dir’]
-        category_url = File.join(category_dir, category.gsub(/_|\P{Word}/, ‘-‘).gsub(/-{2,}/, ‘-‘).downcase)
-        html « “&lt;li class='category'&gt;<a href="http://shengmingzhiqing.com/#{category_url}/">#{category} (#{posts_in_category})</a>&lt;/li&gt;\n”
-      end
+      categories = context.registers[<span class="symbol">:site</span>].categories.keys
+      categories.sort.each <span class="keyword">do</span> |category|
+        posts_in_category = context.registers[<span class="symbol">:site</span>].categories[category].size
+        category_dir = context.registers[<span class="symbol">:site</span>].config[‘category_dir’]
+        category_url = <span class="constant">File</span>.join(category_dir, category.gsub(<span class="regexp"><span class="delimiter">/</span><span class="content">_|</span><span class="char">\P</span><span class="content">{Word}</span><span class="delimiter">/</span></span>, ‘-‘).gsub(<span class="regexp"><span class="delimiter">/</span><span class="content">-{2,}</span><span class="delimiter">/</span></span>, ‘-‘).downcase)
+        html « “&amp;lt;li <span class="keyword">class</span>=<span class="string"><span class="delimiter">'</span><span class="content">category</span><span class="delimiter">'</span></span>&amp;gt;&lt;a href=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://shengmingzhiqing.com/</span><span class="inline"><span class="inline-delimiter">#{</span>category_url<span class="inline-delimiter">}</span></span><span class="content">/</span><span class="delimiter">&quot;</span></span>&gt;<span class="comment">#{category} (#{posts_in_category})&lt;/a&gt;&amp;lt;/li&amp;gt;\n”</span>
+      <span class="keyword">end</span>
       html
-    end
-  end
-end</p>
+    <span class="keyword">end</span>
+  <span class="keyword">end</span>
+<span class="keyword">end</span>&lt;<span class="regexp"><span class="delimiter">/</span><span class="content">p&gt;
 
-<p>Liquid::Template.register_tag(‘category_list’, Jekyll::CategoryListTag){% endcoderay %}</p>
+&lt;p&gt;Liquid::Template.register_tag(‘category_list’, Jekyll::CategoryListTag)</span></span></pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>然后我们使用如下代码新建 <code>category_list.html</code> 文件，并放到 <code>source/_includes/custom/asides/</code> 文件夹下。</p>
 
-<p>{% coderay lang:html source/_includes/custom/asides/category_list.html %}{% raw %}</p>
-<section>
-  <h1>Categories</h1>
-  <ul id="categories">
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>source/_includes/custom/asides/category_list.html </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre><span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;section&gt;</span>
+  <span class="tag">&lt;h1&gt;</span>Categories<span class="tag">&lt;/h1&gt;</span>
+  <span class="tag">&lt;ul</span> <span class="attribute-name">id</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">categories</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
     {% category_list %}
-  </ul>
-</section>
-<p>{% endraw %}{% endcoderay %}</p>
+  <span class="tag">&lt;/ul&gt;</span>
+<span class="tag">&lt;/section&gt;</span>
+<span class="tag">&lt;p&gt;</span></pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>最后，我们在 <code>_config.yml</code> 文件中 <code>default_asides:</code> 后面的方括号中，添加一项 <code>custom/asides/category_list.html</code>，放到你喜欢的位置。</p>
 
@@ -191,15 +199,23 @@ end</p>
 
 <p>打开 <code>plugins/category_list_tag.rb</code>，找到如下一行代码：</p>
 
-<p>{% coderay lang:ruby plugins/category_list_tag.rb %}
-html « “&lt;li class='category'&gt;<a href="http://shengmingzhiqing.com/#{category_url}/">#{category} (#{posts_in_category})</a>&lt;/li&gt;\n”
-{% endcoderay %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>plugins/category_list_tag.rb </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+html « “&amp;lt;li <span class="keyword">class</span>=<span class="string"><span class="delimiter">'</span><span class="content">category</span><span class="delimiter">'</span></span>&amp;gt;&lt;a href=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://shengmingzhiqing.com/</span><span class="inline"><span class="inline-delimiter">#{</span>category_url<span class="inline-delimiter">}</span></span><span class="content">/</span><span class="delimiter">&quot;</span></span>&gt;<span class="comment">#{category} (#{posts_in_category})&lt;/a&gt;&amp;lt;/li&amp;gt;\n”</span>
+</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>替换为：</p>
 
-<p>{% coderay lang:ruby plugins/category_list_tag.rb %}
-html « “&lt;li class='category'&gt;<a href="http://shengmingzhiqing.com/blog/categories/#{category.to_url.downcase}/">#{category} (#{posts_in_category})</a>&lt;/li&gt;\n”
-{% endcoderay %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>plugins/category_list_tag.rb </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+html « “&amp;lt;li <span class="keyword">class</span>=<span class="string"><span class="delimiter">'</span><span class="content">category</span><span class="delimiter">'</span></span>&amp;gt;&lt;a href=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://shengmingzhiqing.com/blog/categories/</span><span class="inline"><span class="inline-delimiter">#{</span>category.to_url.downcase<span class="inline-delimiter">}</span></span><span class="content">/</span><span class="delimiter">&quot;</span></span>&gt;<span class="comment">#{category} (#{posts_in_category})&lt;/a&gt;&amp;lt;/li&amp;gt;\n”</span>
+</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>完工。</p>
 
@@ -213,25 +229,36 @@ html « “&lt;li class='category'&gt;<a href="http://shengmingzhiqing.com/blog
 
 <p>然后只要你在想插入目录的地方，插入如下一段代码即可：</p>
 
-<p>{% coderay %}{% raw %}
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
+  <div class="code"><pre>
 * list element with functor item
-{:toc}{% endraw %}
-{% endcoderay %}</p>
+{:toc}
+</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>没错，就这么简单。当然你可能希望能在这个目录前面自动添加，类似本文前面的「本页目录」四个字，只需要修改样式表 <code>sass/custom/_style.scss</code>，添加如下代码：</p>
 
-<p>{% coderay sass/custom/_style.scss %}
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>sass/custom/_style.scss </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
 #markdown-toc:before {
   content: “本页目录”;
   font-weight: bold;
-}{% endcoderay %}</p>
+}</pre></div>
+</div>
+ </figure></notextile></div></p>
 
-<p>最后，可能还有一个问题，有些朋友和我一样会在文章中使用 <code>{% raw %}&lt;!-- more --&gt;{% endraw %}</code> 标签，在首页只显示部分文章，这时这个目录生成可能就会出现错误，而且事实上我们也没必要在文章的摘要中放置一个目录，所以我们可以在 <code>sass/custom/_style.scss</code> 添加如下代码，让主页不出现目录：</p>
+<p>最后，可能还有一个问题，有些朋友和我一样会在文章中使用 <code>&lt;!-- more --&gt;</code> 标签，在首页只显示部分文章，这时这个目录生成可能就会出现错误，而且事实上我们也没必要在文章的摘要中放置一个目录，所以我们可以在 <code>sass/custom/_style.scss</code> 添加如下代码，让主页不出现目录：</p>
 
-<p>{% coderay sass/custom/_style.scss %}
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>sass/custom/_style.scss </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
 .blog-index #markdown-toc {
   display: none;
-}{% endcoderay %}</p>
+}</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>如果你对这个目录的样式不满意，还可以在样式表中进一步修改，改成什么样就看你个人喜好了。</p>
 
@@ -252,13 +279,21 @@ html « “&lt;li class='category'&gt;<a href="http://shengmingzhiqing.com/blog
     <p>复制 <code>source/_includes/post/revision.html</code> 到你自己的 <code>source/_includes/post</code> 目录下。</p>
   </li>
   <li>在 <code>_config.yml</code> 文件中，添加你的 Github 账户信息，如下： <br />
-{% coderay lang:yml _config.yml %}
-github_user: # 这你填你的 Github 用户名
-github_repo: # 这里填你博客的库名，即 [your_user_name].github.io
-{% endcoderay %}</li>
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>_config.yml </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+<span class="key">github_user</span>: <span class="comment"># 这你填你的 Github 用户名</span>
+<span class="key">github_repo</span>: <span class="comment"># 这里填你博客的库名，即 [your_user_name].github.io</span>
+</pre></div>
+</div>
+ </figure></notextile></div></li>
   <li>在 <code>source/_layouts/post.html</code> 的 <code>&lt;footer&gt;</code> 和 <code>&lt;/footer&gt;</code> 之间，你想要的位置，添加如下代码，此处即为文章修改记录的显示位置：<br />
-{% coderay lang:html source/_layouts/post.html %}{% raw %}
-{% include revision.html %}{% endraw %}{% endcoderay %}</li>
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>source/_layouts/post.html </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+{% include revision.html %}</pre></div>
+</div>
+ </figure></notextile></div></li>
 </ol>
 
 <p>这样，我们就可以在文章末尾看到本文的修改记录了。</p>
@@ -291,23 +326,32 @@ github_repo: # 这里填你博客的库名，即 [your_user_name].github.io
 
 <p>用 Octopress 写博客的很多朋友需要在博客内容当中添加代码块，毕竟这是一个「为黑客而生的博客框架」。Octopress 除了可以使用 Markdown 语言默认的代码块实现方式之外，本身也集成了很强大的代码块 (Code Block) 插件，按照<a href="http://octopress.org/docs/plugins/codeblock/">官方的说明</a>调用即可，比如：</p>
 
-<p>{% codeblock lang:python 节选自比特币 Python API %}
-rv = conn.validateaddress(foo)
-if rv.isvalid:
-    print “The address that you provided is valid”
-else:
-    print “The address that you provided is invalid, please correct”
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>节选自比特币 Python API </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="n">rv</span> <span class="o">=</span> <span class="n">conn</span><span class="o">.</span><span class="n">validateaddress</span><span class="p">(</span><span class="n">foo</span><span class="p">)</span>
+</span><span class='line'><span class="k">if</span> <span class="n">rv</span><span class="o">.</span><span class="n">isvalid</span><span class="p">:</span>
+</span><span class='line'>    <span class="k">print</span> <span class="err">“</span><span class="n">The</span> <span class="n">address</span> <span class="n">that</span> <span class="n">you</span> <span class="n">provided</span> <span class="ow">is</span> <span class="n">valid</span><span class="err">”</span>
+</span><span class='line'><span class="k">else</span><span class="p">:</span>
+</span><span class='line'>    <span class="k">print</span> <span class="err">“</span><span class="n">The</span> <span class="n">address</span> <span class="n">that</span> <span class="n">you</span> <span class="n">provided</span> <span class="ow">is</span> <span class="n">invalid</span><span class="p">,</span> <span class="n">please</span> <span class="n">correct</span><span class="err">”</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>官方的 Code Block 插件支持语法高亮，本身的显示效果也非常不错，可以与博客大背景的深色形成呼应。但如果你的文章中出现大量的代码块，黑色背景看起来可能不那么舒服。这时，你可能想要使用浅色系的代码块，比如：</p>
 
-<p>{% coderay lang:python 节选自比特币 Python API %}
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>节选自比特币 Python API </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
 rv = conn.validateaddress(foo)
-if rv.isvalid:
-    print “The address that you provided is valid”
-else:
-    print “The address that you provided is invalid, please correct”
-{% endcoderay %}<!--more--></p>
+<span class="keyword">if</span> rv.isvalid:
+    <span class="keyword">print</span> <span class="error">“</span>The address that you provided <span class="keyword">is</span> valid<span class="error">”</span>
+<span class="keyword">else</span>:
+    <span class="keyword">print</span> <span class="error">“</span>The address that you provided <span class="keyword">is</span> invalid, please correct<span class="error">”</span>
+</pre></div>
+</div>
+ </figure></notextile></div><!--more--></p>
 
 <p>最早看到这种风格的显示是在 <a href="http://blog.codebykat.com/2013/05/23/gorgeous-octopress-codeblocks-with-coderay/">Kat Hagan 的博客</a>，她在文章中介绍了一种新的语法高亮工具——<a href="http://coderay.rubychan.de">CodeRay</a>，使用这种工具即可实现上面浅色圆角的代码块。作者同时也是一位极具分享精神的 Web 开发者，为了方便大家使用 CodeRay，她还专门制作了一个可直接安装的 Octopress 插件。</p>
 
@@ -323,27 +367,37 @@ else:
 
 <p>在 <code>Gemfile</code> 中添加如下两行代码：</p>
 
-<p>{% coderay lang:ruby %}
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
+  <div class="code"><pre>
 gem ‘kramdown’
 gem ‘coderay’
-{% endcoderay %}</p>
+</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>在终端执行如下命令：</p>
 
-<p>{% coderay lang:ruby %}
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
+  <div class="code"><pre>
 bundle install
-{% endcoderay %}</p>
+</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>然后修改 <code>_config.yml</code> 文件中相关内容如下：</p>
 
-<p>{% coderay lang:yml  _config.yml %}
-markdown: kramdown
-kramdown:
-    use_coderay: true
-    coderay:
-        coderay_line_numbers: table
-        coderay_css: class
-{% endcoderay %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>_config.yml </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+<span class="key">markdown</span>: <span class="string"><span class="content">kramdown</span></span>
+<span class="key">kramdown</span>:
+    <span class="key">use_coderay</span>: <span class="string"><span class="content">true</span></span>
+    <span class="key">coderay</span>:
+        <span class="key">coderay_line_numbers</span>: <span class="string"><span class="content">table</span></span>
+        <span class="key">coderay_css</span>: <span class="string"><span class="content">class</span></span>
+</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>其中 <code>coderay_line_numbers: table</code> 表示激活 CodeRay 的行号功能。</p>
 
@@ -357,17 +411,20 @@ kramdown:
 
 <h3 id="section-1">1.3 使用方法</h3>
 
-<p>{% coderay lang:ruby %}{% raw %}
-{ % coderay [lang:lang] [linenos:true|false(default)] [title] [url] [link text] % }
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
+  <div class="code"><pre>
+{ <span class="string"><span class="delimiter">% </span><span class="content">coderay</span><span class="delimiter"> </span></span>[<span class="key">lang</span>:lang] [<span class="key">linenos</span>:<span class="predefined-constant">true</span>|<span class="predefined-constant">false</span>(default)] [title] [url] [link text] % }
 代码片段
-{ % endcoderay % }{% endraw %}
-{% endcoderay %}</p>
+{ <span class="string"><span class="delimiter">% </span><span class="content">endcoderay</span><span class="delimiter"> </span></span>% }
+</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>你可以看到这个使用方法与官方的 CodeBlock 插件非常像，其中：<code>lang:</code> 定义了代码的语言，<code>linenos:</code> 定义了是否显示行号（默认不显示），<code>title</code> 是代码框标题，<code>url</code> 是链接，<code>link text</code> 是链接文本。</p>
 
 <h2 id="caption">2. 给图片添加说明 (Caption)</h2>
 
-<p>在我们发布文章的时候，难免会插入图片。你可以把你想插入的图片（比如 dream.jpg）放到 <code>source/images/</code> 文件夹下。重新生成部署站点之后，图片的地址为 <code>{% raw %}{{ root_url }}/source/images/dream.jpg{% endraw %}</code>，当然你也可以给 images 文件夹下再添加其他文件夹，只要你加到图片最终的路径上即可。</p>
+<p>在我们发布文章的时候，难免会插入图片。你可以把你想插入的图片（比如 dream.jpg）放到 <code>source/images/</code> 文件夹下。重新生成部署站点之后，图片的地址为 <code>{{ root_url }}/source/images/dream.jpg</code>，当然你也可以给 images 文件夹下再添加其他文件夹，只要你加到图片最终的路径上即可。</p>
 
 <p>具体使用图片时，官方自带了图片插件 (Image Tag)，使用非常方便，具体方法可以参考<a href="http://octopress.org/docs/plugins/image-tag/">官方说明</a>。但有时候，我们需要给图片添加说明 (Caption)，比如在我的文章「<a href="http://shengmingzhiqing.com/blog/why-enter-key-is-huiche-in-chinese.html/">为什么「Enter 键」要被翻译为「回车键」？</a>」中的第二张图。这时官方的插件就显得不够用了，参照 <a href="http://blog.zerosharp.com/image-captions-for-octopress/"><em>Image Captions for Octopress</em></a> , 我们可以按如下步骤实现想要的功能：</p>
 
@@ -375,95 +432,110 @@ kramdown:
 
 <p>首先新建一个文本文件，复制如下代码，另存为 <code>image_caption_tag.rb</code> 文件，注意要使用 .rb 后缀。然后再把这个文件放到 <code>plugins</code> 目录下。</p>
 
-<p>{% coderay lang:ruby plugins/image_caption_tag.rb %}
-# Title: Image tag with caption for Jekyll
-# Description: Easily output images with captions</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>plugins/image_caption_tag.rb </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+<span class="comment"># Title: Image tag with caption for Jekyll</span>
+<span class="comment"># Description: Easily output images with captions&lt;/p&gt;</span>
 
-<p>module Jekyll</p>
+&lt;p&gt;<span class="keyword">module</span> <span class="class">Jekyll</span>&lt;<span class="regexp"><span class="delimiter">/</span><span class="content">p&gt;
 
-<p>class CaptionImageTag &lt; Liquid::Tag
+&lt;p&gt;class CaptionImageTag &amp;lt; Liquid::Tag
     @img = nil
     @title = nil
     @class = ‘’
     @width = ‘’
-    @height = ‘’</p>
+    @height = ‘’&lt;</span><span class="delimiter">/</span></span>p&gt;
 
-<pre><code>def initialize(tag_name, markup, tokens)
-  if markup =~ /(\S.*\s+)?(https?:\/\/|\/)(\S+)(\s+\d+\s+\d+)?(\s+.+)?/i
-    @class = $1 || ''
-    @img = $2 + $3
-    if $5
-      @title = $5.strip
-    end
-    if $4 =~ /\s*(\d+)\s+(\d+)/
-      @width = $1
-      @height = $2
-    end
-  end
-  super
-end
+&lt;pre&gt;&lt;code&gt;<span class="keyword">def</span> <span class="function">initialize</span>(tag_name, markup, tokens)
+  <span class="keyword">if</span> markup =~ <span class="regexp"><span class="delimiter">/</span><span class="content">(</span><span class="char">\S</span><span class="content">.*</span><span class="char">\s</span><span class="content">+)?(https?:</span><span class="char">\/</span><span class="char">\/</span><span class="content">|</span><span class="char">\/</span><span class="content">)(</span><span class="char">\S</span><span class="content">+)(</span><span class="char">\s</span><span class="content">+</span><span class="char">\d</span><span class="content">+</span><span class="char">\s</span><span class="content">+</span><span class="char">\d</span><span class="content">+)?(</span><span class="char">\s</span><span class="content">+.+)?</span><span class="delimiter">/</span><span class="modifier">i</span></span>
+    <span class="instance-variable">@class</span> = <span class="global-variable">$1</span> || <span class="string"><span class="delimiter">'</span><span class="delimiter">'</span></span>
+    <span class="instance-variable">@img</span> = <span class="global-variable">$2</span> + <span class="global-variable">$3</span>
+    <span class="keyword">if</span> <span class="global-variable">$5</span>
+      <span class="instance-variable">@title</span> = <span class="global-variable">$5</span>.strip
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> <span class="global-variable">$4</span> =~ <span class="regexp"><span class="delimiter">/</span><span class="char">\s</span><span class="content">*(</span><span class="char">\d</span><span class="content">+)</span><span class="char">\s</span><span class="content">+(</span><span class="char">\d</span><span class="content">+)</span><span class="delimiter">/</span></span>
+      <span class="instance-variable">@width</span> = <span class="global-variable">$1</span>
+      <span class="instance-variable">@height</span> = <span class="global-variable">$2</span>
+    <span class="keyword">end</span>
+  <span class="keyword">end</span>
+  <span class="keyword">super</span>
+<span class="keyword">end</span>
 
-def render(context)
-  output = super
-  if @img
-    "&lt;span class='#{('caption-wrapper ' + @class).rstrip}'&gt;" +
-      "&lt;img class='caption' src='#{@img}' width='#{@width}' height='#{@height}' title='#{@title}'&gt;" +
-      "&lt;span class='caption-text'&gt;#{@title}&lt;/span&gt;" +
-    "&lt;/span&gt;"
-  else
-    "Error processing input, expected syntax: {% img [class name(s)] /url/to/image [width height] [title text] %}"
-  end
-end   end end
-</code></pre>
+<span class="keyword">def</span> <span class="function">render</span>(context)
+  output = <span class="keyword">super</span>
+  <span class="keyword">if</span> <span class="instance-variable">@img</span>
+    <span class="string"><span class="delimiter">&quot;</span><span class="content">&amp;lt;span class='</span><span class="inline"><span class="inline-delimiter">#{</span>(<span class="string"><span class="delimiter">'</span><span class="content">caption-wrapper </span><span class="delimiter">'</span></span> + <span class="instance-variable">@class</span>).rstrip<span class="inline-delimiter">}</span></span><span class="content">'&amp;gt;</span><span class="delimiter">&quot;</span></span> +
+      <span class="string"><span class="delimiter">&quot;</span><span class="content">&amp;lt;img class='caption' src='</span><span class="inline"><span class="inline-delimiter">#{</span><span class="instance-variable">@img</span><span class="inline-delimiter">}</span></span><span class="content">' width='</span><span class="inline"><span class="inline-delimiter">#{</span><span class="instance-variable">@width</span><span class="inline-delimiter">}</span></span><span class="content">' height='</span><span class="inline"><span class="inline-delimiter">#{</span><span class="instance-variable">@height</span><span class="inline-delimiter">}</span></span><span class="content">' title='</span><span class="inline"><span class="inline-delimiter">#{</span><span class="instance-variable">@title</span><span class="inline-delimiter">}</span></span><span class="content">'&amp;gt;</span><span class="delimiter">&quot;</span></span> +
+      <span class="string"><span class="delimiter">&quot;</span><span class="content">&amp;lt;span class='caption-text'&amp;gt;</span><span class="inline"><span class="inline-delimiter">#{</span><span class="instance-variable">@title</span><span class="inline-delimiter">}</span></span><span class="content">&amp;lt;/span&amp;gt;</span><span class="delimiter">&quot;</span></span> +
+    <span class="string"><span class="delimiter">&quot;</span><span class="content">&amp;lt;/span&amp;gt;</span><span class="delimiter">&quot;</span></span>
+  <span class="keyword">else</span>
+    <span class="string"><span class="delimiter">&quot;</span><span class="content">Error processing input, expected syntax: &lt;img class=</span><span class="delimiter">&quot;</span></span>[<span class="keyword">class</span> <span class="class">name</span>(s)]<span class="string"><span class="delimiter">&quot;</span><span class="content"> src=</span><span class="delimiter">&quot;</span></span>/url/to/image<span class="string"><span class="delimiter">&quot;</span><span class="content"> title=</span><span class="delimiter">&quot;</span></span>[width height] [title text]<span class="string"><span class="delimiter">&quot;</span><span class="content"> &gt;</span><span class="delimiter">&quot;</span></span>
+  <span class="keyword">end</span>
+<span class="keyword">end</span>   <span class="keyword">end</span> <span class="keyword">end</span>
+&lt;<span class="regexp"><span class="delimiter">/</span><span class="content">code&gt;&lt;</span><span class="delimiter">/</span></span>pre&gt;
 
-<p>Liquid::Template.register_tag(‘imgcap’, Jekyll::CaptionImageTag{% endcoderay %}</p>
+&lt;p&gt;<span class="constant">Liquid</span>::<span class="constant">Template</span>.register_tag(‘imgcap’, <span class="constant">Jekyll</span>::<span class="constant">CaptionImageTag</span></pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <h3 id="section-3">2.2 修改样式表</h3>
 
 <p>在 <code>sass/base/_utilities.scss</code> 文件中添加如下几行代码：</p>
 
-<p>{% coderay lang:css sass/base/_utilities.scss %}
-@mixin reset-shadow-box() {
-  @include shadow-box(0px, 0px, 0px);
-}{% endcoderay %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>sass/base/_utilities.scss </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+<span class="directive">@mixin</span> <span class="error">r</span><span class="error">e</span><span class="error">s</span><span class="error">e</span><span class="error">t</span><span class="error">-</span><span class="error">s</span><span class="error">h</span><span class="error">a</span><span class="error">d</span><span class="error">o</span><span class="error">w</span><span class="error">-</span><span class="error">b</span><span class="error">o</span><span class="error">x</span>() {
+  <span class="directive">@include</span> <span class="error">s</span><span class="error">h</span><span class="error">a</span><span class="error">d</span><span class="error">o</span><span class="error">w</span><span class="error">-</span><span class="error">b</span><span class="error">o</span><span class="error">x</span>(<span class="float">0px</span>, <span class="float">0px</span>, <span class="float">0px</span>);
+}</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>最后，打开 <code>sass/partials/_blog.scss</code> 文件，作如下修改，其中减号表示删掉该行，加号表示新添该行：</p>
 
-<p>{% coderay lang:css sass/partials/_blog.scss %}
-   article {
-     font-size: 2.0em; font-style: italic;
-     line-height: 1.3em;
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>sass/partials/_blog.scss </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+   <span class="tag">article</span> {
+     <span class="key">font-size</span>: <span class="float">2.0em</span>; <span class="key">font-style</span>: <span class="value">italic</span>;
+     <span class="key">line-height</span>: <span class="float">1.3em</span>;
    }
--  img, video, .flash-video {
-+  img, video, .flash-video, .caption-wrapper {
-     @extend .flex-content;
-     @extend .basic-alignment;
-     @include shadow-box;
-+    &amp;.caption {
-+      @include reset-shadow-box;
+<span class="error">-</span>  <span class="tag">img</span>, <span class="tag">video</span>, <span class="class">.flash-video</span> {
++  <span class="key">img</span>, <span class="key">video</span>, .<span class="key">flash-video</span>, .<span class="key">caption-wrapper</span> {
+     <span class="directive">@extend</span> .<span class="key">flex-content</span>;
+     <span class="directive">@extend</span> .<span class="key">basic-alignment</span>;
+     <span class="directive">@include</span> <span class="key">shadow-box</span>;
++    <span class="error">&amp;</span><span class="key">amp</span>;.<span class="key">caption</span> {
++      <span class="directive">@include</span> <span class="key">reset-shadow-box</span>;
 +    }
 +  }
-+  .caption-wrapper {
-+    display: inline-block;
-+    margin-bottom: 10px;
-+    .caption-text {
-+      background: #fff;
-+      text-align: center;
-+      font-size: .8em;
-+      color: #666;
-+      display: block;
++  .<span class="key">caption-wrapper</span> {
++    <span class="key">display</span>: <span class="value">inline-block</span>;
++    <span class="key">margin-bottom</span>: <span class="float">10px</span>;
++    .<span class="key">caption-text</span> {
++      <span class="key">background</span>: <span class="color">#fff</span>;
++      <span class="key">text-align</span>: <span class="value">center</span>;
++      <span class="key">font-size</span>: <span class="float">.8em</span>;
++      <span class="key">color</span>: <span class="color">#666</span>;
++      <span class="key">display</span>: <span class="value">block</span>;
 +    }
    }
-   video, .flash-video { margin: 0 auto 1.5em; }
-   video { display: block; width: 100%; }{% endcoderay %}</p>
+   <span class="key">video</span>, .<span class="key">flash-video</span> { <span class="key">margin</span>: <span class="float">0</span> <span class="value">auto</span> <span class="float">1.5em</span>; }
+   <span class="key">video</span> { <span class="key">display</span>: <span class="value">block</span>; <span class="key">width</span>: <span class="float">100%</span>; }</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <h3 id="section-4">2.3 使用方法</h3>
 
 <p>按照如下代码将图片插入文中：</p>
 
-<p>{% coderay lang:ruby %}
-{% imgcap [left/right] [url] [caption] [width] [height] [title text] [alt text] %} 
-{% endcoderay %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
+  <div class="code"><pre>
+&lt;span <span class="keyword">class</span>=<span class="string"><span class="delimiter">'</span><span class="content">caption-wrapper</span><span class="delimiter">'</span></span>&gt;&lt;img <span class="keyword">class</span>=<span class="string"><span class="delimiter">'</span><span class="content">caption</span><span class="delimiter">'</span></span> src=<span class="string"><span class="delimiter">'</span><span class="content">/right]</span><span class="delimiter">'</span></span> width=<span class="string"><span class="delimiter">'</span><span class="delimiter">'</span></span> height=<span class="string"><span class="delimiter">'</span><span class="delimiter">'</span></span> title=<span class="string"><span class="delimiter">'</span><span class="content">[url] [caption] [width] [height] [title text] [alt text]</span><span class="delimiter">'</span></span>&gt;&lt;span <span class="keyword">class</span>=<span class="string"><span class="delimiter">'</span><span class="content">caption-text</span><span class="delimiter">'</span></span>&gt;[url] [caption] [width] [height] [title text] [alt text]&lt;<span class="regexp"><span class="delimiter">/</span><span class="content">span&gt;&lt;</span><span class="delimiter">/</span><span class="modifier">s</span></span>pan&gt; 
+</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>其中，<code>[left/right]</code> 是表示图片显示在页面上的位置，<code>[url]</code> 是图片完整链接，<code>[caption]</code> 是图片说明，<code>[width]</code> 和 <code>[height]</code> 分别是图片的宽度和高度，<code>[title]</code> 是图片标题，<code>[alt text]</code> 是图片替代文字。</p>
 
@@ -475,9 +547,12 @@ end   end end
 
 <p>要使用 Font Awesome，你只需要简单地在 <code>source/_includes/custom/head.html</code> 中添加如下一行代码：</p>
 
-<p>{% coderay lang:html source/_includes/custom/head.html http://fortawesome.github.io/Font-Awesome/get-started/ %}
-<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
-{% endcoderay %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>source/_includes/custom/head.html</span><a href='http://fortawesome.github.io/Font-Awesome/get-started/'>link</a></figcaption> <div class="CodeRay">
+  <div class="code"><pre>
+<span class="tag">&lt;link</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">rel</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">stylesheet</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span>
+</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>安装工作就完成了。然后你看中哪个 Logo，直接输入官方的 Logo 代码，就可以让 Logo 出现在页面相应位置。比如你想显示照相机的 Logo：</p>
 
@@ -485,15 +560,21 @@ end   end end
 
 <p>你只需要输入如下代码：</p>
 
-<p>{% coderay %}
-<i class="fa fa-camera-retro fa-5x" />{% endcoderay %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
+  <div class="code"><pre>
+&lt;i class=&quot;fa fa-camera-retro fa-5x&quot; /&gt;</pre></div>
+</div>
+ </figure></notextile></div></p>
 
-<p>有时候 Font Awesome 可能会出现与 kramdown 解析器相冲突的情况，导致全局样式发生变化，这是你只需要在 Logo 的代码前后分别添加 <code>{% raw %}{::nomarkdown}{% endraw %}</code> 和 <code>{% raw %}{:/nomarkdown}{% endraw %}</code>强制 kramdown 不去解析这段语句即可，比如上面的代码可以改为：</p>
+<p>有时候 Font Awesome 可能会出现与 kramdown 解析器相冲突的情况，导致全局样式发生变化，这是你只需要在 Logo 的代码前后分别添加 <code>{::nomarkdown}</code> 和 <code>{:/nomarkdown}</code>强制 kramdown 不去解析这段语句即可，比如上面的代码可以改为：</p>
 
-<p>{% coderay %}{% raw %}
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
+  <div class="code"><pre>
 
-<i class="fa fa-camera-retro fa-5x"></i>
-{% endraw %}{% endcoderay %}</p>
+&lt;i class=&quot;fa fa-camera-retro fa-5x&quot;&gt;&lt;/i&gt;
+</pre></div>
+</div>
+ </figure></notextile></div></p>
 ]]></content>
   </entry>
   
@@ -525,28 +606,40 @@ end   end end
 
 <p>打开 <code>sass/custom/_layout.scss</code> 这个文件，找到如下两行：</p>
 
-<p>{% coderay lang:css sass/custom/_layout.scss %}//$max-width: 1350px;
-…
-//$sidebar-width-wide: 300px;
-{% endcoderay %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>sass/custom/_layout.scss </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>//<span class="error">$</span><span class="tag">max-width</span>: <span class="float">1350px</span>;
+<span class="error">…</span>
+//<span class="error">$</span><span class="tag">sidebar-width-wide</span>: <span class="float">300px</span>;
+</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>你可以从字面意思看出这两行代码是什么意思，所以你只需要修改相应的数字就好了。以我的博客为例，整体框架的最宽宽度我设为 1000px，侧边栏最宽宽度我设为 260px。之所以称为最宽宽度，是因为网站会根据不同的显示设备自适应宽度。其他诸如最窄宽度，中等宽度，你也可以在这个文件中找到相应的代码，进行修改。</p>
 
 <p>修改完之后，记得把这两行前面的 <code>//</code> 去掉，因为在样式表中，这个符号后面的内容默认是注释内容，会被自动忽略。比如，按照我的设置改完之后，这两行应该变为：</p>
 
-<p>{% coderay lang:css sass/custom/_layout.scss %}$max-width: 1000px;
-…
-$sidebar-width-wide: 260px;
-{% endcoderay %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>sass/custom/_layout.scss </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre><span class="error">$</span><span class="tag">max-width</span>: <span class="float">1000px</span>;
+<span class="error">…</span>
+<span class="error">$</span><span class="tag">sidebar-width-wide</span>: <span class="float">260px</span>;
+</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <h3 id="section-2">1.2 修改内容宽度</h3>
 
 <p>修改完框架宽度之后，我们可以预览一下效果，会发现，由于宽度变窄，文章内容距离框架的边界就显得过宽了，所以我们也要对文章内容的宽度进行修改。同样还是在刚才的 <code>sass/custom/_layout.scss</code> 文件，找到：</p>
 
-<p>{% coderay lang:css sass/custom/_layout.scss %}//$pad-wide: 55px;
-…
-//$sidebar-pad-wide: 20px;
-{% endcoderay %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>sass/custom/_layout.scss </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>//<span class="error">$</span><span class="tag">pad-wide</span>: <span class="float">55px</span>;
+<span class="error">…</span>
+//<span class="error">$</span><span class="tag">sidebar-pad-wide</span>: <span class="float">20px</span>;
+</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>这两行定义的是主栏和侧边栏的文字与边框最宽距离，改成你觉得适合的大小即可。当然如果你想修改「中等距离」和「最窄距离」，找到相应代码修改即可。</p>
 
@@ -558,48 +651,64 @@ $sidebar-width-wide: 260px;
 
 <p>布局修改好之后，我们接着来修改文字字体。打开 <code>sass/custom/_font.scss</code> 这个文件，你会发现如下几行代码：</p>
 
-<p>{% coderay lang:css sass/custom/_font.scss %}//$sans: “Optima”, sans-serif;
-//$serif: “Baskerville”, serif;
-//$mono: “Courier”, monospace;
-//$heading-font-family: “Verdana”, sans-serif;
-//$header-title-font-family: “Futura”, sans-serif;
-//$header-subtitle-font-family: “Futura”, sans-serif{% endcoderay %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>sass/custom/_font.scss </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>//<span class="error">$</span><span class="tag">sans</span>: <span class="error">“</span><span class="tag">Optima</span><span class="error">”</span>, <span class="tag">sans-serif</span>;
+//<span class="error">$</span><span class="tag">serif</span>: <span class="error">“</span><span class="tag">Baskerville</span><span class="error">”</span>, <span class="tag">serif</span>;
+//<span class="error">$</span><span class="tag">mono</span>: <span class="error">“</span><span class="tag">Courier</span><span class="error">”</span>, <span class="tag">monospace</span>;
+//<span class="error">$</span><span class="tag">heading-font-family</span>: <span class="error">“</span><span class="tag">Verdana</span><span class="error">”</span>, <span class="tag">sans-serif</span>;
+//<span class="error">$</span><span class="tag">header-title-font-family</span>: <span class="error">“</span><span class="tag">Futura</span><span class="error">”</span>, <span class="tag">sans-serif</span>;
+//<span class="error">$</span><span class="tag">header-subtitle-font-family</span>: <span class="error">“</span><span class="tag">Futura</span><span class="error">”</span>, <span class="tag">sans-serif</span></pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>由上至下定义了「衬线字体」「无衬线字体」「等宽字体」「标题字体」「网站主标题字体」「网站副标题字体」，在其中添加你喜欢的字体即可。字体的优先级是由先到后的。当然别忘了去掉注释符号。</p>
 
 <p>对于英文字体，你还可以去 <a href="http://www.google.com/fonts/">Google Webfonts</a> 查找你喜欢的字体并使用，比如你想用 PT Serif 这个字体，你只需要在 <code>source/_includes/custom/head.html</code> 中添加如下代码即可：</p>
 
-<p>{% coderay lang:html source/_includes/custom/head.html %}
-<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" /> {% endcoderay %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>source/_includes/custom/head.html </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+<span class="tag">&lt;link</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">rel</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">stylesheet</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">text/css</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span> </pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>顺便说一句，对于中文字体，为了照顾 Windows 用户，我们不得不在 font-family 中添加「微软雅黑」，因为一般人电脑里都会有。尽管这个字体并不好看，但其他 Windows 自带字体更难看。</p>
 
 <p>字体选好之后，我们还需要调整不同文字字体的大小。这部分内容是在 <code>sass/base/_typography.scss</code> 这个样式表中定义的。注意它并不在 <code>sass/custom</code> 目录下。打开之后，你会看到对于不同内容字体样式的定义，比如：</p>
 
-<p>{% coderay lang:css sass/base/_typography.scss %}body &gt; header h1 {
-  font-size: 2.2em;
-  @extend .heading;
-  font-family: $header-title-font-family;
-  font-weight: normal;
-  line-height: 1.2em;
-  margin-bottom: 0.6667em;
-}{% endcoderay %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>sass/base/_typography.scss </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre><span class="tag">body</span> <span class="error">&amp;</span><span class="tag">gt</span>; <span class="tag">header</span> <span class="tag">h1</span> {
+  <span class="key">font-size</span>: <span class="float">2.2em</span>;
+  <span class="directive">@extend</span> .<span class="key">heading</span>;
+  <span class="key">font-family</span>: <span class="error">$</span><span class="value">header-title-font-family</span>;
+  <span class="key">font-weight</span>: <span class="value">normal</span>;
+  <span class="key">line-height</span>: <span class="float">1.2em</span>;
+  <span class="key">margin-bottom</span>: <span class="float">0.6667em</span>;
+}</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>这部分定义的是一级标题的字体样式，其中 <code>font-size: 2.2em</code> 即为字体大小。其他文字的字体大小定义方式也与此类似。你可以直接修改这里的数字来更改文字大小，但秉承我们之前的原则，我们并不修改这个文件。复制 <code>sass/base/_typography.scss</code> 当中想要修改的部分，粘贴到 <code>sass/custom/_styles.scss</code> 这个文件中，然后在 <code>_sytle.scss</code> 这文件中修改即可生效。</p>
 
 <p>这里顺便讲讲 Octopress 的样式表。其实真正定义最终呈现在页面上的效果的样式表是 <code>sass/screen.scss</code> 这个文件，打开之后你会发现：</p>
 
-<p>{% coderay lang:css sass/screen.scss %}
-@import “compass”;
-@include global-reset;</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>sass/screen.scss </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+<span class="directive">@import</span> <span class="error">“</span><span class="tag">compass</span><span class="error">”</span>;
+<span class="directive">@include</span> <span class="tag">global-reset</span>;<span class="error">&lt;</span>/<span class="tag">p</span>&gt;
 
-<p>@import “custom/colors”;
-@import “custom/fonts”;
-@import “custom/layout”;
-@import “base”;
-@import “partials”;
-@import “plugins/<em>*/</em>”;
-@import “custom/styles”;{% endcoderay %}</p>
+<span class="error">&lt;</span><span class="tag">p</span>&gt;<span class="directive">@import</span> <span class="error">“</span><span class="tag">custom</span>/<span class="tag">colors</span><span class="error">”</span>;
+<span class="directive">@import</span> <span class="error">“</span><span class="tag">custom</span>/<span class="tag">fonts</span><span class="error">”</span>;
+<span class="directive">@import</span> <span class="error">“</span><span class="tag">custom</span>/<span class="tag">layout</span><span class="error">”</span>;
+<span class="directive">@import</span> <span class="error">“</span><span class="tag">base</span><span class="error">”</span>;
+<span class="directive">@import</span> <span class="error">“</span><span class="tag">partials</span><span class="error">”</span>;
+<span class="directive">@import</span> <span class="error">“</span><span class="tag">plugins</span>/<span class="error">&lt;</span><span class="tag">em</span>&gt;<span class="tag">*</span>/<span class="error">&lt;</span>/<span class="tag">em</span>&gt;<span class="error">”</span>;
+<span class="directive">@import</span> <span class="error">“</span><span class="tag">custom</span>/<span class="tag">styles</span><span class="error">”</span>;</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>几乎全文件都是 @import 语句，我们可以从字面意思猜出这个语句的意思。也就是说，我们修改的那些样式表，最终会导入这个样式表，然后实现对样式的改动。</p>
 
@@ -609,11 +718,15 @@ $sidebar-width-wide: 260px;
 
 <p>Octopress 默认超链接显示样式有下划线，对于中文来说，这条下划线会和文字挤在一起，不甚美观。打开 <code>sass/base/_theme.scss</code> 文件，找到这行代码：</p>
 
-<p>{% coderay lang:css sass/base/_theme.scss %}
-a {
-  @include link-colors($link-color, $hover: $link-color-hover, $focus: $link-color-hover, $visited: $link-color-visited, $active: $link-color-active);
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>sass/base/_theme.scss </span></figcaption>
+ <div class="CodeRay">
+  <div class="code"><pre>
+<span class="tag">a</span> {
+  <span class="directive">@include</span> <span class="error">l</span><span class="error">i</span><span class="error">n</span><span class="error">k</span><span class="error">-</span><span class="error">c</span><span class="error">o</span><span class="error">l</span><span class="error">o</span><span class="error">r</span><span class="error">s</span>(<span class="error">$</span><span class="key">link-color</span>, <span class="error">$</span><span class="key">hover</span>: <span class="error">$</span><span class="value">link-color-hover</span>, <span class="error">$</span><span class="value">focus</span>: <span class="error">$</span><span class="value">link-color-hover</span>, <span class="error">$</span><span class="value">visited</span>: <span class="error">$</span><span class="value">link-color-visited</span>, <span class="error">$</span><span class="value">active</span>: <span class="error">$</span><span class="value">link-color-active</span>);
 }
-{% endcoderay %}</p>
+</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>在花括号中添加一行 <code>text-decoration: none; </code> 。当然也可以把这段代码复制到 <code>sass/custom/_styles.scss</code> 中再做相应修改。</p>
 
@@ -690,17 +803,23 @@ a {
 
 <p>但仅有这两个页面对很多人来说并不够，我们需要更多，比如在我的博客中，还有一个「<a href="http://shengmingzhiqing.com/article-series/">系列文章</a>」页面，里面放的是我成系列的文章，更加方便读者阅读，也方便自己查阅。那么像这样一个页面该如何生成呢？很简单，执行以下命令：</p>
 
-<p>{% coderay %}
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
+  <div class="code"><pre>
 sudo rake new_page[your-title]
-{% endcoderay %}</p>
+</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>然后你会发现，在你 <code>source</code>  文件夹下会出现一个名为 <code>your-title</code> 的文件夹，里面会有一个名为 index.md 的文件。还记得我们在「<a href="http://shengmingzhiqing.com/blog/octopress-lean-modification-1.html/#markdown-">精益修改 (1)</a>」中修改过 rakefile 里的 Markdown 文件的 后缀，其中有一行是 <code>new_page_ext</code>，这里改动的正式新页面的后缀。</p>
 
 <p>在你重新部署后，这个文件将会生成一个名为<code>index.html</code> 的文件。可以用以下链接来访问这个页面：</p>
 
-<p>{% coderay %}
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
+  <div class="code"><pre>
 http://[your_domain]/your-title/
-{% endcoderay %}</p>
+</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>当然如果你现在访问的话，页面的标题将会是 “your title”，而内容是空白，这简直太合理了，因为我们真的就什么都没写。</p>
 
@@ -708,26 +827,44 @@ http://[your_domain]/your-title/
 
 <p>当然有时候我们并不想让每个页面都生成一个新的文件夹，那么你可以考虑执行以下命令：</p>
 
-<p>{% coderay %}
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
+  <div class="code"><pre>
 sudo rake new_page[your-title/mylove.html]
-{% endcoderay %}</p>
+</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>这样你将在 <code>your-title</code> 文件夹下生成一个 mylove.html 的文件，部署后即可用以下地址访问：</p>
 
-<p>{% coderay %}
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
+  <div class="code"><pre>
 http://[your_domain]/your-title/mylove.html
-{% endcoderay %}</p>
+</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>当你打开这些新页面文件的时候，你会发现和新文章类似的元数据：</p>
 
-<p>{% coderay lang:markdown linenos:true %}—
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+<a href="#n5" name="n5">5</a>
+<a href="#n6" name="n6">6</a>
+<a href="#n7" name="n7">7</a>
+<a href="#n8" name="n8">8</a>
+</pre></td>
+  <td class="code"><pre>—
 layout: page
 title: “your-title”
 date: 
 comments: true
 sharing: true
 footer: true
-—{% endcoderay %}</p>
+—</pre></td>
+</tr></table>
+ </figure></notextile></div></p>
 
 <p>如果你想让页面显示作者，可以在中间加一行 <code>author: </code> 后面接作者名字即可。顺便说一说第一行的 <code>layout: </code> 属性，指的是这个页面用什么样的布局来显示。比如这里是页面布局，之前我们发的文章是 post 布局。具体什么布局是什么样子，通过 <code>source/_layout</code> 这个文件夹下的文件来定义。如果你有一点点模仿能力，你可以根据里面已有的文件，设计出自己的布局。</p>
 
@@ -751,26 +888,43 @@ footer: true
 
 <p>首先，请打开<code>source/_includes/custom/navigation.html</code> 这个文件，你会看到：</p>
 
-<p>{% coderay lang:html linenos:true source/_includes/custom/navigation.html %}{% raw %}&lt;ul class="main-navigation"&gt;</p>
-<li><a href="{{ root_url }}/">Blog</a></li>
-<li><a href="{{ root_url }}/blog/archives">Archives</a></li>
-<p>&lt;/ul&gt;{% endraw %}{% endcoderay %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>source/_includes/custom/navigation.html </span></figcaption>
+ <table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+<a href="#n4" name="n4">4</a>
+</pre></td>
+  <td class="code"><pre><span class="entity">&amp;lt;</span>ul class=&quot;main-navigation&quot;<span class="entity">&amp;gt;</span><span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{{ root_url }}/</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>Blog<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{{ root_url }}/blog/archives</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>Archives<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;p&gt;</span><span class="entity">&amp;lt;</span>/ul<span class="entity">&amp;gt;</span></pre></td>
+</tr></table>
+ </figure></notextile></div></p>
 
 <p>这里就是导航栏里所有链接的列表，你只需要依样画葫芦即可完成页面添加。比如你想把刚刚生成的 your-title 页面和 mylove 页面添加到导航栏中，你可以在第三行下面再加如下两行：</p>
 
-<p>{% coderay lang:html linenos:true source/_includes/custom/navigation.html %}{% raw %}  &lt;li&gt;<a href="{{ root_url }}/your-title/">your-title</a>&lt;/li&gt;</p>
-<li><a href="{{ root_url }}/your-title/mylove.html">mylove</a></li>
-<p>{% endraw %}{% endcoderay %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption class='code-header' style='margin-bottom:-5px;'><span>source/_includes/custom/navigation.html </span></figcaption>
+ <table class="CodeRay"><tr>
+  <td class="line-numbers"><pre><a href="#n1" name="n1">1</a>
+<a href="#n2" name="n2">2</a>
+<a href="#n3" name="n3">3</a>
+</pre></td>
+  <td class="code"><pre>  <span class="entity">&amp;lt;</span>li<span class="entity">&amp;gt;</span><span class="tag">&lt;a</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{{ root_url }}/your-title/</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>your-title<span class="tag">&lt;/a&gt;</span><span class="entity">&amp;lt;</span>/li<span class="entity">&amp;gt;</span><span class="tag">&lt;/p&gt;</span>
+<span class="tag">&lt;li&gt;</span><span class="tag">&lt;a</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{{ root_url }}/your-title/mylove.html</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>mylove<span class="tag">&lt;/a&gt;</span><span class="tag">&lt;/li&gt;</span>
+<span class="tag">&lt;p&gt;</span></pre></td>
+</tr></table>
+ </figure></notextile></div></p>
 
 <p>当然，我们也可以顺手汉化系统默认的两个页面，只要你把上面的 <code>Blog</code> 和 <code>Archives</code> 分别修改成你想要的信息，比如「首页」和「文章列表」，即可像本博客这样显示。</p>
 
 <p>你也可以在这里添加站外链接，只需要把 <code>a href</code> 后面引号中的部分改为相应的网站链接即可。</p>
 
-<p>有一点需要说明，这里出现的 {% raw %}<code>{{ root_url }}</code>{% endraw %} 是你网站的根目录，一般而言就是你的主域名。比如对于我这个博客来说，只要这个链接在站内：{% raw %}<code>{{ root_url }}/page.html</code>{% endraw %} 和 <code>http://shengmingzhiqing.com/page.html</code> 是一个意思。前者给出的是 page.html 相对于根目录的路径，后者给出的是在 <code>shengmingzhiqing.com</code> 这个目录下的路径。简单来说，前者是页面的相对路径，后者是页面的绝对路径。</p>
+<p>有一点需要说明，这里出现的 <code>{{ root_url }}</code> 是你网站的根目录，一般而言就是你的主域名。比如对于我这个博客来说，只要这个链接在站内：<code>{{ root_url }}/page.html</code> 和 <code>http://shengmingzhiqing.com/page.html</code> 是一个意思。前者给出的是 page.html 相对于根目录的路径，后者给出的是在 <code>shengmingzhiqing.com</code> 这个目录下的路径。简单来说，前者是页面的相对路径，后者是页面的绝对路径。</p>
 
 <p>一般而言，站内连接的使用原则是，能使用相对路径就不要使用绝对路径。 因为域名一旦变更，相对路径继续有效，绝对路径将依然指向原域名下的页面，这本来就不是我们的本本意，而如果原来的域名废弃了，链接将直接失效。最为直接的影响是，如果我们在一个指向页面的超链接中使用了绝对路径，我们本地预览页面中的链接与已经部署到网络上的页面链接将指向相同的内容，这样我们就无法通过这个已经设好的超链接来追踪页面的实时效果。</p>
 
-<p>在本文后面的部分以及后面的文章中，我将使用 {% raw %}<code>{{ root_url }}</code>{% endraw %} 来代替你网站的根目录（域名）。</p>
+<p>在本文后面的部分以及后面的文章中，我将使用 <code>{{ root_url }}</code> 来代替你网站的根目录（域名）。</p>
 
 <h2 id="section-4">2. 主题汉化</h2>
 
@@ -784,9 +938,12 @@ footer: true
 
 <p>打开之后找到如下两行代码：</p>
 
-<p>{% coderay lang:html %}{% raw %}&lt;li&gt;<a href="{{ site.subscribe_rss }}" rel="subscribe-rss" title="subscribe via RSS">RSS</a>&lt;/li&gt;
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
+  <div class="code"><pre><span class="entity">&amp;lt;</span>li<span class="entity">&amp;gt;</span><span class="tag">&lt;a</span> <span class="attribute-name">href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{{ site.subscribe_rss }}</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">rel</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">subscribe-rss</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">title</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">subscribe via RSS</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>RSS<span class="tag">&lt;/a&gt;</span><span class="entity">&amp;lt;</span>/li<span class="entity">&amp;gt;</span>
   …
-<input class="search" type="text" name="q" results="0" placeholder="Search" />{% endraw %}{% endcoderay %}</p>
+<span class="tag">&lt;input</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">search</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">type</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">text</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">name</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">q</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">results</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">0</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">placeholder</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">Search</span><span class="delimiter">&quot;</span></span> <span class="tag">/&gt;</span></pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>把其中的 “subscribe via RSS” 和 “Search” (“pacehoder=” 后面那个) 分别换成「订阅 RSS」和「搜索」即可。</p>
 
@@ -796,19 +953,25 @@ footer: true
 
 <h3 id="section-7">2.3 汉化归档页面</h3>
 
-<p>汉化完导航栏之后，我们打开归档页面 ({% raw %}http://{{ root_url }}/blog/archives{% endraw %})，你会发现这个页面上的日期和分类 (Posted in) 还是用英文显示的。要汉化这个内容，我们应该找到相应的页面文件。</p>
+<p>汉化完导航栏之后，我们打开归档页面 (http://{{ root_url }}/blog/archives)，你会发现这个页面上的日期和分类 (Posted in) 还是用英文显示的。要汉化这个内容，我们应该找到相应的页面文件。</p>
 
 <p>不妨根据我们刚才新建页面时对目录的理解，推测一下它在哪个目录。没错，它应该是在 <code>source/blog/archives</code> 目录下的 <code>index.html</code> 文件。但我们打开这个文件之后，发现并没有日期和分类这两项，不过不要着急，仔细观察，你会发现页面的主体内容部分被如下一句代码所代替：</p>
 
-<p>{% coderay %}{% raw %}{% include archive_post.html %}{% endraw %}{% endcoderay %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
+  <div class="code"><pre>{% include archive_post.html %}</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>也就是说，真正出现文字的地方应该在 <code>archive_post.html</code> 这个文件中。那么哪里去找这个文件呢？你当然可以用搜索功能，但在这里，为了更好的了解目录结构，不妨再推测一下。<code>archive_post.html</code> 前面有个 <code>include</code>，通常用这个命令包含的网页，都在 <code>source/_include</code> 这个目录下。打开这个目录，你果然找到了 <code>archive_post.html</code> ，打开之后会找到如下两行代码：</p>
 
-<p>{% coderay lang:html %}{% raw %}
-<time datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate="">{{ post.date | date: "<span class="month">%b</span> <span class="day">%d</span> <span class="year">%Y</span>"}}</time>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
+  <div class="code"><pre>
+<span class="tag">&lt;time</span> <span class="attribute-name">datetime</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">{{ post.date | datetime | date_to_xmlschema }}</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">pubdate</span>=<span class="string"><span class="delimiter">&quot;</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>{{ post.date | date: &quot;<span class="tag">&lt;span</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">month</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>%b<span class="tag">&lt;/span&gt;</span> <span class="tag">&lt;span</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">day</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>%d<span class="tag">&lt;/span&gt;</span> <span class="tag">&lt;span</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">year</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>%Y<span class="tag">&lt;/span&gt;</span>&quot;}}<span class="tag">&lt;/time&gt;</span>
 …
-<span class="categories">posted in {{ post.categories | category_links }}</span>{% endraw %}
-{% endcoderay %}</p>
+<span class="tag">&lt;span</span> <span class="attribute-name">class</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">categories</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>posted in {{ post.categories | category_links }}<span class="tag">&lt;/span&gt;</span>
+</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>分别做如下替换：”%b” →「%m 月」；”%d” →「%d 日」；”posted in” →「分类：」。</p>
 
@@ -864,17 +1027,23 @@ footer: true
 
 <p>如果我们想让系统自带的这些侧边栏工具显示出来的话，需要在 _config.yml 文件下作相应的设置。比如你想添加 pinboard 的小工具，在 _config.yml 中找到如下代码做相应修改即可：</p>
 
-<p>{% coderay lang:yml %}
-# Pinboard
-pinboard_user: #在这里添加你的 pinboard 用户名
-pinboard_count: 3 #这里的数字是默认现实的 pinboard 书签数量，可以任意修改
-{% endcoderay %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
+  <div class="code"><pre>
+<span class="comment"># Pinboard</span>
+<span class="key">pinboard_user</span>: <span class="comment">#在这里添加你的 pinboard 用户名</span>
+<span class="key">pinboard_count</span>: <span class="string"><span class="content">3</span></span> <span class="comment">#这里的数字是默认现实的 pinboard 书签数量，可以任意修改</span>
+</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>还有一行代码需要注意：</p>
 
-<p>{% coderay lang:yml %}
-default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]
-{% endcoderay %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
+  <div class="code"><pre>
+<span class="key">default_asides</span>: <span class="string"><span class="content">[asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]</span></span>
+</pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>这行代码中，后面给出的页面文件，都是默认显示在侧边栏的小工具，只要你进行了类似上面对 Pinboard 工具的设置，就会出现在侧边栏上。前后顺序代表了出现在侧边栏上的上下顺序，你可以根据需要做相应的修改。</p>
 
@@ -886,10 +1055,13 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 
 <p>到目前为止，我们都忽略了一个博客系统非常重要的组成部分，就是与读者的互动。这需要我们加入一个评论系统。Octopress 默认支持 Disqus 评论系统，你需要先到 disqus.com 注册一个账号。然后在 _config.yml 中找到：</p>
 
-<p>{% coderay lang:yml %}
-# Disqus Comments
-disqus_short_name: 
-disqus_show_comment_count: false {% endcoderay %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="CodeRay">
+  <div class="code"><pre>
+<span class="comment"># Disqus Comments</span>
+<span class="key">disqus_short_name</span>: 
+<span class="key">disqus_show_comment_count</span>: <span class="string"><span class="content">false </span></span></pre></div>
+</div>
+ </figure></notextile></div></p>
 
 <p>填入相关信息即可。</p>
 
