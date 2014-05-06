@@ -1,11 +1,13 @@
 ---
-layout: page
-title: "test"
-author: 郝海龙
+layout: post
+title: "Octopress 教程目录"
+date: 2014-05-06 13:50:25
 comments: true
-sharing: true
-footer: true
+categories: "Octopress"
 ---
+
+经过近十天的撰写，这份被自己当做备忘录的 Octopress 教程终于算是告一段落了，相信遵照这份教程可以生成一个不错的 Octopress 独立博客。当然正如在教程里说的，对于主题的修改是「永远的第二步」，所以我不敢说这份教程已经完成，又或者说永远都不可能完成。姑且把完成的部分的目录放在这里，供大家参考。
+{:.info}
 
 <div class="bordergrey">
 
