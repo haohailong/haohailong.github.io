@@ -51,5 +51,7 @@ footer: true
 * [DINEVER'S BLOG](http://dinever.com) 
 * [Lucifr](http://lucifr.com) 最早是搜 Afred Workflows 的时候发现的。
 * [Coding with TalayHan](http://www.talayhan.net)
+* [Jacky and MSC](http://jackycode.github.io) R-language
+* [数据科学与R语言](http://xccds.github.io) R-language
 
 To be continued.
