@@ -4,7 +4,7 @@
   <title><![CDATA[生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2015-02-27T22:03:14+08:00</updated>
+  <updated>2015-02-27T22:07:27+08:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -2285,7 +2285,7 @@ rake gen_deploy
     <link href="http://shengmingzhiqing.com/blog/Day-One.html/"/>
     <updated>2012-12-15T20:03:00+08:00</updated>
     <id>http://shengmingzhiqing.com/blog/Day-One</id>
-    <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/haohailong/imagebed/master/20121215-Day-One.png" /></p>
+    <content type="html"><![CDATA[<center><img alt="Day One icon" src="https://raw.githubusercontent.com/haohailong/imagebed/master/20121215-Day-One.png" width="256" height="256" /></center>
 
 <p>小学二年级的时候，老师开始强迫我们写日记。就我个人而言，懂事之前被强迫做的事情，绝大多数后来都放弃了。即使重新拣起来，也基本上要等到懂事之后过很长时间，并且认真考虑过这件事情的价值之后，比如<a href="http://haohailong.net/archives/294">记笔记</a>。</p>
 
