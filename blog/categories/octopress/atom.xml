@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Octopress | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-05-26T21:29:43+02:00</updated>
+  <updated>2015-02-27T20:33:05+08:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Octopress 教程目录]]></title>
     <link href="http://shengmingzhiqing.com/blog/octopress-tutorials-toc.html/"/>
-    <updated>2014-05-06T15:50:25+02:00</updated>
+    <updated>2014-05-06T21:50:25+08:00</updated>
     <id>http://shengmingzhiqing.com/blog/octopress-tutorials-toc</id>
     <content type="html"><![CDATA[<p class="info">经过近十天的撰写，这份被自己当做备忘录的 Octopress 教程终于算是告一段落了，相信遵照这份教程可以生成一个不错的 Octopress 独立博客。当然正如在教程里说的，对于主题的修改是「永远的第二步」，所以我不敢说这份教程已经完成，又或者说永远都不可能完成。姑且把完成的部分的目录放在这里，供大家参考。</p>
 <!--more-->
@@ -137,7 +137,7 @@
   <entry>
     <title type="html"><![CDATA[Octopress 精益修改 (5)]]></title>
     <link href="http://shengmingzhiqing.com/blog/octopress-lean-modification-5.html/"/>
-    <updated>2014-05-06T12:31:11+02:00</updated>
+    <updated>2014-05-06T18:31:11+08:00</updated>
     <id>http://shengmingzhiqing.com/blog/octopress-lean-modification-5</id>
     <content type="html"><![CDATA[<ul id="markdown-toc">
   <li><a href="#section">1. 侧边栏显示分类目录</a></li>
@@ -304,7 +304,7 @@ html « “&amp;lt;li <span class="keyword">class</span>=<span class="string"><
   <entry>
     <title type="html"><![CDATA[Octopress 精益修改 (4)]]></title>
     <link href="http://shengmingzhiqing.com/blog/octopress-lean-modification-4.html/"/>
-    <updated>2014-05-05T18:52:14+02:00</updated>
+    <updated>2014-05-06T00:52:14+08:00</updated>
     <id>http://shengmingzhiqing.com/blog/octopress-lean-modification-4</id>
     <content type="html"><![CDATA[<ul id="markdown-toc">
   <li><a href="#coderay-block-">1.  CodeRay Block 代码块插件</a>    <ul>
@@ -581,7 +581,7 @@ bundle install
   <entry>
     <title type="html"><![CDATA[Octopress 精益修改 (3)]]></title>
     <link href="http://shengmingzhiqing.com/blog/octopress-lean-modification-3.html/"/>
-    <updated>2014-05-04T13:38:26+02:00</updated>
+    <updated>2014-05-04T19:38:26+08:00</updated>
     <id>http://shengmingzhiqing.com/blog/octopress-lean-modification-3</id>
     <content type="html"><![CDATA[<ul id="markdown-toc">
   <li><a href="#section">1. 网站布局</a>    <ul>
@@ -767,7 +767,7 @@ bundle install
   <entry>
     <title type="html"><![CDATA[Octopress 精益修改 (2)]]></title>
     <link href="http://shengmingzhiqing.com/blog/octopress-lean-modification-2.html/"/>
-    <updated>2014-05-04T05:41:14+02:00</updated>
+    <updated>2014-05-04T11:41:14+08:00</updated>
     <id>http://shengmingzhiqing.com/blog/octopress-lean-modification-2</id>
     <content type="html"><![CDATA[<ul id="markdown-toc">
   <li><a href="#section">1. 页面相关设置</a>    <ul>

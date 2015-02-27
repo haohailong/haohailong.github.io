@@ -4,7 +4,7 @@
   <title><![CDATA[生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2014-05-26T21:29:43+02:00</updated>
+  <updated>2015-02-27T20:33:05+08:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Octopress 教程目录]]></title>
     <link href="http://shengmingzhiqing.com/blog/octopress-tutorials-toc.html/"/>
-    <updated>2014-05-06T15:50:25+02:00</updated>
+    <updated>2014-05-06T21:50:25+08:00</updated>
     <id>http://shengmingzhiqing.com/blog/octopress-tutorials-toc</id>
     <content type="html"><![CDATA[<p class="info">经过近十天的撰写，这份被自己当做备忘录的 Octopress 教程终于算是告一段落了，相信遵照这份教程可以生成一个不错的 Octopress 独立博客。当然正如在教程里说的，对于主题的修改是「永远的第二步」，所以我不敢说这份教程已经完成，又或者说永远都不可能完成。姑且把完成的部分的目录放在这里，供大家参考。</p>
 <!--more-->
@@ -137,7 +137,7 @@
   <entry>
     <title type="html"><![CDATA[Octopress 精益修改 (5)]]></title>
     <link href="http://shengmingzhiqing.com/blog/octopress-lean-modification-5.html/"/>
-    <updated>2014-05-06T12:31:11+02:00</updated>
+    <updated>2014-05-06T18:31:11+08:00</updated>
     <id>http://shengmingzhiqing.com/blog/octopress-lean-modification-5</id>
     <content type="html"><![CDATA[<ul id="markdown-toc">
   <li><a href="#section">1. 侧边栏显示分类目录</a></li>
@@ -310,7 +310,7 @@ html &lt;&lt; <span class="string"><span class="delimiter">&quot;</span><span cl
   <entry>
     <title type="html"><![CDATA[Octopress 精益修改 (4)]]></title>
     <link href="http://shengmingzhiqing.com/blog/octopress-lean-modification-4.html/"/>
-    <updated>2014-05-05T18:52:14+02:00</updated>
+    <updated>2014-05-06T00:52:14+08:00</updated>
     <id>http://shengmingzhiqing.com/blog/octopress-lean-modification-4</id>
     <content type="html"><![CDATA[<ul id="markdown-toc">
   <li><a href="#coderay-block-">1.  CodeRay Block 代码块插件</a>    <ul>
@@ -589,7 +589,7 @@ bundle install
   <entry>
     <title type="html"><![CDATA[Octopress 精益修改 (3)]]></title>
     <link href="http://shengmingzhiqing.com/blog/octopress-lean-modification-3.html/"/>
-    <updated>2014-05-04T13:38:26+02:00</updated>
+    <updated>2014-05-04T19:38:26+08:00</updated>
     <id>http://shengmingzhiqing.com/blog/octopress-lean-modification-3</id>
     <content type="html"><![CDATA[<ul id="markdown-toc">
   <li><a href="#section">1. 网站布局</a>    <ul>
@@ -775,7 +775,7 @@ bundle install
   <entry>
     <title type="html"><![CDATA[Octopress 精益修改 (2)]]></title>
     <link href="http://shengmingzhiqing.com/blog/octopress-lean-modification-2.html/"/>
-    <updated>2014-05-04T05:41:14+02:00</updated>
+    <updated>2014-05-04T11:41:14+08:00</updated>
     <id>http://shengmingzhiqing.com/blog/octopress-lean-modification-2</id>
     <content type="html"><![CDATA[<ul id="markdown-toc">
   <li><a href="#section">1. 页面相关设置</a>    <ul>
@@ -1093,7 +1093,7 @@ footer: true
   <entry>
     <title type="html"><![CDATA[Octopress 精益修改 (1)]]></title>
     <link href="http://shengmingzhiqing.com/blog/octopress-lean-modification-1.html/"/>
-    <updated>2014-04-29T01:31:59+02:00</updated>
+    <updated>2014-04-29T07:31:59+08:00</updated>
     <id>http://shengmingzhiqing.com/blog/octopress-lean-modification-1</id>
     <content type="html"><![CDATA[<ul id="markdown-toc">
   <li><a href="#section">1. 永远的第二步</a></li>
@@ -1440,7 +1440,7 @@ git push origin source
   <entry>
     <title type="html"><![CDATA[Octopress 搭建流程 – Github Pages]]></title>
     <link href="http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/"/>
-    <updated>2014-04-28T06:33:33+02:00</updated>
+    <updated>2014-04-28T12:33:33+08:00</updated>
     <id>http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages</id>
     <content type="html"><![CDATA[<p class="info">本文介绍如何在 Github Pages 上搭建 Octopress 博客，主要针对 IT 外行人士。科普文章用词未必精确，行家里手请不要太在意。主要参考 <a href="http://octopress.org/">Octopress 官网</a>安装教程。<br />
 对了，我用的是 Mac，Windows 我不熟，我只知道 IE 浏览器。</p>
@@ -1811,7 +1811,7 @@ rake gen_deploy
   <entry>
     <title type="html"><![CDATA[Octopress 每个人都该为自己打造专属的写作环境]]></title>
     <link href="http://shengmingzhiqing.com/blog/everybody-should-build-his-own-writing-space.html/"/>
-    <updated>2014-04-27T00:00:00+02:00</updated>
+    <updated>2014-04-27T00:00:00+08:00</updated>
     <id>http://shengmingzhiqing.com/blog/everybody-should-build-his-own-writing-space</id>
     <content type="html"><![CDATA[<ul id="markdown-toc">
   <li><a href="#section">我的博客史</a></li>
@@ -1921,7 +1921,7 @@ rake gen_deploy
   <entry>
     <title type="html"><![CDATA[比特币问答录]]></title>
     <link href="http://shengmingzhiqing.com/blog/Bitcoin-QnA.html/"/>
-    <updated>2014-04-23T00:57:00+02:00</updated>
+    <updated>2014-04-23T00:57:00+08:00</updated>
     <id>http://shengmingzhiqing.com/blog/Bitcoin-QnA</id>
     <content type="html"><![CDATA[<p class="info">本文作者参与比特币经济活动的主要目的是实践自己的理想，所有关于比特币的看法都基于这个前提，不作为投资和投机建议。警告：伴随高收益的永远是高风险。 </p>
 
@@ -2108,7 +2108,7 @@ rake gen_deploy
   <entry>
     <title type="html"><![CDATA[第一份 LaTeX 作业心得]]></title>
     <link href="http://shengmingzhiqing.com/blog/Gain-from-LaTeX-homeowork-1.html/"/>
-    <updated>2013-11-24T03:03:00+01:00</updated>
+    <updated>2013-11-24T03:03:00+08:00</updated>
     <id>http://shengmingzhiqing.com/blog/Gain-from-LaTeX-homeowork-1</id>
     <content type="html"><![CDATA[<p>由于工作原因，很多文档需要用 LaTeX 写作。去年曾经花三天时间阅读了 LaTeX 经典文档 <a href="http://mirror.ox.ac.uk/sites/ctan.org/info/lshort/english/lshort.pdf" target="_blank" title="The (Not So) Short Introduction to LaTeX2e"><em>The (Not So) Short Introduction to LaTeX2e</em></a>，但毕竟不是天天用它写文章，一些功能特性很快就忘了。</p>
 
@@ -2179,7 +2179,7 @@ rake gen_deploy
   <entry>
     <title type="html"><![CDATA[比特币是庞氏骗局吗？]]></title>
     <link href="http://shengmingzhiqing.com/blog/Is-Bicoin-a-Ponzi-scheme.html/"/>
-    <updated>2013-07-08T00:00:00+02:00</updated>
+    <updated>2013-07-08T00:00:00+08:00</updated>
     <id>http://shengmingzhiqing.com/blog/Is-Bicoin-a-Ponzi-scheme</id>
     <content type="html"><![CDATA[<p>不是。</p>
 
@@ -2223,7 +2223,7 @@ rake gen_deploy
   <entry>
     <title type="html"><![CDATA[为什么比特币经济圈不是传销组织？]]></title>
     <link href="http://shengmingzhiqing.com/blog/why-bitcoin-is-not-a-pyramid-scheme.html/"/>
-    <updated>2013-07-03T00:00:00+02:00</updated>
+    <updated>2013-07-03T00:00:00+08:00</updated>
     <id>http://shengmingzhiqing.com/blog/why-bitcoin-is-not-a-pyramid-scheme</id>
     <content type="html"><![CDATA[<p>在接到这个题目的约稿之前，打死我也想不到会有人把「比特币」和「传销」扯在一起。把比特币经济圈说成是传销组织，是目前我见过的对比特币最无厘头的指控。但真要回答这个问题，却也不是一件容易的事情，这恰恰是因为比特币和传销相差太大。牛和羊不一样，这应该算是大家的共识。但如果有人觉得这俩是一种生物，并要你证明他们不一样，要证明牛不是一种特殊的羊，羊也不是刷了白漆的牛，就不是给他看看照片就能完事的。毕竟，牛和样在外型上有很多相似的地方，仅从外形要「证明」这件事情似乎真的有难度。而你如果把牛和羊的 DNA 比对结果拿出来给他看，他又会说太艰深了，看不懂。你说这是科学实验证据，他又会说，人家什么都不懂，如果你们这帮科学家联手骗我怎么办？
 <!--more--></p>
@@ -2249,7 +2249,7 @@ rake gen_deploy
   <entry>
     <title type="html"><![CDATA[写给大家看的公钥加密算法原理]]></title>
     <link href="http://shengmingzhiqing.com/blog/public-key-cryptography-for-dummies.html/"/>
-    <updated>2013-07-02T00:00:00+02:00</updated>
+    <updated>2013-07-02T00:00:00+08:00</updated>
     <id>http://shengmingzhiqing.com/blog/public-key-cryptography-for-dummies</id>
     <content type="html"><![CDATA[<p>相信很多朋友和我一样，都有传递情书的经历。在我中小学那个还没有陌陌的时代，写纸条应该算是与女同学建立感情的最佳手段——至少是之一。</p>
 
@@ -2283,7 +2283,7 @@ rake gen_deploy
   <entry>
     <title type="html"><![CDATA[Day One]]></title>
     <link href="http://shengmingzhiqing.com/blog/Day-One.html/"/>
-    <updated>2012-12-15T20:03:00+01:00</updated>
+    <updated>2012-12-15T20:03:00+08:00</updated>
     <id>http://shengmingzhiqing.com/blog/Day-One</id>
     <content type="html"><![CDATA[<p>小学二年级的时候，老师开始强迫我们写日记。就我个人而言，懂事之前被强迫做的事情，绝大多数后来都放弃了。即使重新拣起来，也基本上要等到懂事之后过很长时间，并且认真考虑过这件事情的价值之后，比如<a href="http://haohailong.net/archives/294">记笔记</a>。</p>
 
@@ -2307,7 +2307,7 @@ rake gen_deploy
   <entry>
     <title type="html"><![CDATA[Summary on Chapter 1 of Microeconomic Theory]]></title>
     <link href="http://shengmingzhiqing.com/blog/Summary-on-Chapter-1-of-Microeconomic-Theory.html/"/>
-    <updated>2012-10-21T14:03:00+02:00</updated>
+    <updated>2012-10-21T14:03:00+08:00</updated>
     <id>http://shengmingzhiqing.com/blog/Summary-on-Chapter-1-of-Microeconomic-Theory</id>
     <content type="html"><![CDATA[<p><img src="http://s.olo.la/u3Ww.png" alt="C1 of Microeconomic Theory (Knowledge Structure)" /></p>
 
@@ -2318,9 +2318,9 @@ rake gen_deploy
   <entry>
     <title type="html"><![CDATA[为什么「Enter 键」要被翻译为「回车键」？]]></title>
     <link href="http://shengmingzhiqing.com/blog/why-enter-key-is-huiche-in-chinese.html/"/>
-    <updated>2012-02-19T15:19:00+01:00</updated>
+    <updated>2012-02-19T15:19:00+08:00</updated>
     <id>http://shengmingzhiqing.com/blog/why-enter-key-is-huiche-in-chinese</id>
-    <content type="html"><![CDATA[<p><img src="http://km.support.apple.com/library/APPLE/APPLECARE_ALLGEOS/HT1168/pc-enter.png" /></p>
+    <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/haohailong/imagebed/master/20120219-why-enter-key-is-huiche-in-chinese-1-pc-enter.png" /></p>
 
 <p>自己刚开始使用电脑的时候，英文基础薄弱，只知道在键盘上有一个 “↵+Enter” 的一个键被称为「回车键」，这个键的作用是在写作的时候换行，在做其他事情的时候当做「输入」或者「确认」。至于 “enter” 这个单词与汉语「回车」有什么关系，一直也没有认真思考过。
 <!--more--></p>
@@ -2335,14 +2335,14 @@ rake gen_deploy
 
 <p>不过有句话我还是忍不住想说，既然现在回车键在英文中更多的是 Enter 的作用，在英文中也被称作 Enter 键，在汉语中把这个名称也译过来又何妨？对于电脑老手这可能是无所谓的事情，但这样可以减少新手不少困惑。即便这个键的译名不改，我想作为一个负责任的计算机老师，应该告诉学生这个键的由来并简单介绍 一下 Enter 这个英文单词的含义，这样新手至少不会为「为什么经常做完一个事情就要敲一下回车键？」这样的问题而摸不着头脑了。不幸的是，我所见过的所有计算机老师没有一个给我讲过 enter 的含义。</p>
 
-<p><span class="caption-wrapper"><img class="caption" src="http://km.support.apple.com/library/APPLE/APPLECARE_ALLGEOS/HT1220/return.png" width="" height="" title="Enter Key on Mac" /><span class="caption-text">Enter Key on Mac</span></span></p>
+<p><span class="caption-wrapper"><img class="caption" src="https://raw.githubusercontent.com/haohailong/imagebed/master/20120219-why-enter-key-is-huiche-in-chinese-2-return.png" width="" height="" title="Enter Key on Mac" /><span class="caption-text">Enter Key on Mac</span></span></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Mac 的「剪切」快捷键]]></title>
     <link href="http://shengmingzhiqing.com/blog/cut-shortcut-on-mac.html/"/>
-    <updated>2012-02-06T14:53:00+01:00</updated>
+    <updated>2012-02-06T14:53:00+08:00</updated>
     <id>http://shengmingzhiqing.com/blog/cut-shortcut-on-mac</id>
     <content type="html"><![CDATA[<p>对于大部分 Windows 用户来说，最熟悉的一组快捷键莫过于 Ctrl+X, Ctrl+C, Ctrl+V 了，分别对应与剪贴板相关的三个功能：剪切、复制和粘贴。在 Mac 下 Ctrl 键的大部分功能被 Command 键取代，所以在 Mac 下 Command+X, Command+C, Command+V 也分别是剪切、拷贝<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>和粘贴。但是 Mac 下的 Command+X 的剪切功能却只对于编辑文本有效，也就是说，如果你想通过 Command+X 是无法把文件剪切到剪贴板的。这也是 Mac 系统经常被 Windows 用户诟病的一点。一直以来，Mac 下要实现直接移动文件，无非以下几个方法：</p>
 
@@ -2373,7 +2373,7 @@ rake gen_deploy
   <entry>
     <title type="html"><![CDATA[我们的生活会需要电子书]]></title>
     <link href="http://shengmingzhiqing.com/blog/Our-life-needs-ebooks.html/"/>
-    <updated>2011-11-01T10:24:00+01:00</updated>
+    <updated>2011-11-01T10:24:00+08:00</updated>
     <id>http://shengmingzhiqing.com/blog/Our-life-needs-ebooks</id>
     <content type="html"><![CDATA[<p>高中以前，我一直生活在一个小县城，县城里盛行教育恐怖主义，因此卖得最好的书籍都是教辅参考书，这样的后果就是，书店里除参考书之外也就只剩下四大名著了，当然在一些人眼里四大名著其实也只不过是语文课本参考书目而已。</p>
 
