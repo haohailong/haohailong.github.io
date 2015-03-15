@@ -6,7 +6,7 @@ comments: true
 categories: "思考"
 ---
 
-{% img http://km.support.apple.com/library/APPLE/APPLECARE_ALLGEOS/HT1168/pc-enter.png %}
+{% img https://raw.githubusercontent.com/haohailong/imagebed/master/20120219-why-enter-key-is-huiche-in-chinese-1-pc-enter.png %}
 
 自己刚开始使用电脑的时候，英文基础薄弱，只知道在键盘上有一个 “↵+Enter” 的一个键被称为「回车键」，这个键的作用是在写作的时候换行，在做其他事情的时候当做「输入」或者「确认」。至于 “enter” 这个单词与汉语「回车」有什么关系，一直也没有认真思考过。
 <!--more-->
@@ -21,4 +21,4 @@ categories: "思考"
 
 不过有句话我还是忍不住想说，既然现在回车键在英文中更多的是 Enter 的作用，在英文中也被称作 Enter 键，在汉语中把这个名称也译过来又何妨？对于电脑老手这可能是无所谓的事情，但这样可以减少新手不少困惑。即便这个键的译名不改，我想作为一个负责任的计算机老师，应该告诉学生这个键的由来并简单介绍 一下Enter 这个英文单词的含义，这样新手至少不会为「为什么经常做完一个事情就要敲一下回车键？」这样的问题而摸不着头脑了。不幸的是，我所见过的所有计算机老师没有一个给我讲过 enter 的含义。
 
-{% imgcap http://km.support.apple.com/library/APPLE/APPLECARE_ALLGEOS/HT1220/return.png Enter Key on Mac %}
+{% imgcap https://raw.githubusercontent.com/haohailong/imagebed/master/20120219-why-enter-key-is-huiche-in-chinese-2-return.png Enter Key on Mac %}

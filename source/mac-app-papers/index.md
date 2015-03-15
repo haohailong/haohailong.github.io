@@ -9,7 +9,7 @@ footer: true
 
 <h3>郝海龙</h3>
 
-<center><img alt="" src="http://s.olo.la/nZKU.png" width="256" height="256" /></center>
+<center><img alt="" src="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-0-Papers.app.png" width="256" height="256" /></center>
 <div class="cb-toc"><a>
 </a>
 <h2>目录</h2>
@@ -72,11 +72,11 @@ footer: true
 <h2>1. Papers 简介 (Introduction)</h2>
 <a href="www.papersapp.com">Papers 官网</a>上用这样一句话来描述他们的产品：
 <blockquote>Your personal library of research (如图所示)</blockquote>
-<center><a href="http://s.olo.la/QLvN.png" target="_blank"><img alt="Figure 1.1" src="http://s.olo.la/QLvN.png" width="480" /></a></center>翻译成汉语就是「你的个人科研图书馆」。结合前文，这样一个定位的软件正是我一直以来寻求的东西。
+<center><a href="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_1.1.png" target="_blank"><img alt="Figure 1.1" src="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_1.1.png" width="480" /></a></center>翻译成汉语就是「你的个人科研图书馆」。结合前文，这样一个定位的软件正是我一直以来寻求的东西。
 
 Papers 的界面格局和 Mac 上很多软件类似（如图所示）：
 
-<center><a href="http://s.olo.la/XsKx.png" target="_blank"><img alt="Figure 1.2" src="http://s.olo.la/XsKx.png" width="480" /></a></center>
+<center><a href="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_1.2.png" target="_blank"><img alt="Figure 1.2" src="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_1.2.png" width="480" /></a></center>
 <ul>
 	<li>在软件处在最前方的时候，菜单栏与系统菜单栏集成在一起；</li>
 	<li>软件窗口顶部除了常规的窗口调节的功能按钮之外，有几个不同功能的按钮和标签，具体功能在涉及到的时候再做详细说明；</li>
@@ -97,7 +97,7 @@ Papers 的界面格局和 Mac 上很多软件类似（如图所示）：
 
 那么如果一个文献管理软件可以集成 Google Scholar 搜索并自动导入找到的文献无疑将最大限度的简化文献收集流程，Papers 做到了。点击主窗口左上方那个带有加号的搜索按钮，就会弹出 Papers 功能强大的一体化搜索框，左侧边栏也会有相应变化（如图所示）。
 
-<center><a href="http://s.olo.la/co6u.png" target="_blank"><img alt="Figure 1.3" src="http://s.olo.la/co6u.png" width="480" height="" /></a></center>在这个搜索框中你可以像平时一样简单输入关键词进行搜索，也可以按照你所知的论文信息，比如标题、作者、主题、时间等来进行搜索，同时可以利用一些逻辑联结词对这些条件进行组合以得到更精确的结果。举个简单的例子，我要找一篇标题中含有「Social Science」，作者的姓是「Moor」，同时是 1976 年发布的文章，我可以对搜索框按以下步骤操作：
+<center><a href="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_2.1.png" target="_blank"><img alt="Figure 2.1" src="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_2.1.png" width="480" height="" /></a></center>在这个搜索框中你可以像平时一样简单输入关键词进行搜索，也可以按照你所知的论文信息，比如标题、作者、主题、时间等来进行搜索，同时可以利用一些逻辑联结词对这些条件进行组合以得到更精确的结果。举个简单的例子，我要找一篇标题中含有「Social Science」，作者的姓是「Moor」，同时是 1976 年发布的文章，我可以对搜索框按以下步骤操作：
 <ol>
 	<li>输入「Social Science」，在弹出的菜单中点击「Title」；</li>
 	<li>点击逻辑联结词「AND」；</li>
@@ -106,13 +106,13 @@ Papers 的界面格局和 Mac 上很多软件类似（如图所示）：
 	<li>输入「1976」，然后点击「Year」；</li>
 	<li>点击「Start Search…」。</li>
 </ol>
-<center><a href="http://s.olo.la/X9C7.png" target="_blank"><img alt="Figure 1.4" src="http://s.olo.la/X9C7.png" width="480" /></a></center>然后我就找到了 James Moor 在 1976 年发表的 <em>Rationality and the Social Sciences</em> 这篇论文。
+<center><a href="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_2.2.png" target="_blank"><img alt="Figure 2.2" src="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_2.2.png" width="480" /></a></center>然后我就找到了 James Moor 在 1976 年发表的 <em>Rationality and the Social Sciences</em> 这篇论文。
 
 点击这篇论文，右侧边栏会显示一些基本信息，你可以进一步确认这篇论文是不是你所需要的。如果正是你要的论文，你可以直接点击右侧「Import」按钮，如果有 PDF 可以直接获取，这篇文章的 PDF 版本就会被保存到你的 Papers 中，否则软件会保留一个网页链接，可以等你需要的时候再通过网站要求的方式进行获取（通常是购买）。
 
 如果你用的是学校和研究机构的网络，强烈建议你在搜索之前先在浏览器里登录校园网，同时在 Papers 的「偏好设置」(Preferences …)里设置代理 (proxy)，在下拉菜单中选择你们学校（如图，我选了我自己的学校 ESSEC Business School）。这样，如果你们学校拥有文章所在数据库的权限的话，就可以直接导入 PDF 文档（或者其他支持格式的文档）。
 
-<center><a href="http://s.olo.la/21xQ.png" target="_blank"><img alt="Figure 1.5" src="http://s.olo.la/21xQ.png" width="480" /></a></center>如果你双击某一条搜索结果，你可以看到结果的页面，这个结果页会被直接导入到你的 Papers 当中，导入的效果和你点击 Import 一样。如果结果页面中有全文链接的话，你可以直接点击链接，这样 Papers 会自动用这个文档代替原来的网页文件。
+<center><a href="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_2.3.png" target="_blank"><img alt="Figure 2.3" src="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_2.3.png" width="480" /></a></center>如果你双击某一条搜索结果，你可以看到结果的页面，这个结果页会被直接导入到你的 Papers 当中，导入的效果和你点击 Import 一样。如果结果页面中有全文链接的话，你可以直接点击链接，这样 Papers 会自动用这个文档代替原来的网页文件。
 
 在你双击搜索结果的同时，这条搜索结果会被收藏在左侧边栏的「Pinned Results」那一栏，以便你随后查阅。同时你可以注意到，搜索页的左侧边栏最上面一栏是搜索引擎 (Search Engines)，这里不仅有前面提到的 Google Scholar，还有其他一些不同功能的搜索引擎，你可以根据你的需求来管理和使用。第二栏就是刚刚提到过的「Pinned Results」，你可以理解为一个搜索结果的收藏夹。第三栏是文件导入窗口，点击它会弹出相应的「DropZone」，让你更方便地导入本地资料。最下面一栏是云服务，如果你在使用相应的云服务（目前只有Mendeley 和 Zotero），也可以在这里把存在云中的文件导入 Papers。
 
@@ -124,13 +124,13 @@ Papers 的界面格局和 Mac 上很多软件类似（如图所示）：
 
 如图所示，所有的收集到 Papers 当中的论文都会呈现在主工作区当中。Papers 总共提供了 List、Column、Grid、Cover Flow 四种呈现方式，和 Mac 的 Finder 类似。
 
-<center><a href="http://s.olo.la/ky6Q.png" target="_blank"><img alt="Figure 3.1" src="http://s.olo.la/ky6Q.png" width="480" /></a></center>顶部中央的五个按钮中，前四个分别是四种不同的分类查看方式，分别是资料库 (Library)<a class="footnote" id="fnref:7" title="see footnote" href="#fn:7">[7]</a>、标签 (Labels)、作者 (Authors)、来源 (Sources)，利用它们，你可以用你喜欢的文档属性来快速定位所需文档。第五个按钮是阅读 (Read) 按钮，点击将显示你目前打开的文档，如果你打开了不止一篇文档，将以标签形式呈现，这点和目前大部分网页浏览器类似。
+<center><a href="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_3.1.png" target="_blank"><img alt="Figure 3.1" src="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_3.1.png" width="480" /></a></center>顶部中央的五个按钮中，前四个分别是四种不同的分类查看方式，分别是资料库 (Library)<a class="footnote" id="fnref:7" title="see footnote" href="#fn:7">[7]</a>、标签 (Labels)、作者 (Authors)、来源 (Sources)，利用它们，你可以用你喜欢的文档属性来快速定位所需文档。第五个按钮是阅读 (Read) 按钮，点击将显示你目前打开的文档，如果你打开了不止一篇文档，将以标签形式呈现，这点和目前大部分网页浏览器类似。
 
 主工作区下方是预览窗口，如果你单击鼠标选中了某一篇文档，在这里将显示该文档大概的样子。点击左下方的眼睛按钮可以打开或关闭预览窗口。
 
 无论你选中还是打开某篇特定的文档，右侧边栏始终会显示该文档的相关信息，或者我们用更加精确的名称「元数据 (Metadata)」。所谓元数据，即「Data about data」，也就是用来描述信息的信息，在此，你可以简单理解为一篇文档的属性资料。设置元数据的主要目的就是为了更好的编排电子目录，因此准确和丰富的元数据将是建立一个完善的归档系统的重要前提。鉴于元数据的重要性，我们把它当作是文档整理的起点。在右侧边栏，有四个标签页，分别是总览 (Overview)、信息 (Info)、笔记 (Notes)、动态 (Activity)：每个标签页的主要功能如下：
 
-<center><a href="http://s.olo.la/8hf7.png" target="_blank"><img alt="Figure 3.2" src="http://s.olo.la/8hf7.png" width="480" /></a></center>
+<center><a href="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_3.2.png" target="_blank"><img alt="Figure 3.2" src="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_3.2.png" width="480" /></a></center>
 <ul>
 	<li><strong>总览 (Overview)：</strong>显示该文档的类型 (Type)、标题 (Title)、作者 (Authors)、来源 (Sources)，可以给文档添加修改概要(My Summary)、关键字 (Keyword)，同时还可以把选中的文档放入某个收藏集 (Collection)，也可以给文章按1~5颗星的标准评分，添加颜色 (Color) 和旗标 (Flag)；</li>
 	<li><strong>信息 (Info)：</strong>这里可以修改文档大部分属性，如标题 (Title)、副标题 (Subtitle)、作者(Authors)、类型 (Type)、出版日期 (Published) 等；</li>
@@ -150,7 +150,7 @@ Papers 的界面格局和 Mac 上很多软件类似（如图所示）：
 	<li>我的收藏集 (My Collections)：这里可以新建和设置文献收藏集，这点后文会做具体介绍。</li>
 	<li>归档 (Archive) 和删除 (Delete)：这个不用过多介绍了吧，感谢Gmail让大家知道了什么是归档。<a class="footnote" id="fnref:9" title="see footnote" href="#fn:9">[9]</a></li>
 </ul>
-<center><a href="http://s.olo.la/MJTh.png" target="_blank"><img alt="Figure 3.3" src="http://s.olo.la/MJTh.png" width="480" /></a></center>这里需要重点介绍的是「我的收藏集 (My Collections)」。收藏集分为两种：智能收藏集 (Smart Collection) 和手动收藏集 (Manual Collection)：
+<center><a href="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_3.3.png" target="_blank"><img alt="Figure 3.3" src="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_3.3.png" width="480" /></a></center>这里需要重点介绍的是「我的收藏集 (My Collections)」。收藏集分为两种：智能收藏集 (Smart Collection) 和手动收藏集 (Manual Collection)：
 <ul>
 	<li>手动收藏集 (Manual Collection) 和文件夹类似，可以根据需要手动把一些文章放入该收藏集，比如我建了一个名为「Working On」的手动收藏集，把正在阅读和当前研究所需的文献都放在了里面。除非自己手动修改，否则里面的文献数量和种类不会发生任何变化。</li>
 	<li>智能收藏集 (Smart Collection) 与手动收藏集刚好相反，并不需要你手动添加任何资料。你只需要设定一个特定的规则，无论是已有的文献还是新添加的文献，只要符合这个规则就会被自动添加到该收藏集中。比如我这里设置了一个名为「in Chinese」的智能收藏集，规则是：关键字中包含「CN」。这样的话只要一个文档的关键字中有「CN」，就被自动添加到这个收藏集中。</li>
@@ -163,7 +163,7 @@ Papers 的界面格局和 Mac 上很多软件类似（如图所示）：
 <h2>4. 阅读 (Read)</h2>
 双击某篇文献即可进入阅读模式，这时顶部中央最后一个眼镜状的按钮「阅读 (Read)」会被激活（变蓝）。此时，你依然可以点击其他四个按钮去查阅文献，只要你不关闭这篇文章，再次点击「阅读 (Read)」按钮，你将回到这篇文章的阅读界面。当然你也可以同时打开几篇文档，这时「阅读 (Read)」按钮旁边会显示你打开文章的数量，这几篇文章将会以标签页的形式呈现，与目前大部分网页浏览器类似。点击不同标签页，你可以在打开的几篇文档之间切换。把鼠标移到标签的标题上会出现关闭按钮，点击即可关闭这篇文章。
 
-<center><a href="http://s.olo.la/XESl.png" target="_blank"><img alt="Figure 4" src="http://s.olo.la/XESl.png" width="480" height="" /></a></center>左下角的四个小按钮分别对应了 Papers 的四种不同的标注功能，分别是：
+<center><a href="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_4.png" target="_blank"><img alt="Figure 4" src="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_4.png" width="480" height="" /></a></center>左下角的四个小按钮分别对应了 Papers 的四种不同的标注功能，分别是：
 <ul>
 	<li><strong>添加笔记 (Create a Note)：</strong>点击可以向文章选定位置添加笔记，若无选定位置，将在文章当前页添加笔记；</li>
 	<li><strong>高亮模式 (Highlight Mode)：</strong>点击之后，该按钮将处在激活状态（变蓝），然后再用鼠标或键盘选中内容时，选中的内容将被高亮显示；</li>
@@ -197,23 +197,23 @@ Papers 的界面格局和 Mac 上很多软件类似（如图所示）：
 
 下面我们用一个例子来说明「神奇引用」如何帮助我们快速完成引文编写。假设我正在用 Byword<a class="footnote" id="fnref:12" title="see footnote" href="#fn:12">[12]</a> 撰写一篇名为 Rationality and Economics 的文章，如图所示。
 
-<center><a href="http://s.olo.la/ZPyV.png" target="_blank"><img alt="Figure 5.1" src="http://s.olo.la/ZPyV.png" width="480" /></a></center>现在我需要在图中用橙色苹果 Logo 的位置插入一篇作者为 Hailong Hao 的引文，在橙色五角星的地方插入另一篇作者为 Cédric Tille 的引文。这时，我可以按如下流程操作：
+<center><a href="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_5.1.png" target="_blank"><img alt="Figure 5.1" src="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_5.1.png" width="480" /></a></center>现在我需要在图中用橙色苹果 Logo 的位置插入一篇作者为 Hailong Hao 的引文，在橙色五角星的地方插入另一篇作者为 Cédric Tille 的引文。这时，我可以按如下流程操作：
 <ol>
 	<li>把光标放在苹果logo那个位置；</li>
 	<li>敲击两次 Control 键<a class="footnote" id="fnref:13" title="see footnote" href="#fn:13">[13]</a>激活 Papers 的小窗口，在弹出的搜索框中查找所需文献。因为我的数据库里只有一篇 Hailong Hao 的文章，我直接搜作者名字即可。我们找到了 Hailong Hao 的 <em>International Financial Adjustment</em>，如图所示：
-<center><a href="http://s.olo.la/XBOi.png" target="_blank"><img alt="Figure 5.2" src="http://s.olo.la/XBOi.png" width="480" /></a></center></li>
+<center><a href="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_5.2.png" target="_blank"><img alt="Figure 5.2" src="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_5.2.png" width="480" /></a></center></li>
 	<li>双击找到的论文，将会跳转到下一页，里面有四个选项：插入引用 (Insert Citation)、查找其他文献 (Search Another Paper)、预览 (Quick Look)、在 Papers 中查看 (Show in Papers)，如果你在相同位置需要引用好几篇文献，可以点击第二项，把这些文献全都查找出来之后一次性插入，现在我只需要插入一篇文献，所以我们直接点击第一项「插入引用」，这时就会在文档光标位置出现一个 Papers 特有的 Citekey 标记，类似「{Hao:2013tp}」的形式。
-<center><a href="http://s.olo.la/N35H.png" target="_blank"><img alt="Figure 5.3" src="http://s.olo.la/N35H.png" width="480" /></a></center></li>
+<center><a href="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_5.3.png" target="_blank"><img alt="Figure 5.3" src="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_5.3.png" width="480" /></a></center></li>
 	<li>重复步骤1~3，在五角星位置生成另一篇文章的 Citekey「{Tille:2003vh}」，如图所示。
-<center><a href="http://s.olo.la/KrWN.png" target="_blank"><img alt="Figure 5.4" src="http://s.olo.la/KrWN.png" width="480" /></a></center></li>
+<center><a href="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_5.4.png" target="_blank"><img alt="Figure 5.4" src="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_5.4.png" width="480" /></a></center></li>
 	<li>再次连击 Control 键，我们发现搜索框下面多出了一列菜单（事实上在你第二次插入引文时这列菜单已经出现了），菜单中的选项分别是：格式化手稿 (Format Manuscript)、插入参考文献列表占位符 (Insert Bibliography Placeholder)、选择引文格式 (Select Style)、在 Papers中查看手稿 (Show Manuscript in Papers)、查找文献 (Search Papers)。最后两项的作用不言自明，其他几项的作用请往后看。
-<center><a href="http://s.olo.la/gRUN.png" target="_blank"><img alt="Figrue 5.5" src="http://s.olo.la/gRUN.png" width="480" /></a></center></li>
+<center><a href="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_5.5.png" target="_blank"><img alt="Figrue 5.5" src="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_5.5.png" width="480" /></a></center></li>
 	<li>选择第三项「选择引文格式 (Select Style)」，前面说过，各个学科都有自己惯用的引文格式，这里可以设置你这篇文献希望用什么样的引文格式，如果你像我一样，大部分论文都是某一特定领域的，建议在「Preferences…」中预先设置一个默认的引文格式，比如我选的是 Chicago Style, 这样在你不选的情况下，默认就会是 Chicago Style.
-<center><a href="http://s.olo.la/HyF8.png" target="_blank"><img alt="Figure 5.6" src="http://s.olo.la/HyF8.png" width="480" /></a></center></li>
+<center><a href="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_5.6.png" target="_blank"><img alt="Figure 5.6" src="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_5.6.png" width="480" /></a></center></li>
 	<li>选好引文格式之后，把光标移动到你想插入参考文献的敌方，然后点击「插入参考文献列表占位符 (Insert Bibliography Placeholder)」，然后会在这个位置生成一个形式为「{papers2_bibliography}」的标记，等格式化之后，这里就会生成参考文献列表。如果你的文章本身有 References 的部分，你也可以不插入这个占位符，Papers 可以自动识别。</li>
 	<li>然后点击第一项「格式化手稿 (Format Manuscript)」，这时刚才苹果Logo和五角星的位置分别变成了「(Hao 2013)」和「(Tille 2003)」，参考文献的位置也变成了标准的 Chicago Style 格式的条目，如图所示。</li>
 </ol>
-<center><a href="http://s.olo.la/jGhC.png" target="_blank"><img alt="Figure 5.7" src="http://s.olo.la/jGhC.png" width="480" /></a></center>这样我们在撰写论文的同时就完成了参考文献列表的编写。在这里，有一点需要说明的是，Papers 支持大部分主流文字处理软件，对经济学和理工科论文经常用到的 LaTeX 也有不错的支持。对不同的文字处理软件支持程度也有所不同，具体请参考<a href="http://support.mekentosj.com/kb/read-write-cite/applications-supported-by-magic-citations">官方说明</a>，在这里你也可以看到，即使 Papers 不支持的软件，也可以通过剪贴板的帮助来使用 Papers 引文编写的部分功能。
+<center><a href="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_5.7.png" target="_blank"><img alt="Figure 5.7" src="https://raw.githubusercontent.com/haohailong/imagebed/master/mac-app-papers-Figure_5.7.png" width="480" /></a></center>这样我们在撰写论文的同时就完成了参考文献列表的编写。在这里，有一点需要说明的是，Papers 支持大部分主流文字处理软件，对经济学和理工科论文经常用到的 LaTeX 也有不错的支持。对不同的文字处理软件支持程度也有所不同，具体请参考<a href="http://support.mekentosj.com/kb/read-write-cite/applications-supported-by-magic-citations">官方说明</a>，在这里你也可以看到，即使 Papers 不支持的软件，也可以通过剪贴板的帮助来使用 Papers 引文编写的部分功能。
 
 Papers 也支持通过其他软件，如 BibTeX，MMD 等对引文进行格式化，如果你有这方面的需求，可以在偏好设置中把 Citekey 设置成对应的软件支持的格式。
 

@@ -41,7 +41,7 @@ categories: "Octopress"
 
 2. 找到下图所示的下载链接，按照提示下载并安装。
 	
-	{% img http://s.olo.la/6JZw.png %}
+	{% img https://raw.githubusercontent.com/haohailong/imagebed/master/20140428-setup-octopress-with-github-pages-1-git.png %}
 
 ### 2.2 安装 Ruby [^3]
 
@@ -150,7 +150,7 @@ rake preview
 
 用刚刚注册的 Github 账号登录，然后在点击页面右上角的加号，在弹出菜单中点击 <code>New Repository</code>: 如图所示
 
-{% img http://s.olo.la/9TgX.png %}
+{% img https://raw.githubusercontent.com/haohailong/imagebed/master/20140428-setup-octopress-with-github-pages-2-Repository.png %}
 
 然后会跳转到一个新建库 (Create new repository) 的页面，在<code>Repository name</code>一栏填 <code>[your_username].github.io</code>，[your_username] 是你 Github 上的用户名，请务必按照此格式填写，否则无法在 Github 上部署博客。然后点击 <code>Create repository</code> 按钮提交。
 
