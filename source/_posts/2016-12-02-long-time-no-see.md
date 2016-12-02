@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "关于这个博客"
+title: "好久不见"
 date: 2016-12-02 13:42:30 +0800
 comments: true
 categories: "Misc"
