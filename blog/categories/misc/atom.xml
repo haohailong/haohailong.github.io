@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Misc | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/misc/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2016-12-02T13:36:04+08:00</updated>
+  <updated>2016-12-02T13:54:12+08:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[关于这个博客]]></title>
+    <link href="http://shengmingzhiqing.com/blog/long-time-no-see.html/"/>
+    <updated>2016-12-02T13:42:30+08:00</updated>
+    <id>http://shengmingzhiqing.com/blog/long-time-no-see</id>
+    <content type="html"><![CDATA[<p>这个博客很久没有更新了，前段时间因为 Kloudsec 关停，所以网站访问出现了一些问题。最近突然想起了搭建这个博客时认真的劲头，想想放弃挺可惜的，于是花了一点时间修正了一些解析中的问题，切回了 http 协议。虽然这样可能会降低搜索引擎的抓取权重，但暂时也没有精力去再找一个靠谱的 https 服务。</p>
+
+<p>另外，考虑到 App.net 很久不更新了，删除了原来页面中「断章」这个标签。</p>
+
+<p>在我没有更新的这段时间，我看到自己写的教程给很多朋友提供了帮助，收获了不少感谢，我感到非常开心。</p>
+
+<p>在目前看来，这里将会作为我的一个实验性博客继续存在，虽然自己并非程序员，但我热爱一切酷的东西，编程即是如此。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Summary on Chapter 1 of Microeconomic Theory]]></title>
