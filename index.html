@@ -9,7 +9,7 @@
   <meta name="author" content="郝海龙">
 
   
-  <meta name="description" content="这个博客很久没有更新了，前段时间因为 Kloudsec 关停，所以网站访问出现了一些问题。最近突然想起了搭建这个博客时认真的劲头，想想放弃挺可惜的，于是花了一点时间修正了一些解析中的问题，切回了 http 协议。虽然这样可能会降低搜索引擎的抓取权重，但暂时也没有精力去再找一个靠谱的 https &hellip;">
+  <meta name="description" content="是的，在我司产品经理的逼迫下我用 AppleScript 写了个批量处理 Excel 的 App。主要功能是针对某一文件夹下所有的 Excel 文件，批量「查找和替换」文本，严格对应区分大小写。可能各位在平时处理 Excel 文件也会有用，分享给大家。 （下载地址在文末） 我想说的一些话 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -140,6 +140,73 @@ $(document).bind('DOMNodeInserted', function(event) {
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/excel-text-replacer.html/">Excel 文本批量替换器</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-12-02T15:42:30+08:00" pubdate data-updated="true">2016年12月 2日</time>
+        
+           | <a href="/blog/excel-text-replacer.html/#disqus_thread"
+             data-disqus-identifier="http://shengmingzhiqing.com/blog/excel-text-replacer.html/">评论</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="https://raw.githubusercontent.com/haohailong/imagebed/master/Excel-text-replacer-bg-design-sketch.jpeg" alt="Excel 文本批量替换器 头图" title="Excel 文本批量替换器 头图" /></p>
+
+<p>是的，在我司产品经理的逼迫下我用 AppleScript 写了个批量处理 Excel 的 App。主要功能是针对某一文件夹下所有的 Excel 文件，批量「查找和替换」文本，严格对应区分大小写。可能各位在平时处理 Excel 文件也会有用，分享给大家。</p>
+
+<p>（下载地址在文末）</p>
+
+<h3 id="section">我想说的一些话</h3>
+
+<p>这个应用虽然简单，但对我来说很重要，因为这不仅仅是我写的第一个应用，也印证着我一直以来对于编程的态度：我们每个人都应该学一点编程，并不是为了写出多么高大上的应用，而是为了实实在在解决一些个人遇到的非普遍性的小问题。</p>
+
+<p>事实上，我原本也没有想过要把它打包成一个 App，但想到既然我有这样的需求，那么也会有其他人有同样的需求。于是，这就变成了我的第一个完整打包的 Mac 应用。</p>
+
+<p>而能打包成 App 也要得益于一直以来 <a href="http://weibo.com/ibuick" title="ibuick 的微博">@ibuick</a> <a href="http://weibo.com/tinyfool" title="tinyfool 的微博">@tinyfool</a> <a href="http://weibo.com/leeyoung7" title="有才的微博">@人字拖 2 号</a> 的耳濡目染——主要是耳濡，让我了解到哪怕是 AppleScript 这样的傻瓜式脚本程序也可以打包成完整的应用，在此对他们表示感谢。</p>
+
+<h3 id="section-1">关于图标</h3>
+
+<p><img src="https://raw.githubusercontent.com/haohailong/imagebed/master/Excel-text-replacer.png" alt="Excel 文本批量替换器 Icon" title="Excel 文本批量替换器 Icon" /></p>
+
+<p>也许有人看过昨天 @人字拖 2 号 的「爆料」，上面这款应用的图标是一根用 Sketch 制作的冰棍，这根冰棍其实是我模仿 dribbble 上 <a href="https://dribbble.com/oliverker" title="Oliver Ker 的 dribbble 主页">Oliver Ker 先生</a>的作品，当时是作为设计练习作业做的，因为版权问题，我正式发出来的版本并没有使用这个图标。而是重新绘制了一个图标。</p>
+
+<p>新图标的形状是一个修正液的瓶子，暗示了软件「用新的替换旧的」的意思，X 的图标表示 Excel 文件，而 Correction Script 的标签来自英文表示修正液的词 Correction Fluid。</p>
+
+<p>坦白讲，绘制这个图标并没有花多长时间，但让我有信心能够绘制出这样一个图标，我想感谢 <a href="http://weibo.com/kevinzhow" title="周楷雯 的微博">@周楷雯 Kevin</a>，是他的 Producter 这本书让我觉得其实绘制这些 Logo 没有我想象的那么难。</p>
+
+<h2 id="section-2">注意事项</h2>
+
+<p>程序使用 AppleScript 编写，主要思路是让系统自动依次打开一个文件夹下所有 Excel，并按规则替换。由于没有用到直接读写 Excel 的包，为避免出错，运行过程中最好不要做其他事情。尽管如此，已经可以节约我很长时间了，昨天我处理 90 个文件，大约用了 6 分钟（比上不足，比下有余）。</p>
+
+<p>下载地址：<a href="https://raw.githubusercontent.com/haohailong/imagebed/master/Excel-text-replacer.dmg" title="Excel 文本批量替换器">Excel 文本批量替换器</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -667,85 +734,6 @@ rv = conn.validateaddress(foo)
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/Bitcoin-QnA.html/">比特币问答录</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-04-23T00:57:00+08:00" pubdate data-updated="true">2014年 4月23日</time>
-        
-           | <a href="/blog/Bitcoin-QnA.html/#disqus_thread"
-             data-disqus-identifier="http://shengmingzhiqing.com/blog/Bitcoin-QnA.html/">评论</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p class="info">本文作者参与比特币经济活动的主要目的是实践自己的理想，所有关于比特币的看法都基于这个前提，不作为投资和投机建议。警告：伴随高收益的永远是高风险。 </p>
-
-<ul id="markdown-toc">
-  <li><a href="#section">1. 为什么如此热衷比特币？</a></li>
-  <li><a href="#section-1">2. 如果没有政府担保，凭什么相信这种货币？</a></li>
-  <li><a href="#section-2">3. 既然你觉得政府不靠谱，你的意思是该把所有前都换成比特币？</a></li>
-  <li><a href="#section-3">4. 那比特币到底是一种用什么担保的货币呢？</a></li>
-  <li><a href="#section-4">5. 那如果背后的信用体系崩塌了，岂不就变成一堆无用的二进制数字了？</a></li>
-  <li><a href="#section-5">6. 你是否觉得比特币在未来某一天会消亡？</a></li>
-  <li><a href="#section-6">7. 照你这么说，比特币会威胁到政府的货币发行权，难道政府不会出台措施封禁掉比特币么？</a></li>
-  <li><a href="#section-7">8. 如果大家都用比特币了，政府的税收怎么解决啊？（一个法国人问我的问题）</a></li>
-  <li><a href="#section-8">9. 有人说比特币交易市场有「庞氏骗局」的某些特征，你怎么看？</a></li>
-  <li><a href="#section-9">10. 现在大家对比特币的狂热怎么看着像 17 世纪荷兰的郁金香花球泡沫呢？</a></li>
-  <li><a href="#section-10">11. 挖矿是什么意思？</a></li>
-  <li><a href="#section-11">12. 为什么挖矿越来越难？</a></li>
-  <li><a href="#section-12">13. 什么是矿机？</a></li>
-  <li><a href="#section-13">14. 如果有人用公家电脑挖矿，岂不是空手套白狼？</a></li>
-  <li><a href="#section-14">15. 既然有这种空手套白狼的机会，是不是说明比特币本身有漏洞呢？</a></li>
-  <li><a href="#section-15">16. 既然挖矿难度越来越大，先挖矿的人可以获得更多比特币，这岂非对后进入者不公平？</a></li>
-  <li><a href="#section-16">17. 可是三年前我不知道比特币这个东西啊，也不知道它会这么值钱，我怎么知道要去挖矿？</a></li>
-  <li><a href="#qq-">18. QQ 提供了交流的平台，我没有一天不在用，创造了大量的价值，比特币怎么能比？</a></li>
-  <li><a href="#section-17">19. 挖矿耗费了大量的电力和计算机运算能力，不是浪费资源吗？</a></li>
-  <li><a href="#section-18">20. 为什么说比特币的发行方式更公平？</a></li>
-  <li><a href="#q-">21. 比特币与 Q 币有什么区别？</a></li>
-  <li><a href="#section-19">22. 比特币狂热怎么看着有点像传销？</a></li>
-  <li><a href="#section-20">23. 如何说服楼下卖冰棍的大妈接受比特币支付呢？</a></li>
-  <li><a href="#section-21">24. 卖矿机的人为什么自己不挖矿呢？</a></li>
-  <li><a href="#section-22">25. 中本聪骰子靠不靠谱？</a></li>
-  <li><a href="#section-23">26. 有人说比特币就是电子黄金，你怎么看？</a></li>
-  <li><a href="#section-24">27. 那么比特币究竟哪里和黄金不一样？</a></li>
-  <li><a href="#section-25">28. 你说比特币易于分割，那么最小能分割到什么程度？</a></li>
-  <li><a href="#section-26">29. 比特币交易需要大量算力来确认交易，因此有了所谓的挖矿，可是到 2140 年以后，比特币总量不会再增多了，还有人愿意用自己的算力为别人确认交易吗？</a></li>
-  <li><a href="#section-27">30. 手续费那么少，会有人愿意去为手续费而挖矿吗？</a></li>
-</ul>
-
-<h2 id="section">1. 为什么如此热衷比特币？</h2>
-
-<p>因为他是一种最接近我理想中货币形式的货币：不依靠任何政府或者中央银行机构，完全按照一套固定的生成规则发行。尽管它在我看来可能还有一些缺陷，但我更愿意把它看成是一种自由货币的发端，从这个意义上讲，我把整个比特币经济圈都当成是一场社会实验。实验当然存在失败的可能性，可人类社会也是在不断的试错中发展的。但为了自己的理想做实验是一件幸福的事情，我已经为实验失败做了充足的准备。我的所有关于比特币的看法都是基于这个前提的，所以请不要把我这个系列的文章当作投资建议。非要听投资建议的话，我想说，高风险高收益。比特币的市值几千倍的涨，对应前面那句话，想想风险有多高。</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/Bitcoin-QnA.html/">阅读全文</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; 较早的文章</a>
@@ -776,6 +764,10 @@ rv = conn.validateaddress(foo)
 <section>
   <h1>最新发布</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/excel-text-replacer.html/">Excel 文本批量替换器</a>
+      </li>
     
       <li class="post">
         <a href="/blog/long-time-no-see.html/">好久不见</a>
@@ -813,16 +805,13 @@ rv = conn.validateaddress(foo)
         <a href="/blog/everybody-should-build-his-own-writing-space.html/">Octopress 每个人都该为自己打造专属的写作环境</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/Bitcoin-QnA.html/">比特币问答录</a>
-      </li>
-    
   </ul>
 </section>
 <section>
   <h1>分类目录</h1>
   <ul id="categories">
-  <li class='category'><a href='/blog/categories/bitcoin-slash-bi-te-bi/'>Bitcoin/比特币 (3)</a></li>
+  <li class='category'><a href='/blog/categories/app/'>App (1)</a></li>
+<li class='category'><a href='/blog/categories/bitcoin-slash-bi-te-bi/'>Bitcoin/比特币 (3)</a></li>
 <li class='category'><a href='/blog/categories/it-general/'>IT(General) (1)</a></li>
 <li class='category'><a href='/blog/categories/latex/'>LaTeX (1)</a></li>
 <li class='category'><a href='/blog/categories/mac/'>Mac (2)</a></li>

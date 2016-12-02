@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>系列文章目录 - 生命之氢</title>
+  <title>Excel 文本批量替换器 - 生命之氢</title>
   <meta name="author" content="郝海龙">
 
   
-  <meta name="description" content="系列文章目录 2014年 4月28日 Octopress 系列教程目录 用 Mac 搞学术系列 用 Mac 搞学术之 Papers 郝海龙 2014年 4月28日 本页评论 Please enable JavaScript to view the comments powered by &hellip;">
+  <meta name="description" content="是的，在我司产品经理的逼迫下我用 AppleScript 写了个批量处理 Excel 的 App。主要功能是针对某一文件夹下所有的 Excel 文件，批量「查找和替换」文本，严格对应区分大小写。可能各位在平时处理 Excel 文件也会有用，分享给大家。 （下载地址在文末） 我想说的一些话 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://shengmingzhiqing.com/article-series/index.html">
+  <link rel="canonical" href="http://shengmingzhiqing.com/blog/excel-text-replacer.html/">
   <link href="/favicon.ico" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="生命之氢" type="application/atom+xml">
@@ -139,41 +139,76 @@ $(document).bind('DOMNodeInserted', function(event) {
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">系列文章目录</h1>
-    <p class="meta">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-04-28T20:20:00+08:00" pubdate data-updated="true">2014年 4月28日</time></p>
-  </header>
-  
-  <h2 id="octopress-blogoctopress-tutorials-tochtml"><a href="/blog/octopress-tutorials-toc.html/">Octopress 系列教程目录</a></h2>
-
-<h2 id="mac-">用 Mac 搞学术系列</h2>
-<ul>
-  <li><a href="/mac-app-papers/">用 Mac 搞学术之 Papers</a></li>
-</ul>
-
-  
-    <footer>
+    
+      <h1 class="entry-title">Excel 文本批量替换器</h1>
+    
+    
       <p class="meta">
         
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-12-02T15:42:30+08:00" pubdate data-updated="true">2016年12月 2日</time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://shengmingzhiqing.com">评论</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><img src="https://raw.githubusercontent.com/haohailong/imagebed/master/Excel-text-replacer-bg-design-sketch.jpeg" alt="Excel 文本批量替换器 头图" title="Excel 文本批量替换器 头图" /></p>
+
+<p>是的，在我司产品经理的逼迫下我用 AppleScript 写了个批量处理 Excel 的 App。主要功能是针对某一文件夹下所有的 Excel 文件，批量「查找和替换」文本，严格对应区分大小写。可能各位在平时处理 Excel 文件也会有用，分享给大家。</p>
+
+<p>（下载地址在文末）</p>
+
+<h3 id="section">我想说的一些话</h3>
+
+<p>这个应用虽然简单，但对我来说很重要，因为这不仅仅是我写的第一个应用，也印证着我一直以来对于编程的态度：我们每个人都应该学一点编程，并不是为了写出多么高大上的应用，而是为了实实在在解决一些个人遇到的非普遍性的小问题。</p>
+
+<p>事实上，我原本也没有想过要把它打包成一个 App，但想到既然我有这样的需求，那么也会有其他人有同样的需求。于是，这就变成了我的第一个完整打包的 Mac 应用。</p>
+
+<p>而能打包成 App 也要得益于一直以来 <a href="http://weibo.com/ibuick" title="ibuick 的微博">@ibuick</a> <a href="http://weibo.com/tinyfool" title="tinyfool 的微博">@tinyfool</a> <a href="http://weibo.com/leeyoung7" title="有才的微博">@人字拖 2 号</a> 的耳濡目染——主要是耳濡，让我了解到哪怕是 AppleScript 这样的傻瓜式脚本程序也可以打包成完整的应用，在此对他们表示感谢。</p>
+
+<h3 id="section-1">关于图标</h3>
+
+<p><img src="https://raw.githubusercontent.com/haohailong/imagebed/master/Excel-text-replacer.png" alt="Excel 文本批量替换器 Icon" title="Excel 文本批量替换器 Icon" /></p>
+
+<p>也许有人看过昨天 @人字拖 2 号 的「爆料」，上面这款应用的图标是一根用 Sketch 制作的冰棍，这根冰棍其实是我模仿 dribbble 上 <a href="https://dribbble.com/oliverker" title="Oliver Ker 的 dribbble 主页">Oliver Ker 先生</a>的作品，当时是作为设计练习作业做的，因为版权问题，我正式发出来的版本并没有使用这个图标。而是重新绘制了一个图标。</p>
+
+<p>新图标的形状是一个修正液的瓶子，暗示了软件「用新的替换旧的」的意思，X 的图标表示 Excel 文件，而 Correction Script 的标签来自英文表示修正液的词 Correction Fluid。</p>
+
+<p>坦白讲，绘制这个图标并没有花多长时间，但让我有信心能够绘制出这样一个图标，我想感谢 <a href="http://weibo.com/kevinzhow" title="周楷雯 的微博">@周楷雯 Kevin</a>，是他的 Producter 这本书让我觉得其实绘制这些 Logo 没有我想象的那么难。</p>
+
+<h2 id="section-2">注意事项</h2>
+
+<p>程序使用 AppleScript 编写，主要思路是让系统自动依次打开一个文件夹下所有 Excel，并按规则替换。由于没有用到直接读写 Excel 的包，为避免出错，运行过程中最好不要做其他事情。尽管如此，已经可以节约我很长时间了，昨天我处理 90 个文件，大约用了 6 分钟（比上不足，比下有余）。</p>
+
+<p>下载地址：<a href="https://raw.githubusercontent.com/haohailong/imagebed/master/Excel-text-replacer.dmg" title="Excel 文本批量替换器">Excel 文本批量替换器</a></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
   
 
 <span class="byline author vcard"><span class="fn">郝海龙</span></span>
 
-        
+      
 
 
 
@@ -185,23 +220,39 @@ $(document).bind('DOMNodeInserted', function(event) {
   
 
 
-<time datetime="2014-04-28T20:20:00+08:00" pubdate data-updated="true">2014年 4月28日</time>
-        
-      </p>
+<time datetime="2016-12-02T15:42:30+08:00" pubdate data-updated="true">2016年12月 2日</time>
       
-        <div class="sharing">
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/app/'>App</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
   
   
   
 </div>
 
+    
+    <p class="meta">
       
-    </footer>
-  
+        <a class="basic-alignment left" href="/blog/long-time-no-see.html/" title="Previous Post: 好久不见">&laquo; 好久不见</a>
+      
+      
+    </p>
+      <section class="postrevision">
+	<ul></ul>
+</section>
+  </footer>
 </article>
 
   <section>
-    <h2>本页评论</h2>
+    <h2>本文评论</h2>
     <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
   </section>
@@ -308,8 +359,8 @@ $(document).bind('DOMNodeInserted', function(event) {
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://shengmingzhiqing.com/article-series/index.html';
-        var disqus_url = 'http://shengmingzhiqing.com/article-series/index.html';
+        var disqus_identifier = 'http://shengmingzhiqing.com/blog/excel-text-replacer.html/';
+        var disqus_url = 'http://shengmingzhiqing.com/blog/excel-text-replacer.html/';
         var disqus_script = 'embed.js';
       
     (function () {
