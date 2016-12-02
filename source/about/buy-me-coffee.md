@@ -14,11 +14,11 @@ footer: true
 
 **你可以用支付宝客户端扫描以下二维码请我喝咖啡：**
 
-![支付宝请我喝咖啡](https://github.com/haohailong/imagebed/raw/master/20161202-alipay.JPG)
+![支付宝请我喝咖啡](https://raw.githubusercontent.com/haohailong/imagebed/master/20161202-alipay.JPG)
 
 **你可以用微信客户端扫描以下二维码请我喝咖啡：**
 
-![微信请我喝咖啡](https://github.com/haohailong/imagebed/raw/master/20161202-wechat-pay.JPG)
+![微信请我喝咖啡](https://raw.githubusercontent.com/haohailong/imagebed/master/20161202-wechat-pay.JPG)
 
 **你可以向我捐赠比特币来支持我，我的比特币收款地址是：**
 
