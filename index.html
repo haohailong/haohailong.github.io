@@ -9,7 +9,7 @@
   <meta name="author" content="郝海龙">
 
   
-  <meta name="description" content="是的，在我司产品经理的逼迫下我用 AppleScript 写了个批量处理 Excel 的 App。主要功能是针对某一文件夹下所有的 Excel 文件，批量「查找和替换」文本，严格对应区分大小写。可能各位在平时处理 Excel 文件也会有用，分享给大家。 （下载地址在文末） 我想说的一些话 &hellip;">
+  <meta name="description" content="刚开始用 Twitter 时，我只是把它当作一个树洞。当然这个树洞很多时候不是为了倾诉一些难以启齿的秘密，而是想把一些不吐不快而又没有太多人会听的话放到一个公开场合，体验一种「也许可能有人会看」的奇妙感觉。后来 Twitter 上的关注者多了起来，发出去的信息居然也有了回音， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -140,6 +140,86 @@ $(document).bind('DOMNodeInserted', function(event) {
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/how-to-sync-weibo-and-twitter-with-wall.html/">如何实现不翻墙同时发送微博和 Twitter</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-12-18T13:09:31+08:00" pubdate data-updated="true">2016年12月18日</time>
+        
+           | <a href="/blog/how-to-sync-weibo-and-twitter-with-wall.html/#disqus_thread"
+             data-disqus-identifier="http://shengmingzhiqing.com/blog/how-to-sync-weibo-and-twitter-with-wall.html/">评论</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>刚开始用 Twitter 时，我只是把它当作一个树洞。当然这个树洞很多时候不是为了倾诉一些难以启齿的秘密，而是想把一些不吐不快而又没有太多人会听的话放到一个公开场合，体验一种「也许可能有人会看」的奇妙感觉。后来 Twitter 上的关注者多了起来，发出去的信息居然也有了回音，转而觉得这种互动也很好玩，渐渐地也成了我使用 Twitter 以及它在国内的模仿者「微博」的主要理由。既然很多时候是为了互动，为了获取回应，那么自然是越多人能够看到你的微博（Tweets）越好。同步发送微博和 Twitter 就成了我非常渴望的得到的一项服务，可是，由于众所周知的原因，国内提供这样服务的平台几乎已经找不着了。</p>
+
+<p>于是我开始自己摸索如何才能在本地实现这一点。首先，我想到了 iPhone 上著名的自动化应用 Launch Center Pro (LCP)，也确实找到了直接用它发布 Twitter 的功能，然后，我试着做了一些整合，最终可以实现只输入一次文字，然后发送到微博和 Twitter 的功能。只是，这个流程还是存在一些问题：</p>
+
+<ol>
+  <li>发布 Twitter 依然需要科学上网（这当然是我们特有的问题）；</li>
+  <li>在发布时，需要先按确认发布到 Twitter，然后利用 iOS 的 Share Sheets 分享到微博，本身就需要确认两次不说，Share Sheets 中寻找微博也是一种不太爽的体验。</li>
+</ol>
+
+<p>第一个问题很好解决，可以通过 IFTTT 做一个中转，然后实现不翻墙发布 Twitter，如果有需要，可以使用以下 Recipe：</p>
+
+<blockquote>
+  <p><strong>推倒墙：https://ifttt.com/applets/264287p-</strong>
+注：需要在 LCP 中使用名为“tuidaoqiang”的 Trigger</p>
+</blockquote>
+
+<p>但在我遇到这个问题的时候，IFTTT 还没有原生支持微博，自己又确实不会编程，于是第二个问题搁置了很久。</p>
+
+<p>前一段时间，IFTTT 终于支持了微博（Weibo）Channel，我突然觉得似乎已经不需要 LCP 这么麻烦了，我只需要发一条微博直接同步到 Twitter 上（或者反过来）即可。但使用了一下发现，同步的过程会有各种各样的问题，因为字数限制不一样，标签样式不一样，或者是否添加图片的原因等等。而我自己一般只需要同步纯文字的内容，这就让我又想起了使用 LCP 完成我之前的想法。基本步骤及原理如下：</p>
+
+<ol>
+  <li>在 LCP 中触发一个 Action，弹出一个文本输入框，在该文本输入框中输入想要发布的内容；</li>
+  <li>将第 1 步中的内容拷贝到剪贴板；</li>
+  <li>将剪贴板内容通过 IFTTT 发布到微博；</li>
+  <li>将剪贴板内容通过 IFTTT （推倒墙）发布到 Twitter。</li>
+</ol>
+
+<p>整个过程只需要输入一次文本，点击一次确认（Launch），就可以同时将内容发布到微博和 Twitter——并且——不用翻墙。当然，如果你想看 Twitter 上的反馈，还是需要科学上网。</p>
+
+<p>要实现以上这个流程并不困难，具体操作方法如下：</p>
+
+<ol>
+  <li>在 IFTTT 中添加 Recipe–weiboit，以实现上述步骤中第三步。<strong>weiboit 获取地址：https://ifttt.com/applets/264288p-weiboit</strong></li>
+  <li>在 IFTTT 中添加 Recipe–推倒墙，以实现上述步骤中第四步。<strong>「推倒墙」获取地址：https://ifttt.com/applets/264287p-</strong></li>
+  <li>在 Launch Center Pro 中添加 Action<strong>「快速微博推」：https://launchcenterpro.com/qqjhp5</strong>（如果你手机上已经安装了 Launch Center Pro，可以直接用手机打开这个链接安装）。</li>
+</ol>
+
+<p>至此，你就可以和我一样在不翻墙的情况下「同步」发布文字版微博和 Twitter 了。使用同样地原理，你也可以实现同步发送微博、Twitter、Facebook、App.net 等，感兴趣的话可以自己试试。</p>
+
+<p>郝海龙<br />
+2015 年 9 月 13 日<br />
+2016 年 12 月 18 日 微调</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -681,59 +761,6 @@ rv = conn.validateaddress(foo)
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/everybody-should-build-his-own-writing-space.html/">Octopress 每个人都该为自己打造专属的写作环境</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-04-27T00:00:00+08:00" pubdate data-updated="true">2014年 4月27日</time>
-        
-           | <a href="/blog/everybody-should-build-his-own-writing-space.html/#disqus_thread"
-             data-disqus-identifier="http://shengmingzhiqing.com/blog/everybody-should-build-his-own-writing-space.html/">评论</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><ul id="markdown-toc">
-  <li><a href="#section">我的博客史</a></li>
-  <li><a href="#section-1">每个人都该为自己打造专属的写作环境</a></li>
-  <li><a href="#wordpress--octopress">WordPress &amp; Octopress</a></li>
-  <li><a href="#octopress-">关于 Octopress 搭建</a></li>
-</ul>
-
-<h2 id="section">我的博客史</h2>
-
-<p>每次搭建新博客都想把自己写博客的历史回顾一遍，这次索性来个彻底回顾，直接从最早接触互联网说起吧。</p>
-
-<p>如果没有记错，2000 年在家乡的一个网吧第一次接触互联网。当我试着把从杂志上抄来的瓦斯科达伽马足球俱乐部的官方首页输入 IE 地址栏时，我并不相信五分钟后竟然能将页面显示出来。</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/everybody-should-build-his-own-writing-space.html/">阅读全文</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; 较早的文章</a>
@@ -764,6 +791,10 @@ rv = conn.validateaddress(foo)
 <section>
   <h1>最新发布</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/how-to-sync-weibo-and-twitter-with-wall.html/">如何实现不翻墙同时发送微博和 Twitter</a>
+      </li>
     
       <li class="post">
         <a href="/blog/excel-text-replacer.html/">Excel 文本批量替换器</a>
@@ -801,10 +832,6 @@ rv = conn.validateaddress(foo)
         <a href="/blog/setup-octopress-with-github-pages.html/">Octopress 搭建流程 – Github Pages</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/everybody-should-build-his-own-writing-space.html/">Octopress 每个人都该为自己打造专属的写作环境</a>
-      </li>
-    
   </ul>
 </section>
 <section>
@@ -817,6 +844,7 @@ rv = conn.validateaddress(foo)
 <li class='category'><a href='/blog/categories/mac/'>Mac (2)</a></li>
 <li class='category'><a href='/blog/categories/misc/'>Misc (2)</a></li>
 <li class='category'><a href='/blog/categories/octopress/'>Octopress (8)</a></li>
+<li class='category'><a href='/blog/categories/tips/'>Tips (1)</a></li>
 <li class='category'><a href='/blog/categories/si-kao/'>思考 (2)</a></li>
 
   </ul>
