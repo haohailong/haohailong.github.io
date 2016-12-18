@@ -4,7 +4,7 @@
   <title><![CDATA[生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2016-12-18T13:50:34+08:00</updated>
+  <updated>2016-12-18T13:57:27+08:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -114,6 +114,38 @@
 <p>在我没有更新的这段时间，我看到自己写的教程给很多朋友提供了帮助，收获了不少感谢，我感到非常开心。</p>
 
 <p>在目前看来，这里将会作为我的一个实验性博客继续存在，虽然自己并非程序员，但我热爱一切酷的东西，编程即是如此。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Mac-Spelling-Check]]></title>
+    <link href="http://shengmingzhiqing.com/blog/mac-spelling-check.html/"/>
+    <updated>2015-08-12T13:53:04+08:00</updated>
+    <id>http://shengmingzhiqing.com/blog/mac-spelling-check</id>
+    <content type="html"><![CDATA[<h1 id="mac-">如何为 Mac 拼写检查设置默认语言</h1>
+
+<p><img src="https://raw.githubusercontent.com/haohailong/imagebed/master/20150817-Mac-Spelling-Check.png" alt="Mac-Spelling-Check" title="Mac-Spelling-Check" /></p>
+
+<p>对于大多数西文写作者来说，Mac 有一个非常重要但也经常被大家忽视的功能，即全局拼写检查。拿英文来说，在几乎所有能输入文字的地方，Mac 都可以提供即时的拼写检查（甚至自动更正）。</p>
+
+<p>由于自己所从事工作的原因，经常需要撰写或校对一些英文文件，这个时候拼写检查的功能对我来说就尤为重要：不仅能节约时间，而且检查的效果也更为精确。但我总面临一个很诡异的问题：不知为何，系统自动识别语言时，总是把我的英文识别为「英式英文」。而我的大多数文档都是用美式英文撰写的，这样在我的电脑上一些典型的美式拼法总是会被识别为错误。比如题图中 Recognize 这个词。</p>
+
+<p>之前我采用了一个比较笨的解决办法，就是手动设置拼写检查语言。于是我不得不在每次撰写或校对文章前，先依次点击 Edit → Spelling and Grammar → Show Spelling and Grammar（中文系统为「编辑 → 拼写和语法 → 显示拼写和语法」），把语言设为 U. S. English. </p>
+
+<p><img src="https://raw.githubusercontent.com/haohailong/imagebed/master/20150817-Mac-Spelling-Check-1.png" alt="Mac-Spelling-Check-1" title="Mac-Spelling-Check-1" /></p>
+
+<p>但我想这事肯定有比较简便的解决方案，毕竟美国人不可能使用英式英语的拼写检查规则，他们肯定也不用每写一篇新文章就调整一次。于是，我开始在网上搜索解决方案，结果解决方案没找到，却发现了很多人和我有相同的问题，比如某英国人希望把默认的拼写检查语言设为「英式英语」，但他的系统默认却是「美式英语」。不过这件事提醒我系统确实存在着默认拼写检查语言这样一种东西。</p>
+
+<p>于是我开始在系统偏好设置（System Preferences）里面找，结果竟然毫不费力就找到了设置方法。我直接在 System Preferences 的搜索框中搜索 Spelling（中文系统可以试试搜「拼写」），发现在 Keyboard （中文系统为「键盘 」）的 Text （中文系统为「文本」）选项卡下，点击 Spelling （拼写）下面的下拉菜单，即可设置默认的拼写检查语言。</p>
+
+<p><img src="https://raw.githubusercontent.com/haohailong/imagebed/master/20150817-Mac-Spelling-Check-2.png" alt="Mac-Spelling-Check-2" title="Mac-Spelling-Check-2" /></p>
+
+<p>如果英文并不是你使用的唯一拼音文字，你可以和我一样选择保留系统的自动识别语言（Automatic by Language），然后在 Set up … （设置）下面选择 U. S. English 作为默认的英文。这样在纯英文的环境下，默认使用美式英语作为拼写检查标准，而在其他拼音文字的环境下，也会根据特定的语言进行调整。</p>
+
+<p><img src="https://raw.githubusercontent.com/haohailong/imagebed/master/20150817-Mac-Spelling-Check-3.png" alt="Mac-Spelling-Check-3" title="Mac-Spelling-Check-3" /></p>
+
+<p>郝海龙<br />
+2015 年 8 月 12 日</p>
 ]]></content>
   </entry>
   
@@ -2453,30 +2485,6 @@ rake gen_deploy
     <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/haohailong/imagebed/master/20121021-Summary-on-Chapter-1-of-Microeconomic-Theory.png" alt="C1 of Microeconomic Theory (Knowledge Structure)" /></p>
 
 <p>刚刚考完微观经济学导论（Introduction to Economics），不如趁热打铁对知识做个梳理。我们用的是经典的微观经济学教材马斯科勒的《微观经济理论》，这是我做的第一章的知识结构图。另，OmniGraffle 太好用了。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[为什么「Enter 键」要被翻译为「回车键」？]]></title>
-    <link href="http://shengmingzhiqing.com/blog/why-enter-key-is-huiche-in-chinese.html/"/>
-    <updated>2012-02-19T15:19:00+08:00</updated>
-    <id>http://shengmingzhiqing.com/blog/why-enter-key-is-huiche-in-chinese</id>
-    <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/haohailong/imagebed/master/20120219-why-enter-key-is-huiche-in-chinese-1-pc-enter.png" /></p>
-
-<p>自己刚开始使用电脑的时候，英文基础薄弱，只知道在键盘上有一个 “↵+Enter” 的一个键被称为「回车键」，这个键的作用是在写作的时候换行，在做其他事情的时候当做「输入」或者「确认」。至于 “enter” 这个单词与汉语「回车」有什么关系，一直也没有认真思考过。
-<!--more--></p>
-
-<p>一些电脑初学者也曾问我为什么 “enter” 被翻译成「回车」，由于觉得这个问题并不是很重要，我总是含糊其辞的说这是个计算机术语，或者告诉他「也许和换行回到一行的开头有关系」。虽说后来我知道这个猜测八九不离十，但事实上我一直对自己这个推测没有太大信心。</p>
-
-<p>直到去年买了一台苹果电脑 (MacBook Pro)，才发现在我们熟悉的回车键上印着另一个英文名称 “Return” 。一个更加明显的答案出现了，其实「回车」并不是 “Enter” 的翻译，而是 “return” 的翻译。这个 return 其实指的是 “↵+Enter” 中箭头的意思，换言之，Enter 并不是“↵”的一个解释，严格讲 “enter” 和“↵”是这个键的两种不同的名称，也即两个不同的用途。</p>
-
-<p>那为什么这个键要被翻译为「回车」，而不是 enter 的意思「输入」或者「进入」呢？毕竟我们在日常使用的时候，这个键 Enter 的作用使用的更广泛一些，而 Return 的作用貌似只有在打字的时候能用到。</p>
-
-<p>其实这就是和打字有关。现代电脑键盘是从过去的打字机上继承过来的。在过去的机械打字机上有个部件叫「字车」，每打一个字符，字车前进一格，打完一行后，我们需要让字车回到起始位置，而 “Return” 键最早就是这个作用，因此被翻译为「回车」。尽管后来回车键的作用已经不止倒回字车那么简单，但这个译名一直被保留下来。</p>
-
-<p>不过有句话我还是忍不住想说，既然现在回车键在英文中更多的是 Enter 的作用，在英文中也被称作 Enter 键，在汉语中把这个名称也译过来又何妨？对于电脑老手这可能是无所谓的事情，但这样可以减少新手不少困惑。即便这个键的译名不改，我想作为一个负责任的计算机老师，应该告诉学生这个键的由来并简单介绍 一下 Enter 这个英文单词的含义，这样新手至少不会为「为什么经常做完一个事情就要敲一下回车键？」这样的问题而摸不着头脑了。不幸的是，我所见过的所有计算机老师没有一个给我讲过 enter 的含义。</p>
-
-<p><span class="caption-wrapper"><img class="caption" src="https://raw.githubusercontent.com/haohailong/imagebed/master/20120219-why-enter-key-is-huiche-in-chinese-2-return.png" width="" height="" title="Enter Key on Mac" /><span class="caption-text">Enter Key on Mac</span></span></p>
 ]]></content>
   </entry>
   
