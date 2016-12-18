@@ -1,12 +1,10 @@
 ---
 layout: post
-title: "Mac-Spelling-Check"
+title: "如何为 Mac 拼写检查设置默认语言"
 date: 2015-08-12 13:53:04 +0800
 comments: true
 categories: 
 ---
-
-# 如何为 Mac 拼写检查设置默认语言
 
 ![Mac-Spelling-Check](https://raw.githubusercontent.com/haohailong/imagebed/master/20150817-Mac-Spelling-Check.png "Mac-Spelling-Check")
 
