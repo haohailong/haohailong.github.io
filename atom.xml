@@ -4,7 +4,7 @@
   <title><![CDATA[生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2016-12-18T15:52:33+08:00</updated>
+  <updated>2016-12-18T16:07:06+08:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -120,13 +120,11 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Mac-Spelling-Check]]></title>
+    <title type="html"><![CDATA[如何为 Mac 拼写检查设置默认语言]]></title>
     <link href="http://shengmingzhiqing.com/blog/mac-spelling-check.html/"/>
     <updated>2015-08-12T13:53:04+08:00</updated>
     <id>http://shengmingzhiqing.com/blog/mac-spelling-check</id>
-    <content type="html"><![CDATA[<h1 id="mac-">如何为 Mac 拼写检查设置默认语言</h1>
-
-<p><img src="https://raw.githubusercontent.com/haohailong/imagebed/master/20150817-Mac-Spelling-Check.png" alt="Mac-Spelling-Check" title="Mac-Spelling-Check" /></p>
+    <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/haohailong/imagebed/master/20150817-Mac-Spelling-Check.png" alt="Mac-Spelling-Check" title="Mac-Spelling-Check" /></p>
 
 <p>对于大多数西文写作者来说，Mac 有一个非常重要但也经常被大家忽视的功能，即全局拼写检查。拿英文来说，在几乎所有能输入文字的地方，Mac 都可以提供即时的拼写检查（甚至自动更正）。</p>
 
