@@ -4,7 +4,7 @@
   <title><![CDATA[分类：Tips | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/tips/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2016-12-18T13:57:27+08:00</updated>
+  <updated>2016-12-18T14:12:57+08:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -20,7 +20,8 @@
     <id>http://shengmingzhiqing.com/blog/how-to-sync-weibo-and-twitter-with-wall</id>
     <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/haohailong/imagebed/master/20150914-weibo-twitter.png" alt="微博+twitter" title="微博+twitter" /></p>
 
-<p>刚开始用 Twitter 时，我只是把它当作一个树洞。当然这个树洞很多时候不是为了倾诉一些难以启齿的秘密，而是想把一些不吐不快而又没有太多人会听的话放到一个公开场合，体验一种「也许可能有人会看」的奇妙感觉。后来 Twitter 上的关注者多了起来，发出去的信息居然也有了回音，转而觉得这种互动也很好玩，渐渐地也成了我使用 Twitter 以及它在国内的模仿者「微博」的主要理由。既然很多时候是为了互动，为了获取回应，那么自然是越多人能够看到你的微博（Tweets）越好。同步发送微博和 Twitter 就成了我非常渴望的得到的一项服务，可是，由于众所周知的原因，国内提供这样服务的平台几乎已经找不着了。</p>
+<p>刚开始用 Twitter 时，我只是把它当作一个树洞。当然这个树洞很多时候不是为了倾诉一些难以启齿的秘密，而是想把一些不吐不快而又没有太多人会听的话放到一个公开场合，体验一种「也许可能有人会看」的奇妙感觉。后来 Twitter 上的关注者多了起来，发出去的信息居然也有了回音，转而觉得这种互动也很好玩，渐渐地也成了我使用 Twitter 以及它在国内的模仿者「微博」的主要理由。既然很多时候是为了互动，为了获取回应，那么自然是越多人能够看到你的微博（Tweets）越好。同步发送微博和 Twitter 就成了我非常渴望的得到的一项服务，可是，由于众所周知的原因，国内提供这样服务的平台几乎已经找不着了（更新：大家也可以试试 <a href="https://weibo.com/erinsnowanmin">@爱尔兰_雪</a> 的 P.cat，20161218）。
+<!--more--></p>
 
 <p>于是我开始自己摸索如何才能在本地实现这一点。首先，我想到了 iPhone 上著名的自动化应用 Launch Center Pro (LCP)，也确实找到了直接用它发布 Twitter 的功能，然后，我试着做了一些整合，最终可以实现只输入一次文字，然后发送到微博和 Twitter 的功能。只是，这个流程还是存在一些问题：</p>
 

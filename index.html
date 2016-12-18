@@ -174,50 +174,13 @@ $(document).bind('DOMNodeInserted', function(event) {
 
   <div class="entry-content"><p><img src="https://raw.githubusercontent.com/haohailong/imagebed/master/20150914-weibo-twitter.png" alt="微博+twitter" title="微博+twitter" /></p>
 
-<p>刚开始用 Twitter 时，我只是把它当作一个树洞。当然这个树洞很多时候不是为了倾诉一些难以启齿的秘密，而是想把一些不吐不快而又没有太多人会听的话放到一个公开场合，体验一种「也许可能有人会看」的奇妙感觉。后来 Twitter 上的关注者多了起来，发出去的信息居然也有了回音，转而觉得这种互动也很好玩，渐渐地也成了我使用 Twitter 以及它在国内的模仿者「微博」的主要理由。既然很多时候是为了互动，为了获取回应，那么自然是越多人能够看到你的微博（Tweets）越好。同步发送微博和 Twitter 就成了我非常渴望的得到的一项服务，可是，由于众所周知的原因，国内提供这样服务的平台几乎已经找不着了。</p>
-
-<p>于是我开始自己摸索如何才能在本地实现这一点。首先，我想到了 iPhone 上著名的自动化应用 Launch Center Pro (LCP)，也确实找到了直接用它发布 Twitter 的功能，然后，我试着做了一些整合，最终可以实现只输入一次文字，然后发送到微博和 Twitter 的功能。只是，这个流程还是存在一些问题：</p>
-
-<ol>
-  <li>发布 Twitter 依然需要科学上网（这当然是我们特有的问题）；</li>
-  <li>在发布时，需要先按确认发布到 Twitter，然后利用 iOS 的 Share Sheets 分享到微博，本身就需要确认两次不说，Share Sheets 中寻找微博也是一种不太爽的体验。</li>
-</ol>
-
-<p>第一个问题很好解决，可以通过 IFTTT 做一个中转，然后实现不翻墙发布 Twitter，如果有需要，可以使用以下 Recipe：</p>
-
-<blockquote>
-  <p><strong>推倒墙：<a href="https://ifttt.com/applets/264287p-">https://ifttt.com/applets/264287p-</a></strong><br />
-注：需要在 LCP 中使用名为“tuidaoqiang”的 Trigger</p>
-</blockquote>
-
-<p>但在我遇到这个问题的时候，IFTTT 还没有原生支持微博，自己又确实不会编程，于是第二个问题搁置了很久。</p>
-
-<p>前一段时间，IFTTT 终于支持了微博（Weibo）Channel，我突然觉得似乎已经不需要 LCP 这么麻烦了，我只需要发一条微博直接同步到 Twitter 上（或者反过来）即可。但使用了一下发现，同步的过程会有各种各样的问题，因为字数限制不一样，标签样式不一样，或者是否添加图片的原因等等。而我自己一般只需要同步纯文字的内容，这就让我又想起了使用 LCP 完成我之前的想法。基本步骤及原理如下：</p>
-
-<ol>
-  <li>在 LCP 中触发一个 Action，弹出一个文本输入框，在该文本输入框中输入想要发布的内容；</li>
-  <li>将第 1 步中的内容拷贝到剪贴板；</li>
-  <li>将剪贴板内容通过 IFTTT 发布到微博；</li>
-  <li>将剪贴板内容通过 IFTTT （推倒墙）发布到 Twitter。</li>
-</ol>
-
-<p>整个过程只需要输入一次文本，点击一次确认（Launch），就可以同时将内容发布到微博和 Twitter——并且——不用翻墙。当然，如果你想看 Twitter 上的反馈，还是需要科学上网。</p>
-
-<p>要实现以上这个流程并不困难，具体操作方法如下：</p>
-
-<ol>
-  <li>在 IFTTT 中添加 Recipe–weiboit，以实现上述步骤中第三步。<strong>weiboit 获取地址：<a href="https://ifttt.com/applets/264288p-weiboit">https://ifttt.com/applets/264288p-weiboit</a></strong></li>
-  <li>在 IFTTT 中添加 Recipe–推倒墙，以实现上述步骤中第四步。<strong>「推倒墙」获取地址：<a href="https://ifttt.com/applets/264287p-">https://ifttt.com/applets/264287p-</a></strong></li>
-  <li>在 Launch Center Pro 中添加 Action<strong>「快速微博推」：<a href="https://launchcenterpro.com/qqjhp5">https://launchcenterpro.com/qqjhp5</a></strong>（如果你手机上已经安装了 Launch Center Pro，可以直接用手机打开这个链接安装）。</li>
-</ol>
-
-<p>至此，你就可以和我一样在不翻墙的情况下「同步」发布文字版微博和 Twitter 了。使用同样地原理，你也可以实现同步发送微博、Twitter、Facebook、App.net 等，感兴趣的话可以自己试试。</p>
-
-<p>郝海龙<br />
-2015 年 9 月 13 日<br />
-2016 年 12 月 18 日 微调</p>
+<p>刚开始用 Twitter 时，我只是把它当作一个树洞。当然这个树洞很多时候不是为了倾诉一些难以启齿的秘密，而是想把一些不吐不快而又没有太多人会听的话放到一个公开场合，体验一种「也许可能有人会看」的奇妙感觉。后来 Twitter 上的关注者多了起来，发出去的信息居然也有了回音，转而觉得这种互动也很好玩，渐渐地也成了我使用 Twitter 以及它在国内的模仿者「微博」的主要理由。既然很多时候是为了互动，为了获取回应，那么自然是越多人能够看到你的微博（Tweets）越好。同步发送微博和 Twitter 就成了我非常渴望的得到的一项服务，可是，由于众所周知的原因，国内提供这样服务的平台几乎已经找不着了（更新：大家也可以试试 <a href="https://weibo.com/erinsnowanmin">@爱尔兰_雪</a> 的 P.cat，20161218）。
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/how-to-sync-weibo-and-twitter-with-wall.html/">阅读全文</a>
+    </footer>
   
 
 
@@ -372,26 +335,13 @@ $(document).bind('DOMNodeInserted', function(event) {
 
 <p>对于大多数西文写作者来说，Mac 有一个非常重要但也经常被大家忽视的功能，即全局拼写检查。拿英文来说，在几乎所有能输入文字的地方，Mac 都可以提供即时的拼写检查（甚至自动更正）。</p>
 
-<p>由于自己所从事工作的原因，经常需要撰写或校对一些英文文件，这个时候拼写检查的功能对我来说就尤为重要：不仅能节约时间，而且检查的效果也更为精确。但我总面临一个很诡异的问题：不知为何，系统自动识别语言时，总是把我的英文识别为「英式英文」。而我的大多数文档都是用美式英文撰写的，这样在我的电脑上一些典型的美式拼法总是会被识别为错误。比如题图中 Recognize 这个词。</p>
-
-<p>之前我采用了一个比较笨的解决办法，就是手动设置拼写检查语言。于是我不得不在每次撰写或校对文章前，先依次点击 Edit → Spelling and Grammar → Show Spelling and Grammar（中文系统为「编辑 → 拼写和语法 → 显示拼写和语法」），把语言设为 U. S. English. </p>
-
-<p><img src="https://raw.githubusercontent.com/haohailong/imagebed/master/20150817-Mac-Spelling-Check-1.png" alt="Mac-Spelling-Check-1" title="Mac-Spelling-Check-1" /></p>
-
-<p>但我想这事肯定有比较简便的解决方案，毕竟美国人不可能使用英式英语的拼写检查规则，他们肯定也不用每写一篇新文章就调整一次。于是，我开始在网上搜索解决方案，结果解决方案没找到，却发现了很多人和我有相同的问题，比如某英国人希望把默认的拼写检查语言设为「英式英语」，但他的系统默认却是「美式英语」。不过这件事提醒我系统确实存在着默认拼写检查语言这样一种东西。</p>
-
-<p>于是我开始在系统偏好设置（System Preferences）里面找，结果竟然毫不费力就找到了设置方法。我直接在 System Preferences 的搜索框中搜索 Spelling（中文系统可以试试搜「拼写」），发现在 Keyboard （中文系统为「键盘 」）的 Text （中文系统为「文本」）选项卡下，点击 Spelling （拼写）下面的下拉菜单，即可设置默认的拼写检查语言。</p>
-
-<p><img src="https://raw.githubusercontent.com/haohailong/imagebed/master/20150817-Mac-Spelling-Check-2.png" alt="Mac-Spelling-Check-2" title="Mac-Spelling-Check-2" /></p>
-
-<p>如果英文并不是你使用的唯一拼音文字，你可以和我一样选择保留系统的自动识别语言（Automatic by Language），然后在 Set up … （设置）下面选择 U. S. English 作为默认的英文。这样在纯英文的环境下，默认使用美式英语作为拼写检查标准，而在其他拼音文字的环境下，也会根据特定的语言进行调整。</p>
-
-<p><img src="https://raw.githubusercontent.com/haohailong/imagebed/master/20150817-Mac-Spelling-Check-3.png" alt="Mac-Spelling-Check-3" title="Mac-Spelling-Check-3" /></p>
-
-<p>郝海龙<br />
-2015 年 8 月 12 日</p>
+<p>由于自己所从事工作的原因，经常需要撰写或校对一些英文文件，这个时候拼写检查的功能对我来说就尤为重要：不仅能节约时间，而且检查的效果也更为精确。但我总面临一个很诡异的问题：不知为何，系统自动识别语言时，总是把我的英文识别为「英式英文」。而我的大多数文档都是用美式英文撰写的，这样在我的电脑上一些典型的美式拼法总是会被识别为错误。比如题图中 Recognize 这个词。
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/mac-spelling-check.html/">阅读全文</a>
+    </footer>
   
 
 
@@ -433,30 +383,13 @@ $(document).bind('DOMNodeInserted', function(event) {
 <p>我有个朋友每次旅行时都会忘记带一件本来记着要带的东西，以至于后来她索性告诉自己这是命中注定，无法改变。我的另一个朋友曾经有过到了边检才发现忘记带护照的窘境，这位朋友在后来的一次旅行前告诉我：</p>
 
 <blockquote>
-  <p>我不想收拾东西，我不想收拾东西，我不想收拾东西。收拾东西对我来说是一项无止境的工作，我永远不知道什么时候算是把我该带的东西带齐，在旅行结束之前，我不可能知道我这次带的东西是不是够用。</p>
-</blockquote>
-
-<p>我想每一个经常旅行的人都曾经遇到过类似的问题，比如我自己，经常在旅途中翻一个本该留在包中的东西，但等到旅行结束打开家门，才发现这件东西赫然在桌子的中央。于是，我在疲惫中懊恼地放下背包，却发现自己的限量版雨伞似乎落在了酒店。</p>
-
-<p>通常遇到这种情况我们的解决办法都是把要带的东西列一个清单，然后照着清单去整理，一般来说就不会有遗漏。但实际情况是，每次旅行前列一个清单也是一件非常恼人的事情，而且总是难免会有遗漏，这次漏这一件，下次漏那一件。</p>
-
-<p>于是我一直都期待能有一个万用清单，每次出行前照着这个清单把东西都捋一遍，然后就可以放心离开。实际情况是，我们每次出行需要的东西都可能会不太一样，万用是不太可能，但我们可以找到一种相对接近万用的方式。</p>
-
-<p>今天我想给大家推荐一款非常好用的 iOS 应用，名字就叫<a href="http://travellistapp.com" title="旅行清单官方网站"><strong>旅行清单（Travel List）</strong></a>。这个清单最大的特点就是预置了很多可供选择的旅行所需物品的列表。基本类别有：衣服、鞋类、饰物、个人护理用品、化妆品、小工具、证件、行李、宝宝、野营/徒步旅行、潜水、雪上运动等等；每一类别下面又会有各类相应的物品，比如个人护理用品中会有牙膏牙刷，小工具中会有手机、钥匙等，可以满足绝大多数人出行的需求。</p>
-
-<p>如果某件你需要带的东西列表中原来没有，也可以通过手动添加，而当你下一次要列旅行清单时，你会发现你添加过的物品赫然在列。</p>
-
-<p>基本上旅行几次之后，你会有自己对旅行的分类，比如出国、短途、回老家、户外活动等等，每一类别需要带的东西其实都差不多。久而久之，你就会有一个针对某一类别旅行的万用清单了。</p>
-
-<p>当然，现在的「旅行清单」还不支持复制之前的清单，这应该算是它最大的不足，不过无论如何它已经是最接近我心目中的完美的旅行清单应用了。</p>
-
-<p>对了，这并不是一则商业广告。</p>
-
-<p>郝海龙<br />
-2015 年 8 月 6 日<br />
-题图为旅行清单（Travel List）的图标</p>
+  <p>我不想收拾东西，我不想收拾东西，我不想收拾东西。收拾东西对我来说是一项无止境的工作，我永远不知道什么时候算是把我该带的东西带齐，在旅行结束之前，我不可能知道我这次带的东西是不是够用。
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/app-travel-list.html/">阅读全文</a>
+    </footer>
   
 
 
