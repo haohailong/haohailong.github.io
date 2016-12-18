@@ -15,7 +15,7 @@ categories: "Tips"
 
 第一个问题很好解决，可以通过 IFTTT 做一个中转，然后实现不翻墙发布 Twitter，如果有需要，可以使用以下 Recipe：
 
-> **推倒墙：https://ifttt.com/applets/264287p-**
+> **推倒墙：<https://ifttt.com/applets/264287p->**  
 > 注：需要在 LCP 中使用名为“tuidaoqiang”的 Trigger
 
 但在我遇到这个问题的时候，IFTTT 还没有原生支持微博，自己又确实不会编程，于是第二个问题搁置了很久。
@@ -31,9 +31,9 @@ categories: "Tips"
 
 要实现以上这个流程并不困难，具体操作方法如下：
 
-1. 在 IFTTT 中添加 Recipe–weiboit，以实现上述步骤中第三步。**weiboit 获取地址：https://ifttt.com/applets/264288p-weiboit**
-2. 在 IFTTT 中添加 Recipe–推倒墙，以实现上述步骤中第四步。**「推倒墙」获取地址：https://ifttt.com/applets/264287p-**
-3. 在 Launch Center Pro 中添加 Action**「快速微博推」：https://launchcenterpro.com/qqjhp5**（如果你手机上已经安装了 Launch Center Pro，可以直接用手机打开这个链接安装）。
+1. 在 IFTTT 中添加 Recipe–weiboit，以实现上述步骤中第三步。**weiboit 获取地址：<https://ifttt.com/applets/264288p-weiboit>**
+2. 在 IFTTT 中添加 Recipe–推倒墙，以实现上述步骤中第四步。**「推倒墙」获取地址：<https://ifttt.com/applets/264287p->**
+3. 在 Launch Center Pro 中添加 Action**「快速微博推」：<https://launchcenterpro.com/qqjhp5>**（如果你手机上已经安装了 Launch Center Pro，可以直接用手机打开这个链接安装）。
 
 至此，你就可以和我一样在不翻墙的情况下「同步」发布文字版微博和 Twitter 了。使用同样地原理，你也可以实现同步发送微博、Twitter、Facebook、App.net 等，感兴趣的话可以自己试试。
 
