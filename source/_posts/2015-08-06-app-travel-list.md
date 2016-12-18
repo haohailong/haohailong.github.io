@@ -6,6 +6,8 @@ comments: true
 categories: "App"
 ---
 
+![Travel List App Icon](https://raw.githubusercontent.com/haohailong/imagebed/master/20150810-Travel-list.png "Travel List App Icon")
+
 我有个朋友每次旅行时都会忘记带一件本来记着要带的东西，以至于后来她索性告诉自己这是命中注定，无法改变。我的另一个朋友曾经有过到了边检才发现忘记带护照的窘境，这位朋友在后来的一次旅行前告诉我：
 
 > 我不想收拾东西，我不想收拾东西，我不想收拾东西。收拾东西对我来说是一项无止境的工作，我永远不知道什么时候算是把我该带的东西带齐，在旅行结束之前，我不可能知道我这次带的东西是不是够用。
