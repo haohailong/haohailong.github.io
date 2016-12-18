@@ -23,7 +23,7 @@ categories: "Octopress"
 
 3. 相对其他托管到 Github 上的博客程序，Octopress 更加成熟易上手。打个比方，Jekyll 可以说是毛坯房，Hexo 和 Octopress 算是简装修，但相比 Hexo，Octopress 有更多装修范例和更多熟练的装修工人，更容易获取帮助。当然如果你只想住精装修的房子，那不得不花点钱上 WordPress 了。
 
-4. 使用 Markdown。Markdown 是现在最为流行的轻量级标记语言，也是已故的天才 Aaron Swartz 留给世人最好的礼物，窃以为每个在互联网上发布文章的人都该掌握。
+4. 使用 Markdown。Markdown 是现在最为流行的轻量级标记语言，也是 John Gruber 带给我们的最好的礼物（顺便缅怀一下已故的天才 Aaron Swartz，他对 Markdown 也做出了很大的贡献），窃以为每个在互联网上发布文章的人都该掌握。
 
 5. 按照官方的说法，Octopress 是个「为黑客设计的博客框架[^1]」，这很酷，你不觉得吗？
 
