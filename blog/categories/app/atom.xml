@@ -4,7 +4,7 @@
   <title><![CDATA[分类：App | 生命之氢]]></title>
   <link href="http://shengmingzhiqing.com/blog/categories/app/atom.xml" rel="self"/>
   <link href="http://shengmingzhiqing.com/"/>
-  <updated>2016-12-18T14:12:57+08:00</updated>
+  <updated>2016-12-18T14:16:12+08:00</updated>
   <id>http://shengmingzhiqing.com/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
@@ -22,7 +22,8 @@
 
 <p>是的，在我司产品经理的逼迫下我用 AppleScript 写了个批量处理 Excel 的 App。主要功能是针对某一文件夹下所有的 Excel 文件，批量「查找和替换」文本，严格对应区分大小写。可能各位在平时处理 Excel 文件也会有用，分享给大家。</p>
 
-<p>（下载地址在文末）</p>
+<p>（下载地址在文末）
+<!--more--></p>
 
 <h3 id="section">我想说的一些话</h3>
 
