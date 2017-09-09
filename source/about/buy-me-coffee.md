@@ -22,9 +22,9 @@ footer: true
 
 **你可以向我捐赠比特币来支持我，我的比特币收款地址是：**
 
-<center><code>15TLxumqmN6Gqosu9YXHTmcvCYfgU2G2Ho</code></center>
+<center><code>1LaiTki6cJq4AQNF6TK4NKfXDEhrVwdNoT</code></center>
 
-**你可以[点击这里通过 Paypal 付给我 5 美元](https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=haohailong%40gmail%2ecom&lc=GB&item_name=Buy%20Hailong%20Coffee&amount=5%2e00&currency_code=USD&button_subtype=services&bn=PP%2dBuyNowBF%3abtn_paynow_LG%2egif%3aNonHosted)。**
+**你可以[点击这里通过 Paypal 付给我 5 美元](https://www.paypal.me/haohailong)。**
 
 不要问我从哪里来，我的故乡是互联网。
 
