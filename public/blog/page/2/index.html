@@ -1,0 +1,805 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>生命之氢</title>
+  <meta name="author" content="郝海龙">
+
+  
+  <meta name="description" content="1. 永远的第二步 2. 简要说明 3. 新主题安装 4. 基本配置 4.1 域名，网站标题，作者 4.2 日期格式 4.3 文章链接形式 4.4 分类目录前缀 4.5「继续阅读」按钮 4.6 修改 Markdown 文件后缀 4.7 修改默认 Markdown 解释器 1. 永远的第二步 通过 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://shengmingzhiqing.com/blog/page/2/index.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="生命之氢" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!-- ask Google to include this site -->
+<link rel="canonical" href="http://shengmingzhiqing.com">
+<!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Special+Elite:regular" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Marko+One:regular" rel="stylesheet" type="text/css">
+
+<!-- adn app.net-->
+<!--script type="text/javascript" src="/javascripts/adn-timeline.min.js"></script>-->
+
+<!-- mathjax config similar to math.stackexchange -->
+
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>
+
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+  </script>
+
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+          var all = MathJax.Hub.getAllJax(), i;
+          for(i=0; i < all.length; i += 1) {
+              all[i].SourceElement().parentNode.className += ' has-jax';
+          }
+      });
+  </script>
+
+  <script type="text/javascript"
+     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+<!--新窗口中打开链接-->
+<script type="text/javascript">
+function addBlankTargetForLinks () {
+  $('a[href^="http"]').each(function(){
+      $(this).attr('target', '_blank');
+  });
+}
+$(document).bind('DOMNodeInserted', function(event) {
+  addBlankTargetForLinks();
+});
+</script>
+
+<!--bigfoot-->
+<style>@import url("/stylesheets/bigfoot-number.scss");</style>
+<script type="text/javascript" src="/javascripts/libs/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/bigfoot.js"></script>
+<script type="text/javascript">
+    $.bigfoot();
+</script>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-49889656-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">生命之氢</a></h1>
+  
+  <h2>Hailong Hao's Laboratory</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<!--  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:shengmingzhiqing.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="搜索 = 输入 + 回车"/>
+  </fieldset>
+</form>
+   -->
+<ul class="main-navigation">
+  <li><a href="/"><i class="fa fa-home"></i> 首页</a></li>
+  <li><a href="/blog/archives/"><i class="fa fa-list-ul"></i> 文章列表</a></li>
+  <li><a href="/article-series/"><i class="fa fa-compass"></i> 系列文章</a></li>
+  <!--<li><a href="/adn-timeline/"><i class="fa fa-flask"></i> 断章</a></li>-->
+  <li><a href="/ebauche/"><i class="fa fa-gavel"></i> Ébauche</a></li>
+  <li><a href="http://haohailong.net"><i class="fa fa-leaf"></i> 另一面</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/octopress-lean-modification-1.html/">Octopress 精益修改 (1)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-29T07:31:59+08:00" pubdate data-updated="true">2014年 4月29日</time>
+        
+           | <a href="/blog/octopress-lean-modification-1.html/#disqus_thread"
+             data-disqus-identifier="http://shengmingzhiqing.com/blog/octopress-lean-modification-1.html/">评论</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><ul id="markdown-toc">
+  <li><a href="#section">1. 永远的第二步</a></li>
+  <li><a href="#section-1">2. 简要说明</a></li>
+  <li><a href="#section-2">3. 新主题安装</a></li>
+  <li><a href="#section-3">4. 基本配置</a>    <ul>
+      <li><a href="#section-4">4.1 域名，网站标题，作者</a></li>
+      <li><a href="#section-5">4.2 日期格式</a></li>
+      <li><a href="#section-6">4.3 文章链接形式</a></li>
+      <li><a href="#section-7">4.4 分类目录前缀</a></li>
+      <li><a href="#section-8">4.5「继续阅读」按钮</a></li>
+      <li><a href="#markdown-">4.6 修改 Markdown 文件后缀</a></li>
+      <li><a href="#markdown--1">4.7 修改默认 Markdown 解释器</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="section">1. 永远的第二步</h2>
+
+<p>通过「<a href="http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/">Octopress 搭建流程 – Github Pages</a>」，我们搭建好了自己的 Octopress 博客并发布了第一篇文章。</p>
+
+<p>但这只是我们 Octopress 博客之旅的第一步，说白了，我们不过是把别人已经做好的程序成功的安装到了网上，并且试运行了一下。但博客终究是个讲究个性化的地方，个性化就意味着需要自己动手进行修改。我们的第二步就是对安装好的 Octopress 做个性化修改。</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/octopress-lean-modification-1.html/">阅读全文</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/setup-octopress-with-github-pages.html/">Octopress 搭建流程 – Github Pages</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-28T12:33:33+08:00" pubdate data-updated="true">2014年 4月28日</time>
+        
+           | <a href="/blog/setup-octopress-with-github-pages.html/#disqus_thread"
+             data-disqus-identifier="http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/">评论</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p class="info">本文介绍如何在 Github Pages 上搭建 Octopress 博客，主要针对 IT 外行人士。科普文章用词未必精确，行家里手请不要太在意。主要参考 <a href="http://octopress.org/">Octopress 官网</a>安装教程。<br />
+对了，我用的是 Mac，Windows 我不熟，我只知道 IE 浏览器。</p>
+
+<ul id="markdown-toc">
+  <li><a href="#octopress--github-pages">1. 为什么是 Octopress &amp; Github Pages?</a></li>
+  <li><a href="#section">2. 准备工作</a>    <ul>
+      <li><a href="#git-2">2.1 安装 git </a></li>
+      <li><a href="#ruby-3">2.2 安装 Ruby </a></li>
+      <li><a href="#github-">2.3 注册 Github 账号</a></li>
+      <li><a href="#section-1">2.4 域名指向（可选）</a></li>
+    </ul>
+  </li>
+  <li><a href="#octopress">3. 本地安装 Octopress</a></li>
+  <li><a href="#octopress--github-pages-1">4. 将 Octopress 部署到 Github Pages</a>    <ul>
+      <li><a href="#repository">4.1 新建库 (Repository)</a></li>
+      <li><a href="#octopress--github-pages-2">4.2 将本地部署的 Octopress 发布到 Github Pages</a></li>
+      <li><a href="#section-2">4.3 使用自己的域名（可选）</a></li>
+    </ul>
+  </li>
+  <li><a href="#section-3">5. 发布新贴</a></li>
+</ul>
+
+<h2 id="octopress--github-pages">1. 为什么是 Octopress &amp; Github Pages?</h2>
+
+<p>在做任何事情之前最好先问个为什么，尽管很多情况下未必有答案，但这个做法绝对有好处。用 Octopress 搭建博客，并托管到 Github Pages，撇除<a href="http://s.olo.la/KIoY">一些个人因素</a>之外，我想还有以下几点原因：</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/setup-octopress-with-github-pages.html/">阅读全文</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/everybody-should-build-his-own-writing-space.html/">Octopress 每个人都该为自己打造专属的写作环境</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-27T00:00:00+08:00" pubdate data-updated="true">2014年 4月27日</time>
+        
+           | <a href="/blog/everybody-should-build-his-own-writing-space.html/#disqus_thread"
+             data-disqus-identifier="http://shengmingzhiqing.com/blog/everybody-should-build-his-own-writing-space.html/">评论</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><ul id="markdown-toc">
+  <li><a href="#section">我的博客史</a></li>
+  <li><a href="#section-1">每个人都该为自己打造专属的写作环境</a></li>
+  <li><a href="#wordpress--octopress">WordPress &amp; Octopress</a></li>
+  <li><a href="#octopress-">关于 Octopress 搭建</a></li>
+</ul>
+
+<h2 id="section">我的博客史</h2>
+
+<p>每次搭建新博客都想把自己写博客的历史回顾一遍，这次索性来个彻底回顾，直接从最早接触互联网说起吧。</p>
+
+<p>如果没有记错，2000 年在家乡的一个网吧第一次接触互联网。当我试着把从杂志上抄来的瓦斯科达伽马足球俱乐部的官方首页输入 IE 地址栏时，我并不相信五分钟后竟然能将页面显示出来。</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/everybody-should-build-his-own-writing-space.html/">阅读全文</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/Bitcoin-QnA.html/">比特币问答录</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-04-23T00:57:00+08:00" pubdate data-updated="true">2014年 4月23日</time>
+        
+           | <a href="/blog/Bitcoin-QnA.html/#disqus_thread"
+             data-disqus-identifier="http://shengmingzhiqing.com/blog/Bitcoin-QnA.html/">评论</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p class="info">本文作者参与比特币经济活动的主要目的是实践自己的理想，所有关于比特币的看法都基于这个前提，不作为投资和投机建议。警告：伴随高收益的永远是高风险。 </p>
+
+<ul id="markdown-toc">
+  <li><a href="#section">1. 为什么如此热衷比特币？</a></li>
+  <li><a href="#section-1">2. 如果没有政府担保，凭什么相信这种货币？</a></li>
+  <li><a href="#section-2">3. 既然你觉得政府不靠谱，你的意思是该把所有前都换成比特币？</a></li>
+  <li><a href="#section-3">4. 那比特币到底是一种用什么担保的货币呢？</a></li>
+  <li><a href="#section-4">5. 那如果背后的信用体系崩塌了，岂不就变成一堆无用的二进制数字了？</a></li>
+  <li><a href="#section-5">6. 你是否觉得比特币在未来某一天会消亡？</a></li>
+  <li><a href="#section-6">7. 照你这么说，比特币会威胁到政府的货币发行权，难道政府不会出台措施封禁掉比特币么？</a></li>
+  <li><a href="#section-7">8. 如果大家都用比特币了，政府的税收怎么解决啊？（一个法国人问我的问题）</a></li>
+  <li><a href="#section-8">9. 有人说比特币交易市场有「庞氏骗局」的某些特征，你怎么看？</a></li>
+  <li><a href="#section-9">10. 现在大家对比特币的狂热怎么看着像 17 世纪荷兰的郁金香花球泡沫呢？</a></li>
+  <li><a href="#section-10">11. 挖矿是什么意思？</a></li>
+  <li><a href="#section-11">12. 为什么挖矿越来越难？</a></li>
+  <li><a href="#section-12">13. 什么是矿机？</a></li>
+  <li><a href="#section-13">14. 如果有人用公家电脑挖矿，岂不是空手套白狼？</a></li>
+  <li><a href="#section-14">15. 既然有这种空手套白狼的机会，是不是说明比特币本身有漏洞呢？</a></li>
+  <li><a href="#section-15">16. 既然挖矿难度越来越大，先挖矿的人可以获得更多比特币，这岂非对后进入者不公平？</a></li>
+  <li><a href="#section-16">17. 可是三年前我不知道比特币这个东西啊，也不知道它会这么值钱，我怎么知道要去挖矿？</a></li>
+  <li><a href="#qq-">18. QQ 提供了交流的平台，我没有一天不在用，创造了大量的价值，比特币怎么能比？</a></li>
+  <li><a href="#section-17">19. 挖矿耗费了大量的电力和计算机运算能力，不是浪费资源吗？</a></li>
+  <li><a href="#section-18">20. 为什么说比特币的发行方式更公平？</a></li>
+  <li><a href="#q-">21. 比特币与 Q 币有什么区别？</a></li>
+  <li><a href="#section-19">22. 比特币狂热怎么看着有点像传销？</a></li>
+  <li><a href="#section-20">23. 如何说服楼下卖冰棍的大妈接受比特币支付呢？</a></li>
+  <li><a href="#section-21">24. 卖矿机的人为什么自己不挖矿呢？</a></li>
+  <li><a href="#section-22">25. 中本聪骰子靠不靠谱？</a></li>
+  <li><a href="#section-23">26. 有人说比特币就是电子黄金，你怎么看？</a></li>
+  <li><a href="#section-24">27. 那么比特币究竟哪里和黄金不一样？</a></li>
+  <li><a href="#section-25">28. 你说比特币易于分割，那么最小能分割到什么程度？</a></li>
+  <li><a href="#section-26">29. 比特币交易需要大量算力来确认交易，因此有了所谓的挖矿，可是到 2140 年以后，比特币总量不会再增多了，还有人愿意用自己的算力为别人确认交易吗？</a></li>
+  <li><a href="#section-27">30. 手续费那么少，会有人愿意去为手续费而挖矿吗？</a></li>
+</ul>
+
+<h2 id="section">1. 为什么如此热衷比特币？</h2>
+
+<p>因为他是一种最接近我理想中货币形式的货币：不依靠任何政府或者中央银行机构，完全按照一套固定的生成规则发行。尽管它在我看来可能还有一些缺陷，但我更愿意把它看成是一种自由货币的发端，从这个意义上讲，我把整个比特币经济圈都当成是一场社会实验。实验当然存在失败的可能性，可人类社会也是在不断的试错中发展的。但为了自己的理想做实验是一件幸福的事情，我已经为实验失败做了充足的准备。我的所有关于比特币的看法都是基于这个前提的，所以请不要把我这个系列的文章当作投资建议。非要听投资建议的话，我想说，高风险高收益。比特币的市值几千倍的涨，对应前面那句话，想想风险有多高。</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/Bitcoin-QnA.html/">阅读全文</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/Gain-from-LaTeX-homeowork-1.html/">第一份 LaTeX 作业心得</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-11-24T03:03:00+08:00" pubdate data-updated="true">2013年11月24日</time>
+        
+           | <a href="/blog/Gain-from-LaTeX-homeowork-1.html/#disqus_thread"
+             data-disqus-identifier="http://shengmingzhiqing.com/blog/Gain-from-LaTeX-homeowork-1.html/">评论</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>由于工作原因，很多文档需要用 LaTeX 写作。去年曾经花三天时间阅读了 LaTeX 经典文档 <a href="http://mirror.ox.ac.uk/sites/ctan.org/info/lshort/english/lshort.pdf" target="_blank" title="The (Not So) Short Introduction to LaTeX2e"><em>The (Not So) Short Introduction to LaTeX2e</em></a>，但毕竟不是天天用它写文章，一些功能特性很快就忘了。</p>
+
+<p>到了真正写论文的时候，我的同事 Alina 和导师 Cristina 都推荐我用 <a href="http://www.lyx.org" target="_blank" title="Lyx">Lyx</a>。我必须承认这个「所见即所得」的 LaTeX 编辑器功能很强大，可以满足你学术写作的大部分需求——如果不是全部的话。但是，不得不说 Lyx 有些功能的实现需要在版面美观方面做出一定让步。这让我这个细节强迫症痛苦不已。
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/Gain-from-LaTeX-homeowork-1.html/">阅读全文</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/Is-Bicoin-a-Ponzi-scheme.html/">比特币是庞氏骗局吗？</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-08T00:00:00+08:00" pubdate data-updated="true">2013年 7月 8日</time>
+        
+           | <a href="/blog/Is-Bicoin-a-Ponzi-scheme.html/#disqus_thread"
+             data-disqus-identifier="http://shengmingzhiqing.com/blog/Is-Bicoin-a-Ponzi-scheme.html/">评论</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>不是。</p>
+
+<p>自比特币大涨以来，身边不断有人和我说，在他看来，比特币就是一种庞氏骗局。这时，我会深情地望着他的眼睛，装作专注地听他把话说完，然后轻轻地问他一个问题：</p>
+
+<blockquote>
+  <p>告诉我，庞氏骗局的定义什么？</p>
+</blockquote>
+
+<p>几乎所有的人都答不上来。很多人都有一种能力，能把自己不懂的事情讲得头头是道，完全不知道是什么的概念拿起来就用。这时如果你双手托着下巴，然后自下而上地仰望，他可能还真以为自己是这方面的专家了呢。
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/Is-Bicoin-a-Ponzi-scheme.html/">阅读全文</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/why-bitcoin-is-not-a-pyramid-scheme.html/">为什么比特币经济圈不是传销组织？</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-03T00:00:00+08:00" pubdate data-updated="true">2013年 7月 3日</time>
+        
+           | <a href="/blog/why-bitcoin-is-not-a-pyramid-scheme.html/#disqus_thread"
+             data-disqus-identifier="http://shengmingzhiqing.com/blog/why-bitcoin-is-not-a-pyramid-scheme.html/">评论</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>在接到这个题目的约稿之前，打死我也想不到会有人把「比特币」和「传销」扯在一起。把比特币经济圈说成是传销组织，是目前我见过的对比特币最无厘头的指控。但真要回答这个问题，却也不是一件容易的事情，这恰恰是因为比特币和传销相差太大。牛和羊不一样，这应该算是大家的共识。但如果有人觉得这俩是一种生物，并要你证明他们不一样，要证明牛不是一种特殊的羊，羊也不是刷了白漆的牛，就不是给他看看照片就能完事的。毕竟，牛和样在外型上有很多相似的地方，仅从外形要「证明」这件事情似乎真的有难度。而你如果把牛和羊的 DNA 比对结果拿出来给他看，他又会说太艰深了，看不懂。你说这是科学实验证据，他又会说，人家什么都不懂，如果你们这帮科学家联手骗我怎么办？
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/why-bitcoin-is-not-a-pyramid-scheme.html/">阅读全文</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/public-key-cryptography-for-dummies.html/">写给大家看的公钥加密算法原理</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-07-02T00:00:00+08:00" pubdate data-updated="true">2013年 7月 2日</time>
+        
+           | <a href="/blog/public-key-cryptography-for-dummies.html/#disqus_thread"
+             data-disqus-identifier="http://shengmingzhiqing.com/blog/public-key-cryptography-for-dummies.html/">评论</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>相信很多朋友和我一样，都有传递情书的经历。在我中小学那个还没有陌陌的时代，写纸条应该算是与女同学建立感情的最佳手段——至少是之一。</p>
+
+<p>既然是传递纸条就难免会假他人之手，尤其是在上课这种不方便走动，班主任又有意把长得有夫妻相的男女生分在不同角落的情况下。是以这种原始的通讯手段虽然能使大名鼎鼎而或臭名昭著的「棱镜」计划丧失用武之地，但却躲不过最原始的监控手段——直接打开看。中国人好奇心最大的地方莫过于别人的私生活，可以想象纸条上不可能有什么秘密存在，肉麻的情话最终往往会成为大家的笑柄。如何才能有效传递情书，但又不让情书的信息在传递过程中泄露出去就成了困扰我很长时间的问题。
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/public-key-cryptography-for-dummies.html/">阅读全文</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/Day-One.html/">Day One</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-15T20:03:00+08:00" pubdate data-updated="true">2012年12月15日</time>
+        
+           | <a href="/blog/Day-One.html/#disqus_thread"
+             data-disqus-identifier="http://shengmingzhiqing.com/blog/Day-One.html/">评论</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><center><img alt="Day One icon" src="https://raw.githubusercontent.com/haohailong/imagebed/master/20121215-Day-One.png" width="256" height="256" /></center>
+
+<p>小学二年级的时候，老师开始强迫我们写日记。就我个人而言，懂事之前被强迫做的事情，绝大多数后来都放弃了。即使重新拣起来，也基本上要等到懂事之后过很长时间，并且认真考虑过这件事情的价值之后，比如<a href="http://haohailong.net/archives/294">记笔记</a>。</p>
+
+<p>写日记的习惯却断断续续的坚持下来了，我想这主要是因为我的父亲也有写日记的习惯，教育小孩，永远是「言传不如身教」。但这篇文章我想说的正是这断断续续中断的部分。
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/Day-One.html/">阅读全文</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/Summary-on-Chapter-1-of-Microeconomic-Theory.html/">Summary on Chapter 1 of Microeconomic Theory</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-21T14:03:00+08:00" pubdate data-updated="true">2012年10月21日</time>
+        
+           | <a href="/blog/Summary-on-Chapter-1-of-Microeconomic-Theory.html/#disqus_thread"
+             data-disqus-identifier="http://shengmingzhiqing.com/blog/Summary-on-Chapter-1-of-Microeconomic-Theory.html/">评论</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><img src="https://raw.githubusercontent.com/haohailong/imagebed/master/20121021-Summary-on-Chapter-1-of-Microeconomic-Theory.png" alt="C1 of Microeconomic Theory (Knowledge Structure)" /></p>
+
+<p>刚刚考完微观经济学导论（Introduction to Economics），不如趁热打铁对知识做个梳理。我们用的是经典的微观经济学教材马斯科勒的《微观经济理论》，这是我做的第一章的知识结构图。另，OmniGraffle 太好用了。</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/3/">&larr; 较早的文章</a>
+    
+    <a href="/blog/archives">文章列表</a>
+    
+    <a class="next" href="/">较新的文章 &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>郝海龙</h1>
+  <p>80后诗人，独立译者，GRE讲师，Podcastor，现居巴黎。 </p>
+  <p> 生命之氢是我两个博客之一，以 IT 和经济学相关内容为主。想看另一个博客请点「<a href="http://haohailong.net/" target="_blank"><i class="fa fa-leaf"></i> 另一面</a>」。 </p>
+  <p class="sideabout">&nbsp;<a href="http://weibo.com/haohailong" target="_blank" title=" 我的微博"><i class="fa fa-weibo fa-2x"></i></a>&nbsp;<a href="https://twitter.com/haohailong" target="_blank" title="My Twitter"><i class="fa fa-twitter fa-2x"></i></a>&nbsp;<a href="https://facebook.com/haohailong" target="_blank" title="My Facebook"><i class="fa fa-facebook-square fa-2x"></i> </a>&nbsp;<a href="https://banlan.show/" target="_blank" title="斑斓播客工作室"><i class="fa fa-microphone fa-2x"></i></a>&nbsp;<a href="http://item.jd.com/11826289.html" target="_blank" title="我翻译的《动物庄园》"><i class="fa fa-book fa-2x"></i></a>&nbsp;<a href="https://haohailong.net/buy-me-a-coffee/" target="_blank" title="请郝海龙喝咖啡"><i class="fa fa-coffee fa-2x"></i></a></p>
+<p><div class=".siderbar">
+  
+  <form action="https://www.google.com/search" method="get">
+    <fieldset role="search">
+      <input type="hidden" name="q" value="site:shengmingzhiqing.com" />
+      <input class="search" type="text" name="q" results="0" placeholder=" 站内搜索 = 输入+回车" />
+    </fieldset>
+  </form>
+    
+</div>
+</p>
+</section>
+<section>
+  <h1>最新发布</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/how-to-sync-weibo-and-twitter-with-wall.html/">如何实现不翻墙同时发送微博和 Twitter</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/excel-text-replacer.html/">Excel 文本批量替换器</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/long-time-no-see.html/">好久不见</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/mac-spelling-check.html/">如何为 Mac 拼写检查设置默认语言</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/app-travel-list.html/">工具：旅行清单（Travel List）</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/octopress-tutorials-toc.html/">Octopress 教程目录</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/octopress-lean-modification-5.html/">Octopress 精益修改 (5)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/octopress-lean-modification-4.html/">Octopress 精益修改 (4)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/octopress-lean-modification-3.html/">Octopress 精益修改 (3)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/octopress-lean-modification-2.html/">Octopress 精益修改 (2)</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>分类目录</h1>
+  <ul id="categories">
+  <li class='category'><a href='/blog/categories/app/'>App (2)</a></li>
+<li class='category'><a href='/blog/categories/bitcoin-slash-bi-te-bi/'>Bitcoin/比特币 (3)</a></li>
+<li class='category'><a href='/blog/categories/it-general/'>IT(General) (1)</a></li>
+<li class='category'><a href='/blog/categories/latex/'>LaTeX (1)</a></li>
+<li class='category'><a href='/blog/categories/mac/'>Mac (2)</a></li>
+<li class='category'><a href='/blog/categories/misc/'>Misc (2)</a></li>
+<li class='category'><a href='/blog/categories/octopress/'>Octopress (8)</a></li>
+<li class='category'><a href='/blog/categories/tips/'>Tips (1)</a></li>
+<li class='category'><a href='/blog/categories/si-kao/'>思考 (2)</a></li>
+
+  </ul>
+</section>
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2017 - 郝海龙 - <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">署名 -  非商业 - 非衍生</a> - <span class="credit">Powered by <a href="http://octopress.org">Octopress</a>, Customized by <a href="http://haohailong.net/" target="_blank">Haohailong.net</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'shengmingzhiqing';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
