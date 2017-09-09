@@ -14,7 +14,7 @@ footer: true
 
 **你可以用支付宝客户端扫描以下二维码请我喝咖啡：**
 
-![支付宝请我喝咖啡](https://raw.githubusercontent.com/haohailong/imagebed/master/20161202-alipay.JPG)
+![支付宝请我喝咖啡](https://raw.githubusercontent.com/haohailong/imagebed/master/Hailong.live-alipay.jpeg)
 
 **你可以用微信客户端扫描以下二维码请我喝咖啡：**
 
