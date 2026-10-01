@@ -1,0 +1,15 @@
+/* Noto Serif SC: self-hosted subset covering the archived site's text. */
+@font-face {
+  font-family: "Archive Serif";
+  src: url("/fonts/archive-serif/noto-serif-sc.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+}
+
+/* Keep headings, metadata, icons and code in their existing font families. */
+#content article,
+#content .blog-index a[rel="full-article"],
+.footnote-content {
+  font-family: "Archive Serif", "Noto Serif CJK SC", "Source Han Serif SC", "Songti SC", "STSong", "SimSun", Georgia, serif;
+}
