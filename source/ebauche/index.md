@@ -30,7 +30,7 @@ footer: true
 
 #### Octopress 相关：
 
-本部分内容已经作为正式文章发布，请点此查看[Octopress 教程目录](http://s.olo.la/rRRf)
+本部分内容已经作为正式文章发布，请点此查看[Octopress 教程目录](https://haohailong.github.io/blog/octopress-tutorials-toc.html/)
 {:.info}
 
 * [Octopress 搭建日志]({{ root_url }}/ebauche/octopress/build-log.html)

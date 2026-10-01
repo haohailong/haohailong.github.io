@@ -15,7 +15,7 @@ categories: "Octopress"
 
 ## 1. 为什么是 Octopress & Github Pages?
 
-在做任何事情之前最好先问个为什么，尽管很多情况下未必有答案，但这个做法绝对有好处。用 Octopress 搭建博客，并托管到 Github Pages，撇除[一些个人因素](http://s.olo.la/KIoY)之外，我想还有以下几点原因：<!--more-->
+在做任何事情之前最好先问个为什么，尽管很多情况下未必有答案，但这个做法绝对有好处。用 Octopress 搭建博客，并托管到 Github Pages，撇除[一些个人因素](https://haohailong.github.io/blog/everybody-should-build-his-own-writing-space.html/)之外，我想还有以下几点原因：<!--more-->
 
 1. 免费且独立。把 Octopress 博客系统搭建到 Github Pages 虽是免费，但不失独立性，即便 Github 全站关闭，你也将有一份本地全站备份，随时可以重新恢复。不必受托管商之气，而且还免费，如果你愿意，甚至可以自行插入广告挣钱。
 
