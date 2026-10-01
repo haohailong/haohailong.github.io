@@ -21,13 +21,13 @@ categories: "Octopress"
 
 对于一个博客来说，仅仅有按时间发布的文章或日志是不够的，我们还需要在上面放一些其他页面。对于 Octopress 来说，系统默认只有两个页面，一个是 Blog 页面，上面按照时间顺序显示着我们发布的日志，另一个是 Archives (归档) 页面，也是我们的文章列表，只是用一种更为简洁的方式呈现，只有标题，时间，和分类描述。
 
-但仅有这两个页面对很多人来说并不够，我们需要更多，比如在我的博客中，还有一个「[系列文章](http://shengmingzhiqing.com/article-series/)」页面，里面放的是我成系列的文章，更加方便读者阅读，也方便自己查阅。那么像这样一个页面该如何生成呢？很简单，执行以下命令：
+但仅有这两个页面对很多人来说并不够，我们需要更多，比如在我的博客中，还有一个「[系列文章](https://haohailong.github.io/article-series/)」页面，里面放的是我成系列的文章，更加方便读者阅读，也方便自己查阅。那么像这样一个页面该如何生成呢？很简单，执行以下命令：
 
 {% coderay %}
 sudo rake new_page[your-title]
 {% endcoderay %}
 
-然后你会发现，在你 <code>source</code>  文件夹下会出现一个名为 <code>your-title</code> 的文件夹，里面会有一个名为 index.md 的文件。还记得我们在「[精益修改 (1)](http://shengmingzhiqing.com/blog/octopress-lean-modification-1.html/#markdown-)」中修改过 rakefile 里的 Markdown 文件的 后缀，其中有一行是 <code>new_page_ext</code>，这里改动的正式新页面的后缀。
+然后你会发现，在你 <code>source</code>  文件夹下会出现一个名为 <code>your-title</code> 的文件夹，里面会有一个名为 index.md 的文件。还记得我们在「[精益修改 (1)](https://haohailong.github.io/blog/octopress-lean-modification-1.html/#markdown-)」中修改过 rakefile 里的 Markdown 文件的 后缀，其中有一行是 <code>new_page_ext</code>，这里改动的正式新页面的后缀。
 
 在你重新部署后，这个文件将会生成一个名为<code>index.html</code> 的文件。可以用以下链接来访问这个页面：
 
@@ -70,7 +70,7 @@ footer: true
 
 对于一个网站来说，有一个页面我们很少会注意到，那就是这个网站的 404 页面——当网站找不到用户访问的页面（通常是不存在）时的替代页面。
 
-这个页面对我们来说并不重要，但却是经常被访问到的页面之一。很多聪明人就想到了这一点：我们可以用它来做公益。你可以试着访问以下我的404页面：<http://shengmingzhiqing.com/404>，你会发现一条寻人的公益广告。那么这是如何实现的呢？
+这个页面对我们来说并不重要，但却是经常被访问到的页面之一。很多聪明人就想到了这一点：我们可以用它来做公益。你可以试着访问以下我的404页面：<https://haohailong.github.io/404.html>，你会发现一条寻人的公益广告。那么这是如何实现的呢？
 
 首先在 <code>source</code> 文件夹下新建一个 404.md 页面文件，然后到 <http://notfound.org/> 这里复制粘贴相应的代码即可。
 
@@ -98,7 +98,7 @@ footer: true
 
 你也可以在这里添加站外链接，只需要把 <code>a href</code> 后面引号中的部分改为相应的网站链接即可。
 
-有一点需要说明，这里出现的 {% raw %}<code>{{ root_url }}</code>{% endraw %} 是你网站的根目录，一般而言就是你的主域名。比如对于我这个博客来说，只要这个链接在站内：{% raw %}<code>{{ root_url }}/page.html</code>{% endraw %} 和 <code>http://shengmingzhiqing.com/page.html</code> 是一个意思。前者给出的是 page.html 相对于根目录的路径，后者给出的是在 <code>shengmingzhiqing.com</code> 这个目录下的路径。简单来说，前者是页面的相对路径，后者是页面的绝对路径。
+有一点需要说明，这里出现的 {% raw %}<code>{{ root_url }}</code>{% endraw %} 是你网站的根目录，一般而言就是你的主域名。比如对于我这个博客来说，只要这个链接在站内：{% raw %}<code>{{ root_url }}/page.html</code>{% endraw %} 和 <code>https://haohailong.github.io/page.html</code> 是一个意思。前者给出的是 page.html 相对于根目录的路径，后者给出的是在 <code>shengmingzhiqing.com</code> 这个目录下的路径。简单来说，前者是页面的相对路径，后者是页面的绝对路径。
 
 一般而言，站内连接的使用原则是，能使用相对路径就不要使用绝对路径。 因为域名一旦变更，相对路径继续有效，绝对路径将依然指向原域名下的页面，这本来就不是我们的本本意，而如果原来的域名废弃了，链接将直接失效。最为直接的影响是，如果我们在一个指向页面的超链接中使用了绝对路径，我们本地预览页面中的链接与已经部署到网络上的页面链接将指向相同的内容，这样我们就无法通过这个已经设好的超链接来追踪页面的实时效果。
 

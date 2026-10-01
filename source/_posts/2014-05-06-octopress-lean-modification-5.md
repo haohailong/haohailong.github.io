@@ -100,7 +100,7 @@ html << "<li class='category'><a href='/blog/categories/#{category.to_url.downca
 
 ## 3. 自动添加文章修改记录
 
-[前面我们说过](http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/#octopress--github-pages)，写文章，建网站都难免要修改，而且会反复修改。如果能把这些修改过程记录下来，本身就是很好的学习资料，那么有没有办法实现这一点呢？Git 就是干这个的，而且也正是我们前面说的 Octopress + Github Pages 相比其他博客系统的优势之一。
+[前面我们说过](https://haohailong.github.io/blog/setup-octopress-with-github-pages.html/#octopress--github-pages)，写文章，建网站都难免要修改，而且会反复修改。如果能把这些修改过程记录下来，本身就是很好的学习资料，那么有没有办法实现这一点呢？Git 就是干这个的，而且也正是我们前面说的 Octopress + Github Pages 相比其他博客系统的优势之一。
 
 事实上，我们每一次更新文章后提交至 Github 的 Commit 就可以当做是文章的修改记录和说明，如果我们能让这个信息自动出现在文章末尾，就可以实现我们想要的功能。同样，百事未行先 Google，我们发现了这样一篇文章：[*Post Revision Plugin for Octopress*](http://jhshi.me/2013/11/17/post-revision-plugin-for-octopress/)，参考此文，具体实现步骤如下：
 

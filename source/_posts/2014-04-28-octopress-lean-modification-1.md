@@ -11,13 +11,13 @@ categories: "Octopress"
 
 ## 1. 永远的第二步
 
-通过「[Octopress 搭建流程 – Github Pages](http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/)」，我们搭建好了自己的 Octopress 博客并发布了第一篇文章。
+通过「[Octopress 搭建流程 – Github Pages](https://haohailong.github.io/blog/setup-octopress-with-github-pages.html/)」，我们搭建好了自己的 Octopress 博客并发布了第一篇文章。
 
 但这只是我们 Octopress 博客之旅的第一步，说白了，我们不过是把别人已经做好的程序成功的安装到了网上，并且试运行了一下。但博客终究是个讲究个性化的地方，个性化就意味着需要自己动手进行修改。我们的第二步就是对安装好的 Octopress 做个性化修改。<!--more-->
 
-[前面我们说过](http://shengmingzhiqing.com/blog/setup-octopress-with-github-pages.html/)，对于实用性的知识，我向来秉承「精益学习」的态度。对我来说，「如何对一个网站进行个性化修改」正是这类知识，所以我们这篇文章的标题叫做「Octopress 精益修改」。
+[前面我们说过](https://haohailong.github.io/blog/setup-octopress-with-github-pages.html/)，对于实用性的知识，我向来秉承「精益学习」的态度。对我来说，「如何对一个网站进行个性化修改」正是这类知识，所以我们这篇文章的标题叫做「Octopress 精益修改」。
 
-我们会在使用博客系统的过程中不断发现问题，发现一例解决一例即可，如果一次性发现了很多个问题，可以做一个[任务列表](http://shengmingzhiqing.com/ebauche/octopress/task-list.html)逐一解决。如果遇到暂时解决不了的问题，那么恭喜你，这是你学习的机会，不妨就花一段时间学学相关知识。
+我们会在使用博客系统的过程中不断发现问题，发现一例解决一例即可，如果一次性发现了很多个问题，可以做一个[任务列表](https://haohailong.github.io/ebauche/octopress/task-list.html)逐一解决。如果遇到暂时解决不了的问题，那么恭喜你，这是你学习的机会，不妨就花一段时间学学相关知识。
 
 当然永远都会出现新的问题，我们的修改过程也就永远不会终止，所以我们的第二步是「永远的第二步」。[^1]
 
