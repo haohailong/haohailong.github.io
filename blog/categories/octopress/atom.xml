@@ -270,7 +270,7 @@ html « “&amp;lt;li <span class="keyword">class</span>=<span class="string"><
 
 <ol>
   <li>
-    <p>到这里 <a href="http://s.olo.la/a6cM">http://s.olo.la/a6cM</a> 找到 Octopress Post Revision 插件。</p>
+    <p>到这里 <a href="https://github.com/jhshi/octopress-post-revision">https://github.com/jhshi/octopress-post-revision</a> 找到 Octopress Post Revision 插件。</p>
   </li>
   <li>
     <p>复制 <code>plugins/revision.rb</code> 到你自己的 <code>plugins</code> 目录下。</p>
@@ -357,7 +357,7 @@ rv = conn.validateaddress(foo)
 
 <p>但是她这个插件取消了 CodeRay 自带的行号功能，在当你需要指出某一行代码时，就非常不方便。为了解决这个问题，<a href="http://www.fritz-hut.com/2013/11/24/github-style-code-highlighting-for-octopress/">Jan Stevens</a> 在 Kat 的插件基础上，开发了可以添加行号的 CodeRay 插件，但为了适应他自己博客的风格，同时也写了新的样式表。</p>
 
-<p>由于 Kat 用的是 Octopress 默认主题，从总体风格上而言，Kat 的插件样式更适合我们的博客，于是我尝试着用 Kat 的样式表配合 Jan 的插件使用，在代码块没有标题框 (Caption) 的情况下表现完美。但一旦加上标题框，问题就出现了：代码块主体部分与标题框的连接处出现了不必要的圆角，显得非常难看。为了解决这一问题，我在他们的基础上修改了 Coderay Block 插件，如果你需要，在这里：<a href="http://s.olo.la/iqLp">Octopress CodeRay Block</a>.</p>
+<p>由于 Kat 用的是 Octopress 默认主题，从总体风格上而言，Kat 的插件样式更适合我们的博客，于是我尝试着用 Kat 的样式表配合 Jan 的插件使用，在代码块没有标题框 (Caption) 的情况下表现完美。但一旦加上标题框，问题就出现了：代码块主体部分与标题框的连接处出现了不必要的圆角，显得非常难看。为了解决这一问题，我在他们的基础上修改了 Coderay Block 插件，如果你需要，在这里：<a href="https://github.com/haohailong/Octopress-CodeRay-block">Octopress CodeRay Block</a>.</p>
 
 <p>具体安装和使用方法如下：</p>
 
@@ -748,7 +748,7 @@ bundle install
 <p>考虑到朱萧木老师的身份，我给他做了如下的回复：</p>
 
 <blockquote>
-  <p>朱老师，作为一个贴心的产品经理，这一格不应该默认加在手机系统中么？参考<a href="http://t.cn/zOWs207">http://t.cn/zOWs207</a><br />
+  <p>朱老师，作为一个贴心的产品经理，这一格不应该默认加在手机系统中么？参考<a href="http://xoyo.name/2012/04/auto-spacing-for-octopress/">http://xoyo.name/2012/04/auto-spacing-for-octopress/</a><br />
 <a href="http://www.weibo.com/1645866217/AEXIFwGEZ">4 月 10 日 02:00</a></p>
 </blockquote>
 
