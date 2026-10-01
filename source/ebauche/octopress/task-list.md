@@ -70,7 +70,7 @@ footer: true
 **Octopress 精益修改 (4)：**
 
 - 元素美化
-	- [CodeRay Block 代码块插件](http://s.olo.la/iqLp)
+	- [CodeRay Block 代码块插件](https://github.com/haohailong/Octopress-CodeRay-block)
 	- 给图片添加说明 (Caption) 
 	- 使用 FontAwesome
 
@@ -89,11 +89,11 @@ footer: true
 
 - 图床问题
 	
-	可以直接使用 Github 在[精益修改 (4)](http://s.olo.la/eay3) 中有介绍，我用的是 [Droplr](https://droplr.com/join/d/kJSa8cTQ).
+	可以直接使用 Github 在[精益修改 (4)](https://haohailong.github.io/blog/octopress-lean-modification-4.html/) 中有介绍，我用的是 [Droplr](https://droplr.com/join/d/kJSa8cTQ).
 
 - 搜索引擎优化
 	
-	本博客作为个人学习使用的博客，并没有做 SEO（或许哪天学习 SEO 时会做一下），有需要的朋友请参考丁培轩翻译的这篇文章：<http://s.olo.la/s5Ue>
+	本博客作为个人学习使用的博客，并没有做 SEO（或许哪天学习 SEO 时会做一下），有需要的朋友请参考丁培轩翻译的这篇文章：<https://dinever.com/blog/2013/01/23/zhuan-zai-fan-yi-octopresszhong-de-seo-youhua/>
 
 - 脚注：Bigfoot
 	
@@ -101,4 +101,4 @@ footer: true
 
 - 添加提示框
 	
-	本文文章前面的 info 信息框以及文章中的 warning 警告框，其实都是用样式表制作出来的，使用了两幅简易的背景图片，具体请参考雁起平沙的 Octopress 样式表：<http://s.olo.la/xFy5>
+	本文文章前面的 info 信息框以及文章中的 warning 警告框，其实都是用样式表制作出来的，使用了两幅简易的背景图片，具体请参考雁起平沙的 Octopress 样式表：<https://yanping.me/cn/blog/2012/03/12/my-style-list/>

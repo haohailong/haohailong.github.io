@@ -104,7 +104,7 @@ html << "<li class='category'><a href='/blog/categories/#{category.to_url.downca
 
 事实上，我们每一次更新文章后提交至 Github 的 Commit 就可以当做是文章的修改记录和说明，如果我们能让这个信息自动出现在文章末尾，就可以实现我们想要的功能。同样，百事未行先 Google，我们发现了这样一篇文章：[*Post Revision Plugin for Octopress*](http://jhshi.me/2013/11/17/post-revision-plugin-for-octopress/)，参考此文，具体实现步骤如下：
 
-1. 到这里 <http://s.olo.la/a6cM> 找到 Octopress Post Revision 插件。
+1. 到这里 <https://github.com/jhshi/octopress-post-revision> 找到 Octopress Post Revision 插件。
 
 2. 复制 ```plugins/revision.rb``` 到你自己的 ```plugins``` 目录下。
 

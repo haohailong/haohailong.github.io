@@ -128,7 +128,7 @@ a {
 
 考虑到朱萧木老师的身份，我给他做了如下的回复：
 
-> 朱老师，作为一个贴心的产品经理，这一格不应该默认加在手机系统中么？参考<http://t.cn/zOWs207>  
+> 朱老师，作为一个贴心的产品经理，这一格不应该默认加在手机系统中么？参考<http://xoyo.name/2012/04/auto-spacing-for-octopress/>  
 > [4月10日 02:00](http://www.weibo.com/1645866217/AEXIFwGEZ)
 
 注意我给他的参考链接，正是在 Octopress 下的实现方式，来自[肖之慰的博客](http://xoyo.name)。参考他这篇《[给中英文间加个空格](http://xoyo.name/2012/04/auto-spacing-for-octopress/)》，你可以实现像本博客一样的中英文自动空格。
