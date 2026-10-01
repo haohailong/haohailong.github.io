@@ -91,7 +91,7 @@ kramdown:
 
 在我们发布文章的时候，难免会插入图片。你可以把你想插入的图片（比如 dream.jpg）放到 ```source/images/``` 文件夹下。重新生成部署站点之后，图片的地址为 ```{% raw %}{{ root_url }}/source/images/dream.jpg{% endraw %}```，当然你也可以给 images 文件夹下再添加其他文件夹，只要你加到图片最终的路径上即可。
 
-具体使用图片时，官方自带了图片插件 (Image Tag)，使用非常方便，具体方法可以参考[官方说明](http://octopress.org/docs/plugins/image-tag/)。但有时候，我们需要给图片添加说明 (Caption)，比如在我的文章「[为什么「Enter 键」要被翻译为「回车键」？](http://shengmingzhiqing.com/blog/why-enter-key-is-huiche-in-chinese.html/)」中的第二张图。这时官方的插件就显得不够用了，参照 [*Image Captions for Octopress*](http://blog.zerosharp.com/image-captions-for-octopress/) , 我们可以按如下步骤实现想要的功能：
+具体使用图片时，官方自带了图片插件 (Image Tag)，使用非常方便，具体方法可以参考[官方说明](http://octopress.org/docs/plugins/image-tag/)。但有时候，我们需要给图片添加说明 (Caption)，比如在我的文章「[为什么「Enter 键」要被翻译为「回车键」？](https://haohailong.github.io/blog/why-enter-key-is-huiche-in-chinese.html/)」中的第二张图。这时官方的插件就显得不够用了，参照 [*Image Captions for Octopress*](http://blog.zerosharp.com/image-captions-for-octopress/) , 我们可以按如下步骤实现想要的功能：
 
 ### 2.1 制作并添加插件
 

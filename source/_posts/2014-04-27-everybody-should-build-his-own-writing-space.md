@@ -47,7 +47,7 @@ WordPress 是一款功能强大的博客系统[^5]，本身就有各种插件，
 
 老实说，Octopress 好看的模板也不多，不过好在大部分模板都比较适合理工科写作，同时如果你有一颗不安分的心，很多功能都可以自行定制。
 
-经过大约一个礼拜的搭建和修改，终于出现了现在你们看到的「[生命之氢](http://shengmingzhiqing.com/)」这个新博客。以后偏向理工科的内容我会发布在这里，同时将陆续迁移 WordPress 博客上所有偏向理工科的内容到这个博客，原博客将继续保持更新：斗胆说一句，人文和科技本身就是我的两面。
+经过大约一个礼拜的搭建和修改，终于出现了现在你们看到的「[生命之氢](https://haohailong.github.io/)」这个新博客。以后偏向理工科的内容我会发布在这里，同时将陆续迁移 WordPress 博客上所有偏向理工科的内容到这个博客，原博客将继续保持更新：斗胆说一句，人文和科技本身就是我的两面。
 
 ## WordPress & Octopress
 
@@ -63,7 +63,7 @@ WordPress 是一款功能强大的博客系统[^5]，本身就有各种插件，
 
 ## 关于 Octopress 搭建
 
-在 Octopress 搭建过程中，除了[官网](http://octopress.org/)的教程之外，还参考了很多网友撰写的教程，同时发现了[一些潜伏在 Octopress/Jekyll 上的博客](http://shengmingzhiqing.com/ebauche/jekyll-octopress-blogs.html)。
+在 Octopress 搭建过程中，除了[官网](http://octopress.org/)的教程之外，还参考了很多网友撰写的教程，同时发现了[一些潜伏在 Octopress/Jekyll 上的博客](https://haohailong.github.io/ebauche/octopress/jekyll-octopress-blogs.html)。
 
 在看这些博客和教程的过程中，有一件事一直想不明白：为什么几乎每一个搭建Octopress 的博主都想会写一个搭建和配置教程？
 
@@ -71,7 +71,7 @@ WordPress 是一款功能强大的博客系统[^5]，本身就有各种插件，
 
 在做一些事情的时候不一定要明白其所以然，但一定要做好记录，否则当你有能力并有精力了解的时候又得重新做一遍。
 
-最近搭建博客的过程让我再一次明白工作日志的作用，那么这算是第一篇，接下来的日志中我要开始撰写我的 Octopress 搭建教程了。所有关于 Octopress 的文章，我都会放在 [Octopress](http://shengmingzhiqing.com/blog/categories/octopress/) 分类下。
+最近搭建博客的过程让我再一次明白工作日志的作用，那么这算是第一篇，接下来的日志中我要开始撰写我的 Octopress 搭建教程了。所有关于 Octopress 的文章，我都会放在 [Octopress](https://haohailong.github.io/blog/categories/octopress/) 分类下。
 
 [^1]: 对于 56K Modem 的年代，5 分钟能加载一个远在南美的网站已经算是非常不错的速度了。
 [^2]: 第二次上网就找了个网络女友，其实这事更惊艳。

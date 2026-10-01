@@ -2,7 +2,9 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://shengmingzhiqing.com
+url: https://haohailong.github.io
+# Keep existing Disqus threads attached to their original opaque identifiers.
+disqus_identifier_url: http://shengmingzhiqing.com
 title: 生命之氢
 subtitle: Hailong Hao's Laboratory
 author: 郝海龙
