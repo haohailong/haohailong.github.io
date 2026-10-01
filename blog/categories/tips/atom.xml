@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[分类：Tips | 生命之氢]]></title>
-  <link href="http://shengmingzhiqing.com/blog/categories/tips/atom.xml" rel="self"/>
-  <link href="http://shengmingzhiqing.com/"/>
+  <link href="https://haohailong.github.io/blog/categories/tips/atom.xml" rel="self"/>
+  <link href="https://haohailong.github.io/"/>
   <updated>2017-09-09T17:36:42+08:00</updated>
-  <id>http://shengmingzhiqing.com/</id>
+  <id>https://haohailong.github.io/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
     <email><![CDATA[haohailong@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[如何实现不翻墙同时发送微博和 Twitter]]></title>
-    <link href="http://shengmingzhiqing.com/blog/how-to-sync-weibo-and-twitter-with-wall.html/"/>
+    <link href="https://haohailong.github.io/blog/how-to-sync-weibo-and-twitter-with-wall.html/"/>
     <updated>2016-12-18T13:09:31+08:00</updated>
-    <id>http://shengmingzhiqing.com/blog/how-to-sync-weibo-and-twitter-with-wall</id>
+    <id>https://haohailong.github.io/blog/how-to-sync-weibo-and-twitter-with-wall</id>
     <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/haohailong/imagebed/master/20150914-weibo-twitter.png" alt="微博+twitter" title="微博+twitter" /></p>
 
 <p>刚开始用 Twitter 时，我只是把它当作一个树洞。当然这个树洞很多时候不是为了倾诉一些难以启齿的秘密，而是想把一些不吐不快而又没有太多人会听的话放到一个公开场合，体验一种「也许可能有人会看」的奇妙感觉。后来 Twitter 上的关注者多了起来，发出去的信息居然也有了回音，转而觉得这种互动也很好玩，渐渐地也成了我使用 Twitter 以及它在国内的模仿者「微博」的主要理由。既然很多时候是为了互动，为了获取回应，那么自然是越多人能够看到你的微博（Tweets）越好。同步发送微博和 Twitter 就成了我非常渴望的得到的一项服务，可是，由于众所周知的原因，国内提供这样服务的平台几乎已经找不着了（更新：大家也可以试试 <a href="https://weibo.com/erinsnowanmin">@爱尔兰_雪</a> 的 P.cat，20161218）。

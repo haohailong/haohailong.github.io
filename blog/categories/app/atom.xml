@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[分类：App | 生命之氢]]></title>
-  <link href="http://shengmingzhiqing.com/blog/categories/app/atom.xml" rel="self"/>
-  <link href="http://shengmingzhiqing.com/"/>
+  <link href="https://haohailong.github.io/blog/categories/app/atom.xml" rel="self"/>
+  <link href="https://haohailong.github.io/"/>
   <updated>2017-09-09T17:36:42+08:00</updated>
-  <id>http://shengmingzhiqing.com/</id>
+  <id>https://haohailong.github.io/</id>
   <author>
     <name><![CDATA[郝海龙]]></name>
     <email><![CDATA[haohailong@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Excel 文本批量替换器]]></title>
-    <link href="http://shengmingzhiqing.com/blog/excel-text-replacer.html/"/>
+    <link href="https://haohailong.github.io/blog/excel-text-replacer.html/"/>
     <updated>2016-12-02T15:42:30+08:00</updated>
-    <id>http://shengmingzhiqing.com/blog/excel-text-replacer</id>
+    <id>https://haohailong.github.io/blog/excel-text-replacer</id>
     <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/haohailong/imagebed/master/Excel-text-replacer-bg-design-sketch.jpeg" alt="Excel 文本批量替换器 头图" title="Excel 文本批量替换器 头图" /></p>
 
 <p>是的，在我司产品经理的逼迫下我用 AppleScript 写了个批量处理 Excel 的 App。主要功能是针对某一文件夹下所有的 Excel 文件，批量「查找和替换」文本，严格对应区分大小写。可能各位在平时处理 Excel 文件也会有用，分享给大家。</p>
@@ -53,9 +53,9 @@
   
   <entry>
     <title type="html"><![CDATA[工具：旅行清单（Travel List）]]></title>
-    <link href="http://shengmingzhiqing.com/blog/app-travel-list.html/"/>
+    <link href="https://haohailong.github.io/blog/app-travel-list.html/"/>
     <updated>2015-08-06T13:20:20+08:00</updated>
-    <id>http://shengmingzhiqing.com/blog/app-travel-list</id>
+    <id>https://haohailong.github.io/blog/app-travel-list</id>
     <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/haohailong/imagebed/master/20150810-Travel-list.png" alt="Travel List App Icon" title="Travel List App Icon" /></p>
 
 <p>我有个朋友每次旅行时都会忘记带一件本来记着要带的东西，以至于后来她索性告诉自己这是命中注定，无法改变。我的另一个朋友曾经有过到了边检才发现忘记带护照的窘境，这位朋友在后来的一次旅行前告诉我：</p>
