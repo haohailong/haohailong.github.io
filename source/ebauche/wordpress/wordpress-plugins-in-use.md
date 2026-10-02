@@ -8,7 +8,7 @@ sharing: true
 footer: true
 ---
 
-我的主博客 <haohailong.net> 使用的一些 WordPress 插件，留此存档。
+我的主博客 <haohailong.com> 使用的一些 WordPress 插件，留此存档。
 
 - [Askimet](https://akismet.com): 消除垃圾评论，系统自带。
 - [Archive](http://wordpress.org/plugins/archive/): 早年写的一些低质量文章，自己不想删，那么就选择归档吧。
