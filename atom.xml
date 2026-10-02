@@ -1059,7 +1059,7 @@ footer: true
 
 <p>首先在 <code>source</code> 文件夹下新建一个 404.md 页面文件，然后到 <a href="http://notfound.org/">http://notfound.org/</a> 这里复制粘贴相应的代码即可。</p>
 
-<p>当然如果你更愿意用中文的产品，可以考虑益云的公益 404 项目，我的<a href="http://haohailong.net/">另一个博客</a>用的就是这个方案。不过益云生成的页面并不是响应式设计<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>，所以手机浏览效果比较差。</p>
+<p>当然如果你更愿意用中文的产品，可以考虑益云的公益 404 项目，我的<a href="https://haohailong.com/">另一个博客</a>用的就是这个方案。不过益云生成的页面并不是响应式设计<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup>，所以手机浏览效果比较差。</p>
 
 <h3 id="section-3">1.3 添加页面和其他链接至导航栏</h3>
 
@@ -1597,7 +1597,7 @@ git push origin source
       <p>想到这一节，我把博客的副标题也改为了「Hailong Hao’s Laboratory」，这里不仅是我的博客，也是用来试错的地方。<a href="#fnref:1" rel="reference">&#8617;</a></p>
     </li>
     <li id="fn:2">
-      <p>这我留给了 <a href="http://haohailong.net/">http://haohailong.net/</a><a href="#fnref:2" rel="reference">&#8617;</a></p>
+      <p>这我留给了 <a href="https://haohailong.com/">https://haohailong.com/</a><a href="#fnref:2" rel="reference">&#8617;</a></p>
     </li>
     <li id="fn:3">
       <p>当然如果你现在只有这一篇文章，也只会显示这一篇。<a href="#fnref:3" rel="reference">&#8617;</a></p>
@@ -2005,7 +2005,7 @@ rake gen_deploy
 
 <p>可突然有一天，我在博客大巴的博客在未接到任何通知的情况下，被锁定了 20 多篇文章，并在事后也没有接到任何解释，哪怕是群发的官样文章的通知。当然这不怪他们，冤有头债有主，前方左转你也知道是什么。但这种感觉我非常不爽，于是在这种半被动的情况下，开始了我的独立博客之旅。</p>
 
-<p>当时最流行的博客系统就是现在也最流行的 WordPress，于是我在淘宝上买了海外虚拟主机，用最傻瓜的方式搭建起了现在的个人博客「<a href="http://haohailong.net/">郝海龙</a>」。</p>
+<p>当时最流行的博客系统就是现在也最流行的 WordPress，于是我在淘宝上买了海外虚拟主机，用最傻瓜的方式搭建起了现在的个人博客「<a href="https://haohailong.com/">郝海龙</a>」。</p>
 
 <h2 id="section-1">每个人都该为自己打造专属的写作环境</h2>
 
@@ -2290,7 +2290,7 @@ rake gen_deploy
 
 <p>于是，我决定转回 WYSIWYM <sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>模式的 LaTeX，重新学习 LaTeX 也就成了必然，这一次我用的教材是 <a href="http://www.amazon.com/Guide-LaTeX-Edition-Helmut-Kopka-ebook/dp/B00256Z3G8/ref=tmm_kin_title_0?ie=UTF8&amp;qid=1385070416&amp;sr=8-1" target="_blank"><em>Guide to LaTeX</em></a>。为了避免再次忘掉，除了完成书上的练习之外，我决定给自己布置作业，以便可以应对真实的排版情况。</p>
 
-<p>今天（其实已经是昨天了）我刚刚完成第一份作业——<a href="http://haohailong.net/archives/gre-sentence-completion-tutorial-8-1.vie" target="_blank">重排「《GRE 填空教程》英汉对照 8.1 版」</a>（感兴趣的朋友可以点击链接看一下我的作业做得怎么样）。完成这份作业总共花了我整整两天时间，每天几乎都是从早做到晚。一般而言，精疲力竭之后总会有不少收获，这次也不例外。一些心得摘录在此：</p>
+<p>今天（其实已经是昨天了）我刚刚完成第一份作业——<a href="https://haohailong.com/archives/gre-sentence-completion-tutorial-8-1.vie" target="_blank">重排「《GRE 填空教程》英汉对照 8.1 版」</a>（感兴趣的朋友可以点击链接看一下我的作业做得怎么样）。完成这份作业总共花了我整整两天时间，每天几乎都是从早做到晚。一般而言，精疲力竭之后总会有不少收获，这次也不例外。一些心得摘录在此：</p>
 
 <ol>
   <li>
@@ -2460,7 +2460,7 @@ rake gen_deploy
     <id>https://haohailong.github.io/blog/Day-One</id>
     <content type="html"><![CDATA[<center><img alt="Day One icon" src="https://raw.githubusercontent.com/haohailong/imagebed/master/20121215-Day-One.png" width="256" height="256" /></center>
 
-<p>小学二年级的时候，老师开始强迫我们写日记。就我个人而言，懂事之前被强迫做的事情，绝大多数后来都放弃了。即使重新拣起来，也基本上要等到懂事之后过很长时间，并且认真考虑过这件事情的价值之后，比如<a href="http://haohailong.net/archives/294">记笔记</a>。</p>
+<p>小学二年级的时候，老师开始强迫我们写日记。就我个人而言，懂事之前被强迫做的事情，绝大多数后来都放弃了。即使重新拣起来，也基本上要等到懂事之后过很长时间，并且认真考虑过这件事情的价值之后，比如<a href="https://haohailong.com/archives/294">记笔记</a>。</p>
 
 <p>写日记的习惯却断断续续的坚持下来了，我想这主要是因为我的父亲也有写日记的习惯，教育小孩，永远是「言传不如身教」。但这篇文章我想说的正是这断断续续中断的部分。
 <!--more--></p>
